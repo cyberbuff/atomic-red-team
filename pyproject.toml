@@ -9,6 +9,7 @@ packages = [{include = "atomic_red_team"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 pyyaml = "^6.0"
+pydantic = "^1.10.7"
 
 
 [build-system]
