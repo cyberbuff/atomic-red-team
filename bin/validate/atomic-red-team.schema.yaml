@@ -7,6 +7,7 @@ properties:
     description: A MITRE ATT&CK Technique ID with a capital T
     type: string
     format: technique_id
+    pattern: T[\.\d]{4,8}
   display_name:
     description: Name of the technique as defined by ATT&CK.
     type: string
