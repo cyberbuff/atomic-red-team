@@ -77,14 +77,14 @@ atomic_tests:
       # - Integer
       # - Float
       # - really anything else you'd like, but add it to this list
-      type: Path
+      type: path
       # default value for this argument that will be used if one is not specifid
       default: test.wma
 
     # this is a example of a second argument
     malware_payload_url:
       description: xxxxx
-      type: Url
+      type: url
       default: 0000:00:30
 
   dependency_executor_name: powershell # (optional) The executor for the prereq commands, defaults to the same executor used by the attack commands

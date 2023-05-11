@@ -36537,7 +36537,7 @@ persistence:
         userprincipalname:
           description: User principal name (UPN) for the new Azure user being created
             format email address
-          type: String
+          type: string
           default: atomicredteam@yourdomain.com
         password:
           description: Password for the new Azure AD user being created
@@ -36580,7 +36580,7 @@ persistence:
         userprincipalname:
           description: User principal name (UPN) for the new Azure user being created
             format email address
-          type: String
+          type: string
           default: atomicredteam@yourdomain.com
         password:
           description: Password for the new Azure AD user being created
@@ -61382,7 +61382,7 @@ impact:
       input_arguments:
         userprincipalname:
           description: User principal name (UPN) for the Azure user being deleted
-          type: String
+          type: string
           default: atomicredteam@yourdomain.com
       dependency_executor_name: powershell
       dependencies:
@@ -61412,7 +61412,7 @@ impact:
       input_arguments:
         userprincipalname:
           description: User principal name (UPN) for the Azure user being deleted
-          type: String
+          type: string
           default: atomicredteam@yourdomain.com
       dependency_executor_name: powershell
       dependencies:
