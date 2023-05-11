@@ -1,5 +1,6 @@
-from pydantic import BaseModel, Field, validator, ValidationError
-from typing import Dict, List, Literal, Optional
+from typing import Dict, List, Literal, Optional, Union
+
+from pydantic import BaseModel, Field, validator, IPvAnyAddress, AnyUrl, constr, FileUrl
 
 Platform = Literal[
     "windows", "macos", "linux", "office-365", "azure-ad", "google-workspace", "saas", "iaas", "containers", "iaas:gcp", "iaas:azure", "iaas:aws"]
@@ -21,6 +22,17 @@ class AtomicExecutor(BaseModel):
     elevation_required: Optional[bool]
 
 
+class URLValidator(BaseModel):
+    url: Union[IPvAnyAddress, AnyUrl, FileUrl, constr(
+        regex="^(?=.{1,255}$)[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?(?:\.[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?)*\.?(:\d{1,5})?$")]
+
+
+# TODO: Add a regex for path validation
+class PathValidator(BaseModel):
+    path: constr(
+        regex="^(?=.{1,255}$)[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?(?:\.[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?)*\.?(:\d{1,5})?$")
+
+
 class InputArgument(BaseModel):
     description: str
     type: Literal["path", "url", "string", "integer"]
@@ -28,12 +40,25 @@ class InputArgument(BaseModel):
 
     @validator('default')
     def default_must_be_of_valid_type(cls, v, values, **kwargs):
-        if _type := values.get("type"):
+        if (_type := values.get("type")) and v:
             if _type == "integer":
                 try:
                     int(v)
+                except ValueError:
+                    raise ValueError(f"{v} is not a valid integer.")
+            elif _type == "url":
+                try:
+                    URLValidator(url=v)
                 except ValueError as e:
-                    raise ValidationError(str(e))
+                    if not v.startswith("file://"):  # TODO: Add a regex for file schema validation
+                        raise ValueError(f"{v} is neither a valid IPv4/IPv6 address nor a valid Url.")
+            elif _type == "path":
+                # try:
+                #     PathValidator(path=v)
+                # except ValueError as e:
+                #     raise ValueError(f"{v} is not a valid path.")
+                pass
+
         return v
 
 
