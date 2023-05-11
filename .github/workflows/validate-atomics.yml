@@ -36,6 +36,7 @@ jobs:
 
     - name: Validate schema
       run: |
+        source .venv/bin/activate
         python bin/validate/validate.py
 
   validate-terraform:
