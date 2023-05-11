@@ -98,7 +98,7 @@ atomic_tests:
   input_arguments:
     user_account:
       description: User account whose password will be changed.
-      type: String
+      type: string
       default: ARTUser
   executor:
     command: |
@@ -114,11 +114,11 @@ atomic_tests:
   input_arguments:
     user_account:
       description: User account which will be deleted.
-      type: String 
+      type: string 
       default: ARTUser
     user_password:
       description: User password.
-      type: String 
+      type: string 
       default: ARTPassword    
   executor:
     command: |
@@ -140,15 +140,15 @@ atomic_tests:
   input_arguments:
     user_account:
       description: User account which will be deleted.
-      type: String  
+      type: string  
       default: ARTUserAccount
     user_name:
       description: New user name.
-      type: String
+      type: string
       default: ARTUser
     user_password:
       description: New user password.
-      type: String
+      type: string
       default: ARTPassword
   executor:
     command: |
@@ -165,7 +165,7 @@ atomic_tests:
   input_arguments:
     userprincipalname:
       description: User principal name (UPN) for the Azure user being deleted
-      type: String
+      type: string
       default: "atomicredteam@yourdomain.com"
   dependency_executor_name: powershell
   dependencies:
@@ -190,7 +190,7 @@ atomic_tests:
   input_arguments:
     userprincipalname:
       description: User principal name (UPN) for the Azure user being deleted
-      type: String
+      type: string
       default: "atomicredteam@yourdomain.com"
   dependency_executor_name: powershell
   dependencies:

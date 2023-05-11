@@ -192,11 +192,11 @@ atomic_tests:
   input_arguments:
     GPG_Exe_Location:
       description: Path of the GPG program
-      type: Path
+      type: path
       default: 'C:\Program Files (x86)\GnuPG\bin\gpg.exe'
     File_to_Encrypt_Location:
       description: Path of File
-      type: Path
+      type: path
       default: '$env:temp\test.txt'
   dependencies:
     - description: |

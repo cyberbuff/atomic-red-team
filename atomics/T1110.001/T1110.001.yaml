@@ -103,7 +103,7 @@ atomic_tests:
 
       $passwords = "#{passwords}".split("{`n}")
       foreach($password in $passwords) {
-        $PWord = ConvertTo-SecureString -String "$password" -AsPlainText -Force
+        $PWord = ConvertTo-Securestring -string "$password" -AsPlainText -Force
         $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "#{username}", $Pword
         try {
           Write-Host " [-] Attempting ${password} on account #{username}."
@@ -164,7 +164,7 @@ atomic_tests:
   input_arguments:
     remote_url:
       description: url of remote payload
-      type: Url
+      type: url
       default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1110.001/src/sudo_bruteforce.sh
   dependency_executor_name: bash
   dependencies:
@@ -200,7 +200,7 @@ atomic_tests:
   input_arguments:
     remote_url:
       description: url of remote payload
-      type: Url
+      type: url
       default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1110.001/src/sudo_bruteforce.sh
   dependency_executor_name: bash
   dependencies:

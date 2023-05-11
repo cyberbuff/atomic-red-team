@@ -59,23 +59,23 @@ atomic_tests:
   input_arguments:
     username:
       description: Azure username
-      type: String
+      type: string
       default: null
     password:
       description: Azure password
-      type: String
+      type: string
       default: null
     resource_group:
       description: Name of the resource group
-      type: String
+      type: string
       default: null
     runbook_name:
       description: Name of the runbook name
-      type: String
+      type: string
       default: null
     automation_account_name:
       description: Name of the automation account name
-      type: String
+      type: string
       default: null
   dependency_executor_name: powershell
   dependencies:
@@ -87,7 +87,7 @@ atomic_tests:
       Install-Module -Name Az -Scope CurrentUser -Force
   executor:
     command: |
-      $secure_pwd = "#{password}" | ConvertTo-SecureString -AsPlainText -Force
+      $secure_pwd = "#{password}" | ConvertTo-Securestring -AsPlainText -Force
       $creds = New-Object System.Management.Automation.PSCredential -ArgumentList "#{username}", $secure_pwd
       Connect-AzAccount -Credential $creds
       New-AzAutomationRunbook -Name #{runbook_name} -Type PowerShell -ResourceGroupName #{resource_group} -Description 'my-test-runbook' -AutomationAccountName #{automation_account_name}
