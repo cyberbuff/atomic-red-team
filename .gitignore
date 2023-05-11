@@ -27,3 +27,4 @@ techniques_hash.db
 
 # Credential files 
 *.creds
+**/__pycache__
