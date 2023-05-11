@@ -103,7 +103,7 @@ atomic_tests:
 
       $passwords = "#{passwords}".split("{`n}")
       foreach($password in $passwords) {
-        $PWord = ConvertTo-Securestring -string "$password" -AsPlainText -Force
+        $PWord = ConvertTo-SecureString -String "$password" -AsPlainText -Force
         $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "#{username}", $Pword
         try {
           Write-Host " [-] Attempting ${password} on account #{username}."
