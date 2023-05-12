@@ -45,7 +45,7 @@ atomic_tests:
     command: |
       #{gsecdump_exe} -a
     name: command_prompt
-    elevation_required: 123
+    elevation_required: true
 
 - name: Credential Dumping with NPPSpy
   auto_generated_guid: 9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6
