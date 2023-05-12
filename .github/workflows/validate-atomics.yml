@@ -5,12 +5,14 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  build:
+  validate-atomics:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout repo
+        uses: actions/checkout@v3
 
-      - name: Set up Python 3.10
+
+      - name: setup python3.10
         uses: actions/setup-python@v4
         id: setup-python
         with:
@@ -34,7 +36,7 @@ jobs:
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
 
-      - name: Validate schema
+      - name: validate the format of atomics tests against the spec
         run: |
           source .venv/bin/activate
           python bin/validate/validate.py
