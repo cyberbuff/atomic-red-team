@@ -24,6 +24,7 @@ jobs:
 
       - name: validate the format of atomics tests against the spec
         run: |
+          ls;
           python bin/validate/validate.py
 
   validate-terraform:
