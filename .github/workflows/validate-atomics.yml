@@ -24,8 +24,7 @@ jobs:
 
       - name: validate the format of atomics tests against the spec
         run: |
-          ls;
-          python bin/validate/validate.py
+          poetry run python bin/validate/validate.py
 
   validate-terraform:
     runs-on: ubuntu-latest
