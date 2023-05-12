@@ -18,11 +18,15 @@ with open(f"{os.path.dirname(os.path.abspath(__file__))}/atomic-red-team.schema.
                 schema=schema
             )
         except ValidationError as ve:
-            print(f"Error occurred with {item}.")
+            print(f"Error occurred with {item}")
             print("Each of the following are why it failed:")
-            print(f"\n\t{ve.context[0].message}\n")
+            if (context := ve.context) and len(context) > 0:
+                print(f"\n\t{context[0].message}\n")
+            else:
+                print(f"\n\t{ve}\n")
             print(f"The JSON Path is {ve.json_path}")
+            break
         except Exception as e:
-            print(f"Error occurred with {item}.")
+            print(f"Error occurred with {item}")
             print("Each of the following are why it failed:")
             print(f"\n\t{e}\n")
