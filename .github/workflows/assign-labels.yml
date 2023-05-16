@@ -9,7 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     # Map a step output to a job output
     steps:
-      - name: View context attributes
+      - name: View modified files
+        id: get_files
         uses: actions/github-script@v6
         with:
-          script: console.log(context)
+          script: |
+            return github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.pull_request.number
+            });
+        result-encoding: string
+      - name: print output
+        run: |
+          echo '${{steps.get_files.outputs.result}}'
+
