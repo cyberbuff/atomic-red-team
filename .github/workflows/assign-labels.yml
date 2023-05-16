@@ -21,8 +21,8 @@ jobs:
         id: changes
         # Set outputs using the command.
         run: |
-          echo "name=all value=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
-          echo "name=yaml value=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .yaml$ | xargs)" >> $GITHUB_OUTPUT
+          echo "all=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
+          echo "yaml=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .yaml$ | xargs)" >> $GITHUB_OUTPUT
           echo $GITHUB_OUTPUT
           cat $GITHUB_OUTPUT
   lint:
