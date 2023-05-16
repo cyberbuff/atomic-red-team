@@ -17,7 +17,7 @@ jobs:
             return github.rest.pulls.listFiles({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: context.pull_request.number
+              pull_number: context.issue.number
             });
       - name: print output
         run: |
