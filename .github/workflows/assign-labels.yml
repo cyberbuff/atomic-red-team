@@ -28,7 +28,6 @@ jobs:
     # require the first job to have ran
     needs: changedfiles
     # only run there are changed files
-    if: ${{needs.changedfiles.outputs.yaml}}
     steps:
       - name: echo changed files
         run: echo ${{needs.changedfiles.outputs.yaml}}; echo ${{needs.changedfiles.outputs.all}}
