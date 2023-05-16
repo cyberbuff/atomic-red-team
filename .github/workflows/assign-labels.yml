@@ -19,7 +19,6 @@ jobs:
               repo: context.repo.repo,
               pull_number: context.pull_request.number
             });
-        result-encoding: string
       - name: print output
         run: |
           echo '${{steps.get_files.outputs.result}}'
