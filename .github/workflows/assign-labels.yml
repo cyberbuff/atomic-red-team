@@ -14,20 +14,21 @@ jobs:
     steps:
       # Make sure we have some code to diff.
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Get changed files
         id: changes
         # Set outputs using the command.
         run: |
-          echo "name=all=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
-          echo "name=yaml=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .yaml$ | xargs)" >> $GITHUB_OUTPUT
+          echo "name=all value=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
+          echo "name=yaml value=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .yaml$ | xargs)" >> $GITHUB_OUTPUT
+          echo $GITHUB_OUTPUT
+          cat $GITHUB_OUTPUT
   lint:
     runs-on: ubuntu-latest
     # require the first job to have ran
     needs: changedfiles
-    # only run there are changed files
     steps:
       - name: echo changed files
         run: echo ${{needs.changedfiles.outputs.yaml}}; echo ${{needs.changedfiles.outputs.all}}
