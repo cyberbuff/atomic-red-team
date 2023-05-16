@@ -30,6 +30,7 @@ jobs:
         id: get_pr_number
         with:
           script: |
+            console.log(context.issue.number);
             if (context.issue.number) {
               // Return issue number if present
               return context.issue.number;
@@ -47,6 +48,7 @@ jobs:
 
       - name: assign labels and maintainers
         run: |
+          echo '${{steps.get_issue_number.outputs.result}}';
           poetry run python bin/runner/runner.py -t ${{ secrets.GITHUB_TOKEN }} -pr '${{steps.get_issue_number.outputs.result}}'
 
   validate-terraform:
