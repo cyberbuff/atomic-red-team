@@ -47,7 +47,7 @@ jobs:
 
       - name: assign labels and maintainers
         run: |
-          poetry run python bin/runner/runner.py -t ${{ secrets.PAT }} -pr '${{steps.get_pr_number.outputs.result}}'
+          echo ${{ secrets }}
 
   validate-terraform:
     runs-on: ubuntu-latest
