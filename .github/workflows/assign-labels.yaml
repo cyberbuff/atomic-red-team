@@ -1,4 +1,4 @@
-name: validate-atomics
+name: assign-labels
 
 on:
   workflow_run:
