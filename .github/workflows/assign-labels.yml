@@ -41,7 +41,18 @@ jobs:
             let fs = require('fs');
             return Number(fs.readFileSync('./pr_number'));
           result-encoding: string
-
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: Install poetry
+        run: pipx install poetry
+      - name: setup python3.11
+        uses: actions/setup-python@v4
+        id: setup-python
+        with:
+          python-version: "3.11.2"
+          cache: "poetry"
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
       - name: assign labels and reviewers
         run: |
           poetry run python bin/runner/runner.py -pr '${{steps.get_pr_number.outputs.result}}' -t  ${{ secrets.GITHUB_TOKEN }}
