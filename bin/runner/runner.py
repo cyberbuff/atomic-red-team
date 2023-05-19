@@ -125,7 +125,15 @@ class GithubAPI:
                 labels.append(self.labels[p])
             if p in self.maintainers:
                 maintainers += self.maintainers[p]
+        print("changed files", tests)
+        print("labels", tests)
+        print("maintainers", tests)
         os.mkdir("pr")
+
+        with open("pr/changedfiles.json", "w") as f:
+            x = [{"name": t.technique, "test_number": t.test_number} for t in tests]
+            f.write(json.dumps(x))
+
         with open("pr/labels.json", "w") as f:
             j = {
                 "pr": pr,
