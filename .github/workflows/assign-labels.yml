@@ -40,6 +40,7 @@ jobs:
           script: |
             let fs = require('fs');
             const obj = JSON.parse(fs.readFileSync('./labels.json'));
+            console.log(obj)
             if(obj.labels.length > 0){
               await github.rest.issues.addLabels({
                 issue_number: obj.pr,
