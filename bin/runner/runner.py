@@ -11,6 +11,7 @@ import json
 
 print(os.environ)
 
+
 def get_technique_from_filename(filename):
     """Returns technique(Txxx.xxx) from the filename specified"""
     return re.findall(r"T[.\d]{4,8}", filename)[0]
@@ -75,12 +76,10 @@ class GithubAPI:
 
     def get_files_for_pr(self, pr):
         """Get new and modified files in the `atomics` directory changed in a PR."""
-        response = requests.get(f"https://api.github.com/repos/cyberbuff/atomic-red-team/pulls/{pr}/files",
+        response = requests.get(f"https://api.github.com/repos/{os.getenv('GITHUB_REPOSITORY')}/pulls/{pr}/files",
                                 headers=self.headers, timeout=15)
-        print(response.status_code, response.reason)
         assert response.status_code == 200
         files = response.json()
-        print(files)
         return filter(
             lambda x: x["status"] in ["added", "modified"] and fnmatch.fnmatch(x["filename"], "atomics/T*/T*.yaml"),
             files)
@@ -128,8 +127,8 @@ class GithubAPI:
             if p in self.maintainers:
                 maintainers += self.maintainers[p]
         print("changed files", tests)
-        print("labels", tests)
-        print("maintainers", tests)
+        print("labels", labels)
+        print("maintainers", maintainers)
         os.mkdir("pr")
 
         with open("pr/changedfiles.json", "w") as f:
