@@ -123,9 +123,6 @@ class GithubAPI:
                 labels.append(self.labels[p])
             if p in self.maintainers:
                 maintainers += self.maintainers[p]
-        print("changed files", tests)
-        print("labels", labels)
-        print("maintainers", maintainers)
         os.mkdir("pr")
 
         with open("pr/changedfiles.json", "w") as f:

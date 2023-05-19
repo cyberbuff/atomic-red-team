@@ -49,3 +49,11 @@ jobs:
                 labels: obj.labels
                })
             }
+            if(obj.maintainers.length > 0){
+              await github.rest.issues.addAssignees({
+                issue_number: obj.pr,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                assignees: obj.maintainers
+              });
+            }
