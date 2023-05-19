@@ -144,7 +144,6 @@ if __name__ == "__main__":
                         help="Current pull request number")
     parser.add_argument('-t', '--token', type=str, help="Github Token to be used")
     args = parser.parse_args()
-    print(args)
 
     api = GithubAPI(args.token)
     api.assign_labels_and_maintainers(args.pull_request)
