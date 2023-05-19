@@ -39,31 +39,24 @@ jobs:
 
   upload:
     runs-on: ubuntu-latest
+    needs: validate-atomics
     steps:
-      - uses: actions/github-script@v6
-        id: get_pr_number
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: Install poetry
+        run: pipx install poetry
+      - name: setup python3.11
+        uses: actions/setup-python@v4
+        id: setup-python
         with:
-          script: |
-            if (context.issue.number) {
-              // Return issue number if present
-              return context.issue.number;
-            } else {
-              // Otherwise return issue number from commit
-              return (
-                await github.rest.repos.listPullRequestsAssociatedWithCommit({
-                  commit_sha: context.sha,
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                })
-              ).data[0].number;
-            }
-          result-encoding: string
-
-      - name: Save PR number
+          python-version: "3.11.2"
+          cache: "poetry"
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+      - name: save labels and reviewers into a file.
         run: |
-          mkdir -p ./pr
-          echo '${{steps.get_pr_number.outputs.result}}' > ./pr/pr_number
+          poetry run python bin/runner/runner.py  -t  ${{ secrets.GITHUB_TOKEN }} -pr '${{steps.get_pr_number.outputs.result}}'
       - uses: actions/upload-artifact@v3
         with:
-          name: pr_number
+          name: labels.json
           path: pr/

@@ -1,12 +1,12 @@
 import fnmatch
 import re
-import sys
 from dataclasses import dataclass
 
 import click
 import requests
 import yaml
 from yaml.loader import SafeLoader
+import json
 
 
 def get_technique_from_filename(filename):
@@ -112,25 +112,6 @@ class GithubAPI:
 
         return tests
 
-    def assign_label(self, pr, labels):
-        url = f"https://api.github.com/repos/redcanaryco/atomic-red-team/issues/{pr}/labels"
-        data = {
-            "labels": labels
-        }
-        response = requests.put(url, json=data,
-                                headers=self.headers, timeout=15)
-        print(response.status_code, response.reason, response.text)
-        assert response.status_code == 200
-
-    def assign_maintainer(self, pr, maintainers):
-        url = f"https://api.github.com/repos/redcanaryco/atomic-red-team/issues/{pr}/assignees"
-        data = {
-            "assignees": maintainers
-        }
-        response = requests.post(url, json=data,
-                                 headers=self.headers, timeout=15)
-        assert response.status_code == 201
-
     def assign_labels_and_maintainers(self, pr):
         tests = self.get_tests_changed(pr)
         platforms = set()
@@ -143,8 +124,13 @@ class GithubAPI:
                 labels.append(self.labels[p])
             if p in self.maintainers:
                 maintainers += self.maintainers[p]
-        self.assign_label(pr, labels)
-        self.assign_maintainer(pr, maintainers)
+        with open("pr/labels.json", "w") as f:
+            j = {
+                "pr": pr,
+                "labels": labels,
+                "maintainers": maintainers
+            }
+            f.write(json.dumps(j))
 
 
 @click.command()
