@@ -1,4 +1,5 @@
 import fnmatch
+import os
 import re
 from dataclasses import dataclass
 
@@ -124,6 +125,7 @@ class GithubAPI:
                 labels.append(self.labels[p])
             if p in self.maintainers:
                 maintainers += self.maintainers[p]
+        os.mkdir("pr")
         with open("pr/labels.json", "w") as f:
             j = {
                 "pr": pr,
