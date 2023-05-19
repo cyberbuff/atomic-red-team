@@ -141,8 +141,6 @@ class GithubAPI:
             f.write(json.dumps(j))
 
 
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate an SVG counter for a folder with a list of YAML files.')
     parser.add_argument('-pr', '--pull-request', type=str,
@@ -152,4 +150,4 @@ if __name__ == "__main__":
     print(args)
 
     api = GithubAPI(args.token)
-    api.assign_labels_and_maintainers(args.pr)
+    api.assign_labels_and_maintainers(args.pull_request)
