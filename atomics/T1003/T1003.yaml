@@ -163,4 +163,4 @@ atomic_tests:
     - linux
   executor:
     command: rundll32.exe keymgr,KRShowKeyMgr
-    name: pwsh
+    name: bash
