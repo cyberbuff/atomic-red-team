@@ -40,9 +40,11 @@ jobs:
           script: |
             let fs = require('fs');
             const obj = JSON.parse(fs.readFileSync('./labels.json'));
-            await github.rest.issues.addLabels({
-              issue_number: obj.pr,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: obj.labels
-            })
+            if(obj.labels.length > 0){
+              await github.rest.issues.addLabels({
+                issue_number: obj.pr,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: obj.labels
+               })
+            }
