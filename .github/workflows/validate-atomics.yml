@@ -72,7 +72,7 @@ jobs:
         run: poetry install --no-interaction --no-root
       - name: save labels and reviewers into a file.
         run: |
-          poetry run python bin/runner/runner.py  -t  ${{ secrets.GITHUB_TOKEN }} -pr '${{steps.get_pr_number.outputs.result}}'
+          poetry run python bin/generate_labels.py  -t  ${{ secrets.GITHUB_TOKEN }} -pr '${{steps.get_pr_number.outputs.result}}'
       - uses: actions/upload-artifact@v3
         with:
           name: labels.json
