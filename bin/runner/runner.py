@@ -9,6 +9,7 @@ import yaml
 from yaml.loader import SafeLoader
 import json
 
+print(os.environ)
 
 def get_technique_from_filename(filename):
     """Returns technique(Txxx.xxx) from the filename specified"""
@@ -74,7 +75,7 @@ class GithubAPI:
 
     def get_files_for_pr(self, pr):
         """Get new and modified files in the `atomics` directory changed in a PR."""
-        response = requests.get(f"https://api.github.com/repos/redcanaryco/atomic-red-team/pulls/{pr}/files",
+        response = requests.get(f"https://api.github.com/repos/cyberbuff/atomic-red-team/pulls/{pr}/files",
                                 headers=self.headers, timeout=15)
         print(response.status_code, response.reason)
         assert response.status_code == 200

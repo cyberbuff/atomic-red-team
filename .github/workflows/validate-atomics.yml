@@ -39,7 +39,6 @@ jobs:
 
   upload:
     runs-on: ubuntu-latest
-    needs: validate-atomics
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
