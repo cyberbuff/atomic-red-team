@@ -79,6 +79,7 @@ class GithubAPI:
         print(response.status_code, response.reason)
         assert response.status_code == 200
         files = response.json()
+        print(files)
         return filter(
             lambda x: x["status"] in ["added", "modified"] and fnmatch.fnmatch(x["filename"], "atomics/T*/T*.yaml"),
             files)
