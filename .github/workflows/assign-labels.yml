@@ -41,6 +41,11 @@ jobs:
             let fs = require('fs');
             const obj = JSON.parse(fs.readFileSync('./labels.json'));
             console.log(obj)
+            const assignees = await github.rest.issues.listAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+            console.log(assignees)
             if(obj.labels.length > 0){
               await github.rest.issues.addLabels({
                 issue_number: obj.pr,
