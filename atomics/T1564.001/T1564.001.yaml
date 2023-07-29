@@ -23,7 +23,7 @@ atomic_tests:
   - macos
   executor:
     command: |
-      xattr -lr * / 2>&1 /dev/null | grep -C 2 "00 00 00 00 00 00 00 00 40 00 FF FF FF FF 00 00"
+      xattr -lr * / 2>&1 /dev/null | grep -C 2 "00 00 00 00 00 00 00 00 40 00 FF FF FF FF 00 00" 
     name: sh
 - name: Create Windows System File with Attrib
   auto_generated_guid: f70974c8-c094-4574-b542-2c545af95a32
