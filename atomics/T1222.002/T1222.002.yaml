@@ -220,46 +220,22 @@ atomic_tests:
       description: Path of compiled file
       type: path
       default: /tmp/T1222002
+    compiler:
+      description: Compiler command or path to the compiler
+      type: string
+      default: gcc
   dependency_executor_name: sh
   dependencies:
   - description: |
       Compile the script from (#{source_file}). Destination is #{compiled_file}
     prereq_command: |
-      gcc #{source_file} -o #{compiled_file}
+      (test -e #{compiled_file} && exit 0) || exit 1;
     get_prereq_command: |
-      gcc #{source_file} -o #{compiled_file}
+      #{compiler} #{source_file} -o #{compiled_file}
   executor:
     command: |
       #{compiled_file} /tmp/ T1222002
     name: sh
-- name: Chmod through c script (freebsd)
-  auto_generated_guid: da40b5fe-3098-4b3b-a410-ff177e49ee2e
-  description: |
-    chmods a file using a c script
-  supported_platforms:
-  - linux
-  input_arguments:
-    source_file:
-      description: Path of c source file
-      type: path
-      default: PathToAtomicsFolder/T1222.002/src/T1222.002.c
-    compiled_file:
-      description: Path of compiled file
-      type: path
-      default: /tmp/T1222002
-  dependency_executor_name: sh
-  dependencies:
-  - description: |
-      Compile the script from (#{source_file}). Destination is #{compiled_file}
-    prereq_command: |
-      cc #{source_file} -o #{compiled_file}
-    get_prereq_command: |
-      cc #{source_file} -o #{compiled_file}
-  executor:
-    command: |
-      #{compiled_file} /tmp/ T1222002
-    name: sh
-
 - name: Chown through c script
   auto_generated_guid: 18592ba1-5f88-4e3c-abc8-ab1c6042e389
   description: |
@@ -276,44 +252,20 @@ atomic_tests:
       description: Path of compiled file
       type: path
       default: /tmp/T1222002own
+    compiler:
+      description: Compiler command or path to the compiler
+      type: string
+      default: gcc
   dependency_executor_name: sh
   dependencies:
   - description: |
       Compile the script from (#{source_file}). Destination is #{compiled_file}
     prereq_command: |
-      gcc #{source_file} -o #{compiled_file}
+      #{compiler} #{source_file} -o #{compiled_file}
     get_prereq_command: |
-      gcc #{source_file} -o #{compiled_file}
+      #{compiler} #{source_file} -o #{compiled_file}
   executor:
     command: |
       sudo #{compiled_file} #{source_file}
-    name: sh
-    elevation_required: true
-- name: Chown through c script (freebsd)
-  auto_generated_guid: eb577a19-b730-4918-9b03-c5edcf51dc4e
-  description: |
-    chowns a file to root using a c script
-  supported_platforms:
-  - linux
-  input_arguments:
-    source_file:
-      description: Path of c source file
-      type: path
-      default: PathToAtomicsFolder/T1222.002/src/chown.c
-    compiled_file:
-      description: Path of compiled file
-      type: path
-      default: /tmp/T1222002own
-  dependency_executor_name: sh
-  dependencies:
-  - description: |
-      Compile the script from (#{source_file}). Destination is #{compiled_file}
-    prereq_command: |
-      cc #{source_file} -o #{compiled_file}
-    get_prereq_command: |
-      cc #{source_file} -o #{compiled_file}
-  executor:
-    command: |
-      #{compiled_file} #{source_file}
     name: sh
     elevation_required: true

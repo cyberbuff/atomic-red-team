@@ -28,12 +28,12 @@ atomic_tests:
     package_checker:
       description: Package checking command. Debian - dpkg -s samba
       type: string
-      default: (rpm -q samba &>/dev/null) || (dpkg -s samba | grep -q installed)
+      default: (rpm -q samba &>/dev/null) || (dpkg -s samba | grep -q installed) || (pkg info -x samba &>/dev/null)
     package_installer:
       description: Package installer command. Debian - apt install samba
       type: string
-      default: (which yum && yum -y install epel-release samba)||(which apt-get && DEBIAN_FRONTEND=noninteractive apt-get install -y samba)
-  dependency_executor_name: bash
+      default: (which yum && yum -y install epel-release samba)||(which apt-get && DEBIAN_FRONTEND=noninteractive apt-get install -y samba)||(which pkg && pkg install -y samba413)
+  dependency_executor_name: sh
   dependencies:
   - description: |
       Package with smbstatus (samba) must exist on device
@@ -44,37 +44,8 @@ atomic_tests:
   executor:
     command: |
       sudo smbstatus --shares
-    name: bash
-    elevation_required: true
-- name: Network Share Discovery - FreeBSD
-  auto_generated_guid: 77e468a6-3e5c-45a1-9948-c4b5603747cb
-  description: |
-    Network Share Discovery using smbstatus
-  supported_platforms:
-  - linux
-  input_arguments:
-    package_checker:
-      description: Package checking command. pkg info -x samba
-      type: string
-      default: (pkg info -x samba &>/dev/null)
-    package_installer:
-      description: Package installer command. pkg install -y samba413
-      type: string
-      default: (which pkg && pkg install -y samba413)
-  dependency_executor_name: sh
-  dependencies:
-  - description: |
-      Package with smbstatus (samba) must exist on device
-    prereq_command: |
-      if #{package_checker} > /dev/null; then exit 0; else exit 1; fi
-    get_prereq_command: |
-      #{package_installer} 
-  executor:
-    command: |
-      smbstatus --shares
     name: sh
     elevation_required: true
-
 - name: Network Share Discovery command prompt
   auto_generated_guid: 20f1097d-81c1-405c-8380-32174d493bbb
   description: |

