@@ -43,7 +43,7 @@ atomic_tests:
       sudo #{package_installer} 
   executor:
     command: |
-      sudo smbstatus --shares
+      smbstatus --shares
     name: sh
     elevation_required: true
 - name: Network Share Discovery command prompt
