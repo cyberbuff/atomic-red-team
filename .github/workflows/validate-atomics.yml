@@ -80,7 +80,7 @@ jobs:
           path: atomic_red_team/pr/
 
   run-atomics:
-    name: Install Invoke-Atomic
+    name: Run atomics
     needs:
       - upload
     runs-on: ${{ matrix.os }}
@@ -103,6 +103,10 @@ jobs:
           }
           IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicsfolder.ps1' -UseBasicParsing);
           Install-AtomicsFolder -RepoOwner ${{ github.event.pull_request.head.repo.owner.login }} -Branch ${{ github.event.pull_request.head.ref }} -Force
+
+      - name: Run atomics
+        shell: pwsh
+        run: |
           $changedFiles = Get-Content .\changedfiles.json -Raw | ConvertFrom-Json 
           $changedFiles | ForEach-Object {
             Invoke-AtomicTest $_.name -TestNumbers $_.test_number -GetPreReqs
