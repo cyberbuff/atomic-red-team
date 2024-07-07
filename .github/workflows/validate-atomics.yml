@@ -74,11 +74,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: labels.json
-          path: atomic_red_team/pr/
-
-      - uses: actions/upload-artifact@v4
-        with:
           name: changedfiles.json
           path: atomic_red_team/pr/
 
