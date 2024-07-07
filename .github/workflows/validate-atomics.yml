@@ -85,19 +85,19 @@ jobs:
           path: atomic_red_team/pr/
 
   run-windows-atomics:
-    if: ${{ github.event.label.name == 'windows' }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'windows') }}
     runs-on: windows-latest
     steps:
       - uses: ./.github/actions/run-atomics
 
   run-macos-atomics:
-    if: ${{ github.event.label.name == 'macos' }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'macos') }}
     runs-on: macos-latest
     steps:
       - uses: ./.github/actions/run-atomics
 
   run-linux-atomics:
-    if: ${{ github.event.label.name == 'linux' }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'linux') }}
     runs-on: ubuntu-latest
     steps:
       - uses: ./.github/actions/run-atomics
