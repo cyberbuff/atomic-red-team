@@ -88,16 +88,19 @@ jobs:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'windows') }}
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
 
   run-macos-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'macos') }}
     runs-on: macos-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
 
   run-linux-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'linux') }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
