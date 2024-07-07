@@ -5,6 +5,11 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+  checks: write
+  pull-requests: write
+
 jobs:
   validate-atomics:
     runs-on: ubuntu-latest
@@ -78,3 +83,21 @@ jobs:
         with:
           name: changedfiles.json
           path: atomic_red_team/pr/
+
+  run-windows-atomics:
+    if: ${{ github.event.label.name == 'windows' }}
+    runs-on: windows-latest
+    steps:
+      - uses: ./.github/actions/run-atomics
+
+  run-macos-atomics:
+    if: ${{ github.event.label.name == 'macos' }}
+    runs-on: macos-latest
+    steps:
+      - uses: ./.github/actions/run-atomics
+
+  run-linux-atomics:
+    if: ${{ github.event.label.name == 'linux' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/run-atomics
