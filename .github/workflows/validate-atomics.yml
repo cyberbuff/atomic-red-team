@@ -87,6 +87,8 @@ jobs:
   run-windows-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'windows') }}
     runs-on: windows-latest
+    needs:
+      - upload
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
@@ -94,6 +96,8 @@ jobs:
   run-macos-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'macos') }}
     runs-on: macos-latest
+    needs:
+      - upload
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
@@ -101,6 +105,8 @@ jobs:
   run-linux-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'linux') }}
     runs-on: ubuntu-latest
+    needs:
+      - upload
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/run-atomics
