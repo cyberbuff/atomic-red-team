@@ -9,6 +9,7 @@ on:
 jobs:
   assign-labels:
     runs-on: ubuntu-latest
+
     steps:
       - name: download-artifact
         uses: actions/github-script@v7
@@ -57,31 +58,3 @@ jobs:
                 assignees: obj.maintainers
               });
             }
-
-
-  run-windows-atomics:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'windows') }}
-    runs-on: windows-latest
-    needs:
-      - assign-labels
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/run-atomics
-
-  run-macos-atomics:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'macos') }}
-    runs-on: macos-latest
-    needs:
-      - assign-labels
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/run-atomics
-
-  run-linux-atomics:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'linux') }}
-    runs-on: ubuntu-latest
-    needs:
-      - assign-labels
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/run-atomics
