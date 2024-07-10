@@ -9,6 +9,8 @@ on:
 jobs:
   assign-labels:
     runs-on: ubuntu-latest
+    env:
+      EVENT_OBJ: ${{ toJson(github.event) }}
     steps:
       - name: download-artifact
         uses: actions/github-script@v7
@@ -58,6 +60,9 @@ jobs:
               });
             }
 
+
+      - name: echo Github Event
+        run: echo $EVENT_OBJ
 
   run-windows-atomics:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'windows') }}
