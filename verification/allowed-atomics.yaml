@@ -521,10 +521,6 @@ atomics:
   technique: T1685.006
   platforms:
   - linux
-- guid: 1207ddff-f25b-41b3-aa0e-7c26d2b546d1
-  technique: T1485
-  platforms:
-  - windows
 - guid: 121de5c6-5818-4868-b8a7-8fd07c455c1b
   technique: T1016
   platforms:
@@ -840,10 +836,6 @@ atomics:
   technique: T1059.001
   platforms:
   - windows
-- guid: 1c68c68d-83a4-4981-974e-8993055fa034
-  technique: T1490
-  platforms:
-  - windows
 - guid: 1c91e740-1729-4329-b779-feba6e71d048
   technique: T1055
   platforms:
@@ -1107,10 +1099,6 @@ atomics:
   technique: T1110.003
   platforms:
   - windows
-- guid: 263ba6cb-ea2b-41c9-9d4e-b652dadd002c
-  technique: T1490
-  platforms:
-  - windows
 - guid: 26a6b840-4943-4965-8df5-ef1f9a282440
   technique: T1539
   platforms:
@@ -1359,10 +1347,6 @@ atomics:
   technique: T1055
   platforms:
   - windows
-- guid: 321fd25e-0007-417f-adec-33232252be19
-  technique: T1485
-  platforms:
-  - windows
 - guid: 3235aafe-b49d-451b-a1f1-d979fa65ddaf
   technique: T1112
   platforms:
@@ -1506,10 +1490,6 @@ atomics:
   technique: T1560.001
   platforms:
   - windows
-- guid: 36f96049-0ad7-4a5f-8418-460acaeb92fb
-  technique: T1070.004
-  platforms:
-  - windows
 - guid: 3723ab77-c546-403c-8fb4-bb577033b235
   technique: T1003.008
   platforms:
@@ -1543,11 +1523,6 @@ atomics:
   technique: T1059.001
   platforms:
   - windows
-- guid: 38deee99-fd65-4031-bec8-bfa4f9f26146
-  technique: T1485
-  platforms:
-  - linux
-  - macos
 - guid: 391f5298-b12d-4636-8482-35d9c17d53a8
   technique: T1560.002
   platforms:
@@ -1558,10 +1533,6 @@ atomics:
   - windows
 - guid: 396f997b-c5f8-4a96-bb2c-3c8795cf459d
   technique: T1112
-  platforms:
-  - windows
-- guid: 39a295ca-7059-4a88-86f6-09556c1211e7
-  technique: T1490
   platforms:
   - windows
 - guid: 39cb0e67-dd0d-4b74-a74b-c072db7ae991
@@ -1822,10 +1793,6 @@ atomics:
   technique: T1218.011
   platforms:
   - windows
-- guid: 42111a6f-7e7f-482c-9b1b-3cfd090b999c
-  technique: T1490
-  platforms:
-  - windows
 - guid: 4238a7f0-a980-4fff-98a2-dfc0a363d507
   technique: T1564.002
   platforms:
@@ -1879,10 +1846,6 @@ atomics:
   technique: T1003.007
   platforms:
   - linux
-- guid: 43819286-91a9-4369-90ed-d31fb4da2c01
-  technique: T1490
-  platforms:
-  - windows
 - guid: 4396927f-e503-427b-b023-31049b9b09a6
   technique: T1059.001
   platforms:
@@ -2434,10 +2397,6 @@ atomics:
   technique: T1018
   platforms:
   - windows
-- guid: 584331dd-75bc-4c02-9e0b-17f5fd81c748
-  technique: T1490
-  platforms:
-  - windows
 - guid: 5843529a-5056-4bc1-9c13-a311e2af4ca0
   technique: T1018
   platforms:
@@ -2804,10 +2763,6 @@ atomics:
   technique: T1027
   platforms:
   - windows
-- guid: 66e647d1-8741-4e43-b7c1-334760c2047f
-  technique: T1490
-  platforms:
-  - windows
 - guid: 66ee226e-64cb-4dae-80e3-5bf5763e4a51
   technique: T1105
   platforms:
@@ -2885,10 +2840,6 @@ atomics:
   technique: T1685
   platforms:
   - windows
-- guid: 6a3ff8dd-f49c-4272-a658-11c2fe58bd88
-  technique: T1490
-  platforms:
-  - windows
 - guid: 6a5b2a50-d037-4879-bf01-43d4d6cbf73f
   technique: T1059.001
   platforms:
@@ -2899,10 +2850,6 @@ atomics:
   - windows
 - guid: 6afe288a-8a8b-4d33-a629-8d03ba9dad3a
   technique: T1564
-  platforms:
-  - windows
-- guid: 6b1dbaf6-cc8a-4ea6-891f-6058569653bf
-  technique: T1490
   platforms:
   - windows
 - guid: 6b2903ac-8f36-450d-9ad5-b220e8a2dcb9
@@ -4402,10 +4349,6 @@ atomics:
   platforms:
   - linux
   - macos
-- guid: a4420f93-5386-4290-b780-f4f66abc7070
-  technique: T1490
-  platforms:
-  - windows
 - guid: a450e469-ba54-4de1-9deb-9023a6111690
   technique: T1112
   platforms:
@@ -5585,10 +5528,6 @@ atomics:
   technique: T1685
   platforms:
   - linux
-- guid: cf21060a-80b3-4238-a595-22525de4ab81
-  technique: T1490
-  platforms:
-  - windows
 - guid: cf3391e0-b482-4b02-87fc-ca8362269b29
   technique: T1202
   platforms:
@@ -5869,10 +5808,6 @@ atomics:
   platforms:
   - linux
   - macos
-- guid: da558b07-69ae-41b9-b9d4-4d98154a7049
-  technique: T1490
-  platforms:
-  - windows
 - guid: da627f63-b9bd-4431-b6f8-c5b44d061a62
   technique: T1070.006
   platforms:
@@ -6328,10 +6263,6 @@ atomics:
   technique: T1110.001
   platforms:
   - windows
-- guid: ed952f70-91d4-445a-b7ff-30966bfb1aff
-  technique: T1490
-  platforms:
-  - macos
 - guid: edbcd8c9-3639-4844-afad-455c91e95a35
   technique: T1569.002
   platforms:
@@ -6469,10 +6400,6 @@ atomics:
   technique: T1112
   platforms:
   - windows
-- guid: f3aa95fe-4f10-4485-ad26-abf22a764c52
-  technique: T1070.004
-  platforms:
-  - linux
 - guid: f3ad3c5b-1db1-45c1-81bf-d3370ebab6c8
   technique: T1218.011
   platforms:
@@ -6563,10 +6490,6 @@ atomics:
   - windows
 - guid: f70974c8-c094-4574-b542-2c545af95a32
   technique: T1564.001
-  platforms:
-  - windows
-- guid: f723d13d-48dc-4317-9990-cf43a9ac0bf2
-  technique: T1070.004
   platforms:
   - windows
 - guid: f7308845-6da8-468e-99f2-4271f2f5bb67

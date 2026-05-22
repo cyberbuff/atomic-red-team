@@ -5,11 +5,21 @@ on:
     - cron: "0 9 * * 5"
   workflow_dispatch:
     inputs:
-      shard_count:
-        description: "Number of parallel shards to split each platform across"
+      windows_shard_count:
+        description: "Number of parallel Windows shards"
         required: false
         type: number
-        default: 4
+        default: 20
+      linux_shard_count:
+        description: "Number of parallel Linux shards"
+        required: false
+        type: number
+        default: 15
+      macos_shard_count:
+        description: "Number of parallel macOS shards"
+        required: false
+        type: number
+        default: 10
 
 permissions:
   contents: write
@@ -17,7 +27,9 @@ permissions:
 
 env:
   PYTHONPATH: ${{ github.workspace }}
-  VERIFICATION_SHARD_COUNT: ${{ inputs.shard_count || 4 }}
+  WINDOWS_SHARD_COUNT: ${{ inputs.windows_shard_count || 20 }}
+  LINUX_SHARD_COUNT: ${{ inputs.linux_shard_count || 15 }}
+  MACOS_SHARD_COUNT: ${{ inputs.macos_shard_count || 10 }}
 
 jobs:
   prepare:
@@ -45,7 +57,9 @@ jobs:
         id: matrix
         run: |
           python atomic_red_team/runner.py build-verification-matrix \
-            --shard-count "$VERIFICATION_SHARD_COUNT" \
+            --windows-shard-count "$WINDOWS_SHARD_COUNT" \
+            --linux-shard-count "$LINUX_SHARD_COUNT" \
+            --macos-shard-count "$MACOS_SHARD_COUNT" \
             --output matrix.json
           echo "matrix=$(cat matrix.json)" >> "$GITHUB_OUTPUT"
 

@@ -9,7 +9,11 @@ import yaml
 
 from atomic_red_team.common import atomics_path
 
-DEFAULT_SHARD_COUNT = 4
+DEFAULT_PLATFORM_SHARD_COUNTS = {
+    "linux": 15,
+    "macos": 10,
+    "windows": 20,
+}
 RUNNERS_BY_PLATFORM = {
     "linux": "ubuntu-latest",
     "macos": "macos-latest",
@@ -44,10 +48,12 @@ def shard_for_guid(guid: str, shard_count: int) -> int:
 
 def build_platform_matrix(
     allowed: dict[str, Any],
-    shard_count: int = DEFAULT_SHARD_COUNT,
+    shard_counts: dict[str, int] | None = None,
 ) -> dict[str, list[dict[str, Any]]]:
-    if shard_count < 1:
-        raise ValueError("shard_count must be at least 1")
+    shard_counts = shard_counts or DEFAULT_PLATFORM_SHARD_COUNTS
+    for platform, shard_count in shard_counts.items():
+        if shard_count < 1:
+            raise ValueError(f"{platform} shard_count must be at least 1")
     shards_by_platform: dict[str, set[int]] = {}
     for atomic in allowed.get("atomics", []):
         if not isinstance(atomic, dict):
@@ -57,6 +63,7 @@ def build_platform_matrix(
             continue
         for platform in atomic.get("platforms", []):
             if platform in RUNNERS_BY_PLATFORM:
+                shard_count = shard_counts.get(platform, 1)
                 shards_by_platform.setdefault(platform, set()).add(
                     shard_for_guid(guid, shard_count)
                 )
@@ -68,7 +75,7 @@ def build_platform_matrix(
                     "platform": platform,
                     "runner": RUNNERS_BY_PLATFORM[platform],
                     "shard_index": shard_index,
-                    "shard_count": shard_count,
+                    "shard_count": shard_counts.get(platform, 1),
                 }
             )
     return {"include": include}
@@ -79,7 +86,7 @@ def targets_for_platform(
     platform: str,
     atomics_dir: Path = Path(atomics_path),
     shard_index: int | None = None,
-    shard_count: int = DEFAULT_SHARD_COUNT,
+    shard_count: int = 1,
 ) -> dict[str, Any]:
     if shard_count < 1:
         raise ValueError("shard_count must be at least 1")
@@ -291,14 +298,28 @@ def main(argv: list[str] | None = None) -> int:
     matrix = subparsers.add_parser("build-matrix")
     matrix.add_argument("--allowed", default="verification/allowed-atomics.yaml")
     matrix.add_argument("--output", default="-")
-    matrix.add_argument("--shard-count", type=int, default=DEFAULT_SHARD_COUNT)
+    matrix.add_argument(
+        "--linux-shard-count",
+        type=int,
+        default=DEFAULT_PLATFORM_SHARD_COUNTS["linux"],
+    )
+    matrix.add_argument(
+        "--macos-shard-count",
+        type=int,
+        default=DEFAULT_PLATFORM_SHARD_COUNTS["macos"],
+    )
+    matrix.add_argument(
+        "--windows-shard-count",
+        type=int,
+        default=DEFAULT_PLATFORM_SHARD_COUNTS["windows"],
+    )
 
     targets = subparsers.add_parser("targets")
     targets.add_argument("--allowed", default="verification/allowed-atomics.yaml")
     targets.add_argument("--platform", required=True)
     targets.add_argument("--output", required=True)
     targets.add_argument("--shard-index", type=int)
-    targets.add_argument("--shard-count", type=int, default=DEFAULT_SHARD_COUNT)
+    targets.add_argument("--shard-count", type=int, default=1)
 
     merge = subparsers.add_parser("merge-results")
     merge.add_argument("--allowed", default="verification/allowed-atomics.yaml")
@@ -310,7 +331,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "build-matrix":
         data = build_platform_matrix(
             read_yaml(Path(args.allowed)),
-            shard_count=args.shard_count,
+            shard_counts={
+                "linux": args.linux_shard_count,
+                "macos": args.macos_shard_count,
+                "windows": args.windows_shard_count,
+            },
         )
         text = json.dumps(data, separators=(",", ":"))
         if args.output == "-":

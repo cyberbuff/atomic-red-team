@@ -101,7 +101,7 @@ atomic_tests:
     }
 
 
-def test_build_platform_matrix_uses_github_hosted_runners():
+def test_build_platform_matrix_uses_platform_shard_counts():
     allowed = {
         "version": 1,
         "atomics": [
@@ -115,10 +115,18 @@ def test_build_platform_matrix_uses_github_hosted_runners():
                 "technique": "T1001",
                 "platforms": ["windows"],
             },
+            {
+                "guid": "33333333-3333-4333-8333-333333333333",
+                "technique": "T1002",
+                "platforms": ["macos"],
+            },
         ],
     }
 
-    matrix = build_platform_matrix(allowed, shard_count=2)
+    matrix = build_platform_matrix(
+        allowed,
+        shard_counts={"linux": 15, "macos": 10, "windows": 20},
+    )
 
     assert matrix["include"] == [
         {
@@ -126,18 +134,27 @@ def test_build_platform_matrix_uses_github_hosted_runners():
             "runner": "ubuntu-latest",
             "shard_index": shard_for_guid(
                 "11111111-1111-4111-8111-111111111111",
-                2,
+                15,
             ),
-            "shard_count": 2,
+            "shard_count": 15,
+        },
+        {
+            "platform": "macos",
+            "runner": "macos-latest",
+            "shard_index": shard_for_guid(
+                "33333333-3333-4333-8333-333333333333",
+                10,
+            ),
+            "shard_count": 10,
         },
         {
             "platform": "windows",
             "runner": "windows-latest",
             "shard_index": shard_for_guid(
                 "22222222-2222-4222-8222-222222222222",
-                2,
+                20,
             ),
-            "shard_count": 2,
+            "shard_count": 20,
         },
     ]
 

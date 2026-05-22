@@ -20,7 +20,7 @@ from atomic_red_team.labels import GithubAPI
 from atomic_red_team.models import Technique
 from atomic_red_team.validator import Validator, format_validation_error, yaml
 from atomic_red_team.verification import (
-    DEFAULT_SHARD_COUNT,
+    DEFAULT_PLATFORM_SHARD_COUNTS,
     build_platform_matrix,
     load_results,
     merge_verification_results,
@@ -127,13 +127,28 @@ def build_verification_matrix(
         str,
         typer.Option("--output"),
     ] = "-",
-    shard_count: Annotated[
+    linux_shard_count: Annotated[
         int,
-        typer.Option("--shard-count"),
-    ] = DEFAULT_SHARD_COUNT,
+        typer.Option("--linux-shard-count"),
+    ] = DEFAULT_PLATFORM_SHARD_COUNTS["linux"],
+    macos_shard_count: Annotated[
+        int,
+        typer.Option("--macos-shard-count"),
+    ] = DEFAULT_PLATFORM_SHARD_COUNTS["macos"],
+    windows_shard_count: Annotated[
+        int,
+        typer.Option("--windows-shard-count"),
+    ] = DEFAULT_PLATFORM_SHARD_COUNTS["windows"],
 ):
     """Build a GitHub Actions matrix for allowed atomic platforms."""
-    matrix = build_platform_matrix(read_yaml(Path(allowed)), shard_count=shard_count)
+    matrix = build_platform_matrix(
+        read_yaml(Path(allowed)),
+        shard_counts={
+            "linux": linux_shard_count,
+            "macos": macos_shard_count,
+            "windows": windows_shard_count,
+        },
+    )
     text = json.dumps(matrix, separators=(",", ":"))
     if output == "-":
         print(text)
@@ -156,7 +171,7 @@ def build_verification_targets(
     shard_count: Annotated[
         int,
         typer.Option("--shard-count"),
-    ] = DEFAULT_SHARD_COUNT,
+    ] = 1,
 ):
     """Write per-platform verification targets for the PowerShell runner."""
     targets = targets_for_platform(
