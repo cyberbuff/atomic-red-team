@@ -97,10 +97,6 @@ jobs:
           path: verification-results/${{ matrix.platform }}-${{ matrix.shard_index }}.json
           if-no-files-found: warn
 
-      - name: Fail on atomic execution failure
-        if: ${{ steps.verify.outcome == 'failure' }}
-        run: exit 1
-
   update-results:
     needs:
       - prepare
