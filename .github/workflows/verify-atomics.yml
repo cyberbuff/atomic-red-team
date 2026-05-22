@@ -15,6 +15,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
@@ -40,8 +43,6 @@ jobs:
 
       - name: Validate atomic YAML
         run: python atomic_red_team/runner.py validate
-        env:
-          PYTHONPATH: ${{ github.workspace }}
 
       - name: Build verification matrix
         id: matrix
