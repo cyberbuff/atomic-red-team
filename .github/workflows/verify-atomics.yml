@@ -5,11 +5,6 @@ on:
     - cron: "0 9 * * 5"
   workflow_dispatch:
     inputs:
-      refresh_allowlist:
-        description: "Regenerate verification/allowed-atomics.yaml before running"
-        required: false
-        type: boolean
-        default: false
       shard_count:
         description: "Number of parallel shards to split each platform across"
         required: false
@@ -43,10 +38,6 @@ jobs:
       - name: Install Python package
         run: python -m pip install .
 
-      - name: Refresh allowlist
-        if: ${{ inputs.refresh_allowlist == true }}
-        run: python atomic_red_team/runner.py seed-allowed-atomics-file
-
       - name: Validate atomic YAML
         run: python atomic_red_team/runner.py validate
 
@@ -79,10 +70,6 @@ jobs:
 
       - name: Install Python package
         run: python -m pip install .
-
-      - name: Refresh allowlist
-        if: ${{ inputs.refresh_allowlist == true }}
-        run: python atomic_red_team/runner.py seed-allowed-atomics-file
 
       - name: Build platform targets
         shell: pwsh
@@ -137,10 +124,6 @@ jobs:
       - name: Install Python package
         run: python -m pip install .
 
-      - name: Refresh allowlist
-        if: ${{ inputs.refresh_allowlist == true }}
-        run: python atomic_red_team/runner.py seed-allowed-atomics-file
-
       - name: Download verification results
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
@@ -176,7 +159,6 @@ jobs:
           fi
 
           git add \
-            verification/allowed-atomics.yaml \
             verification/verified-atomics.yaml \
             verification/verification-state.yaml
 
