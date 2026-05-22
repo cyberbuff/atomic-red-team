@@ -1,2 +1,1846 @@
 version: 1
-atomics: []
+atomics:
+- guid: 4ff61684-ad91-405c-9fbc-048354ff1d07
+  atomic_id: T1001.002-3
+  name: Execute Embedded Script in Image via Steganography
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:40Z'
+    run_id: '26312525826'
+- guid: eeb9751a-d598-42d3-b11c-c122d9c3f6c7
+  atomic_id: T1003.002-5
+  name: dump volume shadow copy hives with certutil
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:22:45Z'
+    run_id: '26312525826'
+- guid: 9d77fed7-05f8-476e-a81b-8ff0472c64d0
+  atomic_id: T1003.002-6
+  name: dump volume shadow copy hives with System.IO.File
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:22:47Z'
+    run_id: '26312525826'
+- guid: 60e860b6-8ae6-49db-ad07-5e73edd88f5d
+  atomic_id: T1003.008-3
+  name: Access /etc/passwd (Local)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:41Z'
+    run_id: '26312525826'
+- guid: d3d9af44-b8ad-4375-8b0a-4bff4b7e419c
+  atomic_id: T1005-1
+  name: Search files of interest and save them to a single zip file (Windows)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:22:50Z'
+    run_id: '26312525826'
+- guid: 5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3
+  atomic_id: T1007-2
+  name: System Service Discovery - net.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:22:51Z'
+    run_id: '26312525826'
+- guid: 0d80d088-a84c-4353-af1a-fc8b439f1564
+  atomic_id: T1012-3
+  name: Enumerate COM Objects in Registry with Powershell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:24:52Z'
+    run_id: '26312525826'
+- guid: 355d4632-8cb9-449d-91ce-b566d0253d3e
+  atomic_id: T1021.001-1
+  name: RDP to DomainController
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:24:54Z'
+    run_id: '26312525826'
+- guid: 01d1c6c0-faf0-408e-b368-752a02285cb2
+  atomic_id: T1021.001-4
+  name: Disable NLA for RDP via Command Prompt
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:24:54Z'
+    run_id: '26312525826'
+- guid: 505f24be-1c11-4694-b614-e01ae1cd2570
+  atomic_id: T1021.003-2
+  name: PowerShell Lateral Movement Using Excel Application Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:24:55Z'
+    run_id: '26312525826'
+- guid: 5295bd61-bd7e-4744-9d52-85962a4cf2d6
+  atomic_id: T1021.006-2
+  name: Remote Code Execution with PS Credentials Using Invoke-Command
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:10Z'
+    run_id: '26312525826'
+- guid: f45df6be-2e1e-4136-a384-8f18ab3826fb
+  atomic_id: T1027-1
+  name: Decode base64 Data into Script
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:41Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:32Z'
+    run_id: '26312525826'
+- guid: 6683baf0-6e77-4f58-b114-814184ea8150
+  atomic_id: T1027-11
+  name: Obfuscated PowerShell Command via Character Array
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:13Z'
+    run_id: '26312525826'
+- guid: 450e7218-7915-4be4-8b9b-464a49eafcec
+  atomic_id: T1027-3
+  name: Execute base64-encoded PowerShell from Windows Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:11Z'
+    run_id: '26312525826'
+- guid: ffe2346c-abd5-4b45-a713-bf5f1ebd573a
+  atomic_id: T1027.001-1
+  name: Pad Binary to Change Hash - Linux/macOS dd
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:42Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:32Z'
+    run_id: '26312525826'
+- guid: e22a9e89-69c7-410f-a473-e6c212cd2292
+  atomic_id: T1027.001-2
+  name: Pad Binary to Change Hash using truncate command - Linux/macOS
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:42Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:33Z'
+    run_id: '26312525826'
+- guid: 11c46cd8-e471-450e-acb8-52a1216ae6a4
+  atomic_id: T1027.002-1
+  name: Binary simply packed by UPX (linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:43Z'
+    run_id: '26312525826'
+- guid: f06197f8-ff46-48c2-a0c6-afc1b50665e1
+  atomic_id: T1027.002-2
+  name: Binary packed by UPX, with modified headers (linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:43Z'
+    run_id: '26312525826'
+- guid: b16ef901-00bb-4dda-b4fc-a04db5067e20
+  atomic_id: T1027.002-3
+  name: Binary simply packed by UPX
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:21:34Z'
+    run_id: '26312525826'
+- guid: 4d46e16b-5765-4046-9f25-a600d3e65e4d
+  atomic_id: T1027.002-4
+  name: Binary packed by UPX, with modified headers
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:21:34Z'
+    run_id: '26312525826'
+- guid: 7693ccaa-8d64-4043-92a5-a2eb70359535
+  atomic_id: T1027.013-1
+  name: Decode Eicar File and Write to File
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:45Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:35Z'
+    run_id: '26312525826'
+  - platform: windows
+    verified_at: '2026-05-22T21:25:14Z'
+    run_id: '26312525826'
+- guid: b404caaa-12ce-43c7-9214-62a531c044f7
+  atomic_id: T1027.013-2
+  name: Decrypt Eicar File and Write to File
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:46Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:36Z'
+    run_id: '26312525826'
+  - platform: windows
+    verified_at: '2026-05-22T21:25:19Z'
+    run_id: '26312525826'
+- guid: c2ca068a-eb1e-498f-9f93-3d554c455916
+  atomic_id: T1027.013-3
+  name: Password-Protected ZIP Payload Extraction and Execution
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:47Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:37Z'
+    run_id: '26312525826'
+- guid: 5917f0fd-c6d4-4af8-b89d-f3db06349c49
+  atomic_id: T1027.018-1
+  name: File Masquerading with Zero-Width Space
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:20Z'
+    run_id: '26312525826'
+- guid: 125b1b41-bcef-42c3-acaa-a44303e3ffc1
+  atomic_id: T1027.018-2
+  name: Invisible Unicode in Environment Variables
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:21Z'
+    run_id: '26312525826'
+- guid: ab936c51-10f4-46ce-9144-e02137b2016a
+  atomic_id: T1030-1
+  name: Data Transfer Size Limits
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:47Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:37Z'
+    run_id: '26312525826'
+- guid: dcb6cdee-1fb0-4087-8bf8-88cfd136ba51
+  atomic_id: T1033-4
+  name: User Discovery With Env Vars PowerShell Script
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:22Z'
+    run_id: '26312525826'
+- guid: 1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b
+  atomic_id: T1033-5
+  name: GetCurrent User with PowerShell Script
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:23Z'
+    run_id: '26312525826'
+- guid: 3d257a03-eb80-41c5-b744-bb37ac7f65c7
+  atomic_id: T1033-6
+  name: System Discovery - SocGholish whoami
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:24Z'
+    run_id: '26312525826'
+- guid: ba38e193-37a6-4c41-b214-61b33277fe36
+  atomic_id: T1033-7
+  name: System Owner/User Discovery Using Command Prompt
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:24Z'
+    run_id: '26312525826'
+- guid: 5ba5a3d1-cf3c-4499-968a-a93155d1f717
+  atomic_id: T1036.003-1
+  name: Masquerading as Windows LSASS process
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:25Z'
+    run_id: '26312525826'
+- guid: a315bfff-7a98-403b-b442-2ea1b255e556
+  atomic_id: T1036.003-2
+  name: Masquerading as FreeBSD or Linux crond process.
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:53Z'
+    run_id: '26312525826'
+- guid: ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa
+  atomic_id: T1036.003-5
+  name: Masquerading - powershell.exe running as taskhostw.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:26Z'
+    run_id: '26312525826'
+- guid: f0e3aaea-5cd9-4db6-a077-631dd19b27a8
+  atomic_id: T1036.004-3
+  name: linux rename /proc/pid/comm using prctl
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:54Z'
+    run_id: '26312525826'
+- guid: 812c3ab8-94b0-4698-a9bf-9420af23ce24
+  atomic_id: T1036.005-1
+  name: Execute a process from a directory masquerading as the current parent directory
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:21:54Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:38Z'
+    run_id: '26312525826'
+- guid: b95ce2eb-a093-4cd8-938d-5258cef656ea
+  atomic_id: T1036.006-2
+  name: Space After Filename
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:00Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:39Z'
+    run_id: '26312525826'
+- guid: d6042746-07d4-4c92-9ad8-e644c114a231
+  atomic_id: T1037.001-1
+  name: Logon Scripts
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:26Z'
+    run_id: '26312525826'
+- guid: 435057fb-74b1-410e-9403-d81baf194f75
+  atomic_id: T1053.003-1
+  name: Cron - Replace crontab with referenced file
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:00Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:39Z'
+    run_id: '26312525826'
+- guid: 42f53695-ad4a-4546-abb6-7d837f644a71
+  atomic_id: T1053.005-2
+  name: Scheduled task Local
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:27Z'
+    run_id: '26312525826'
+- guid: af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd
+  atomic_id: T1053.005-4
+  name: Powershell Cmdlet Scheduled Task
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:29Z'
+    run_id: '26312525826'
+- guid: e895677d-4f06-49ab-91b6-ae3742d0a2ba
+  atomic_id: T1053.005-7
+  name: Scheduled Task Executing Base64 Encoded Commands From Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:29Z'
+    run_id: '26312525826'
+- guid: 3de33f5b-62e5-4e63-a2a0-6fd8808c80ec
+  atomic_id: T1053.006-2
+  name: Create a user level transient systemd service and timer
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:01Z'
+    run_id: '26312525826'
+- guid: 2871ed59-3837-4a52-9107-99500ebc87cb
+  atomic_id: T1055-11
+  name: Process Injection with Go using CreateThread WinAPI
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:32Z'
+    run_id: '26312525826'
+- guid: 2a3c7035-d14f-467a-af94-933e49fe6786
+  atomic_id: T1055-12
+  name: Process Injection with Go using CreateThread WinAPI (Natively)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:33Z'
+    run_id: '26312525826'
+- guid: 2315ce15-38b6-46ac-a3eb-5e21abef2545
+  atomic_id: T1055-6
+  name: Process Injection with Go using UuidFromStringA WinAPI
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:30Z'
+    run_id: '26312525826'
+- guid: 7362ecef-6461-402e-8716-7410e1566400
+  atomic_id: T1055-7
+  name: Process Injection with Go using EtwpCreateEtwThread WinAPI
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:31Z'
+    run_id: '26312525826'
+- guid: 73785dd2-323b-4205-ab16-bb6f06677e14
+  atomic_id: T1055.004-2
+  name: EarlyBird APC Queue Injection in Go
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:34Z'
+    run_id: '26312525826'
+- guid: 4cc571b1-f450-414a-850f-879baf36aa06
+  atomic_id: T1055.004-3
+  name: Remote Process Injection with Go using NtQueueApcThreadEx WinAPI
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:35Z'
+    run_id: '26312525826'
+- guid: c8f98fe1-c89b-4c49-a7e3-d60ee4bc2f5a
+  atomic_id: T1055.012-3
+  name: Process Hollowing in Go using CreateProcessW WinAPI
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:36Z'
+    run_id: '26312525826'
+- guid: 94903cc5-d462-498a-b919-b1e5ab155fee
+  atomic_id: T1055.012-4
+  name: Process Hollowing in Go using CreateProcessW and CreatePipe WinAPIs (T1055.012)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:37Z'
+    run_id: '26312525826'
+- guid: 7f85a946-a0ea-48aa-b6ac-8ff539278258
+  atomic_id: T1056.001-5
+  name: Bash session based keylogger
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:01Z'
+    run_id: '26312525826'
+- guid: aee3a097-4c5c-4fff-bbd3-0a705867ae29
+  atomic_id: T1056.001-8
+  name: MacOS Swift Keylogger
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:21:44Z'
+    run_id: '26312525826'
+- guid: 4ff64f0b-aaf2-4866-b39d-38d9791407cc
+  atomic_id: T1057-1
+  name: Process Discovery - ps
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:02Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:45Z'
+    run_id: '26312525826'
+- guid: fa050f5e-bc75-4230-af73-b6fd7852cd73
+  atomic_id: T1059.001-10
+  name: PowerShell Fileless Script Execution
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:38Z'
+    run_id: '26312525826'
+- guid: 8e5c5532-1181-4c1d-bb79-b3a9f5dbd680
+  atomic_id: T1059.001-11
+  name: NTFS Alternate Data Stream Access
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:41Z'
+    run_id: '26312525826'
+- guid: 127b4afe-2346-4192-815c-69042bec570e
+  atomic_id: T1059.003-2
+  name: Writes text to a file and displays it.
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:25:41Z'
+    run_id: '26312525826'
+- guid: 6b2903ac-8f36-450d-9ad5-b220e8a2dcb9
+  atomic_id: T1059.003-4
+  name: Simulate BlackByte Ransomware Print Bombing
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:44Z'
+    run_id: '26312525826'
+- guid: 7e7ac3ed-f795-4fa5-b711-09d6fbe9b873
+  atomic_id: T1059.004-1
+  name: Create and Execute Bash Shell Script
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:15Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:49Z'
+    run_id: '26312525826'
+- guid: bdaebd56-368b-4970-a523-f905ff4a8a51
+  atomic_id: T1059.004-11
+  name: Environment variable scripts
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:16Z'
+    run_id: '26312525826'
+- guid: ab4d04af-68dc-4fee-9c16-6545265b3276
+  atomic_id: T1059.004-16
+  name: Shell Creation using busybox command
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:17Z'
+    run_id: '26312525826'
+- guid: 8cd1947b-4a54-41fb-b5ea-07d0ace04f81
+  atomic_id: T1059.004-5
+  name: New script file in the tmp directory
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:16Z'
+    run_id: '26312525826'
+- guid: 96e86706-6afd-45b6-95d6-108d23eaf2e9
+  atomic_id: T1070-2
+  name: Indicator Manipulation using FSUtil
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:45Z'
+    run_id: '26312525826'
+- guid: 2f898b81-3e97-4abb-bc3f-a95138988370
+  atomic_id: T1070.003-11
+  name: Prevent Powershell History Logging
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:46Z'
+    run_id: '26312525826'
+- guid: 1d0d9aa6-6111-4f89-927b-53e8afae7f94
+  atomic_id: T1070.003-13
+  name: Set Custom AddToHistoryHandler to Avoid History File Logging
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:47Z'
+    run_id: '26312525826'
+- guid: 784e4011-bd1a-4ecd-a63a-8feb278512e6
+  atomic_id: T1070.003-7
+  name: Clear and Disable Bash History Logging
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:17Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:49Z'
+    run_id: '26312525826'
+- guid: 5f8abd62-f615-43c5-b6be-f780f25790a1
+  atomic_id: T1070.003-9
+  name: Disable Bash History Logging with SSH -T
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:18Z'
+    run_id: '26312525826'
+- guid: 562d737f-2fc6-4b09-8c2a-7f8ff0828480
+  atomic_id: T1070.004-1
+  name: Delete a single file - FreeBSD/Linux/macOS
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:19Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:50Z'
+    run_id: '26312525826'
+- guid: 5f9113d5-ed75-47ed-ba23-ea3573d05810
+  atomic_id: T1070.006-1
+  name: Set a file's access timestamp
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:19Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:51Z'
+    run_id: '26312525826'
+- guid: 20ef1523-8758-4898-b5a2-d026cc3d2c52
+  atomic_id: T1070.006-2
+  name: Set a file's modification timestamp
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:20Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:51Z'
+    run_id: '26312525826'
+- guid: 631ea661-d661-44b0-abdb-7a7f3fc08e50
+  atomic_id: T1070.006-4
+  name: Modify file timestamps using reference file
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:20Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:52Z'
+    run_id: '26312525826'
+- guid: 87fffff4-d371-4057-a539-e3b24c37e564
+  atomic_id: T1070.006-9
+  name: MacOS - Timestomp Date Modified
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:21:53Z'
+    run_id: '26312525826'
+- guid: a57fbe4b-3440-452a-88a7-943531ac872a
+  atomic_id: T1074.001-3
+  name: Zip a Folder with PowerShell for Staging in Temp
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:48Z'
+    run_id: '26312525826'
+- guid: cccb070c-df86-4216-a5bc-9fb60c74e27c
+  atomic_id: T1082-3
+  name: List OS Information
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:21Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:53Z'
+    run_id: '26312525826'
+- guid: ce479c1a-e8fa-42b2-812a-96b0f2f4d28a
+  atomic_id: T1082-37
+  name: Identify System Locale and Regional Settings with PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:27:49Z'
+    run_id: '26312525826'
+- guid: 0e36303b-6762-4500-b003-127743b80ba6
+  atomic_id: T1083-1
+  name: File and Directory Discovery (cmd.exe)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:50Z'
+    run_id: '26312525826'
+- guid: ffc8b249-372a-4b74-adcd-e4c0430842de
+  atomic_id: T1083-3
+  name: Nix File and Directory Discovery
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:22Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:21:54Z'
+    run_id: '26312525826'
+- guid: 13c5e1ae-605b-46c4-a79f-db28c77ff24e
+  atomic_id: T1083-4
+  name: Nix File and Directory Discovery 2
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:23Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:22:19Z'
+    run_id: '26312525826'
+- guid: c6c34f61-1c3e-40fb-8a58-d017d88286d8
+  atomic_id: T1083-5
+  name: Simulating MAZE Directory Enumeration
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:51Z'
+    run_id: '26312525826'
+- guid: 95a21323-770d-434c-80cd-6f6fbf7af432
+  atomic_id: T1083-9
+  name: Recursive Enumerate Files And Directories By Powershell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:52Z'
+    run_id: '26312525826'
+- guid: f8aab3dd-5990-4bf8-b8ab-2226c951696f
+  atomic_id: T1087.001-1
+  name: Enumerate all accounts (Local)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:23Z'
+    run_id: '26312525826'
+- guid: c955a599-3653-4fe5-b631-f11c00eb0397
+  atomic_id: T1087.001-3
+  name: View accounts with UID 0
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:24Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:22:19Z'
+    run_id: '26312525826'
+- guid: 0f0b6a29-08c3-44ad-a30b-47fd996b2110
+  atomic_id: T1087.001-5
+  name: Show if a user account has ever logged in remotely
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:25Z'
+    run_id: '26312525826'
+- guid: b8a563d4-a836-4993-a74e-0a19b8481bfe
+  atomic_id: T1087.002-17
+  name: Wevtutil - Discover NTLM Users Remote
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:54Z'
+    run_id: '26312525826'
+- guid: 394012d9-2164-4d4f-b9e5-acf30ba933fe
+  atomic_id: T1087.002-18
+  name: Suspicious LAPS Attributes Query with Get-ADComputer all properties
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:55Z'
+    run_id: '26312525826'
+- guid: 6e85bdf9-7bc4-4259-ac0f-f0cb39964443
+  atomic_id: T1087.002-19
+  name: Suspicious LAPS Attributes Query with Get-ADComputer ms-Mcs-AdmPwd property
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:56Z'
+    run_id: '26312525826'
+- guid: ffbcfd62-15d6-4989-a21a-80bfc8e58bb5
+  atomic_id: T1087.002-20
+  name: Suspicious LAPS Attributes Query with Get-ADComputer all properties and SearchScope
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:57Z'
+    run_id: '26312525826'
+- guid: abf00f6c-9983-4d9a-afbc-6b1c6c6448e1
+  atomic_id: T1087.002-21
+  name: Suspicious LAPS Attributes Query with adfind all properties
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:58Z'
+    run_id: '26312525826'
+- guid: 51a98f96-0269-4e09-a10f-e307779a8b05
+  atomic_id: T1087.002-22
+  name: Suspicious LAPS Attributes Query with adfind ms-Mcs-AdmPwd
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:29:59Z'
+    run_id: '26312525826'
+- guid: 648d68c1-8bcd-4486-9abe-71c6655b6a2c
+  atomic_id: T1090.001-2
+  name: Connection Proxy for macOS UI
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:22:20Z'
+    run_id: '26312525826'
+- guid: d44b7297-622c-4be8-ad88-ec40d7563c75
+  atomic_id: T1091-1
+  name: USB Malware Spread Simulation
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:00Z'
+    run_id: '26312525826'
+- guid: a55a22e9-a3d3-42ce-bd48-2653adb8f7a9
+  atomic_id: T1098-2
+  name: Domain Account and Group Manipulate
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:01Z'
+    run_id: '26312525826'
+- guid: 342cc723-127c-4d3a-8292-9c0c6b4ecadc
+  atomic_id: T1098.004-1
+  name: Modify SSH Authorized Keys
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:25Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:22:21Z'
+    run_id: '26312525826'
+- guid: c99a829f-0bb8-4187-b2c6-d47d1df74cab
+  atomic_id: T1105-14
+  name: whois file download
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:26Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:22:21Z'
+    run_id: '26312525826'
+- guid: 70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf
+  atomic_id: T1105-21
+  name: MAZE Propagation Script
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:03Z'
+    run_id: '26312525826'
+- guid: 49845fc1-7961-4590-a0f0-3dbcf065ae7e
+  atomic_id: T1105-22
+  name: Printer Migration Command-Line Tool UNC share folder into a zip file
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:04Z'
+    run_id: '26312525826'
+- guid: ed0335ac-0354-400c-8148-f6151d20035a
+  atomic_id: T1105-24
+  name: Lolbas replace.exe use to copy UNC file
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:04Z'
+    run_id: '26312525826'
+- guid: ae56083f-28d0-417d-84da-df4242da1f7c
+  atomic_id: T1106-5
+  name: Run Shellcode via Syscall in Go
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:05Z'
+    run_id: '26312525826'
+- guid: 1324796b-d0f6-455a-b4ae-21ffee6aa6b9
+  atomic_id: T1112-1
+  name: Modify Registry of Current User Profile - cmd
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:06Z'
+    run_id: '26312525826'
+- guid: 795d3248-0394-4d4d-8e86-4e8df2a2693f
+  atomic_id: T1112-32
+  name: Windows Modify Show Compress Color And Info Tip Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:11Z'
+    run_id: '26312525826'
+- guid: 65704cd4-6e36-4b90-b6c1-dc29a82c8e56
+  atomic_id: T1112-40
+  name: NetWire RAT Registry Key Creation
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:12Z'
+    run_id: '26312525826'
+- guid: c375558d-7c25-45e9-bd64-7b23a97c1db0
+  atomic_id: T1112-41
+  name: Ursnif Malware Registry Key Creation
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:12Z'
+    run_id: '26312525826'
+- guid: cf447677-5a4e-4937-a82c-e47d254afd57
+  atomic_id: T1112-5
+  name: Add domain to Trusted sites Zone
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:07Z'
+    run_id: '26312525826'
+- guid: c88ef166-50fa-40d5-a80c-e2b87d4180f7
+  atomic_id: T1112-59
+  name: Modify Internet Zone Protocol Defaults in Current User Registry - cmd
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:13Z'
+    run_id: '26312525826'
+- guid: 15f44ea9-4571-4837-be9e-802431a7bfae
+  atomic_id: T1112-6
+  name: Javascript in registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:09Z'
+    run_id: '26312525826'
+- guid: b1a4d687-ba52-4057-81ab-757c3dc0d3b5
+  atomic_id: T1112-60
+  name: Modify Internet Zone Protocol Defaults in Current User Registry - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:14Z'
+    run_id: '26312525826'
+- guid: c26fb85a-fa50-4fab-a64a-c51f5dc538d5
+  atomic_id: T1112-61
+  name: Activities To Disable Secondary Authentication Detected By Modified Registry
+    Value.
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:15Z'
+    run_id: '26312525826'
+- guid: ffeddced-bb9f-49c6-97f0-3d07a509bf94
+  atomic_id: T1112-62
+  name: Activities To Disable Microsoft [FIDO Aka Fast IDentity Online] Authentication
+    Detected By Modified Registry Value.
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:16Z'
+    run_id: '26312525826'
+- guid: ca8ba39c-3c5a-459f-8e15-280aec65a910
+  atomic_id: T1112-63
+  name: Scarab Ransomware Defense Evasion Activities
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:17Z'
+    run_id: '26312525826'
+- guid: 61d35188-f113-4334-8245-8c6556d43909
+  atomic_id: T1112-64
+  name: Disable Remote Desktop Anti-Alias Setting Through Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:17Z'
+    run_id: '26312525826'
+- guid: 4b81bcfa-fb0a-45e9-90c2-e3efe5160140
+  atomic_id: T1112-65
+  name: Disable Remote Desktop Security Settings Through Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:18Z'
+    run_id: '26312525826'
+- guid: 09147b61-40f6-4b2a-b6fb-9e73a3437c96
+  atomic_id: T1112-66
+  name: Disabling ShowUI Settings of Windows Error Reporting (WER)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:19Z'
+    run_id: '26312525826'
+- guid: eb0ba433-63e5-4a8c-a9f0-27c4192e1336
+  atomic_id: T1112-67
+  name: Enable Proxy Settings
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:20Z'
+    run_id: '26312525826'
+- guid: d88a3d3b-d016-4939-a745-03638aafd21b
+  atomic_id: T1112-68
+  name: Set-Up Proxy Server
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:20Z'
+    run_id: '26312525826'
+- guid: 7e7b62e9-5f83-477d-8935-48600f38a3c6
+  atomic_id: T1112-69
+  name: RDP Authentication Level Override
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:32:23Z'
+    run_id: '26312525826'
+- guid: f3a6cceb-06c9-48e5-8df8-8867a6814245
+  atomic_id: T1112-7
+  name: Change Powershell Execution Policy to Bypass
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:30:10Z'
+    run_id: '26312525826'
+- guid: 0f47ceb1-720f-4275-96b8-21f0562217ac
+  atomic_id: T1113-1
+  name: Screencapture
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:22:22Z'
+    run_id: '26312525826'
+- guid: deb7d358-5fbd-4dc4-aecc-ee0054d2d9a4
+  atomic_id: T1113-2
+  name: Screencapture (silent)
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:22:23Z'
+    run_id: '26312525826'
+- guid: 8206dd0c-faf6-4d74-ba13-7fbe13dce6ac
+  atomic_id: T1113-3
+  name: X Windows Capture
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:27Z'
+    run_id: '26312525826'
+- guid: 562f3bc2-74e8-46c5-95c7-0e01f9ccc65c
+  atomic_id: T1113-4
+  name: X Windows Capture (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:27Z'
+    run_id: '26312525826'
+- guid: 9cd1cccb-91e4-4550-9139-e20a586fcea1
+  atomic_id: T1113-5
+  name: Capture Linux Desktop using Import Tool
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:28Z'
+    run_id: '26312525826'
+- guid: 18397d87-38aa-4443-a098-8a48a8ca5d8d
+  atomic_id: T1113-6
+  name: Capture Linux Desktop using Import Tool (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:28Z'
+    run_id: '26312525826'
+- guid: 3c898f62-626c-47d5-aad2-6de873d69153
+  atomic_id: T1113-7
+  name: Windows Screencapture
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:32:26Z'
+    run_id: '26312525826'
+- guid: e9313014-985a-48ef-80d9-cde604ffc187
+  atomic_id: T1113-8
+  name: Windows Screen Capture (CopyFromScreen)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:32:27Z'
+    run_id: '26312525826'
+- guid: 0cd14633-58d4-4422-9ede-daa2c9474ae7
+  atomic_id: T1115-1
+  name: Utilize Clipboard to store or execute commands from
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:32:28Z'
+    run_id: '26312525826'
+- guid: cb379146-53f1-43e0-b884-7ce2c635ff5b
+  atomic_id: T1119-1
+  name: Automated Collection Command Prompt
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:29Z'
+    run_id: '26312525826'
+- guid: 634bd9b9-dc83-4229-b19f-7f83ba9ad313
+  atomic_id: T1119-2
+  name: Automated Collection PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:30Z'
+    run_id: '26312525826'
+- guid: c3f6d794-50dd-482f-b640-0384fbb7db26
+  atomic_id: T1119-3
+  name: Recon information for export with PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:31Z'
+    run_id: '26312525826'
+- guid: aa1180e2-f329-4e1e-8625-2472ec0bfaf3
+  atomic_id: T1119-4
+  name: Recon information for export with Command Prompt
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:32Z'
+    run_id: '26312525826'
+- guid: 2cb4dbf2-2dca-4597-8678-4d39d207a3a5
+  atomic_id: T1120-1
+  name: Win32_PnPEntity Hardware Inventory
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:33Z'
+    run_id: '26312525826'
+- guid: 7a21cce2-6ada-4f7c-afd9-e1e9c481e44a
+  atomic_id: T1123-2
+  name: Registry artefact when application use microphone
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:34Z'
+    run_id: '26312525826'
+- guid: c7a0bb71-70ce-4a53-b115-881f241b795b
+  atomic_id: T1123-3
+  name: using Quicktime Player
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:24:24Z'
+    run_id: '26312525826'
+- guid: 6581e4a7-42e3-43c5-a0d2-5a0d62f9702a
+  atomic_id: T1125-1
+  name: Registry artefact when application use webcam
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:34Z'
+    run_id: '26312525826'
+- guid: fcec2963-9951-4173-9bfa-98d8b7834e62
+  atomic_id: T1136.002-1
+  name: Create a new Windows domain admin user
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:35Z'
+    run_id: '26312525826'
+- guid: dc7726d2-8ccb-4cc6-af22-0d5afb53a548
+  atomic_id: T1136.002-2
+  name: Create a new account similar to ANONYMOUS LOGON
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:36Z'
+    run_id: '26312525826'
+- guid: 5a3497a4-1568-4663-b12a-d4a5ed70c7d7
+  atomic_id: T1136.002-3
+  name: Create a new Domain Account using PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:37Z'
+    run_id: '26312525826'
+- guid: bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c
+  atomic_id: T1137-1
+  name: Office Application Startup - Outlook as a C2
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:37Z'
+    run_id: '26312525826'
+- guid: ffadc988-b682-4a68-bd7e-4803666be637
+  atomic_id: T1137.005-1
+  name: Outlook Rule - Subject Trigger with DeletePermanently Action via COM Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:39Z'
+    run_id: '26312525826'
+- guid: bddfd8d4-7687-4971-b611-50a537ab3ab4
+  atomic_id: T1137.005-2
+  name: Outlook Rule - Sender Address Trigger with DeletePermanently Action via COM
+    Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:40Z'
+    run_id: '26312525826'
+- guid: b0bd3d76-a57c-4699-83f4-8cd798dd09bd
+  atomic_id: T1137.005-3
+  name: Outlook Rule - Auto-Forward Emails to External Address via COM Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:41Z'
+    run_id: '26312525826'
+- guid: 5ff5249a-5807-480e-ab52-c430497a8a25
+  atomic_id: T1137.005-4
+  name: Outlook Rules - Enumerate Existing Rules via PowerShell COM Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:42Z'
+    run_id: '26312525826'
+- guid: dc6fe391-69e6-4506-bd06-ea5eeb4082f8
+  atomic_id: T1140-1
+  name: Deobfuscate/Decode Files Or Information
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:43Z'
+    run_id: '26312525826'
+- guid: c3b65cd5-ee51-4e98-b6a3-6cbdec138efc
+  atomic_id: T1140-10
+  name: XOR decoding and command execution using Python
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:22:29Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:24:25Z'
+    run_id: '26312525826'
+- guid: 9f8b1c54-cb76-4d5e-bb1f-2f5c0e8f5a11
+  atomic_id: T1140-11
+  name: Expand CAB with expand.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:44Z'
+    run_id: '26312525826'
+- guid: 71abc534-3c05-4d0c-80f7-cbe93cb2aa94
+  atomic_id: T1140-2
+  name: Certutil Rename and Decode
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:44Z'
+    run_id: '26312525826'
+- guid: 82a9f001-94c5-495e-9ed5-f530dbded5e2
+  atomic_id: T1195-1
+  name: Octopus Scanner Malware Open Source Supply Chain
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:45Z'
+    run_id: '26312525826'
+- guid: 0fd14730-6226-4f5e-8d67-43c65f1be940
+  atomic_id: T1202-4
+  name: Indirect Command Execution - Scriptrunner.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:46Z'
+    run_id: '26312525826'
+- guid: 24fd9719-7419-42dd-bce6-ab3463110b3c
+  atomic_id: T1204.002-11
+  name: Mirror Blast Emulation
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:47Z'
+    run_id: '26312525826'
+- guid: 2a8f2d3c-3dec-4262-99dd-150cb2a4d63a
+  atomic_id: T1216-2
+  name: manage-bde.wsf Signed Script Command Execution
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:48Z'
+    run_id: '26312525826'
+- guid: 3a41f169-a5ab-407f-9269-abafdb5da6c2
+  atomic_id: T1217-1
+  name: List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:29Z'
+    run_id: '26312525826'
+- guid: 1ca1f9c7-44bc-46bb-8c85-c50e2e94267b
+  atomic_id: T1217-2
+  name: List Mozilla Firefox Bookmark Database Files on macOS
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:26:26Z'
+    run_id: '26312525826'
+- guid: b789d341-154b-4a42-a071-9111588be9bc
+  atomic_id: T1217-3
+  name: List Google Chrome Bookmark JSON Files on macOS
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:28:27Z'
+    run_id: '26312525826'
+- guid: 88ca025b-3040-44eb-9168-bd8af22b82fa
+  atomic_id: T1217-4
+  name: List Google Chromium Bookmark JSON Files on FreeBSD
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:36Z'
+    run_id: '26312525826'
+- guid: 5fc528dd-79de-47f5-8188-25572b7fafe0
+  atomic_id: T1217-9
+  name: List Safari Bookmarks on MacOS
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:30:29Z'
+    run_id: '26312525826'
+- guid: 1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421
+  atomic_id: T1218.010-4
+  name: Regsvr32 Registering Non DLL
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:34:48Z'
+    run_id: '26312525826'
+- guid: 83a95136-a496-423c-81d3-1c6750133917
+  atomic_id: T1218.011-13
+  name: Rundll32 with desk.cpl
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:50Z'
+    run_id: '26312525826'
+- guid: 8a7f56ee-10e7-444c-a139-0109438288eb
+  atomic_id: T1218.011-16
+  name: Rundll32 execute payload by calling RouteTheCall
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:51Z'
+    run_id: '26312525826'
+- guid: 32b979da-7b68-42c9-9a99-0e39900fc36c
+  atomic_id: T1222.001-4
+  name: attrib - hide file
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:52Z'
+    run_id: '26312525826'
+- guid: 7b8ce084-3922-4618-8d22-95f996173765
+  atomic_id: T1486-1
+  name: Encrypt files using gpg (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:36Z'
+    run_id: '26312525826'
+- guid: 53e6735a-4727-44cc-b35b-237682a151ad
+  atomic_id: T1486-2
+  name: Encrypt files using 7z (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:37Z'
+    run_id: '26312525826'
+- guid: 08cbf59f-85da-4369-a5f4-049cffd7709f
+  atomic_id: T1486-3
+  name: Encrypt files using ccrypt (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:37Z'
+    run_id: '26312525826'
+- guid: 142752dc-ca71-443b-9359-cf6f497315f1
+  atomic_id: T1486-4
+  name: Encrypt files using openssl (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:38Z'
+    run_id: '26312525826'
+- guid: 1a01f6b8-b1e8-418e-bbe3-78a6f822759e
+  atomic_id: T1486-7
+  name: Encrypt files using openssl utility - macOS
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:30:30Z'
+    run_id: '26312525826'
+- guid: 502a7dc4-9d6f-4d28-abf2-f0e84692562d
+  atomic_id: T1497.001-3
+  name: Detect Virtualization Environment (Windows)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:53Z'
+    run_id: '26312525826'
+- guid: 53adbdfa-8200-490c-871c-d3b1ab3324b2
+  atomic_id: T1505.004-1
+  name: Install IIS Module using AppCmd.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:54Z'
+    run_id: '26312525826'
+- guid: cc3381fb-4bd0-405c-a8e4-6cacfac3b06c
+  atomic_id: T1505.004-2
+  name: Install IIS Module using PowerShell Cmdlet New-WebGlobalModule
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:55Z'
+    run_id: '26312525826'
+- guid: 94500ae1-7e31-47e3-886b-c328da46872f
+  atomic_id: T1546.004-1
+  name: Add command to .bash_profile
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:38Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:30:31Z'
+    run_id: '26312525826'
+- guid: 0a898315-4cfa-4007-bafe-33a4646d115f
+  atomic_id: T1546.004-2
+  name: Add command to .bashrc
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:39Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:30:32Z'
+    run_id: '26312525826'
+- guid: 41502021-591a-4649-8b6e-83c9192aff53
+  atomic_id: T1546.004-3
+  name: Add command to .shrc
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:39Z'
+    run_id: '26312525826'
+- guid: bbdb06bc-bab6-4f5b-8232-ba3fbed51d77
+  atomic_id: T1546.004-5
+  name: Append commands user shell profile
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:40Z'
+    run_id: '26312525826'
+- guid: a74b2e07-5952-4c03-8b56-56274b076b61
+  atomic_id: T1546.005-1
+  name: Trap EXIT
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:40Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:30:32Z'
+    run_id: '26312525826'
+- guid: be1a5d70-6865-44aa-ab50-42244c9fd16f
+  atomic_id: T1546.005-2
+  name: Trap EXIT (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:41Z'
+    run_id: '26312525826'
+- guid: a547d1ba-1d7a-4cc5-a9cb-8d65e8809636
+  atomic_id: T1546.005-3
+  name: Trap SIGINT
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:41Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:30:33Z'
+    run_id: '26312525826'
+- guid: ade10242-1eac-43df-8412-be0d4c704ada
+  atomic_id: T1546.005-4
+  name: Trap SIGINT (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:42Z'
+    run_id: '26312525826'
+- guid: 752191b1-7c71-445c-9dbe-21bb031b18eb
+  atomic_id: T1546.015-2
+  name: Powershell Execute COM Object
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:56Z'
+    run_id: '26312525826'
+- guid: a58c066d-f2f0-42a2-ab70-30af73f89e66
+  atomic_id: T1546.018-3
+  name: Python Startup Hook - atomic_hook.pth (Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:46Z'
+    run_id: '26312525826'
+- guid: 28ca4f81-fa96-47ff-8555-dde98017e89b
+  atomic_id: T1546.018-4
+  name: Python Startup Hook - atomic_hook.pth (macOS)
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:30:38Z'
+    run_id: '26312525826'
+- guid: 6e78084a-a433-4702-a838-cc7b765d87e8
+  atomic_id: T1546.018-5
+  name: Python Startup Hook - usercustomize.py (Linux / MacOS)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:46Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:30:40Z'
+    run_id: '26312525826'
+- guid: e55be3fd-3521-4610-9d1a-e210e42dcf05
+  atomic_id: T1547.001-1
+  name: Reg Key Run
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:57Z'
+    run_id: '26312525826'
+- guid: 8834b65a-f808-4ece-ad7e-2acdf647aafa
+  atomic_id: T1547.001-11
+  name: Change Startup Folder - HKCU Modify User Shell Folders Startup Value
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:00Z'
+    run_id: '26312525826'
+- guid: bda6a3d6-7aa7-4e89-908b-306772e9662f
+  atomic_id: T1547.001-8
+  name: Add persistance via Recycle bin
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:58Z'
+    run_id: '26312525826'
+- guid: 9dc7767b-30c1-4cc4-b999-50cab5e27891
+  atomic_id: T1547.001-9
+  name: SystemBC Malware-as-a-Service Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:36:59Z'
+    run_id: '26312525826'
+- guid: bf9f9d65-ee4d-4c3e-a843-777d04f19c38
+  atomic_id: T1547.004-1
+  name: Winlogon Shell Key Persistence - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:01Z'
+    run_id: '26312525826'
+- guid: fb32c935-ee2e-454b-8fa3-1c46b42e8dfb
+  atomic_id: T1547.004-2
+  name: Winlogon Userinit Key Persistence - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:02Z'
+    run_id: '26312525826'
+- guid: d40da266-e073-4e5a-bb8b-2b385023e5f9
+  atomic_id: T1547.004-3
+  name: Winlogon Notify Key Logon Persistence - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:03Z'
+    run_id: '26312525826'
+- guid: 95a3c42f-8c88-4952-ad60-13b81d929a9d
+  atomic_id: T1547.004-4
+  name: Winlogon HKLM Shell Key Persistence - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:04Z'
+    run_id: '26312525826'
+- guid: f9b8daff-8fa7-4e6a-a1a7-7c14675a545b
+  atomic_id: T1547.004-5
+  name: Winlogon HKLM Userinit Key Persistence - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:05Z'
+    run_id: '26312525826'
+- guid: 5fefd767-ef54-4ac6-84d3-751ab85e8aba
+  atomic_id: T1547.007-1
+  name: Copy in loginwindow.plist for Re-Opened Applications
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:30:40Z'
+    run_id: '26312525826'
+- guid: 766b6c3c-9353-4033-8b7e-38b309fa3a93
+  atomic_id: T1547.007-3
+  name: Append to existing loginwindow for Re-Opened Applications
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:30:42Z'
+    run_id: '26312525826'
+- guid: ce4fc678-364f-4282-af16-2fb4c78005ce
+  atomic_id: T1547.009-1
+  name: Shortcut Modification
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:06Z'
+    run_id: '26312525826'
+- guid: 5073adf8-9a50-4bd9-b298-a9bd2ead8af9
+  atomic_id: T1548.002-1
+  name: Bypass UAC using Event Viewer (cmd)
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:07Z'
+    run_id: '26312525826'
+- guid: 160a7c77-b00e-4111-9e45-7c2a44eda3fd
+  atomic_id: T1548.002-25
+  name: Disable UAC notification via registry keys
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:08Z'
+    run_id: '26312525826'
+- guid: a768aaa2-2442-475c-8990-69cf33af0f4e
+  atomic_id: T1548.002-26
+  name: Disable ConsentPromptBehaviorAdmin via registry keys
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:09Z'
+    run_id: '26312525826'
+- guid: b6f4645c-34ea-4c7c-98f2-d5a2747efb08
+  atomic_id: T1548.002-27
+  name: UAC bypassed by Utilizing ProgIDs registry.
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:10Z'
+    run_id: '26312525826'
+- guid: 58f641ea-12e3-499a-b684-44dee46bd182
+  atomic_id: T1548.002-3
+  name: Bypass UAC using Fodhelper
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:08Z'
+    run_id: '26312525826'
+- guid: 46959285-906d-40fa-9437-5a439accd878
+  atomic_id: T1552.004-2
+  name: Discover Private SSH Keys
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:49Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:32:43Z'
+    run_id: '26312525826'
+- guid: 7c247dc7-5128-4643-907b-73a76d9135c3
+  atomic_id: T1552.004-3
+  name: Copy Private SSH Keys with CP
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:52Z'
+    run_id: '26312525826'
+- guid: 12e4a260-a7fd-4ed8-bf18-1a28c1395775
+  atomic_id: T1552.004-4
+  name: Copy Private SSH Keys with CP (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:55Z'
+    run_id: '26312525826'
+- guid: 864bb0b2-6bb5-489a-b43b-a77b3a16d68a
+  atomic_id: T1552.004-5
+  name: Copy Private SSH Keys with rsync
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:24:58Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:34:33Z'
+    run_id: '26312525826'
+- guid: 922b1080-0b95-42b0-9585-b9a5ea0af044
+  atomic_id: T1552.004-6
+  name: Copy Private SSH Keys with rsync (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:25:01Z'
+    run_id: '26312525826'
+- guid: 2a5a0601-f5fb-4e2e-aa09-73282ae6afca
+  atomic_id: T1552.004-7
+  name: Copy the users GnuPG directory with rsync
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:25:04Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:36:34Z'
+    run_id: '26312525826'
+- guid: b05ac39b-515f-48e9-88e9-2f141b5bcad0
+  atomic_id: T1552.004-8
+  name: Copy the users GnuPG directory with rsync (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:25:07Z'
+    run_id: '26312525826'
+- guid: 78e95057-d429-4e66-8f82-0f060c1ac96f
+  atomic_id: T1552.004-9
+  name: ADFS token signing and encryption certificates theft - Local
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:11Z'
+    run_id: '26312525826'
+- guid: 1864fdec-ff86-4452-8c30-f12507582a93
+  atomic_id: T1555.001-2
+  name: Export Certificate Item(s)
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:36:35Z'
+    run_id: '26312525826'
+- guid: 5c32102a-c508-49d3-978f-288f8a9f6617
+  atomic_id: T1555.001-4
+  name: Copy Keychain using cat utility
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:36:35Z'
+    run_id: '26312525826'
+- guid: f543635c-1705-42c3-b180-efd6dc6e7ee7
+  atomic_id: T1555.003-10
+  name: Stage Popular Credential Files for Exfiltration
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:37:13Z'
+    run_id: '26312525826'
+- guid: 124e13e5-d8a1-4378-a6ee-a53cd0c7e369
+  atomic_id: T1555.003-14
+  name: Simulating Access to Chrome Login Data - MacOS
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:36:36Z'
+    run_id: '26312525826'
+- guid: 41410c60-614d-4b9d-b66e-b0192dd9c597
+  atomic_id: T1560-1
+  name: Compress Data for Exfiltration With PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:14Z'
+    run_id: '26312525826'
+- guid: 2a7bc405-9555-4f49-ace2-b2ae2941d629
+  atomic_id: T1560.001-11
+  name: Compress a File for Exfiltration using Makecab
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:15Z'
+    run_id: '26312525826'
+- guid: cde3c2af-3485-49eb-9c1f-0ed60e9cc0af
+  atomic_id: T1560.001-6
+  name: Data Compressed - nix - gzip Single File
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:25:08Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:36:37Z'
+    run_id: '26312525826'
+- guid: 7af2b51e-ad1c-498c-aca8-d3290c19535a
+  atomic_id: T1560.001-7
+  name: Data Compressed - nix - tar Folder or File
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:35Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:38:39Z'
+    run_id: '26312525826'
+- guid: 0286eb44-e7ce-41a0-b109-3da516e05a5f
+  atomic_id: T1560.001-8
+  name: Data Encrypted with zip and gpg symmetric
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:37Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:38:40Z'
+    run_id: '26312525826'
+- guid: a743e3a6-e8b2-4a30-abe7-ca85d201b5d3
+  atomic_id: T1560.001-9
+  name: Encrypts collected data with AES-256 and Base64
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:37Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:38:41Z'
+    run_id: '26312525826'
+- guid: 391f5298-b12d-4636-8482-35d9c17d53a8
+  atomic_id: T1560.002-1
+  name: Compressing data using GZip in Python (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:38Z'
+    run_id: '26312525826'
+- guid: c75612b2-9de0-4d7c-879c-10d7b077072d
+  atomic_id: T1560.002-2
+  name: Compressing data using bz2 in Python (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:38Z'
+    run_id: '26312525826'
+- guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
+  atomic_id: T1560.002-3
+  name: Compressing data using zipfile in Python (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:39Z'
+    run_id: '26312525826'
+- guid: e86f1b4b-fcc1-4a2a-ae10-b49da01458db
+  atomic_id: T1560.002-4
+  name: Compressing data using tarfile in Python (FreeBSD/Linux)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:39Z'
+    run_id: '26312525826'
+- guid: 61a782e5-9a19-40b5-8ba4-69a4b9f3d7be
+  atomic_id: T1564.001-1
+  name: Create a hidden file in a hidden directory
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:39Z'
+    run_id: '26312525826'
+  - platform: macos
+    verified_at: '2026-05-22T21:38:42Z'
+    run_id: '26312525826'
+- guid: b115ecaf-3b24-4ed2-aefe-2fcb9db913d3
+  atomic_id: T1564.001-6
+  name: Hide a Directory
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:38:43Z'
+    run_id: '26312525826'
+- guid: 9a1ec7da-b892-449f-ad68-67066d04380c
+  atomic_id: T1564.001-7
+  name: Show all hidden files
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:38:44Z'
+    run_id: '26312525826'
+- guid: 17e7637a-ddaf-4a82-8622-377e20de8fdb
+  atomic_id: T1564.004-3
+  name: Create ADS command prompt
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:15Z'
+    run_id: '26312525826'
+- guid: 0045ea16-ed3c-4d4c-a9ee-15e44d1560d1
+  atomic_id: T1564.004-4
+  name: Create ADS PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:16Z'
+    run_id: '26312525826'
+- guid: 3e6791e7-232c-481c-a680-a52f86b83fdf
+  atomic_id: T1564.004-5
+  name: Create Hidden Directory via $index_allocation
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:17Z'
+    run_id: '26312525826'
+- guid: 6fb61988-724e-4755-a595-07743749d4e2
+  atomic_id: T1569.001-1
+  name: Launchctl
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:38:45Z'
+    run_id: '26312525826'
+- guid: 1e5be8d4-605a-4acb-8709-2f80b2d8ea95
+  atomic_id: T1569.003-6
+  name: Enumerate All systemd Services Using systemctl
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:41Z'
+    run_id: '26312525826'
+- guid: 4d66029d-7355-43fd-93a4-b63ba92ea1be
+  atomic_id: T1574.006-3
+  name: Dylib Injection via DYLD_INSERT_LIBRARIES
+  verified_platforms:
+  - platform: macos
+    verified_at: '2026-05-22T21:40:52Z'
+    run_id: '26312525826'
+- guid: 1561de08-0b4b-498e-8261-e922f3494aae
+  atomic_id: T1574.008-1
+  name: powerShell Persistence via hijacking default modules - Get-Variable.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:19Z'
+    run_id: '26312525826'
+- guid: f38e9eea-e1d7-4ba6-b716-584791963827
+  atomic_id: T1574.011-2
+  name: Service ImagePath Change with reg.exe
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:20Z'
+    run_id: '26312525826'
+- guid: eb121494-82d1-4148-9e2b-e624e03fbf3d
+  atomic_id: T1649-1
+  name: Staging Local Certificates via Export-Certificate
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:21Z'
+    run_id: '26312525826'
+- guid: 235b30a2-e5b1-441f-9705-be6231c88ddd
+  atomic_id: T1652-1
+  name: Device Driver Discovery
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:29Z'
+    run_id: '26312525826'
+- guid: 695eed40-e949-40e5-b306-b4031e4154bd
+  atomic_id: T1685-16
+  name: AMSI Bypass - AMSI InitFailed
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:30Z'
+    run_id: '26312525826'
+- guid: 6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7
+  atomic_id: T1685-22
+  name: Disable Microsoft Office Security Features
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:31Z'
+    run_id: '26312525826'
+- guid: fdac1f79-b833-4bab-b4a1-11b1ed676a4b
+  atomic_id: T1685-72
+  name: Disable .NET Event Tracing for Windows Via Environment Variable HKCU Registry
+    - Cmd
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:32Z'
+    run_id: '26312525826'
+- guid: b42c1f8c-399b-47ae-8fd8-763181395fee
+  atomic_id: T1685-73
+  name: Disable .NET Event Tracing for Windows Via Environment Variable HKCU Registry
+    - PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:33Z'
+    run_id: '26312525826'
+- guid: 69435dcf-c66f-4ec0-a8b1-82beb76b34db
+  atomic_id: T1685.001-1
+  name: Disable Windows IIS HTTP Logging
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:34Z'
+    run_id: '26312525826'
+- guid: a957fb0f-1e85-49b2-a211-413366784b1e
+  atomic_id: T1685.001-2
+  name: Disable Windows IIS HTTP Logging via PowerShell
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:36Z'
+    run_id: '26312525826'
+- guid: b26a3340-dad7-4360-9176-706269c74103
+  atomic_id: T1685.001-6
+  name: Disable Event Logging with wevtutil
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:36Z'
+    run_id: '26312525826'
+- guid: 88d05800-a5e4-407e-9b53-ece4174f197f
+  atomic_id: T1686-1
+  name: Disable Microsoft Defender Firewall
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:37Z'
+    run_id: '26312525826'
+- guid: afedc8c4-038c-4d82-b3e5-623a95f8a612
+  atomic_id: T1686-2
+  name: Disable Microsoft Defender Firewall via Registry
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:38Z'
+    run_id: '26312525826'
+- guid: d9841bf8-f161-4c73-81e9-fd773a5ff8c1
+  atomic_id: T1686-3
+  name: Allow SMB and RDP on Microsoft Defender Firewall
+  verified_platforms:
+  - platform: windows
+    verified_at: '2026-05-22T21:39:39Z'
+    run_id: '26312525826'
+- guid: f12acddb-7502-4ce6-a146-5b62c59592f1
+  atomic_id: T1690-10
+  name: Setting the HISTIGNORE environment variable
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:44Z'
+    run_id: '26312525826'
+- guid: 878794f7-c511-4199-a950-8c28b3ed8e5b
+  atomic_id: T1690-4
+  name: Clear bash history
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:41Z'
+    run_id: '26312525826'
+- guid: 10ab786a-028e-4465-96f6-9e83ca6c5f24
+  atomic_id: T1690-5
+  name: Setting the HISTCONTROL environment variable
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:42Z'
+    run_id: '26312525826'
+- guid: 5cafd6c1-2f43-46eb-ac47-a5301ba0a618
+  atomic_id: T1690-6
+  name: Setting the HISTFILESIZE environment variable
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:42Z'
+    run_id: '26312525826'
+- guid: 386d3850-2ce7-4508-b56b-c0558922c814
+  atomic_id: T1690-7
+  name: Setting the HISTSIZE environment variable
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:43Z'
+    run_id: '26312525826'
+- guid: b3dacb6c-a9e3-44ec-bf87-38db60c5cad1
+  atomic_id: T1690-8
+  name: Setting the HISTFILE environment variable
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:43Z'
+    run_id: '26312525826'
+- guid: f7308845-6da8-468e-99f2-4271f2f5bb67
+  atomic_id: T1690-9
+  name: Setting the HISTFILE environment variable (freebsd)
+  verified_platforms:
+  - platform: linux
+    verified_at: '2026-05-22T21:26:44Z'
+    run_id: '26312525826'
