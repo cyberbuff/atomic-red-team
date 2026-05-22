@@ -14,7 +14,6 @@ $ErrorActionPreference = "Stop"
 
 function Add-Stage {
   param(
-    [Parameter(Mandatory = $true)]
     [System.Collections.Generic.List[object]]$Stages,
 
     [Parameter(Mandatory = $true)]
