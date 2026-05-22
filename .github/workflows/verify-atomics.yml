@@ -1,0 +1,191 @@
+name: verify-atomics
+
+on:
+  schedule:
+    - cron: "0 9 * * 5"
+  workflow_dispatch:
+    inputs:
+      refresh_allowlist:
+        description: "Regenerate verification/allowed-atomics.yaml before running"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.11.2"
+
+      - name: Install Python package
+        run: python -m pip install .
+
+      - name: Refresh allowlist
+        if: ${{ inputs.refresh_allowlist == true }}
+        run: python atomic_red_team/runner.py seed-allowed-atomics-file
+
+      - name: Validate atomic YAML
+        run: python atomic_red_team/runner.py validate
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Build verification matrix
+        id: matrix
+        run: |
+          python atomic_red_team/runner.py build-verification-matrix --output matrix.json
+          echo "matrix=$(cat matrix.json)" >> "$GITHUB_OUTPUT"
+
+  verify:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.matrix != '{"include":[]}' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.11.2"
+
+      - name: Install Python package
+        run: python -m pip install .
+
+      - name: Refresh allowlist
+        if: ${{ inputs.refresh_allowlist == true }}
+        run: python atomic_red_team/runner.py seed-allowed-atomics-file
+
+      - name: Build platform targets
+        shell: pwsh
+        run: |
+          python atomic_red_team/runner.py build-verification-targets `
+            --platform "${{ matrix.platform }}" `
+            --output targets.json
+
+      - name: Run atomic verification
+        id: verify
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          ./verification/run-atomic-verification.ps1 `
+            -TargetsPath targets.json `
+            -OutputPath "verification-results/${{ matrix.platform }}.json"
+
+      - name: Upload verification results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: atomic-results-${{ matrix.platform }}
+          path: verification-results/${{ matrix.platform }}.json
+          if-no-files-found: warn
+
+      - name: Fail on atomic execution failure
+        if: ${{ steps.verify.outcome == 'failure' }}
+        run: exit 1
+
+  update-results:
+    needs:
+      - prepare
+      - verify
+    if: ${{ always() && needs.prepare.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.11.2"
+
+      - name: Install Python package
+        run: python -m pip install .
+
+      - name: Refresh allowlist
+        if: ${{ inputs.refresh_allowlist == true }}
+        run: python atomic_red_team/runner.py seed-allowed-atomics-file
+
+      - name: Download verification results
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        with:
+          pattern: atomic-results-*
+          path: verification/results
+          merge-multiple: true
+
+      - name: Merge verification results
+        run: |
+          if compgen -G "verification/results/*.json" > /dev/null; then
+            python atomic_red_team/runner.py merge-verification-files \
+              --results-dir verification/results
+          else
+            echo "No verification result artifacts found."
+          fi
+
+      - name: Commit verification updates
+        id: commit
+        env:
+          BRANCH_NAME: atomic-verification-results
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          gh auth setup-git
+
+          git add \
+            verification/allowed-atomics.yaml \
+            verification/verified-atomics.yaml \
+            verification/verification-state.yaml
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git checkout -B "$BRANCH_NAME"
+          git commit -m "Update verified atomics"
+          git push --force-with-lease origin "$BRANCH_NAME"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open verification results pull request
+        if: ${{ steps.commit.outputs.changed == 'true' }}
+        env:
+          BRANCH_NAME: atomic-verification-results
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_BODY: |
+            Updates weekly atomic execution verification files.
+
+            This PR is generated by `.github/workflows/verify-atomics.yml`.
+        run: |
+          if gh pr view "$BRANCH_NAME" --json number --jq .number > /dev/null; then
+            gh pr edit "$BRANCH_NAME" --title "Update verified atomics" --body "$PR_BODY"
+          else
+            gh pr create \
+              --base "${{ github.event.repository.default_branch }}" \
+              --head "$BRANCH_NAME" \
+              --title "Update verified atomics" \
+              --body "$PR_BODY"
+          fi

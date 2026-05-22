@@ -5,6 +5,7 @@ import sys
 import urllib.parse
 from collections import defaultdict
 from functools import partial
+from pathlib import Path
 from typing import Annotated
 
 import typer
@@ -18,6 +19,15 @@ from atomic_red_team.guid import (
 from atomic_red_team.labels import GithubAPI
 from atomic_red_team.models import Technique
 from atomic_red_team.validator import Validator, format_validation_error, yaml
+from atomic_red_team.verification import (
+    build_platform_matrix,
+    load_results,
+    merge_verification_results,
+    read_yaml,
+    seed_allowed_atomics,
+    targets_for_platform,
+    write_yaml,
+)
 
 app = typer.Typer(help="Atomic Red Team Maintenance tool CLI helper")
 
@@ -105,6 +115,78 @@ def validate():
                 else:
                     print(f"\n\t{error}\n")
         sys.exit(1)
+
+
+@app.command()
+def seed_allowed_atomics_file(
+    output: Annotated[
+        str,
+        typer.Option("--output"),
+    ] = "verification/allowed-atomics.yaml",
+):
+    """Generate the conservative GitHub-hosted atomic execution allowlist."""
+    write_yaml(Path(output), seed_allowed_atomics(Path(atomics_path)))
+
+
+@app.command()
+def build_verification_matrix(
+    allowed: Annotated[
+        str,
+        typer.Option("--allowed"),
+    ] = "verification/allowed-atomics.yaml",
+    output: Annotated[
+        str,
+        typer.Option("--output"),
+    ] = "-",
+):
+    """Build a GitHub Actions matrix for allowed atomic platforms."""
+    matrix = build_platform_matrix(read_yaml(Path(allowed)))
+    text = json.dumps(matrix, separators=(",", ":"))
+    if output == "-":
+        print(text)
+    else:
+        Path(output).write_text(text, encoding="utf-8")
+
+
+@app.command()
+def build_verification_targets(
+    platform: Annotated[str, typer.Option("--platform")],
+    output: Annotated[str, typer.Option("--output")],
+    allowed: Annotated[
+        str,
+        typer.Option("--allowed"),
+    ] = "verification/allowed-atomics.yaml",
+):
+    """Write per-platform verification targets for the PowerShell runner."""
+    targets = targets_for_platform(read_yaml(Path(allowed)), platform)
+    Path(output).write_text(json.dumps(targets, indent=2), encoding="utf-8")
+
+
+@app.command()
+def merge_verification_files(
+    results_dir: Annotated[str, typer.Option("--results-dir")],
+    allowed: Annotated[
+        str,
+        typer.Option("--allowed"),
+    ] = "verification/allowed-atomics.yaml",
+    verified: Annotated[
+        str,
+        typer.Option("--verified"),
+    ] = "verification/verified-atomics.yaml",
+    state: Annotated[
+        str,
+        typer.Option("--state"),
+    ] = "verification/verification-state.yaml",
+):
+    """Merge execution results into verified atomics and grace-period state."""
+    verified_data, state_data = merge_verification_results(
+        read_yaml(Path(allowed)),
+        read_yaml(Path(verified)),
+        read_yaml(Path(state)),
+        load_results(Path(results_dir)),
+    )
+    write_yaml(Path(verified), verified_data)
+    write_yaml(Path(state), state_data)
 
 
 if __name__ == "__main__":
