@@ -136,6 +136,9 @@ jobs:
             echo "No verification result artifacts found."
           fi
 
+      - name: Format verification YAML
+        run: python verification/format-yaml.py
+
       - name: Commit verification updates
         id: commit
         env:
