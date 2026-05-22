@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -10,6 +11,7 @@ import yaml
 from atomic_red_team.common import atomics_path
 
 HOSTED_PLATFORMS = {"linux", "macos", "windows"}
+DEFAULT_SHARD_COUNT = 4
 RUNNERS_BY_PLATFORM = {
     "linux": "ubuntu-latest",
     "macos": "macos-latest",
@@ -132,16 +134,42 @@ def allowed_atomic_entry(technique: str, test: dict[str, Any]) -> dict[str, Any]
     }
 
 
-def build_platform_matrix(allowed: dict[str, Any]) -> dict[str, list[dict[str, str]]]:
-    platforms = set()
+def shard_for_guid(guid: str, shard_count: int) -> int:
+    if shard_count < 1:
+        raise ValueError("shard_count must be at least 1")
+    digest = hashlib.sha256(guid.encode("utf-8")).hexdigest()
+    return int(digest, 16) % shard_count
+
+
+def build_platform_matrix(
+    allowed: dict[str, Any],
+    shard_count: int = DEFAULT_SHARD_COUNT,
+) -> dict[str, list[dict[str, Any]]]:
+    if shard_count < 1:
+        raise ValueError("shard_count must be at least 1")
+    shards_by_platform: dict[str, set[int]] = {}
     for atomic in allowed.get("atomics", []):
-        if isinstance(atomic, dict):
-            platforms.update(atomic.get("platforms", []))
-    include = [
-        {"platform": platform, "runner": RUNNERS_BY_PLATFORM[platform]}
-        for platform in sorted(platforms)
-        if platform in RUNNERS_BY_PLATFORM
-    ]
+        if not isinstance(atomic, dict):
+            continue
+        guid = atomic.get("guid")
+        if not isinstance(guid, str):
+            continue
+        for platform in atomic.get("platforms", []):
+            if platform in RUNNERS_BY_PLATFORM:
+                shards_by_platform.setdefault(platform, set()).add(
+                    shard_for_guid(guid, shard_count)
+                )
+    include = []
+    for platform in sorted(shards_by_platform):
+        for shard_index in sorted(shards_by_platform[platform]):
+            include.append(
+                {
+                    "platform": platform,
+                    "runner": RUNNERS_BY_PLATFORM[platform],
+                    "shard_index": shard_index,
+                    "shard_count": shard_count,
+                }
+            )
     return {"include": include}
 
 
@@ -149,18 +177,34 @@ def targets_for_platform(
     allowed: dict[str, Any],
     platform: str,
     atomics_dir: Path = Path(atomics_path),
+    shard_index: int | None = None,
+    shard_count: int = DEFAULT_SHARD_COUNT,
 ) -> dict[str, Any]:
+    if shard_count < 1:
+        raise ValueError("shard_count must be at least 1")
+    if shard_index is not None and not 0 <= shard_index < shard_count:
+        raise ValueError(
+            "shard_index must be greater than or equal to 0 and less than shard_count"
+        )
     atomics = []
     for atomic in allowed.get("atomics", []):
-        if isinstance(atomic, dict) and platform in atomic.get("platforms", []):
-            resolved = resolve_atomic_target(
-                atomics_dir,
-                atomic["technique"],
-                atomic["guid"],
-            )
-            resolved["platform"] = platform
-            atomics.append(resolved)
-    return {"version": 1, "platform": platform, "atomics": atomics}
+        if not isinstance(atomic, dict) or platform not in atomic.get("platforms", []):
+            continue
+        guid = atomic["guid"]
+        if shard_index is not None and shard_for_guid(guid, shard_count) != shard_index:
+            continue
+        resolved = resolve_atomic_target(
+            atomics_dir,
+            atomic["technique"],
+            guid,
+        )
+        resolved["platform"] = platform
+        atomics.append(resolved)
+    targets = {"version": 1, "platform": platform, "atomics": atomics}
+    if shard_index is not None:
+        targets["shard_index"] = shard_index
+        targets["shard_count"] = shard_count
+    return targets
 
 
 def resolve_atomic_target(
@@ -350,11 +394,14 @@ def main(argv: list[str] | None = None) -> int:
     matrix = subparsers.add_parser("build-matrix")
     matrix.add_argument("--allowed", default="verification/allowed-atomics.yaml")
     matrix.add_argument("--output", default="-")
+    matrix.add_argument("--shard-count", type=int, default=DEFAULT_SHARD_COUNT)
 
     targets = subparsers.add_parser("targets")
     targets.add_argument("--allowed", default="verification/allowed-atomics.yaml")
     targets.add_argument("--platform", required=True)
     targets.add_argument("--output", required=True)
+    targets.add_argument("--shard-index", type=int)
+    targets.add_argument("--shard-count", type=int, default=DEFAULT_SHARD_COUNT)
 
     merge = subparsers.add_parser("merge-results")
     merge.add_argument("--allowed", default="verification/allowed-atomics.yaml")
@@ -368,7 +415,10 @@ def main(argv: list[str] | None = None) -> int:
         write_yaml(Path(args.output), data)
         return 0
     if args.command == "build-matrix":
-        data = build_platform_matrix(read_yaml(Path(args.allowed)))
+        data = build_platform_matrix(
+            read_yaml(Path(args.allowed)),
+            shard_count=args.shard_count,
+        )
         text = json.dumps(data, separators=(",", ":"))
         if args.output == "-":
             print(text)
@@ -376,7 +426,12 @@ def main(argv: list[str] | None = None) -> int:
             Path(args.output).write_text(text, encoding="utf-8")
         return 0
     if args.command == "targets":
-        data = targets_for_platform(read_yaml(Path(args.allowed)), args.platform)
+        data = targets_for_platform(
+            read_yaml(Path(args.allowed)),
+            args.platform,
+            shard_index=args.shard_index,
+            shard_count=args.shard_count,
+        )
         Path(args.output).write_text(json.dumps(data, indent=2), encoding="utf-8")
         return 0
     if args.command == "merge-results":

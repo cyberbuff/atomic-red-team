@@ -10,6 +10,11 @@ on:
         required: false
         type: boolean
         default: false
+      shard_count:
+        description: "Number of parallel shards to split each platform across"
+        required: false
+        type: number
+        default: 4
 
 permissions:
   contents: write
@@ -17,6 +22,7 @@ permissions:
 
 env:
   PYTHONPATH: ${{ github.workspace }}
+  VERIFICATION_SHARD_COUNT: ${{ inputs.shard_count || 4 }}
 
 jobs:
   prepare:
@@ -47,7 +53,9 @@ jobs:
       - name: Build verification matrix
         id: matrix
         run: |
-          python atomic_red_team/runner.py build-verification-matrix --output matrix.json
+          python atomic_red_team/runner.py build-verification-matrix \
+            --shard-count "$VERIFICATION_SHARD_COUNT" \
+            --output matrix.json
           echo "matrix=$(cat matrix.json)" >> "$GITHUB_OUTPUT"
 
   verify:
@@ -56,6 +64,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    name: verify (${{ matrix.platform }} shard ${{ matrix.shard_index }})
     runs-on: ${{ matrix.runner }}
     steps:
       - name: Checkout repository
@@ -80,6 +89,8 @@ jobs:
         run: |
           python atomic_red_team/runner.py build-verification-targets `
             --platform "${{ matrix.platform }}" `
+            --shard-index "${{ matrix.shard_index }}" `
+            --shard-count "${{ matrix.shard_count }}" `
             --output targets.json
 
       - name: Run atomic verification
@@ -89,14 +100,14 @@ jobs:
         run: |
           ./verification/run-atomic-verification.ps1 `
             -TargetsPath targets.json `
-            -OutputPath "verification-results/${{ matrix.platform }}.json"
+            -OutputPath "verification-results/${{ matrix.platform }}-${{ matrix.shard_index }}.json"
 
       - name: Upload verification results
         if: ${{ always() }}
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
-          name: atomic-results-${{ matrix.platform }}
-          path: verification-results/${{ matrix.platform }}.json
+          name: atomic-results-${{ matrix.platform }}-${{ matrix.shard_index }}
+          path: verification-results/${{ matrix.platform }}-${{ matrix.shard_index }}.json
           if-no-files-found: warn
 
       - name: Fail on atomic execution failure

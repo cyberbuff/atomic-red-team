@@ -20,6 +20,7 @@ from atomic_red_team.labels import GithubAPI
 from atomic_red_team.models import Technique
 from atomic_red_team.validator import Validator, format_validation_error, yaml
 from atomic_red_team.verification import (
+    DEFAULT_SHARD_COUNT,
     build_platform_matrix,
     load_results,
     merge_verification_results,
@@ -138,9 +139,13 @@ def build_verification_matrix(
         str,
         typer.Option("--output"),
     ] = "-",
+    shard_count: Annotated[
+        int,
+        typer.Option("--shard-count"),
+    ] = DEFAULT_SHARD_COUNT,
 ):
     """Build a GitHub Actions matrix for allowed atomic platforms."""
-    matrix = build_platform_matrix(read_yaml(Path(allowed)))
+    matrix = build_platform_matrix(read_yaml(Path(allowed)), shard_count=shard_count)
     text = json.dumps(matrix, separators=(",", ":"))
     if output == "-":
         print(text)
@@ -156,9 +161,22 @@ def build_verification_targets(
         str,
         typer.Option("--allowed"),
     ] = "verification/allowed-atomics.yaml",
+    shard_index: Annotated[
+        int | None,
+        typer.Option("--shard-index"),
+    ] = None,
+    shard_count: Annotated[
+        int,
+        typer.Option("--shard-count"),
+    ] = DEFAULT_SHARD_COUNT,
 ):
     """Write per-platform verification targets for the PowerShell runner."""
-    targets = targets_for_platform(read_yaml(Path(allowed)), platform)
+    targets = targets_for_platform(
+        read_yaml(Path(allowed)),
+        platform,
+        shard_index=shard_index,
+        shard_count=shard_count,
+    )
     Path(output).write_text(json.dumps(targets, indent=2), encoding="utf-8")
 
 

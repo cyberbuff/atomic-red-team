@@ -4,6 +4,7 @@ from atomic_red_team.verification import (
     build_platform_matrix,
     merge_verification_results,
     seed_allowed_atomics,
+    shard_for_guid,
     targets_for_platform,
 )
 
@@ -200,13 +201,88 @@ def test_build_platform_matrix_uses_github_hosted_runners():
         ],
     }
 
-    matrix = build_platform_matrix(allowed)
+    matrix = build_platform_matrix(allowed, shard_count=2)
 
-    assert matrix == {
-        "include": [
-            {"platform": "linux", "runner": "ubuntu-latest"},
-            {"platform": "windows", "runner": "windows-latest"},
-        ]
+    assert matrix["include"] == [
+        {
+            "platform": "linux",
+            "runner": "ubuntu-latest",
+            "shard_index": shard_for_guid(
+                "11111111-1111-4111-8111-111111111111",
+                2,
+            ),
+            "shard_count": 2,
+        },
+        {
+            "platform": "windows",
+            "runner": "windows-latest",
+            "shard_index": shard_for_guid(
+                "22222222-2222-4222-8222-222222222222",
+                2,
+            ),
+            "shard_count": 2,
+        },
+    ]
+
+
+def test_targets_for_platform_filters_to_requested_shard(tmp_path):
+    write_atomic(
+        tmp_path / "T1002" / "T1002.yaml",
+        """
+attack_technique: T1002
+display_name: Sharded Examples
+atomic_tests:
+- name: first safe command
+  auto_generated_guid: 11111111-1111-4111-8111-111111111111
+  description: Runs locally and cleans up.
+  supported_platforms:
+  - linux
+  executor:
+    name: sh
+    command: echo first
+    cleanup_command: echo clean
+- name: second safe command
+  auto_generated_guid: 22222222-2222-4222-8222-222222222222
+  description: Runs locally and cleans up.
+  supported_platforms:
+  - linux
+  executor:
+    name: sh
+    command: echo second
+    cleanup_command: echo clean
+""",
+    )
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1002",
+                "platforms": ["linux"],
+            },
+            {
+                "guid": "22222222-2222-4222-8222-222222222222",
+                "technique": "T1002",
+                "platforms": ["linux"],
+            },
+        ],
+    }
+
+    shard_index = shard_for_guid("11111111-1111-4111-8111-111111111111", 2)
+    targets = targets_for_platform(
+        allowed,
+        "linux",
+        tmp_path,
+        shard_index=shard_index,
+        shard_count=2,
+    )
+
+    assert targets["shard_index"] == shard_index
+    assert targets["shard_count"] == 2
+    assert {atomic["guid"] for atomic in targets["atomics"]} == {
+        atomic["guid"]
+        for atomic in allowed["atomics"]
+        if shard_for_guid(atomic["guid"], 2) == shard_index
     }
 
 
