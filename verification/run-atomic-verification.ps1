@@ -72,6 +72,32 @@ function Invoke-AtomicStage {
   Invoke-AtomicTest $Target.technique @arguments
 }
 
+function Write-AtomicProgressLog {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Platform,
+
+    [Parameter(Mandatory = $true)]
+    [object]$Target,
+
+    [Parameter(Mandatory = $true)]
+    [int]$CurrentTarget,
+
+    [Parameter(Mandatory = $true)]
+    [int]$TotalTargets,
+
+    [Parameter(Mandatory = $true)]
+    [int]$PercentComplete
+  )
+
+  $barWidth = 20
+  $filledWidth = [math]::Floor(($PercentComplete / 100) * $barWidth)
+  $emptyWidth = $barWidth - $filledWidth
+  $bar = ("#" * $filledWidth) + ("-" * $emptyWidth)
+  Write-Host "[$bar] $PercentComplete% ($CurrentTarget/$TotalTargets) " `
+    "$Platform $($Target.atomic_id) - $($Target.name)"
+}
+
 $targetsDocument = Get-Content -Raw -Path $TargetsPath | ConvertFrom-Json
 $results = [System.Collections.Generic.List[object]]::new()
 $runId = if ($env:GITHUB_RUN_ID) { $env:GITHUB_RUN_ID } else { "local" }
@@ -92,6 +118,12 @@ for ($index = 0; $index -lt $totalTargets; $index++) {
   Write-Progress `
     -Activity "Verifying atomics for $($targetsDocument.platform)" `
     -Status "[$currentTarget/$totalTargets] $($target.atomic_id) - $($target.name)" `
+    -PercentComplete $percentComplete
+  Write-AtomicProgressLog `
+    -Platform $targetsDocument.platform `
+    -Target $target `
+    -CurrentTarget $currentTarget `
+    -TotalTargets $totalTargets `
     -PercentComplete $percentComplete
 
   $stages = [System.Collections.Generic.List[object]]::new()
