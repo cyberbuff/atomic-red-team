@@ -2605,10 +2605,6 @@ atomics:
   technique: T1055.001
   platforms:
   - windows
-- guid: 748cb4f6-2fb3-4e97-b7ad-b22635a09ab0
-  technique: T1218.003
-  platforms:
-  - windows
 - guid: 74ace21e-a31c-4f7d-b540-53e4eb6d1f73
   technique: T1021.001
   platforms:
