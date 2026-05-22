@@ -10,7 +10,6 @@ param(
   [string]$InvokeAtomicVersion = "2.3.0"
 )
 
-Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 function Add-Stage {
