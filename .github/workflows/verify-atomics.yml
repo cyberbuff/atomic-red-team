@@ -156,6 +156,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           gh auth setup-git
 
+          git fetch origin "$BRANCH_NAME" || true
+
+          if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH_NAME"; then
+            git checkout -B "$BRANCH_NAME" "origin/$BRANCH_NAME"
+          else
+            git checkout -B "$BRANCH_NAME"
+          fi
+
           git add \
             verification/allowed-atomics.yaml \
             verification/verified-atomics.yaml \
@@ -166,9 +174,8 @@ jobs:
             exit 0
           fi
 
-          git checkout -B "$BRANCH_NAME"
           git commit -m "Update verified atomics"
-          git push --force-with-lease origin "$BRANCH_NAME"
+          git push --force-with-lease origin HEAD:"$BRANCH_NAME"
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Open verification results pull request
