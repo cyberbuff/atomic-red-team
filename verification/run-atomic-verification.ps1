@@ -84,7 +84,16 @@ Install-Module `
   -AllowClobber
 Import-Module Invoke-AtomicRedTeam -RequiredVersion $InvokeAtomicVersion -Force
 
-foreach ($target in $targetsDocument.atomics) {
+$totalTargets = @($targetsDocument.atomics).Count
+for ($index = 0; $index -lt $totalTargets; $index++) {
+  $target = $targetsDocument.atomics[$index]
+  $currentTarget = $index + 1
+  $percentComplete = [math]::Round(($currentTarget / $totalTargets) * 100, 0)
+  Write-Progress `
+    -Activity "Verifying atomics for $($targetsDocument.platform)" `
+    -Status "[$currentTarget/$totalTargets] $($target.atomic_id) - $($target.name)" `
+    -PercentComplete $percentComplete
+
   $stages = [System.Collections.Generic.List[object]]::new()
   $status = "failed"
   $errorMessage = ""
@@ -138,6 +147,7 @@ foreach ($target in $targetsDocument.atomics) {
       stages = $stages
     })
 }
+Write-Progress -Activity "Verifying atomics for $($targetsDocument.platform)" -Completed
 
 $output = [ordered]@{
   version = 1
