@@ -168,8 +168,9 @@ def merge_verification_results(
                 {
                     "consecutive_failures": 0,
                     "last_status": "passed",
-                    "last_run_at": result.get("verified_at"),
-                    "last_run_id": result.get("run_id"),
+                    "exit_code": result.get("exit_code", 0),
+                    "stdout": result.get("stdout", ""),
+                    "stderr": result.get("stderr", ""),
                 }
             )
             platform_state.pop("last_error", None)
@@ -180,9 +181,10 @@ def merge_verification_results(
                 {
                     "consecutive_failures": failures,
                     "last_status": "failed",
-                    "last_run_at": result.get("verified_at"),
-                    "last_run_id": result.get("run_id"),
                     "last_error": result.get("error", ""),
+                    "exit_code": result.get("exit_code", 1),
+                    "stdout": result.get("stdout", ""),
+                    "stderr": result.get("stderr", ""),
                 }
             )
             if failures >= 2:
@@ -200,10 +202,70 @@ def merge_verification_results(
         ),
     }
     state_data = {
-        "version": 1,
+        "version": 2,
+        **latest_run_metadata(state, results),
         "atomics": sorted(state_by_guid.values(), key=lambda atomic: atomic["guid"]),
     }
     return verified_data, state_data
+
+
+def latest_run_metadata(
+    previous_state: dict[str, Any],
+    results: list[dict[str, Any]],
+) -> dict[str, Any]:
+    run_times = [
+        str(result["verified_at"])
+        for result in results
+        if isinstance(result.get("verified_at"), str)
+    ]
+    run_ids = [
+        str(result["run_id"])
+        for result in results
+        if isinstance(result.get("run_id"), str | int)
+    ]
+    metadata: dict[str, Any] = {}
+    platform_metadata: dict[str, Any] = {}
+    if run_times:
+        metadata["last_run_at"] = max(run_times)
+    elif "last_run_at" in previous_state:
+        metadata["last_run_at"] = previous_state["last_run_at"]
+    else:
+        platform_metadata = latest_platform_run_metadata(previous_state)
+        if "last_run_at" in platform_metadata:
+            metadata["last_run_at"] = platform_metadata["last_run_at"]
+    if run_ids:
+        metadata["last_run_id"] = run_ids[0]
+    elif "last_run_id" in previous_state:
+        metadata["last_run_id"] = previous_state["last_run_id"]
+    elif "last_run_id" in platform_metadata:
+        metadata["last_run_id"] = platform_metadata["last_run_id"]
+    return metadata
+
+
+def latest_platform_run_metadata(previous_state: dict[str, Any]) -> dict[str, Any]:
+    latest_run_at = None
+    latest_run_id = None
+    for atomic in previous_state.get("atomics", []):
+        if not isinstance(atomic, dict):
+            continue
+        platforms = atomic.get("platforms", {})
+        if not isinstance(platforms, dict):
+            continue
+        for platform_state in platforms.values():
+            if not isinstance(platform_state, dict):
+                continue
+            last_run_at = platform_state.get("last_run_at")
+            if not isinstance(last_run_at, str):
+                continue
+            if latest_run_at is None or last_run_at > latest_run_at:
+                latest_run_at = last_run_at
+                latest_run_id = platform_state.get("last_run_id")
+    metadata: dict[str, Any] = {}
+    if latest_run_at is not None:
+        metadata["last_run_at"] = latest_run_at
+    if isinstance(latest_run_id, str | int):
+        metadata["last_run_id"] = str(latest_run_id)
+    return metadata
 
 
 def index_verified(verified: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -223,11 +285,28 @@ def index_state(state: dict[str, Any]) -> dict[str, dict[str, Any]]:
     indexed = {}
     for atomic in state.get("atomics", []):
         if isinstance(atomic, dict) and atomic.get("guid"):
+            platforms = atomic.get("platforms", {})
+            if not isinstance(platforms, dict):
+                platforms = {}
             indexed[atomic["guid"]] = {
                 "guid": atomic["guid"],
-                "platforms": dict(atomic.get("platforms", {})),
+                "platforms": {
+                    platform: normalize_platform_state(platform_state)
+                    for platform, platform_state in platforms.items()
+                    if isinstance(platform_state, dict)
+                },
             }
     return indexed
+
+
+def normalize_platform_state(platform_state: dict[str, Any]) -> dict[str, Any]:
+    normalized = dict(platform_state)
+    normalized.pop("last_run_at", None)
+    normalized.pop("last_run_id", None)
+    normalized.setdefault("exit_code", 0)
+    normalized.setdefault("stdout", "")
+    normalized.setdefault("stderr", "")
+    return normalized
 
 
 def add_verified_platform(

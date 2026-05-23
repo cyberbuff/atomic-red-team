@@ -12,6 +12,22 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+function Get-FileText {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Path
+  )
+
+  if (-not (Test-Path -Path $Path)) {
+    return ""
+  }
+  $text = Get-Content -Raw -Path $Path
+  if ($null -eq $text) {
+    return ""
+  }
+  return $text
+}
+
 function Add-Stage {
   param(
     [System.Collections.Generic.List[object]]$Stages,
@@ -24,14 +40,34 @@ function Add-Stage {
   )
 
   $started = Get-Date
+  $stdoutPath = [System.IO.Path]::GetTempFileName()
+  $stderrPath = [System.IO.Path]::GetTempFileName()
   try {
-    & $ScriptBlock *> $null
+    $LASTEXITCODE = 0
+    & $ScriptBlock 1> $stdoutPath 2> $stderrPath
+    $stageExitCode = [int]$LASTEXITCODE
+    if ($stageExitCode -eq 0) {
+      $Stages.Add([ordered]@{
+          name = $Name
+          status = "passed"
+          duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
+          exit_code = 0
+          stdout = Get-FileText -Path $stdoutPath
+          stderr = Get-FileText -Path $stderrPath
+        })
+      return $true
+    }
+
     $Stages.Add([ordered]@{
         name = $Name
-        status = "passed"
+        status = "failed"
         duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
+        error = "Command exited with code $stageExitCode"
+        exit_code = $stageExitCode
+        stdout = Get-FileText -Path $stdoutPath
+        stderr = Get-FileText -Path $stderrPath
       })
-    return $true
+    return $false
   }
   catch {
     $Stages.Add([ordered]@{
@@ -39,8 +75,14 @@ function Add-Stage {
         status = "failed"
         duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
         error = $_.Exception.Message
+        exit_code = 1
+        stdout = Get-FileText -Path $stdoutPath
+        stderr = Get-FileText -Path $stderrPath
       })
     return $false
+  }
+  finally {
+    Remove-Item -Force -ErrorAction SilentlyContinue -Path $stdoutPath, $stderrPath
   }
 }
 
@@ -164,6 +206,12 @@ for ($index = 0; $index -lt $totalTargets; $index++) {
   if ($failedStage) {
     $errorMessage = $failedStage.error
   }
+  $exitCode = 0
+  if ($failedStage) {
+    $exitCode = $failedStage.exit_code
+  }
+  $stdout = (($stages | ForEach-Object { $_.stdout }) | Where-Object { $_ }) -join "`n"
+  $stderr = (($stages | ForEach-Object { $_.stderr }) | Where-Object { $_ }) -join "`n"
 
   $results.Add([ordered]@{
       guid = $target.guid
@@ -176,6 +224,9 @@ for ($index = 0; $index -lt $totalTargets; $index++) {
       verified_at = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
       run_id = $runId
       error = $errorMessage
+      exit_code = $exitCode
+      stdout = $stdout
+      stderr = $stderr
       stages = $stages
     })
 }

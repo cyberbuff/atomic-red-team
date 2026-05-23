@@ -7,6 +7,8 @@ from atomic_red_team.verification import (
     targets_for_platform,
 )
 
+RUNNER_SCRIPT = Path("verification/run-atomic-verification.ps1")
+
 
 def write_atomic(path: Path, body: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -317,3 +319,176 @@ def test_merge_results_applies_failure_grace_period():
         }
     ]
     assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 0
+
+
+def test_merge_results_writes_run_metadata_and_output_to_state():
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1000",
+                "platforms": ["linux"],
+            }
+        ],
+    }
+    verified = {"version": 1, "atomics": []}
+    state = {"version": 1, "atomics": []}
+
+    verified, state = merge_verification_results(
+        allowed,
+        verified,
+        state,
+        [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platform": "linux",
+                "status": "passed",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_at": "2026-05-22T09:00:00Z",
+                "run_id": "4",
+                "exit_code": 0,
+                "stdout": "command output\n",
+                "stderr": "warning output\n",
+            }
+        ],
+    )
+
+    assert verified["version"] == 1
+    assert state["version"] == 2
+    assert state["last_run_at"] == "2026-05-22T09:00:00Z"
+    assert state["last_run_id"] == "4"
+    platform_state = state["atomics"][0]["platforms"]["linux"]
+    assert platform_state == {
+        "consecutive_failures": 0,
+        "last_status": "passed",
+        "exit_code": 0,
+        "stdout": "command output\n",
+        "stderr": "warning output\n",
+    }
+
+
+def test_merge_results_removes_platform_run_metadata_from_existing_state():
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1000",
+                "platforms": ["linux"],
+            }
+        ],
+    }
+    verified = {"version": 1, "atomics": []}
+    state = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platforms": {
+                    "linux": {
+                        "consecutive_failures": 1,
+                        "last_status": "failed",
+                        "last_run_at": "2026-05-15T09:00:00Z",
+                        "last_run_id": "3",
+                        "last_error": "old failure",
+                    }
+                },
+            }
+        ],
+    }
+
+    _, state = merge_verification_results(
+        allowed,
+        verified,
+        state,
+        [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platform": "linux",
+                "status": "failed",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_at": "2026-05-22T09:00:00Z",
+                "run_id": "4",
+                "error": "new failure",
+                "exit_code": 7,
+                "stdout": "",
+                "stderr": "new stderr",
+            }
+        ],
+    )
+
+    platform_state = state["atomics"][0]["platforms"]["linux"]
+    assert "last_run_at" not in platform_state
+    assert "last_run_id" not in platform_state
+    assert platform_state["last_error"] == "new failure"
+    assert platform_state["exit_code"] == 7
+    assert platform_state["stdout"] == ""
+    assert platform_state["stderr"] == "new stderr"
+
+
+def test_merge_results_promotes_existing_platform_run_metadata_when_no_results():
+    allowed = {"version": 1, "atomics": []}
+    verified = {"version": 1, "atomics": []}
+    state = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platforms": {
+                    "linux": {
+                        "consecutive_failures": 0,
+                        "last_status": "passed",
+                        "last_run_at": "2026-05-15T09:00:00Z",
+                        "last_run_id": "3",
+                    },
+                    "macos": {
+                        "consecutive_failures": 0,
+                        "last_status": "passed",
+                        "last_run_at": "2026-05-22T09:00:00Z",
+                        "last_run_id": "4",
+                    },
+                },
+            }
+        ],
+    }
+
+    _, state = merge_verification_results(allowed, verified, state, [])
+
+    assert state["last_run_at"] == "2026-05-22T09:00:00Z"
+    assert state["last_run_id"] == "4"
+    platform_state = state["atomics"][0]["platforms"]["macos"]
+    assert "last_run_at" not in platform_state
+    assert "last_run_id" not in platform_state
+    assert platform_state["exit_code"] == 0
+
+
+def test_runner_captures_stage_output_and_emits_result_streams():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "& $ScriptBlock *> $null" not in script
+    assert "stdout = Get-FileText -Path $stdoutPath" in script
+    assert "stderr = Get-FileText -Path $stderrPath" in script
+    assert "stdout = $stdout" in script
+    assert "stderr = $stderr" in script
+
+
+def test_runner_calculates_stage_status_from_exit_code():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "$LASTEXITCODE = 0" in script
+    assert "$stageExitCode = [int]$LASTEXITCODE" in script
+    assert "if ($stageExitCode -eq 0)" in script
+    assert "Command exited with code $stageExitCode" in script
+
+
+def test_runner_emits_stage_and_result_exit_codes():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "exit_code = 0" in script
+    assert "exit_code = $stageExitCode" in script
+    assert "$exitCode = 0" in script
+    assert "$exitCode = $failedStage.exit_code" in script
+    assert "exit_code = $exitCode" in script
