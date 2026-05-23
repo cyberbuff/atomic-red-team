@@ -2,12 +2,11 @@
   "guid": "d7c03c7e-31cd-43c7-859a-ec053f73b23a",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\nPrerequisites met: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\nReal filename on disk: C:\\Users\\runneradmin\\Desktop\\evil_batch?fdp.bat\r\nDisplays in explorer as: evil_batchtab.pdf\r\nExit code: 0\r\nDone executing test: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\nDone executing cleanup for test: \r\nT1036.002-1 Masquerading: Right-to-Left Override Batch File Creation and Execution\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4fh014.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

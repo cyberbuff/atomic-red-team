@@ -9,7 +9,7 @@
       "exit_code": 0
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1036.006-2 Space After Filename\n\nPrerequisites met: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1036.006-2 Space After Filename\n\nsh: /usr/bin/echo: No such file or directory\ntestdirwithspaceend /init : No such file or directory\nchmod: testdirwithspaceend /init : No such file or directory\nsh: ./testdirwithspaceend /init : No such file or directory\nExit code: 127\nDone executing test: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1036.006-2 Space After Filename\n\nDone executing cleanup for test: \nT1036.006-2 Space After Filename\n\n",
       "stderr": "",

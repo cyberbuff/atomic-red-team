@@ -2,12 +2,12 @@
   "guid": "a8568b10-9ab9-4140-a523-1c72e0176924",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1222.001-6 SubInAcl Execution\r\n\r\nPrerequisites not met: T1222.001-6 SubInAcl Execution\r\n\t[*] Download subinacl\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1222.001-6 SubInAcl Execution\r\n\r\n'C:\\Program' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nExit code: 1\r\nDone executing test: \r\nT1222.001-6 SubInAcl Execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1222.001-6 SubInAcl Execution\r\n\r\nDone executing cleanup for test: \r\nT1222.001-6 SubInAcl Execution\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpdwyyt5.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

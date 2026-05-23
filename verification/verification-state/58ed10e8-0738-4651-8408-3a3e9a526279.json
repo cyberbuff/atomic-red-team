@@ -2,12 +2,11 @@
   "guid": "58ed10e8-0738-4651-8408-3a3e9a526279",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\nPrerequisites met: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\nException calling \"GetCurrentForest\" with \"0\" argument(s): \"Current security context is not associated with an Active \r\nDirectory domain or forest.\"\r\nAt line:4344 char:13\r\n+             $ForestObject = [System.DirectoryServices.ActiveDirectory ...\r\n+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\r\n    + FullyQualifiedErrorId : ActiveDirectoryOperationException\r\nExit code: 0\r\nDone executing test: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\nDone executing cleanup for test: \r\nT1482-7 Get-ForestTrust with PowerView\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpc5odaj.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

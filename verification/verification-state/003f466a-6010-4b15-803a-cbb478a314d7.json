@@ -2,12 +2,11 @@
   "guid": "003f466a-6010-4b15-803a-cbb478a314d7",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\nPrerequisites met: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\nDone executing cleanup for test: \r\nT1112-36 Disable Windows Toast Notifications\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzd4jkg.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

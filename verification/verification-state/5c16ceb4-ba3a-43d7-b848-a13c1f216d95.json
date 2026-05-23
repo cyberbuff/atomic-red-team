@@ -2,12 +2,11 @@
   "guid": "5c16ceb4-ba3a-43d7-b848-a13c1f216d95",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\nPrerequisites met: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\r\nExit code: -1\r\nDone executing test: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\nDone executing cleanup for test: \r\nT1082-23 WinPwn - PowerSharpPack - Seatbelt\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpdwcalh.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

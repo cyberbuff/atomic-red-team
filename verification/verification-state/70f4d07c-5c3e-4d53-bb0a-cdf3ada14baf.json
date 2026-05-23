@@ -2,12 +2,11 @@
   "guid": "70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1105-21 MAZE Propagation Script\r\n\r\nPrerequisites not met: T1105-21 MAZE Propagation Script\r\n\t[*] Machine list must exist at specified location (\"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\T1105MachineList.txt\")\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1105-21 MAZE Propagation Script\r\n\r\nget-content : Cannot find path 'D:\\a\\atomic-red-team\\atomic-red-team\\ExternalPayloads\\T1105MachineList.txt' because it \r\ndoes not exist.\r\nAt line:4 char:22\r\n+ foreach ($machine in get-content -path \"$machine_list\")\r\n+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (D:\\a\\atomic-red...MachineList.txt:String) [Get-Content], ItemNotFoundEx \r\n   ception\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand\r\nExit code: 0\r\nDone executing test: \r\nT1105-21 MAZE Propagation Script\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1105-21 MAZE Propagation Script\r\n\r\nDone executing cleanup for test: \r\nT1105-21 MAZE Propagation Script\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnrzu1c.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

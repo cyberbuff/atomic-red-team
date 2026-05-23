@@ -2,7 +2,7 @@
   "guid": "3b7015f2-3144-4205-b799-b05580621379",
   "platforms": {
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1564.001-5 Hidden files\n\nPrerequisites met: \nT1564.001-5 Hidden files\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1564.001-5 Hidden files\n\nERROR: File Not Found. (-43)  on file: /tmp/evil\nExit code: 2\nDone executing test: \nT1564.001-5 Hidden files\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1564.001-5 Hidden files\n\nDone executing cleanup for test: \nT1564.001-5 Hidden files\n\n",
       "stderr": "",

@@ -2,12 +2,11 @@
   "guid": "e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\nPrerequisites met: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\nget-wmiobject : Invalid query \"select * from ds_computer\"\r\nAt line:1 char:10\r\n+ & {try { get-wmiobject -class ds_computer -namespace root\\directory\\l ...\r\n+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidArgument: (:) [Get-WmiObject], ManagementException\r\n    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.GetWmiObjectCommand\r\nExit code: -2146233087\r\nDone executing test: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\nDone executing cleanup for test: \r\nT1018-20 Get-WmiObject to Enumerate Domain Controllers\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpoxa1vy.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

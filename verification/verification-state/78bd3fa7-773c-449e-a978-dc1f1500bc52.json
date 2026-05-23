@@ -9,7 +9,7 @@
       "exit_code": 0
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.004-5 Go compile\n\nPrerequisites met: \nT1027.004-5 Go compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.004-5 Go compile\n\nsh: go: command not found\nExit code: 127\nDone executing test: \nT1027.004-5 Go compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.004-5 Go compile\n\nDone executing cleanup for test: \nT1027.004-5 Go compile\n\n",
       "stderr": "",

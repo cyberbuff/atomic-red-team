@@ -2,12 +2,12 @@
   "guid": "a8206bcc-f282-40a9-a389-05d9c0263485",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\r\nPrerequisites not met: T1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\t[*] Test requrires a file to modify to be located at (%temp%\\T1222.001_cacls)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\r\nSuccessfully processed 0 files; Failed processing 1 files\r\nC:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\T1222.001_cacls: The system cannot find the file specified.\r\nExit code: 2\r\nDone executing test: \r\nT1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\r\nDone executing cleanup for test: \r\nT1222.001-2 cacls - Grant permission to specified user or group recursively\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpccfwtk.tmp' because it is being used by another process."
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
     }
   }
 }

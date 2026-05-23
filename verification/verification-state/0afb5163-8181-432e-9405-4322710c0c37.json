@@ -2,12 +2,12 @@
   "guid": "0afb5163-8181-432e-9405-4322710c0c37",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\nPrerequisites met: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\nThe request will be processed at a domain controller for domain WORKGROUP.\r\nThe request will be processed at a domain controller for domain WORKGROUP.\r\nThe request will be processed at a domain controller for domain WORKGROUP.\r\nSystem error 1355 has occurred.\r\nThe specified domain either does not exist or could not be contacted.\r\nSystem error 1355 has occurred.\r\nThe specified domain either does not exist or could not be contacted.\r\nThe syntax of this command is:\r\nNET GROUP\r\n             groupname {/ADD [/COMMENT:\"text\"] | /DELETE}  [/DOMAIN]\r\n             groupname username [...] {/ADD | /DELETE} [/DOMAIN]\r\n[groupname [/COMMENT:\"text\"]] [/DOMAIN]\r\nSystem error 1355 has occurred.\r\nThe specified domain either does not exist or could not be contacted.\r\nExit code: 2\r\nDone executing test: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\nDone executing cleanup for test: \r\nT1069.002-3 Elevated group enumeration using net group (Domain)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpridbfi.tmp' because it is being used by another process."
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
     }
   }
 }

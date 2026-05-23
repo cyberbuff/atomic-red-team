@@ -2,12 +2,11 @@
   "guid": "69f50a5f-967c-4327-a5bb-e1a9a9983785",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\nPrerequisites met: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\nExit code: 0\r\nDone executing test: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\nDone executing cleanup for test: \r\nT1070.004-10 Delete TeamViewer Log Files\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmph5m504.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

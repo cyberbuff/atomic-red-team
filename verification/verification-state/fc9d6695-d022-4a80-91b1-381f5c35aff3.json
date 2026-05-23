@@ -2,7 +2,7 @@
   "guid": "fc9d6695-d022-4a80-91b1-381f5c35aff3",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nPrerequisites met: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nchmod: cannot access '/tmp/AtomicRedTeam/atomics/T1222.002': No such file or directory\nExit code: 1\nDone executing test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nDone executing cleanup for test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n",
       "stderr": "",
@@ -10,7 +10,7 @@
       "last_error": "Command exited with code 1"
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nPrerequisites met: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nchmod: /tmp/AtomicRedTeam/atomics/T1222.002: No such file or directory\nExit code: 1\nDone executing test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\nDone executing cleanup for test: \nT1222.002-2 chmod - Change file or folder mode (symbolic mode)\n\n",
       "stderr": "",

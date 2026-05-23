@@ -2,12 +2,12 @@
   "guid": "280812c8-4dae-43e9-a74e-1d08ab997c0e",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\r\nPrerequisites not met: T1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\t[*] Check if we have plink\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\r\nThe system cannot find the path specified.\r\nExit code: 255\r\nDone executing test: \r\nT1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\r\nThe system cannot find the path specified.\r\nDone executing cleanup for test: \r\nT1021.004-2 ESXi - Enable SSH via VIM-CMD\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplkq0uk.tmp' because it is being used by another process."
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
     }
   }
 }

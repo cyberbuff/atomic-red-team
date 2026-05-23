@@ -2,12 +2,11 @@
   "guid": "8ecef16d-d289-46b4-917b-0dba6dc81cf1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\r\nPrerequisites not met: T1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\t[*] lsass_lib.dll must exist on disk at specified location (D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\lsass_lib.dll)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\r\nLsaDbExtPt   : D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\lsass_lib.dll\r\nPSPath       : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\NTDS\r\nPSParentPath : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\r\nPSChildName  : NTDS\r\nPSDrive      : HKLM\r\nPSProvider   : Microsoft.PowerShell.Core\\Registry\r\nExit code: 0\r\nDone executing test: \r\nT1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\r\nDone executing cleanup for test: \r\nT1547.008-1 Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwz2ddi.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

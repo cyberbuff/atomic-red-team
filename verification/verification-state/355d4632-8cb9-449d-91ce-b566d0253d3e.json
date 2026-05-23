@@ -2,12 +2,11 @@
   "guid": "355d4632-8cb9-449d-91ce-b566d0253d3e",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.001-1 RDP to DomainController\r\n\r\nPrerequisites not met: T1021.001-1 RDP to DomainController\r\n\t[*] Computer must be domain joined\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.001-1 RDP to DomainController\r\n\r\nCMDKEY: Credential added successfully.\r\nRDP connection established\r\nExit code: 0\r\nDone executing test: \r\nT1021.001-1 RDP to DomainController\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.001-1 RDP to DomainController\r\n\r\nDone executing cleanup for test: \r\nT1021.001-1 RDP to DomainController\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgycids.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

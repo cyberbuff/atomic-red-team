@@ -2,12 +2,11 @@
   "guid": "b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\nPrerequisites met: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\nHive: HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\r\nName                           Property                                                                                \r\n----                           --------                                                                                \r\nRun\r\nExit code: 0\r\nDone executing test: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\nDone executing cleanup for test: \r\nT1547.001-13 HKLM - Policy Settings Explorer Run Key\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpo10b50.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

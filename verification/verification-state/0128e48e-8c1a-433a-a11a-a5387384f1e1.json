@@ -2,12 +2,11 @@
   "guid": "0128e48e-8c1a-433a-a11a-a5387384f1e1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\nPrerequisites met: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\n[+] Vulnerable dll base address: 0000000210040000\r\n[+] Shellcode address: 00007ff743828000\r\n[+] RWX section address: 000000021022c000\r\n[+] Shellcode size: 4194\r\n[+] Thread was terminated.\r\n[+] WRX injection successful. \r\n[+] Thread exited with code: 259\r\nExit code: 0\r\nDone executing test: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\nDone executing cleanup for test: \r\nT1055-5 Read-Write-Execute process Injection\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpdkalbj.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

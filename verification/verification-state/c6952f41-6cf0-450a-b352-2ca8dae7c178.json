@@ -2,12 +2,11 @@
   "guid": "c6952f41-6cf0-450a-b352-2ca8dae7c178",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1055-3 Section View Injection\r\n\r\nPrerequisites met: \r\nT1055-3 Section View Injection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1055-3 Section View Injection\r\n\r\nExit code: 0\r\nDone executing test: \r\nT1055-3 Section View Injection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1055-3 Section View Injection\r\n\r\nStop-Process : Cannot bind argument to parameter 'Id' because it is null.\r\nAt line:1 char:17\r\n+ & {Stop-Process $notepad.pid}\r\n+                 ~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcess \r\n   Command\r\nDone executing cleanup for test: \r\nT1055-3 Section View Injection\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpksoxpn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "8b8a6449-be98-4f42-afd2-dedddc7453b2",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\nPrerequisites met: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\nThe request will be processed at a domain controller for domain WORKGROUP.\r\nObjectClass Name                             PrincipalSource\r\n----------- ----                             ---------------\r\nGroup       NT AUTHORITY\\Authenticated Users Unknown        \r\nGroup       NT AUTHORITY\\INTERACTIVE         Unknown\r\nSystem error 1355 has occurred.\r\nThe specified domain either does not exist or could not be contacted.\r\nget-aduser : The term 'get-aduser' is not recognized as the name of a cmdlet, function, script file, or operable \r\nprogram. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:3 char:1\r\n+ get-aduser -filter *}\r\n+ ~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (get-aduser:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\nDone executing cleanup for test: \r\nT1087.002-2 Enumerate all accounts via PowerShell (Domain)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpkyf2jo.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

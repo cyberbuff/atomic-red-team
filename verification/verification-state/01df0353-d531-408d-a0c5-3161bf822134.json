@@ -2,12 +2,11 @@
   "guid": "01df0353-d531-408d-a0c5-3161bf822134",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\n1\r\nPrerequisites met: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\nVolume in drive C is Windows\r\n Volume Serial Number is 2498-A7BD\r\n Directory of C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp\\victim-files\r\n05/23/2026  02:08 AM    <DIR>          .\r\n05/23/2026  02:08 AM    <DIR>          ..\r\n05/23/2026  02:08 AM                33 encrypted_file.txt\r\n               1 File(s)             33 bytes\r\n               2 Dir(s)  35,040,301,056 bytes free\r\nThe system cannot find the path specified.\r\nExit code: 0\r\nDone executing test: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\nDone executing cleanup for test: \r\nT1560.001-3 Compress Data and lock with password for Exfiltration with winzip\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp32os1a.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

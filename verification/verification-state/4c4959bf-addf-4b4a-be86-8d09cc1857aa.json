@@ -2,12 +2,12 @@
   "guid": "4c4959bf-addf-4b4a-be86-8d09cc1857aa",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1033-1 System Owner/User Discovery\r\n\r\nPrerequisites met: \r\nT1033-1 System Owner/User Discovery\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1033-1 System Owner/User Discovery\r\n\r\nrunnervmqq1k9\\runneradmin\r\n USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME\r\n runneradmin           console             2  Active      none   5/23/2026 1:57 AM\r\n USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME\r\n>runneradmin           console             2  Active      none   5/23/2026 1:57 AM\r\n SESSIONNAME               USERNAME                 ID  STATE   TYPE        DEVICE \r\n services                                            0  Disc                        \r\n console                   runneradmin               2  Active                      \r\n 31c5ce94259d4006a9e4                            65536  Listen                      \r\n rdp-tcp                                         65537  Listen                      \r\n SESSIONNAME               USERNAME                 ID  STATE   TYPE        DEVICE \r\n services                                            0  Disc                        \r\n>console                   runneradmin               2  Active                      \r\n 31c5ce94259d4006a9e4                            65536  Listen                      \r\n rdp-tcp                                         65537  Listen                      \r\nservices\r\n'wmic' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nThe system cannot find the file computers.txt.\r\nError 1722 getting sessionnames\r\nError [1722]:The RPC server is unavailable.\r\nExit code: 1\r\nDone executing test: \r\nT1033-1 System Owner/User Discovery\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1033-1 System Owner/User Discovery\r\n\r\nDone executing cleanup for test: \r\nT1033-1 System Owner/User Discovery\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpctcuzc.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

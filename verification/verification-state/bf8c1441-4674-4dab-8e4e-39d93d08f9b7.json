@@ -2,12 +2,11 @@
   "guid": "bf8c1441-4674-4dab-8e4e-39d93d08f9b7",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\nPrerequisites met: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\nRemote download of SharpHound.ps1 into memory, followed by execution of the script\r\n-----------------------------------------------\r\nInitializing SharpHound at 2:10 AM on 5/23/2026\r\n-----------------------------------------------\r\nResolved Collection Methods: Group, Sessions, Trusts, ACL, ObjectProps, LocalGroups, SPNTargets, Container\r\nSystem.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException: Current security context is not associated with an Active Directory domain or forest.\r\n   at System.DirectoryServices.ActiveDirectory.DirectoryContext.GetLoggedOnDomain()\r\n   at System.DirectoryServices.ActiveDirectory.DirectoryContext.IsContextValid(DirectoryContext context, DirectoryContextType contextType)\r\n   at System.DirectoryServices.ActiveDirectory.Domain.GetDomain(DirectoryContext context)\r\n   at SharpHound3.SharpHound.<Main>d__0.MoveNext()\r\nUnable to determine user's domain. Please manually specify it with the --domain flag\r\n   at System.DirectoryServices.ActiveDirectory.DirectoryContext.isDomain()\r\nExit code: 0\r\nDone executing test: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\nDone executing cleanup for test: \r\nT1059.001-3 Run Bloodhound from Memory using Download Cradle\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpfavzp3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "562f3bc2-74e8-46c5-95c7-0e01f9ccc65c",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1113-4 X Windows Capture (freebsd)\n\nPrerequisites not met: T1113-4 X Windows Capture (freebsd)\n\t[*] Package with XWD and XWUD must exist on device\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1113-4 X Windows Capture (freebsd)\n\nsh: 1: xwd: not found\nsh: 1: xwud: not found\nExit code: 127\nDone executing test: \nT1113-4 X Windows Capture (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1113-4 X Windows Capture (freebsd)\n\nrm: cannot remove '/tmp/T1113_desktop.xwd': No such file or directory\nDone executing cleanup for test: \nT1113-4 X Windows Capture (freebsd)\n\n",
       "stderr": "",

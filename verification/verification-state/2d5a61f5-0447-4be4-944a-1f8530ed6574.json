@@ -2,12 +2,11 @@
   "guid": "2d5a61f5-0447-4be4-944a-1f8530ed6574",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1018-5 Remote System Discovery - arp\r\n\r\nPrerequisites met: \r\nT1018-5 Remote System Discovery - arp\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1018-5 Remote System Discovery - arp\r\n\r\nInterface: 172.20.208.1 --- 0xb\r\n  172.20.223.255        ff-ff-ff-ff-ff-ff     static    \r\n  224.0.0.22            01-00-5e-00-00-16     static    \r\nInterface: 10.1.0.115 --- 0xe\r\n  Internet Address      Physical Address      Type\r\n  10.1.0.1              12-34-56-78-9a-bc     dynamic   \r\n  10.1.15.255           ff-ff-ff-ff-ff-ff     static    \r\n  224.0.0.22            01-00-5e-00-00-16     static    \r\n  224.0.0.252           01-00-5e-00-00-fc     static    \r\n  255.255.255.255       ff-ff-ff-ff-ff-ff     static    \r\n  Internet Address      Physical Address      Type\r\nExit code: 0\r\nDone executing test: \r\nT1018-5 Remote System Discovery - arp\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1018-5 Remote System Discovery - arp\r\n\r\nDone executing cleanup for test: \r\nT1018-5 Remote System Discovery - arp\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzqhbzt.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "76f49d86-5eb1-461a-a032-a480f86652f1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1553.004-5 Install root CA on Windows\r\n\r\nPrerequisites not met: T1553.004-5 Install root CA on Windows\r\n\t[*] Verify the certificate exists. It generates if not on disk.\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1553.004-5 Install root CA on Windows\r\n\r\nImport-Certificate : The certificate file could not be found.\r\nAt line:1 char:12\r\n+ & {$cert = Import-Certificate -FilePath rootCA.cer -CertStoreLocation ...\r\n+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [Import-Certificate], FileNotFoundException\r\n    + FullyQualifiedErrorId : System.IO.FileNotFoundException,Microsoft.CertificateServices.Commands.ImportCertificate \r\n   Command\r\n \r\nMove-Item : Cannot bind argument to parameter 'Path' because it is null.\r\nAt line:2 char:17\r\n+ Move-Item -Path $cert.PSPath -Destination \"Cert:\\LocalMachine\\Root\"}\r\n+                 ~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidData: (:) [Move-Item], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.MoveItemCom \r\n   mand\r\nExit code: 0\r\nDone executing test: \r\nT1553.004-5 Install root CA on Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1553.004-5 Install root CA on Windows\r\n\r\nDone executing cleanup for test: \r\nT1553.004-5 Install root CA on Windows\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzamqly.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "68981660-6670-47ee-a5fa-7e74806420a4",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\nPrerequisites met: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\nHKEY_LOCAL_MACHINE\\Software\\Microsoft\\Internet Explorer\r\n    svcVersion    REG_SZ    11.32860.26100.0\r\nExit code: 0\r\nDone executing test: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\nDone executing cleanup for test: \r\nT1518-1 Find and Display Internet Explorer Browser Version\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpb5xvnl.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

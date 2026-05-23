@@ -2,12 +2,11 @@
   "guid": "14fdc3f1-6fc3-4556-8d36-aa89d9d42d02",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\nPrerequisites met: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\nCompleted 1 percent (0/63) \tProcess Privilege Rights area        \r\nCompleted 25 percent (15/63) \tProcess Privilege Rights area        \r\nCompleted 25 percent (15/63) \tProcess Group Membership area        \r\nCompleted 49 percent (30/63) \tProcess Group Membership area        \r\nCompleted 49 percent (30/63) \tProcess Registry Keys area        \r\nCompleted 49 percent (30/63) \tProcess File Security area        \r\nCompleted 49 percent (30/63) \tProcess Services area        \r\nCompleted 65 percent (40/63) \tProcess Services area        \r\nCompleted 73 percent (45/63) \tProcess Services area        \r\nCompleted 73 percent (45/63) \tProcess Security Policy area        \r\nCompleted 77 percent (48/63) \tProcess Security Policy area        \r\nCompleted 84 percent (52/63) \tProcess Security Policy area        \r\nCompleted 88 percent (55/63) \tProcess Security Policy area        \r\nCompleted 93 percent (58/63) \tProcess Security Policy area        \r\nCompleted 100 percent (63/63) \tProcess Security Policy area        \r\n                                                                           \r\nThe task has completed successfully.\r\nSee log %windir%\\security\\logs\\scesrv.log for detail info.\r\nExit code: 0\r\nDone executing test: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\nDone executing cleanup for test: \r\nT1547.001-16 secedit used to create a Run key in the HKLM Hive\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpc3fhrt.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

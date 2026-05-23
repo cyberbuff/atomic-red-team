@@ -2,12 +2,11 @@
   "guid": "b8147c9a-84db-4ec1-8eee-4e0da75f0de5",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1018-22 Enumerate Remote Hosts with Netscan\r\n\r\nPrerequisites not met: T1018-22 Enumerate Remote Hosts with Netscan\r\n\t[*] Netscan must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1018-22 Enumerate Remote Hosts with Netscan\r\n\r\nThe system cannot find the path specified.\r\nExit code: 0\r\nDone executing test: \r\nT1018-22 Enumerate Remote Hosts with Netscan\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1018-22 Enumerate Remote Hosts with Netscan\r\n\r\nDone executing cleanup for test: \r\nT1018-22 Enumerate Remote Hosts with Netscan\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpkq4scq.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

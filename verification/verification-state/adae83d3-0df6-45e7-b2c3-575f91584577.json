@@ -2,12 +2,11 @@
   "guid": "adae83d3-0df6-45e7-b2c3-575f91584577",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\nPrerequisites met: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\nProcess started successfully with Process ID: 5704\r\nConvertTo-SecureString : The 'ConvertTo-SecureString' command was found in the module 'Microsoft.PowerShell.Security', \r\nbut the module could not be loaded. For more information, run 'Import-Module Microsoft.PowerShell.Security'.\r\nAt line:3 char:11\r\n+  $PWord = ConvertTo-SecureString -String \"P@ssword1\" -AsPlainText -Fo ...\r\n+           ~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (ConvertTo-SecureString:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule\r\n \r\nNew-Object : Exception calling \".ctor\" with \"2\" argument(s): \"Cannot process argument because the value of argument \r\n\"password\" is null. Change the value of argument \"password\" to a non-null value.\"\r\nAt line:4 char:16\r\n+ ... redential = New-Object -TypeName System.Management.Automation.PSCrede ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException\r\n    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand\r\nExit code: 0\r\nDone executing test: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\nDone executing cleanup for test: \r\nT1546-4 WMI Invoke-CimMethod Start Process\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpihaiuf.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

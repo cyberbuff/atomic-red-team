@@ -2,12 +2,12 @@
   "guid": "d2c9e41e-cd86-473d-980d-b6403562e3e1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\nPrerequisites met: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\nERROR: Invalid key name.\r\nType \"REG ADD /?\" for usage.\r\nERROR: Invalid syntax.\r\nType \"REG ADD /?\" for usage.\r\nExit code: 1\r\nDone executing test: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\nDone executing cleanup for test: \r\nT1112-43 Disable Windows Error Reporting Settings\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4l3wlc.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

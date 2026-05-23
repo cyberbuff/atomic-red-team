@@ -11,7 +11,7 @@
     "macos": {
       "consecutive_failures": 0,
       "last_status": "passed",
-      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.004-3 C compile\n\nPrerequisites met: \nT1027.004-3 C compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.004-3 C compile\n\nExit code: 0\nDone executing test: \nT1027.004-3 C compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.004-3 C compile\n\nDone executing cleanup for test: \nT1027.004-3 C compile\n\n",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.004-3 C compile\n\nPrerequisites met: \nT1027.004-3 C compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.004-3 C compile\n\nT1027-004-test.c has compiled and executedT1027-004-test.c has compiled and executed\nExit code: 0\nDone executing test: \nT1027.004-3 C compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.004-3 C compile\n\nDone executing cleanup for test: \nT1027.004-3 C compile\n\n",
       "stderr": "",
       "exit_code": 0
     }

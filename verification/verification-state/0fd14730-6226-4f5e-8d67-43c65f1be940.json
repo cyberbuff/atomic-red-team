@@ -2,12 +2,11 @@
   "guid": "0fd14730-6226-4f5e-8d67-43c65f1be940",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\nPrerequisites met: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\nScript filename is C:\\Windows\\System32\\calc.exe\r\nScript arguments are \r\nWait is False\r\nTimeout is -1\r\nRollback is False\r\nNumber of scripts to run: 1\r\nScript is C:\\Windows\\System32\\calc.exe\r\nWait is False\r\nRollbackOnError is False\r\nExit code: 0\r\nDone executing test: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\nDone executing cleanup for test: \r\nT1202-4 Indirect Command Execution - Scriptrunner.exe\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpjgpgzg.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

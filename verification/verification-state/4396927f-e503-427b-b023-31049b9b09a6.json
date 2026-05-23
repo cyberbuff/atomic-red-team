@@ -2,12 +2,12 @@
   "guid": "4396927f-e503-427b-b023-31049b9b09a6",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1059.001-7 Powershell XML requests\r\n\r\nPrerequisites met: \r\nT1059.001-7 Powershell XML requests\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1059.001-7 Powershell XML requests\r\n\r\n'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -exec bypass -noprofile \"$Xml' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nExit code: 255\r\nDone executing test: \r\nT1059.001-7 Powershell XML requests\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1059.001-7 Powershell XML requests\r\n\r\nDone executing cleanup for test: \r\nT1059.001-7 Powershell XML requests\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpoc5mcc.tmp' because it is being used by another process."
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
     }
   }
 }

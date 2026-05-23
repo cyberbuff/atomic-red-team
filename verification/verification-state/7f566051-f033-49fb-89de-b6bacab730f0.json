@@ -2,12 +2,11 @@
   "guid": "7f566051-f033-49fb-89de-b6bacab730f0",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\nPrerequisites met: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\nHandles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                  \r\n-------  ------    -----      -----     ------     --  -- -----------                                                  \r\n    176      11     2732      12744       0.02   9204   2 smartscreen                                                  \r\n    178      11     2188      10832       0.09   4544   0 vmcompute\r\nExit code: 0\r\nDone executing test: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\nDone executing cleanup for test: \r\nT1518.001-2 Security Software Discovery - powershell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpt4mfqz.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

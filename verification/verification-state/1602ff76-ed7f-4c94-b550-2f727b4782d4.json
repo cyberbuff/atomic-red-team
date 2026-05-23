@@ -2,7 +2,7 @@
   "guid": "1602ff76-ed7f-4c94-b550-2f727b4782d4",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685.006-19 Overwrite Linux Mail Spool\n\nstat: cannot statx '/var/spool/mail/root': No such file or directory\nPrerequisites not met: T1685.006-19 Overwrite Linux Mail Spool\n\t[*] Elevation required but not provided\n\n\t[*] target files must exist\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685.006-19 Overwrite Linux Mail Spool\n\nbash: line 1: /var/spool/mail/root: Permission denied\nExit code: 1\nDone executing test: \nT1685.006-19 Overwrite Linux Mail Spool\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685.006-19 Overwrite Linux Mail Spool\n\nDone executing cleanup for test: \nT1685.006-19 Overwrite Linux Mail Spool\n\n",
       "stderr": "",

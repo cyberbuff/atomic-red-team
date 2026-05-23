@@ -2,12 +2,11 @@
   "guid": "082141ed-b048-4c86-99c7-2b8da5b5bf48",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\r\nPrerequisites not met: T1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\t[*] Microsoft Excel must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\r\nCopy : Could not find a part of the path 'C:\\Users\\runneradmin\\AppData\\Roaming\\Microsoft\\Excel\\XLSTART\\notepad.xlam'.\r\n+ & {Copy \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1137.006\\bin\\A ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException\r\n    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand\r\n \r\nAt line:1 char:4\r\nAt line:2 char:1\r\nStart-Process : This command cannot be run due to the error: The system cannot find the file specified.\r\n+ Start-Process \"Excel\"}\r\n+ ~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException\r\n    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand\r\nExit code: 0\r\nDone executing test: \r\nT1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\r\nDone executing cleanup for test: \r\nT1137.006-4 Persistent Code Execution Via Excel VBA Add-in File (XLAM)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpb535en.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

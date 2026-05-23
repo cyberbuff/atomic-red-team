@@ -2,17 +2,17 @@
   "guid": "0139dba1-f391-405e-a4f5-f3989f2c88ef",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-6 sftp remote file copy (pull)\n\nPrerequisites met: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-6 sftp remote file copy (pull)\n\nConnection closed\nConnection closed.  \nssh: Could not resolve hostname adversary-host: Temporary failure in name resolution\nExit code: 255\nDone executing test: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\n",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-6 sftp remote file copy (pull)\n\nPrerequisites met: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-6 sftp remote file copy (pull)\n\nssh: Could not resolve hostname adversary-host: Temporary failure in name resolution\nConnection closed.  \nConnection closed\nExit code: 255\nDone executing test: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\n",
       "stderr": "",
       "exit_code": 255,
       "last_error": "Command exited with code 255"
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-6 sftp remote file copy (pull)\n\nPrerequisites met: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-6 sftp remote file copy (pull)\n\nssh: Could not resolve hostname adversary-host: nodename nor servname provided, or not known\nConnection closed\nConnection closed.\nExit code: 255\nDone executing test: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\n",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-6 sftp remote file copy (pull)\n\nPrerequisites met: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-6 sftp remote file copy (pull)\n\nssh: Could not resolve hostname adversary-host: nodename nor servname provided, or not known\nConnection closed.  \nConnection closed\nExit code: 255\nDone executing test: \nT1105-6 sftp remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-6 sftp remote file copy (pull)\n\n",
       "stderr": "",
       "exit_code": 255,
       "last_error": "Command exited with code 255"

@@ -2,12 +2,12 @@
   "guid": "e39b99e9-ce7f-4b24-9c88-0fbad069e6c6",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1614.001-8 Discover System Language by Windows API Query\r\n\r\nPrerequisites not met: T1614.001-8 Discover System Language by Windows API Query\r\n\t[*] LanguageKeyboardLayout.exe must exist on disk (default location: D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\LanguageKeyboardLayout.exe)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1614.001-8 Discover System Language by Windows API Query\r\n\r\nThe system cannot find the path specified.\r\nExit code: 1\r\nDone executing test: \r\nT1614.001-8 Discover System Language by Windows API Query\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1614.001-8 Discover System Language by Windows API Query\r\n\r\nDone executing cleanup for test: \r\nT1614.001-8 Discover System Language by Windows API Query\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpdodl3u.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

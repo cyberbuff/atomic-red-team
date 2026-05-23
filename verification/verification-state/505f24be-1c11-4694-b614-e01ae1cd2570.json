@@ -2,12 +2,11 @@
   "guid": "505f24be-1c11-4694-b614-e01ae1cd2570",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\r\nPrerequisites not met: T1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\t[*] Microsoft Excel must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\r\ncopy : Could not find a part of the path 'C:\\users\\admin\\AppData\\local\\Microsoft\\WindowsApps\\foxprow.exe'.\r\nAt line:1 char:4\r\n+ & {copy c:\\windows\\system32\\calc.exe 'C:\\users\\admin\\AppData\\local\\Mi ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException\r\n    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand\r\n \r\nMultiple ambiguous overloads found for \"CreateInstance\" and the argument count: \"1\".\r\nAt line:2 char:1\r\n+ $com = [System.Activator]::CreateInstance([type]::GetTypeFromProgID(\" ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + FullyQualifiedErrorId : MethodCountCouldNotFindBest\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodException\r\n \r\nYou cannot call a method on a null-valued expression.\r\nAt line:3 char:1\r\n+ $com.ActivateMicrosoftApp(\"5\")}\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : InvokeMethodOnNull\r\nExit code: 0\r\nDone executing test: \r\nT1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\r\nRemove-Item : Cannot find path 'C:\\users\\admin\\AppData\\local\\Microsoft\\WindowsApps\\foxprow.exe' because it does not \r\nexist.\r\nAt line:1 char:4\r\n+ & {Remove-Item 'C:\\users\\admin\\AppData\\local\\Microsoft\\WindowsApps\\fo ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (C:\\users\\admin\\...pps\\foxprow.exe:String) [Remove-Item], ItemNotFoundEx \r\n   ception\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand\r\nDone executing cleanup for test: \r\nT1021.003-2 PowerShell Lateral Movement Using Excel Application Object\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpvc4ckb.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

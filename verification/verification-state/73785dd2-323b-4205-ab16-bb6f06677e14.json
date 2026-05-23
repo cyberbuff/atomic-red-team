@@ -2,12 +2,11 @@
   "guid": "73785dd2-323b-4205-ab16-bb6f06677e14",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\nPrerequisites met: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\n[DEBUG]Loading kernel32.dll and ntdll.dll...\r\n[DEBUG]Calling CreateProcess to start:\r\n\tC:\\Windows\\System32\\werfault.exe ...\r\n[DEBUG]Loading supporting procedures...\r\n[DEBUG]Calling VirtualAllocEx on PID 8084...\r\n[DEBUG]Shellcode address: 0x230bfc30000\r\n[DEBUG]Calling WriteProcessMemory on PID 8084...\r\n[DEBUG]Calling VirtualProtectEx on PID 8084...\r\n[DEBUG]Calling QueueUserAPC\r\n[DEBUG]The QueueUserAPC call returned 1\r\n[DEBUG]Calling ResumeThread...\r\n[DEBUG]Calling CloseHandle on child process...\r\n[DEBUG]Calling CloseHandle on child process thread...\r\nExit code: 0\r\nDone executing test: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\nDone executing cleanup for test: \r\nT1055.004-2 EarlyBird APC Queue Injection in Go\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwdiykr.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "0d5a2b03-3a26-45e4-96ae-89485b4d1f97",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-12 Port Scan using nmap (Port range)\n\nPrerequisites not met: T1046-12 Port Scan using nmap (Port range)\n\t[*] Elevation required but not provided\n\n\t[*] Check if nmap command exists on the machine\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-12 Port Scan using nmap (Port range)\n\nsh: 1: nmap: not found\nExit code: 127\nDone executing test: \nT1046-12 Port Scan using nmap (Port range)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-12 Port Scan using nmap (Port range)\n\nDone executing cleanup for test: \nT1046-12 Port Scan using nmap (Port range)\n\n",
       "stderr": "",
@@ -10,7 +10,7 @@
       "last_error": "Command exited with code 127"
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-12 Port Scan using nmap (Port range)\n\nPrerequisites not met: T1046-12 Port Scan using nmap (Port range)\n\t[*] Elevation required but not provided\n\n\t[*] Check if nmap command exists on the machine\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-12 Port Scan using nmap (Port range)\n\nsh: nmap: command not found\nExit code: 127\nDone executing test: \nT1046-12 Port Scan using nmap (Port range)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-12 Port Scan using nmap (Port range)\n\nDone executing cleanup for test: \nT1046-12 Port Scan using nmap (Port range)\n\n",
       "stderr": "",

@@ -2,12 +2,11 @@
   "guid": "4c8db261-a58b-42a6-a866-0a294deedde4",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\nPrerequisites met: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\nHive: HKEY_LOCAL_MACHINE\\Software\\Wow6432Node\\Google\\Chrome\\Extensions\r\nName                           Property                                                                                \r\n----                           --------                                                                                \r\nfcfhplploccackoneaefokcmbjfbke                                                                                         \r\nnj                                                                                                                     \r\nupdate_url   : https://clients2.google.com/service/update2/crx\r\nPSPath       : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Wow6432Node\\Google\\Chrome\\Extensions\\fcf\r\n               hplploccackoneaefokcmbjfbkenj\r\nPSParentPath : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Wow6432Node\\Google\\Chrome\\Extensions\r\nPSChildName  : fcfhplploccackoneaefokcmbjfbkenj\r\nPSDrive      : HKLM\r\nPSProvider   : Microsoft.PowerShell.Core\\Registry\r\nfdcgdnkidjaadafnichfpabhfomceb                                                                                         \r\nme                                                                                                                     \r\nupdate_url   : https://clients2.google.com/service/update2/crx\r\nPSPath       : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Wow6432Node\\Google\\Chrome\\Extensions\\fdc\r\n               gdnkidjaadafnichfpabhfomcebme\r\nPSParentPath : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Wow6432Node\\Google\\Chrome\\Extensions\r\nPSChildName  : fdcgdnkidjaadafnichfpabhfomcebme\r\nPSDrive      : HKLM\r\nPSProvider   : Microsoft.PowerShell.Core\\Registry\r\nExit code: 0\r\nDone executing test: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\nDone executing cleanup for test: \r\nT1133-1 Running Chrome VPN Extensions via the Registry 2 vpn extension\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpce5c2o.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

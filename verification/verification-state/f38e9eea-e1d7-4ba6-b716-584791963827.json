@@ -2,12 +2,11 @@
   "guid": "f38e9eea-e1d7-4ba6-b716-584791963827",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1574.011-2 Service ImagePath Change with reg.exe\r\n\r\nGet-Service : Cannot find any service with service name 'calcservice'.\r\nAt line:1 char:8\r\n+ & {if (Get-Service calcservice) {exit 0} else {exit 1}}\r\n+        ~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (calcservice:String) [Get-Service], ServiceCommandException\r\n    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand\r\nPrerequisites not met: T1574.011-2 Service ImagePath Change with reg.exe\r\n\t[*] The service must exist (calcservice)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1574.011-2 Service ImagePath Change with reg.exe\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1574.011-2 Service ImagePath Change with reg.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1574.011-2 Service ImagePath Change with reg.exe\r\n\r\n[SC] OpenService FAILED 1060:\r\nThe specified service does not exist as an installed service.\r\nDone executing cleanup for test: \r\nT1574.011-2 Service ImagePath Change with reg.exe\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpr1vtjq.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

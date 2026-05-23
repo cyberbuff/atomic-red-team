@@ -2,12 +2,12 @@
   "guid": "85321a9c-897f-4a60-9f20-29788e50bccd",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1018-1 Remote System Discovery - net\r\n\r\nPrerequisites met: \r\nT1018-1 Remote System Discovery - net\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1018-1 Remote System Discovery - net\r\n\r\nSystem error 6118 has occurred.\r\nThe list of servers for this workgroup is not currently available\r\nSystem error 6118 has occurred.\r\nThe list of servers for this workgroup is not currently available\r\nExit code: 2\r\nDone executing test: \r\nT1018-1 Remote System Discovery - net\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1018-1 Remote System Discovery - net\r\n\r\nDone executing cleanup for test: \r\nT1018-1 Remote System Discovery - net\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp0rs1aw.tmp' because it is being used by another process."
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
     }
   }
 }

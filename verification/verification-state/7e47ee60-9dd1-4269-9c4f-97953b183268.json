@@ -2,12 +2,11 @@
   "guid": "7e47ee60-9dd1-4269-9c4f-97953b183268",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\nPrerequisites met: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\nFile created: C:\\Windows\\registration\\04e53197-72be-4dd8-88b1-533fe6eed577.04e53197-72be-4dd8-88b1-533fe6eed577.crmlog\r\nExit code: 0\r\nDone executing test: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\nFile deleted: C:\\Windows\\registration\\04e53197-72be-4dd8-88b1-533fe6eed577.04e53197-72be-4dd8-88b1-533fe6eed577.crmlog\r\nDone executing cleanup for test: \r\nT1027-9 Snake Malware Encrypted crmlog file\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplvnkbw.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

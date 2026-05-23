@@ -2,12 +2,11 @@
   "guid": "3b0df731-030c-4768-b492-2a3216d90e53",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1071-1 Telnet C2\r\n\r\nWARNING: TCP connect to (127.0.0.1 : 23) failed\r\nPrerequisites not met: T1071-1 Telnet C2\r\n\t[*] A command and control (C2) server can be established by running D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1071\\bin\\telnet_server.exe on a specified server with a specified IP that must be reachable by a client (telnet_client.exe)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1071-1 Telnet C2\r\n\r\nTraceback (most recent call last):\r\n  File \"telnet.client.py\", line 44, in <module>\r\n  File \"telnet.client.py\", line 35, in main\r\n  File \"asyncio\\base_events.py\", line 653, in run_until_complete\r\n  File \"telnetlib3\\client.py\", line 352, in open_connection\r\n  File \"asyncio\\base_events.py\", line 1085, in create_connection\r\n  File \"asyncio\\base_events.py\", line 1069, in create_connection\r\n  File \"asyncio\\base_events.py\", line 973, in _connect_sock\r\n  File \"asyncio\\proactor_events.py\", line 726, in sock_connect\r\n  File \"asyncio\\windows_events.py\", line 846, in _poll\r\n  File \"asyncio\\windows_events.py\", line 633, in finish_connect\r\nConnectionRefusedError: [WinError 1225] The remote computer refused the network connection\r\n[7676] Failed to execute script 'telnet.client' due to unhandled exception!\r\nExit code: 0\r\nDone executing test: \r\nT1071-1 Telnet C2\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1071-1 Telnet C2\r\n\r\nDone executing cleanup for test: \r\nT1071-1 Telnet C2\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpl0f5bu.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

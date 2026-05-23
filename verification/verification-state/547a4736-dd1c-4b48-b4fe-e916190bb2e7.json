@@ -2,12 +2,11 @@
   "guid": "547a4736-dd1c-4b48-b4fe-e916190bb2e7",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\nPrerequisites met: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\nCopy-Item : Access to the path 'C:\\Windows\\Setup\\Scripts\\ErrorHandler.cmd' is denied.\r\nAt line:1 char:4\r\n+ & {Copy-Item -Path D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1546 ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : PermissionDenied: (D:\\a\\atomic-red...rrorHandler.cmd:FileInfo) [Copy-Item], Unauthorized \r\n   AccessException\r\n    + FullyQualifiedErrorId : CopyFileInfoItemUnauthorizedAccessError,Microsoft.PowerShell.Commands.CopyItemCommand\r\nExit code: 0\r\nDone executing test: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\nRemove-Item : Cannot remove item C:\\Windows\\Setup\\Scripts\\ErrorHandler.cmd: You do not have sufficient access rights \r\nto perform this operation.\r\nAt line:1 char:4\r\n+ & {Remove-Item C:\\Windows\\Setup\\Scripts\\ErrorHandler.cmd}\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : PermissionDenied: (C:\\Windows\\Setu...rrorHandler.cmd:FileInfo) [Remove-Item], IOExceptio \r\n   n\r\n    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand\r\nDone executing cleanup for test: \r\nT1546-8 Persistence via ErrorHandler.cmd script execution\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp5r4zmb.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

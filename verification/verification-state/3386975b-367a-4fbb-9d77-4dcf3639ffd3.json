@@ -2,12 +2,12 @@
   "guid": "3386975b-367a-4fbb-9d77-4dcf3639ffd3",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.002-1 Map admin share\r\n\r\nPrerequisites met: \r\nT1021.002-1 Map admin share\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.002-1 Map admin share\r\n\r\nSystem error 67 has occurred.\r\nThe network name cannot be found.\r\nExit code: 2\r\nDone executing test: \r\nT1021.002-1 Map admin share\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.002-1 Map admin share\r\n\r\nDone executing cleanup for test: \r\nT1021.002-1 Map admin share\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpfoes2e.tmp' because it is being used by another process."
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
     }
   }
 }

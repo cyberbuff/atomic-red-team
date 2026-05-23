@@ -2,12 +2,12 @@
   "guid": "e447b83b-a698-4feb-bed1-a7aaf45c3443",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1072-2 PDQ Deploy RAT\r\n\r\nPrerequisites not met: T1072-2 PDQ Deploy RAT\r\n\t[*] PDQ Deploy will be installed at specified location (Admin Arsenal/PDQ Deploy/PDQDeployConsole.exe)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1072-2 PDQ Deploy RAT\r\n\r\n'C:\\Program' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nExit code: 1\r\nDone executing test: \r\nT1072-2 PDQ Deploy RAT\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1072-2 PDQ Deploy RAT\r\n\r\nDone executing cleanup for test: \r\nT1072-2 PDQ Deploy RAT\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpkd3ip2.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

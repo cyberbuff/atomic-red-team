@@ -2,12 +2,11 @@
   "guid": "5917f0fd-c6d4-4af8-b89d-f3db06349c49",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\nPrerequisites met: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\nDirectory: C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\n-a----         5/23/2026   2:02 AM             22 secret?.txt                                                          \r\nCreated file: C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\secret?.txt\r\nExit code: 0\r\nDone executing test: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\nDone executing cleanup for test: \r\nT1027.018-1 File Masquerading with Zero-Width Space\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpm1kzjx.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

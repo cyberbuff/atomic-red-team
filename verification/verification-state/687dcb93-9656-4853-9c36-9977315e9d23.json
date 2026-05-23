@@ -2,7 +2,7 @@
   "guid": "687dcb93-9656-4853-9c36-9977315e9d23",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1547.006-1 Linux - Load Kernel Module via insmod\n\nPrerequisites not met: T1547.006-1 Linux - Load Kernel Module via insmod\n\t[*] Elevation required but not provided\n\n\t[*] The kernel module must exist on disk at specified location\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1547.006-1 Linux - Load Kernel Module via insmod\n\ninsmod: ERROR: could not load module /tmp/T1547.006/T1547006.ko: No such file or directory\nExit code: 1\nDone executing test: \nT1547.006-1 Linux - Load Kernel Module via insmod\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1547.006-1 Linux - Load Kernel Module via insmod\n\nrmmod: ERROR: Module T1547006 is not currently loaded\nDone executing cleanup for test: \nT1547.006-1 Linux - Load Kernel Module via insmod\n\n",
       "stderr": "",

@@ -2,12 +2,12 @@
   "guid": "6fb4c4c5-f949-4fd2-8af5-ddbc61595223",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\nPrerequisites met: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\nERROR: The system was unable to find the specified registry key or value.\r\nERROR: The system was unable to find the specified registry key or value.\r\nExit code: 1\r\nDone executing test: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\nDone executing cleanup for test: \r\nT1012-4 Reg query for AlwaysInstallElevated status\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpihtmvc.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

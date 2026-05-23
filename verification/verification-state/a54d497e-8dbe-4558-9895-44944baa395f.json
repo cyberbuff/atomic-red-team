@@ -2,7 +2,7 @@
   "guid": "a54d497e-8dbe-4558-9895-44944baa395f",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1087.002-24 Account Enumeration with LDAPDomainDump\n\nPrerequisites not met: T1087.002-24 Account Enumeration with LDAPDomainDump\n\t[*] The ldapdomaindump module must be installed\n\t[*] The future module must be installed\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1087.002-24 Account Enumeration with LDAPDomainDump\n\nsh: 1: ldapdomaindump: not found\nExit code: 127\nDone executing test: \nT1087.002-24 Account Enumeration with LDAPDomainDump\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1087.002-24 Account Enumeration with LDAPDomainDump\n\nDone executing cleanup for test: \nT1087.002-24 Account Enumeration with LDAPDomainDump\n\n",
       "stderr": "",

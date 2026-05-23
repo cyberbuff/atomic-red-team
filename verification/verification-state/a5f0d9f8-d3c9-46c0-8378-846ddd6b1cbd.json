@@ -2,12 +2,12 @@
   "guid": "a5f0d9f8-d3c9-46c0-8378-846ddd6b1cbd",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\nPrerequisites met: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\nVERBOSE: [Find-DomainLocalGroupMember] Querying computers in the domain\r\nVERBOSE: get-domain\r\nVERBOSE: [Get-Domain] Error retrieving the current domain: Exception calling \"GetCurrentDomain\" with \"0\" argument(s): \r\n\"Current security context is not associated with an Active Directory domain or forest.\"\r\nVERBOSE: [Get-DomainSearcher] search base: LDAP://\r\nVERBOSE: [Get-DomainComputer] Get-DomainComputer filter string: (&(samAccountType=805306369))\r\nVERBOSE: [Find-DomainLocalGroupMember] TargetComputers length: 0\r\nException calling \"FindAll\" with \"0\" argument(s): \"Unknown error (0x80005000)\"\r\nAt line:6331 char:20\r\n+             else { $Results = $CompSearcher.FindAll() }\r\n+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\r\n    + FullyQualifiedErrorId : COMException\r\n \r\n[Find-DomainLocalGroupMember] No hosts found to enumerate\r\nAt line:19344 char:13\r\n+             throw '[Find-DomainLocalGroupMember] No hosts found to en ...\r\n+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: ([Find-DomainLoc...nd to enumerate:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : [Find-DomainLocalGroupMember] No hosts found to enumerate\r\nExit code: 1\r\nDone executing test: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\nDone executing cleanup for test: \r\nT1069.002-5 Find local admins on all machines in domain (PowerView)\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmps4q1rh.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

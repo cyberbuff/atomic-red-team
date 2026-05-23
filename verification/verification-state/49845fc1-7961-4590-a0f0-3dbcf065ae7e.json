@@ -2,12 +2,11 @@
   "guid": "49845fc1-7961-4590-a0f0-3dbcf065ae7e",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\nPrerequisites met: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\nOperation mode: create backup from directory\r\nTarget file path: C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\PrintBrm.zip.\r\nTarget directory: \\\\127.0.0.1\\c$\\AtomicRedTeam\\atomics\\T1105\\src\\\r\nQueue publish mode: none\r\nTarget server: local machine\r\nOverwrite mode: force new settings\r\nThe following error occurred: 0x80070003.\r\nThe system cannot find the path specified.\r\nCheck the eventlog for detailed information about the error which occurred.\r\nExit code: 0\r\nDone executing test: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\nDone executing cleanup for test: \r\nT1105-22 Printer Migration Command-Line Tool UNC share folder into a zip file\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpbrwmid.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

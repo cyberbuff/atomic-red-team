@@ -2,12 +2,11 @@
   "guid": "bec1e95c-83aa-492e-ab77-60c71bbd21b0",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1222.001-3 attrib - Remove read-only attribute\r\n\r\nPrerequisites not met: T1222.001-3 attrib - Remove read-only attribute\r\n\t[*] Test requrires a file to modify to be located at (%temp%\\T1222.001_attrib)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1222.001-3 attrib - Remove read-only attribute\r\n\r\nPath not found - C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\T1222.001_attrib\r\nExit code: 0\r\nDone executing test: \r\nT1222.001-3 attrib - Remove read-only attribute\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1222.001-3 attrib - Remove read-only attribute\r\n\r\nDone executing cleanup for test: \r\nT1222.001-3 attrib - Remove read-only attribute\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpg25nhe.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

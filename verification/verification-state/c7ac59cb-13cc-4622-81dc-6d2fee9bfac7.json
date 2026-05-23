@@ -2,9 +2,9 @@
   "guid": "c7ac59cb-13cc-4622-81dc-6d2fee9bfac7",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-10 Change login shell\n\nexit 0\nPrerequisites not met: T1059.004-10 Change login shell\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-10 Change login shell\n\nuseradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\nchsh: user 'art' does not exist\nExit code: 1\nDone executing test: \nT1059.004-10 Change login shell\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-10 Change login shell\n\nuserdel: user 'art' does not exist\nDone executing cleanup for test: \nT1059.004-10 Change login shell\n\n",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-10 Change login shell\n\nexit 0\nPrerequisites not met: T1059.004-10 Change login shell\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-10 Change login shell\n\nuseradd: cannot lock /etc/passwd; try again later.\nuseradd: Permission denied.\nchsh: user 'art' does not exist\nExit code: 1\nDone executing test: \nT1059.004-10 Change login shell\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-10 Change login shell\n\nuserdel: user 'art' does not exist\nDone executing cleanup for test: \nT1059.004-10 Change login shell\n\n",
       "stderr": "",
       "exit_code": 1,
       "last_error": "Command exited with code 1"

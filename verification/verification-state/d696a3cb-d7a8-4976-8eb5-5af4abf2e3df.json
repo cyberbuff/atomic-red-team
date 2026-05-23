@@ -2,12 +2,11 @@
   "guid": "d696a3cb-d7a8-4976-8eb5-5af4abf2e3df",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1046-3 Port Scan NMap for Windows\r\n\r\nPrerequisites not met: T1046-3 Port Scan NMap for Windows\r\n\t[*] NMap must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1046-3 Port Scan NMap for Windows\r\n\r\nnmap : The term 'nmap' is not recognized as the name of a cmdlet, function, script file, or operable program. Check \r\nthe spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:1 char:4\r\n+ & {nmap 127.0.0.1}\r\n+    ~~~~\r\n    + CategoryInfo          : ObjectNotFound: (nmap:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1046-3 Port Scan NMap for Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1046-3 Port Scan NMap for Windows\r\n\r\nDone executing cleanup for test: \r\nT1046-3 Port Scan NMap for Windows\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpjvudq2.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "f3a6cceb-06c9-48e5-8df8-8867a6814245",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\nPrerequisites met: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\nSet-ExecutionPolicy : The 'Set-ExecutionPolicy' command was found in the module 'Microsoft.PowerShell.Security', but \r\nthe module could not be loaded. For more information, run 'Import-Module Microsoft.PowerShell.Security'.\r\nAt line:1 char:4\r\n+ & {Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine}\r\n+    ~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Set-ExecutionPolicy:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule\r\nExit code: 0\r\nDone executing test: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\nDone executing cleanup for test: \r\nT1112-7 Change Powershell Execution Policy to Bypass\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpu2lnpk.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

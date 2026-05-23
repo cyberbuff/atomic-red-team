@@ -2,12 +2,11 @@
   "guid": "80b453d1-eec5-4144-bf08-613a6c3ffe12",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\nPrerequisites met: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\nNew-ItemProperty : Cannot find path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile' because it does \r\nnot exist.\r\nAt line:1 char:4\r\n+ & {New-ItemProperty \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewal ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (HKLM:\\SOFTWARE\\...l\\DomainProfile:String) [New-ItemProperty], ItemNotFo \r\n   undException\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand\r\n \r\nNew-ItemProperty : Cannot find path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\StandardProfile' because it \r\ndoes not exist.\r\nAt line:2 char:1\r\n+ New-ItemProperty \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\S ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (HKLM:\\SOFTWARE\\...StandardProfile:String) [New-ItemProperty], ItemNotFo \r\n   undException\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand\r\nExit code: 0\r\nDone executing test: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\nDone executing cleanup for test: \r\nT1686-21 LockBit Black - Unusual Windows firewall registry modification -Powershell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpna3ovn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

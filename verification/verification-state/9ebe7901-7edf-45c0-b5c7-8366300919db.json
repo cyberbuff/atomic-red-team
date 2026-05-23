@@ -2,12 +2,11 @@
   "guid": "9ebe7901-7edf-45c0-b5c7-8366300919db",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\r\nPrerequisites not met: T1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\t[*] The AtomicTestHarnesses module must be installed and Invoke-ATHRemoteFXvGPUDisablementCommand must be exported in the module.\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\r\nInvoke-ATHRemoteFXvGPUDisablementCommand : The term 'Invoke-ATHRemoteFXvGPUDisablementCommand' is not recognized as \r\nthe name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was \r\nincluded, verify that the path is correct and try again.\r\nAt line:1 char:4\r\n+ & {Invoke-ATHRemoteFXvGPUDisablementCommand -ModuleName foo -ModulePa ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Invoke-ATHRemoteFXvGPUDisablementCommand:String) [], CommandNotFoundExc \r\n   eption\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\r\nDone executing cleanup for test: \r\nT1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpv41ad0.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

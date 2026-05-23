@@ -2,12 +2,11 @@
   "guid": "e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\nPrerequisites met: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\ncmdletOutput                                                    ReturnValue PSComputerName\r\n------------                                                    ----------- --------------\r\nMSFT_ScheduledTask (TaskName = \"T1053_005_WMI\", TaskPath = \"\\\")           0\r\nExit code: 0\r\nDone executing test: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\nDone executing cleanup for test: \r\nT1053.005-6 WMI Invoke-CimMethod Scheduled Task\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpflkbsf.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "2bf9a018-4664-438a-b435-cc6f8c6f71b1",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.003-2 Sudo usage (freebsd)\n\nPrerequisites not met: T1548.003-2 Sudo usage (freebsd)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.003-2 Sudo usage (freebsd)\n\nMatching Defaults entries for runner on runnervmg397c:\nUser runner may run the following commands on runnervmg397c:\n    (ALL) NOPASSWD: ALL\n    env_reset, mail_badpass, secure_path=/usr/local/sbin\\:/usr/local/bin\\:/usr/sbin\\:/usr/bin\\:/sbin\\:/bin\\:/snap/bin, use_pty\ncat: /usr/local/etc/sudoers: No such file or directory\nsudo: ee: command not found\nExit code: 1\nDone executing test: \nT1548.003-2 Sudo usage (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.003-2 Sudo usage (freebsd)\n\nDone executing cleanup for test: \nT1548.003-2 Sudo usage (freebsd)\n\n",
       "stderr": "",

@@ -11,7 +11,7 @@
     "macos": {
       "consecutive_failures": 0,
       "last_status": "passed",
-      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-1 Port Scan\n\nPrerequisites met: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-1 Port Scan\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nbash: line 1: 39328 Killed: 9               ( echo 2> /dev/null > /dev/tcp/192.168.1.1/$port )\nExit code: \nDone executing test: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-1 Port Scan\n\nDone executing cleanup for test: \nT1046-1 Port Scan\n\n",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-1 Port Scan\n\nPrerequisites met: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-1 Port Scan\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nbash: line 1: 57759 Killed: 9               ( echo 2> /dev/null > /dev/tcp/192.168.1.1/$port )\nExit code: \nDone executing test: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-1 Port Scan\n\nDone executing cleanup for test: \nT1046-1 Port Scan\n\n",
       "stderr": "",
       "exit_code": 0
     }

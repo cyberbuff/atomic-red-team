@@ -2,12 +2,12 @@
   "guid": "6657864e-0323-4206-9344-ac9cd7265a4f",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\nPrerequisites met: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\nThe password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.\r\nMore help is available by typing NET HELPMSG 2245.\r\nExit code: 2\r\nDone executing test: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\nDone executing cleanup for test: \r\nT1136.001-4 Create a new user in a command prompt\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwt4d0s.tmp' because it is being used by another process."
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
     }
   }
 }

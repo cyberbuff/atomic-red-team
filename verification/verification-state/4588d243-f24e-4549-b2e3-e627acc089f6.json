@@ -2,12 +2,11 @@
   "guid": "4588d243-f24e-4549-b2e3-e627acc089f6",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1201-6 Examine local password policy - Windows\r\n\r\nPrerequisites met: \r\nT1201-6 Examine local password policy - Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1201-6 Examine local password policy - Windows\r\n\r\nForce user logoff how long after time expires?:       Never\r\nMinimum password age (days):                          0\r\nMaximum password age (days):                          42\r\nMinimum password length:                              0\r\nLength of password history maintained:                None\r\nLockout threshold:                                    10\r\nLockout duration (minutes):                           10\r\nLockout observation window (minutes):                 10\r\nComputer role:                                        SERVER\r\nThe command completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1201-6 Examine local password policy - Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1201-6 Examine local password policy - Windows\r\n\r\nDone executing cleanup for test: \r\nT1201-6 Examine local password policy - Windows\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp5njv3w.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

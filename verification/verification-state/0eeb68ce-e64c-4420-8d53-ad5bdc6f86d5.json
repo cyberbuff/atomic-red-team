@@ -2,12 +2,11 @@
   "guid": "0eeb68ce-e64c-4420-8d53-ad5bdc6f86d5",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\nC:\\Windows\\System32\\notepad.exe\r\nC:\\Windows\\notepad.exe\r\nC:\\Program Files\\Git\\usr\\bin\\notepad\r\nPrerequisites met: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\nExit code: 0\r\nDone executing test: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\nDone executing cleanup for test: \r\nT1491.001-4 Windows - Display a simulated ransom note via Notepad (non-destructive)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpcs1fas.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

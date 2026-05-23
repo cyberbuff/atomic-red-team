@@ -2,12 +2,12 @@
   "guid": "ba38e193-37a6-4c41-b214-61b33277fe36",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\nPrerequisites met: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\nExit code: 1\r\nDone executing test: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\nThe system cannot find the file specified.\r\nDone executing cleanup for test: \r\nT1033-7 System Owner/User Discovery Using Command Prompt\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp1gpoqv.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

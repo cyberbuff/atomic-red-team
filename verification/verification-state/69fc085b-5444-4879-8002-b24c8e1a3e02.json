@@ -2,12 +2,11 @@
   "guid": "69fc085b-5444-4879-8002-b24c8e1a3e02",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\nPrerequisites met: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\nEnabled      : 0\r\nPSPath       : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\\r\n               Channels\\Microsoft-Windows-Windows Defender\\Operational\r\nPSParentPath : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\\r\n               Channels\r\nPSChildName  : Microsoft-Windows-Windows Defender/Operational\r\nPSDrive      : HKLM\r\nPSProvider   : Microsoft.PowerShell.Core\\Registry\r\nExit code: 0\r\nDone executing test: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\nDone executing cleanup for test: \r\nT1685-71 LockBit Black - Disable the ETW Provider of Windows Defender -Powershell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4typpx.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

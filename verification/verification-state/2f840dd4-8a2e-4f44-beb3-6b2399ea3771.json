@@ -2,12 +2,11 @@
   "guid": "2f840dd4-8a2e-4f44-beb3-6b2399ea3771",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\nPrerequisites met: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\nName                          : {7ae2bb4e-e6c0-4881-9fb2-bbb107c7fff8}\r\nDisplayName                   : RDPPORTLatest-TCP-In\r\nDescription                   : \r\nDisplayGroup                  : \r\nGroup                         : \r\nEnabled                       : True\r\nProfile                       : Public\r\nPlatform                      : {}\r\nDirection                     : Inbound\r\nAction                        : Allow\r\nEdgeTraversalPolicy           : Block\r\nLooseSourceMapping            : False\r\nLocalOnlyMapping              : False\r\nOwner                         : \r\nPrimaryStatus                 : OK\r\nStatus                        : The rule was parsed successfully from the store. (65536)\r\nEnforcementStatus             : NotApplicable\r\nPolicyStoreSource             : PersistentStore\r\nPolicyStoreSourceType         : Local\r\nRemoteDynamicKeywordAddresses : {}\r\nPolicyAppId                   : \r\nPackageFamilyName             :\r\nExit code: 0\r\nDone executing test: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\nDone executing cleanup for test: \r\nT1021.001-2 Changing RDP Port to Non Standard Port via Powershell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnfnuxi.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "46274fc6-08a7-4956-861b-24cbbaa0503c",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-3 Harvest SUID executable files\n\nPrerequisites not met: T1059.004-3 Harvest SUID executable files\n\t[*] AutoSUID must exist on disk at specified location (/home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/AutoSUID.sh)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-3 Harvest SUID executable files\n\nchmod: cannot access '/home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/AutoSUID.sh': No such file or directory\nbash: /home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/AutoSUID.sh: No such file or directory\nExit code: 127\nDone executing test: \nT1059.004-3 Harvest SUID executable files\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-3 Harvest SUID executable files\n\nDone executing cleanup for test: \nT1059.004-3 Harvest SUID executable files\n\n",
       "stderr": "",

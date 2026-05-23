@@ -2,12 +2,12 @@
   "guid": "bd13b9fc-b758-496a-b81a-397462f82c72",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1559-1 Cobalt Strike Artifact Kit pipe\r\n\r\nPrerequisites not met: T1559-1 Cobalt Strike Artifact Kit pipe\r\n\t[*] Named pipe executors must exist on disk\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1559-1 Cobalt Strike Artifact Kit pipe\r\n\r\nThe system cannot find the path specified.\r\nExit code: 1\r\nDone executing test: \r\nT1559-1 Cobalt Strike Artifact Kit pipe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1559-1 Cobalt Strike Artifact Kit pipe\r\n\r\nDone executing cleanup for test: \r\nT1559-1 Cobalt Strike Artifact Kit pipe\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpq1whd3.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

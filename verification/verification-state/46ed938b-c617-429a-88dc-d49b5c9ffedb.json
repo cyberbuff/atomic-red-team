@@ -2,12 +2,11 @@
   "guid": "46ed938b-c617-429a-88dc-d49b5c9ffedb",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\nPrerequisites met: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\n1 file(s) copied.\r\n        1 file(s) copied.\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\nThe operation completed successfully.\r\nDone executing cleanup for test: \r\nT1574.001-2 Phantom Dll Hijacking - WinAppXRT.dll\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplgh3xo.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }
