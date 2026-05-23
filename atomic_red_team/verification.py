@@ -192,6 +192,7 @@ def merge_verification_results(
 
     verified_data = {
         "version": 1,
+        **latest_verified_metadata(verified, results),
         "atomics": sorted(
             [
                 atomic
@@ -207,6 +208,60 @@ def merge_verification_results(
         "atomics": sorted(state_by_guid.values(), key=lambda atomic: atomic["guid"]),
     }
     return verified_data, state_data
+
+
+def latest_verified_metadata(
+    previous_verified: dict[str, Any],
+    results: list[dict[str, Any]],
+) -> dict[str, Any]:
+    metadata = latest_metadata_from_items(results, "verified_at", "run_id")
+    if "verified_at" in metadata:
+        return metadata
+    if "verified_at" in previous_verified:
+        metadata["verified_at"] = previous_verified["verified_at"]
+    if "run_id" in previous_verified:
+        metadata["run_id"] = previous_verified["run_id"]
+    if "verified_at" in metadata:
+        return metadata
+    return latest_verified_platform_metadata(previous_verified)
+
+
+def latest_verified_platform_metadata(previous_verified: dict[str, Any]) -> dict[str, Any]:
+    items = []
+    for atomic in previous_verified.get("atomics", []):
+        if not isinstance(atomic, dict):
+            continue
+        verified_platforms = atomic.get("verified_platforms", [])
+        if not isinstance(verified_platforms, list):
+            continue
+        items.extend(
+            platform
+            for platform in verified_platforms
+            if isinstance(platform, dict)
+        )
+    return latest_metadata_from_items(items, "verified_at", "run_id")
+
+
+def latest_metadata_from_items(
+    items: list[dict[str, Any]],
+    timestamp_key: str,
+    run_id_key: str,
+) -> dict[str, Any]:
+    latest_timestamp = None
+    latest_run_id = None
+    for item in items:
+        timestamp = item.get(timestamp_key)
+        if not isinstance(timestamp, str):
+            continue
+        if latest_timestamp is None or timestamp > latest_timestamp:
+            latest_timestamp = timestamp
+            latest_run_id = item.get(run_id_key)
+    metadata: dict[str, Any] = {}
+    if latest_timestamp is not None:
+        metadata[timestamp_key] = latest_timestamp
+    if isinstance(latest_run_id, str | int):
+        metadata[run_id_key] = str(latest_run_id)
+    return metadata
 
 
 def latest_run_metadata(
@@ -276,9 +331,21 @@ def index_verified(verified: dict[str, Any]) -> dict[str, dict[str, Any]]:
                 "guid": atomic["guid"],
                 "atomic_id": atomic["atomic_id"],
                 "name": atomic["name"],
-                "verified_platforms": list(atomic.get("verified_platforms", [])),
+                "verified_platforms": normalize_verified_platforms(
+                    atomic.get("verified_platforms", [])
+                ),
             }
     return indexed
+
+
+def normalize_verified_platforms(verified_platforms: Any) -> list[dict[str, Any]]:
+    if not isinstance(verified_platforms, list):
+        return []
+    platforms = []
+    for item in verified_platforms:
+        if isinstance(item, dict) and isinstance(item.get("platform"), str):
+            platforms.append({"platform": item["platform"]})
+    return platforms
 
 
 def index_state(state: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -330,11 +397,7 @@ def add_verified_platform(
         if item.get("platform") != result["platform"]
     ]
     platforms.append(
-        {
-            "platform": result["platform"],
-            "verified_at": result.get("verified_at"),
-            "run_id": result.get("run_id"),
-        }
+        {"platform": result["platform"]}
     )
     entry["verified_platforms"] = sorted(
         platforms,

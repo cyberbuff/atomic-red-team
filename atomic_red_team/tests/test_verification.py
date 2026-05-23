@@ -311,14 +311,48 @@ def test_merge_results_applies_failure_grace_period():
         ],
     )
 
+    assert verified["verified_at"] == "2026-05-22T09:00:00Z"
+    assert verified["run_id"] == "4"
     assert verified["atomics"][0]["verified_platforms"] == [
-        {
-            "platform": "linux",
-            "verified_at": "2026-05-22T09:00:00Z",
-            "run_id": "4",
-        }
+        {"platform": "linux"}
     ]
     assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 0
+
+
+def test_merge_results_promotes_verified_platform_metadata_to_root():
+    allowed = {"version": 1, "atomics": []}
+    verified = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_platforms": [
+                    {
+                        "platform": "linux",
+                        "verified_at": "2026-05-15T09:00:00Z",
+                        "run_id": "3",
+                    },
+                    {
+                        "platform": "macos",
+                        "verified_at": "2026-05-22T09:00:00Z",
+                        "run_id": "4",
+                    },
+                ],
+            }
+        ],
+    }
+    state = {"version": 1, "atomics": []}
+
+    verified, _ = merge_verification_results(allowed, verified, state, [])
+
+    assert verified["verified_at"] == "2026-05-22T09:00:00Z"
+    assert verified["run_id"] == "4"
+    assert verified["atomics"][0]["verified_platforms"] == [
+        {"platform": "linux"},
+        {"platform": "macos"},
+    ]
 
 
 def test_merge_results_writes_run_metadata_and_output_to_state():
@@ -482,6 +516,24 @@ def test_runner_calculates_stage_status_from_exit_code():
     assert "$stageExitCode = [int]$LASTEXITCODE" in script
     assert "if ($stageExitCode -eq 0)" in script
     assert "Command exited with code $stageExitCode" in script
+
+
+def test_runner_fails_stage_when_inner_command_logs_nonzero_exit_code():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "function Get-InnerExitCode" in script
+    assert "Exit code:\\s*(\\d+)" in script
+    assert "$innerExitCode = Get-InnerExitCode" in script
+    assert "if ($stageExitCode -eq 0 -and $innerExitCode -ne 0)" in script
+
+
+def test_runner_captures_non_error_powershell_streams_as_stdout():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "3>> $stdoutPath" in script
+    assert "4>> $stdoutPath" in script
+    assert "5>> $stdoutPath" in script
+    assert "6>> $stdoutPath" in script
 
 
 def test_runner_emits_stage_and_result_exit_codes():

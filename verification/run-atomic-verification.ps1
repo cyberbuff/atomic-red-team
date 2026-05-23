@@ -28,6 +28,22 @@ function Get-FileText {
   return $text
 }
 
+function Get-InnerExitCode {
+  param(
+    [string[]]$Texts
+  )
+
+  foreach ($text in $Texts) {
+    foreach ($match in [regex]::Matches($text, "Exit code:\s*(\d+)")) {
+      $exitCode = [int]$match.Groups[1].Value
+      if ($exitCode -ne 0) {
+        return $exitCode
+      }
+    }
+  }
+  return 0
+}
+
 function Add-Stage {
   param(
     [System.Collections.Generic.List[object]]$Stages,
@@ -44,16 +60,23 @@ function Add-Stage {
   $stderrPath = [System.IO.Path]::GetTempFileName()
   try {
     $LASTEXITCODE = 0
-    & $ScriptBlock 1> $stdoutPath 2> $stderrPath
+    & $ScriptBlock 1> $stdoutPath 2> $stderrPath 3>> $stdoutPath `
+      4>> $stdoutPath 5>> $stdoutPath 6>> $stdoutPath
     $stageExitCode = [int]$LASTEXITCODE
+    $stdout = Get-FileText -Path $stdoutPath
+    $stderr = Get-FileText -Path $stderrPath
+    $innerExitCode = Get-InnerExitCode -Texts @($stdout, $stderr)
+    if ($stageExitCode -eq 0 -and $innerExitCode -ne 0) {
+      $stageExitCode = $innerExitCode
+    }
     if ($stageExitCode -eq 0) {
       $Stages.Add([ordered]@{
           name = $Name
           status = "passed"
           duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
           exit_code = 0
-          stdout = Get-FileText -Path $stdoutPath
-          stderr = Get-FileText -Path $stderrPath
+          stdout = $stdout
+          stderr = $stderr
         })
       return $true
     }
@@ -64,8 +87,8 @@ function Add-Stage {
         duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
         error = "Command exited with code $stageExitCode"
         exit_code = $stageExitCode
-        stdout = Get-FileText -Path $stdoutPath
-        stderr = Get-FileText -Path $stderrPath
+        stdout = $stdout
+        stderr = $stderr
       })
     return $false
   }
