@@ -1,0 +1,13 @@
+{
+  "guid": "ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpi1ipcw.tmp' because it is being used by another process."
+    }
+  }
+}

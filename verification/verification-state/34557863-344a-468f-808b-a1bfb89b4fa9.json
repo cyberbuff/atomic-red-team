@@ -1,0 +1,13 @@
+{
+  "guid": "34557863-344a-468f-808b-a1bfb89b4fa9",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpooezwd.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "4df6a0fe-2bdd-4be8-8618-a6a19654a57a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\nPrerequisites not met: T1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\n/usr/local/etc/sudoers: parsed OK\nExit code: 0\nDone executing test: \nT1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\nDone executing cleanup for test: \nT1548.003-6 Disable tty_tickets for sudo caching (freebsd)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

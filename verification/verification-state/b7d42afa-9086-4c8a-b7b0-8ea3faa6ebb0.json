@@ -1,0 +1,21 @@
+{
+  "guid": "b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nPrerequisites not met: T1053.003-2 Cron - Add script to all cron subfolders\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nbash: line 1: /etc/cron.daily/persistevil: Permission denied\nbash: line 1: /etc/cron.hourly/persistevil: Permission denied\nbash: line 1: /etc/cron.monthly/persistevil: Permission denied\nbash: line 1: /etc/cron.weekly/persistevil: Permission denied\nExit code: 1\nDone executing test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nDone executing cleanup for test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nPrerequisites not met: T1053.003-2 Cron - Add script to all cron subfolders\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nbash: /etc/cron.hourly/persistevil: No such file or directory\nbash: /etc/cron.daily/persistevil: No such file or directory\nbash: /etc/cron.monthly/persistevil: No such file or directory\nbash: /etc/cron.weekly/persistevil: No such file or directory\nExit code: 1\nDone executing test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\nrm: /etc/cron.daily/persistevil: No such file or directory\nrm: -f: No such file or directory\nrm: /etc/cron.hourly/persistevil: No such file or directory\nrm: -f: No such file or directory\nrm: /etc/cron.monthly/persistevil: No such file or directory\nrm: -f: No such file or directory\nrm: /etc/cron.weekly/persistevil: No such file or directory\nrm: -f: No such file or directory\nDone executing cleanup for test: \nT1053.003-2 Cron - Add script to all cron subfolders\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

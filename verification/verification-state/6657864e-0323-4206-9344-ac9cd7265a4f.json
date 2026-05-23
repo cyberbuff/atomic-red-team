@@ -1,0 +1,13 @@
+{
+  "guid": "6657864e-0323-4206-9344-ac9cd7265a4f",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwt4d0s.tmp' because it is being used by another process."
+    }
+  }
+}

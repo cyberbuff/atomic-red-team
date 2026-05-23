@@ -1,0 +1,13 @@
+{
+  "guid": "46b1f278-c8ee-4aa5-acce-65e77b11f3c1",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpiry4gu.tmp' because it is being used by another process."
+    }
+  }
+}

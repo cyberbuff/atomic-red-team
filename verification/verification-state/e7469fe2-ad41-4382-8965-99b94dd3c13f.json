@@ -1,0 +1,21 @@
+{
+  "guid": "e7469fe2-ad41-4382-8965-99b94dd3c13f",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-9 chattr - Remove immutable file attribute\n\nPrerequisites met: \nT1222.002-9 chattr - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-9 chattr - Remove immutable file attribute\n\nchattr: No such file or directory while trying to stat /var/spool/cron/root\nExit code: 1\nDone executing test: \nT1222.002-9 chattr - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-9 chattr - Remove immutable file attribute\n\nDone executing cleanup for test: \nT1222.002-9 chattr - Remove immutable file attribute\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-9 chattr - Remove immutable file attribute\n\nPrerequisites met: \nT1222.002-9 chattr - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-9 chattr - Remove immutable file attribute\n\nsh: chattr: command not found\nExit code: 127\nDone executing test: \nT1222.002-9 chattr - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-9 chattr - Remove immutable file attribute\n\nDone executing cleanup for test: \nT1222.002-9 chattr - Remove immutable file attribute\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "8fba7766-2d11-4b4a-979a-1e3d9cc9a88c",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-9 Disable Carbon Black Response\n\nPrerequisites not met: T1685-9 Disable Carbon Black Response\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-9 Disable Carbon Black Response\n\nUnload failed: 5: Input/output error\nTry running `launchctl bootout` as root for richer errors.\nUnload failed: 5: Input/output error\nTry running `launchctl bootout` as root for richer errors.\nExit code: 0\nDone executing test: \nT1685-9 Disable Carbon Black Response\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-9 Disable Carbon Black Response\n\nTry running `launchctl bootstrap` as root for richer errors.\nLoad failed: 5: Input/output error\nLoad failed: 5: Input/output error\nTry running `launchctl bootstrap` as root for richer errors.\nDone executing cleanup for test: \nT1685-9 Disable Carbon Black Response\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

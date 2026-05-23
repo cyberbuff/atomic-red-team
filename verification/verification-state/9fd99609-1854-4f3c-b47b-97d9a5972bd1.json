@@ -1,0 +1,13 @@
+{
+  "guid": "9fd99609-1854-4f3c-b47b-97d9a5972bd1",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-9 Stop/Start UFW firewall systemctl\n\nERROR: You need to be root to run this script\nPrerequisites not met: T1686-9 Stop/Start UFW firewall systemctl\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-9 Stop/Start UFW firewall systemctl\n\nFailed to stop ufw.service: Interactive authentication required.\nSee system logs and 'systemctl status ufw.service' for details.\nExit code: 1\nDone executing test: \nT1686-9 Stop/Start UFW firewall systemctl\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-9 Stop/Start UFW firewall systemctl\n\n\u25cf ufw.service - Uncomplicated firewall\n     Loaded: loaded (/usr/lib/systemd/system/ufw.service; enabled; preset: enabled)\n     Active: active (exited) since Sat 2026-05-23 01:20:29 UTC; 6min ago\n       Docs: man:ufw(8)\n        CPU: 23ms\n   Main PID: 459 (code=exited, status=0/SUCCESS)\nMay 23 01:20:29 runnervmg397c systemd[1]: Starting ufw.service - Uncomplicated firewall...\nMay 23 01:20:29 runnervmg397c systemd[1]: Finished ufw.service - Uncomplicated firewall.\nFailed to start ufw.service: Interactive authentication required.\nSee system logs and 'systemctl status ufw.service' for details.\nDone executing cleanup for test: \nT1686-9 Stop/Start UFW firewall systemctl\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

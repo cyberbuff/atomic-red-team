@@ -1,0 +1,13 @@
+{
+  "guid": "003f466a-6010-4b15-803a-cbb478a314d7",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzd4jkg.tmp' because it is being used by another process."
+    }
+  }
+}

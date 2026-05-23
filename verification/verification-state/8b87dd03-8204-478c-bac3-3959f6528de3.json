@@ -1,0 +1,19 @@
+{
+  "guid": "8b87dd03-8204-478c-bac3-3959f6528de3",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.003-1 Delay execution with ping\n\nPrerequisites met: \nT1497.003-1 Delay execution with ping\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.003-1 Delay execution with ping\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nKilled\nExit code: \nDone executing test: \nT1497.003-1 Delay execution with ping\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.003-1 Delay execution with ping\n\nDone executing cleanup for test: \nT1497.003-1 Delay execution with ping\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.003-1 Delay execution with ping\n\nPrerequisites met: \nT1497.003-1 Delay execution with ping\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.003-1 Delay execution with ping\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nsh: line 1: 39180 Killed: 9               ping -c 250 8.8.8.8 > /dev/null\nExit code: \nDone executing test: \nT1497.003-1 Delay execution with ping\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.003-1 Delay execution with ping\n\nDone executing cleanup for test: \nT1497.003-1 Delay execution with ping\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

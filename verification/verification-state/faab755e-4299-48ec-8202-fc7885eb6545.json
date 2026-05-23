@@ -1,0 +1,13 @@
+{
+  "guid": "faab755e-4299-48ec-8202-fc7885eb6545",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp53pjvp.tmp' because it is being used by another process."
+    }
+  }
+}

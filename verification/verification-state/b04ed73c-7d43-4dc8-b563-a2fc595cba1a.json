@@ -1,0 +1,12 @@
+{
+  "guid": "b04ed73c-7d43-4dc8-b563-a2fc595cba1a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-8 Command line scripts\n\nPrerequisites met: \nT1059.004-8 Command line scripts\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-8 Command line scripts\n\n1, Atomic Red Team was here!\n2, Atomic Red Team was here!\n3, Atomic Red Team was here!\n4, Atomic Red Team was here!\n5, Atomic Red Team was here!\nExit code: 0\nDone executing test: \nT1059.004-8 Command line scripts\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-8 Command line scripts\n\nDone executing cleanup for test: \nT1059.004-8 Command line scripts\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

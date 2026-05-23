@@ -1,0 +1,21 @@
+{
+  "guid": "ab936c51-10f4-46ce-9144-e02137b2016a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1030-1 Data Transfer Size Limits\n\nPrerequisites not met: T1030-1 Data Transfer Size Limits\n\t[*] The file must exist for the test to run.\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1030-1 Data Transfer Size Limits\n\nsh: 1: cd: can't cd to /tmp/T1030\nsplit: cannot open 'T1030_urandom' for reading: No such file or directory\nls: cannot access '/tmp/T1030': No such file or directory\nExit code: 2\nDone executing test: \nT1030-1 Data Transfer Size Limits\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1030-1 Data Transfer Size Limits\n\nDone executing cleanup for test: \nT1030-1 Data Transfer Size Limits\n\n",
+      "stderr": "",
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1030-1 Data Transfer Size Limits\n\nPrerequisites not met: T1030-1 Data Transfer Size Limits\n\t[*] The file must exist for the test to run.\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1030-1 Data Transfer Size Limits\n\nsh: line 0: cd: /tmp/T1030: No such file or directory\nsplit: T1030_urandom: No such file or directory\nls: /tmp/T1030: No such file or directory\nExit code: 1\nDone executing test: \nT1030-1 Data Transfer Size Limits\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1030-1 Data Transfer Size Limits\n\nDone executing cleanup for test: \nT1030-1 Data Transfer Size Limits\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

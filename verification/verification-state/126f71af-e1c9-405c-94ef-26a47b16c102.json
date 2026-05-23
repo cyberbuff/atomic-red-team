@@ -1,0 +1,12 @@
+{
+  "guid": "126f71af-e1c9-405c-94ef-26a47b16c102",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1037.004-3 rc.local\n\nPrerequisites not met: T1037.004-3 rc.local\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1037.004-3 rc.local\n\n#!/bin/bash\npython3 -c \"import os, base64;exec(base64.b64decode('aW1wb3J0IG9zCm9zLnBvcGVuKCdlY2hvIGF0b21pYyB0ZXN0IGZvciBtb2RpZnlpbmcgcmMubG9jYWwgPiAvdG1wL1QxMDM3LjAwNC5yYy5sb2NhbCcpCgo='))\"\nexit 0\nExit code: 0\nDone executing test: \nT1037.004-3 rc.local\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1037.004-3 rc.local\n\nDone executing cleanup for test: \nT1037.004-3 rc.local\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

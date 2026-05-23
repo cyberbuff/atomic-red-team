@@ -1,0 +1,13 @@
+{
+  "guid": "edd779e4-a509-4cba-8dfa-a112543dbfb1",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpi4trfp.tmp' because it is being used by another process."
+    }
+  }
+}

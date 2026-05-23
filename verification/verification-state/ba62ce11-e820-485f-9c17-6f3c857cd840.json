@@ -1,0 +1,12 @@
+{
+  "guid": "ba62ce11-e820-485f-9c17-6f3c857cd840",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\nPrerequisites met: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\nrunner            6748   0.0  0.0 410593184   1120   ??  R<    1:29AM   0:00.00 egrep Little\\\\ Snitch|CbOsxSensorService|falcond|nessusd|santad|CbDefense|td-agent|packetbeat|filebeat|auditbeat|osqueryd|BlockBlock|LuLu\nrunner            6746   0.0  0.0 410724736   1856   ??  S<    1:29AM   0:00.00 sh -c ps aux | egrep 'Little\\\\ Snitch|CbOsxSensorService|falcond|nessusd|santad|CbDefense|td-agent|packetbeat|filebeat|auditbeat|osqueryd|BlockBlock|LuLu'\nExit code: 0\nDone executing test: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\nDone executing cleanup for test: \nT1518.001-3 Security Software Discovery - ps (macOS)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

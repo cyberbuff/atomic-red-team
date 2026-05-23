@@ -1,0 +1,12 @@
+{
+  "guid": "cc3381fb-4bd0-405c-a8e4-6cacfac3b06c",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

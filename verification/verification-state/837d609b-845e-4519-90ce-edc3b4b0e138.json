@@ -1,0 +1,12 @@
+{
+  "guid": "837d609b-845e-4519-90ce-edc3b4b0e138",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1614.001-3 Discover System Language with locale\n\nPrerequisites met: \nT1614.001-3 Discover System Language with locale\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1614.001-3 Discover System Language with locale\n\nLANG=C.UTF-8\nLANGUAGE=\nLC_NUMERIC=\"C.UTF-8\"\nLC_CTYPE=\"C.UTF-8\"\nLC_TIME=\"C.UTF-8\"\nLC_COLLATE=\"C.UTF-8\"\nLC_MONETARY=\"C.UTF-8\"\nLC_MESSAGES=\"C.UTF-8\"\nLC_PAPER=\"C.UTF-8\"\nLC_ADDRESS=\"C.UTF-8\"\nLC_TELEPHONE=\"C.UTF-8\"\nLC_NAME=\"C.UTF-8\"\nLC_MEASUREMENT=\"C.UTF-8\"\nLC_IDENTIFICATION=\"C.UTF-8\"\nLC_ALL=\nExit code: 0\nDone executing test: \nT1614.001-3 Discover System Language with locale\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1614.001-3 Discover System Language with locale\n\nDone executing cleanup for test: \nT1614.001-3 Discover System Language with locale\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "b721c6ef-472c-4263-a0d9-37f1f4ecff66",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpivnv5o.tmp' because it is being used by another process."
+    }
+  }
+}

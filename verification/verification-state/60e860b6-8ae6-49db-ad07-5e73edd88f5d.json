@@ -1,0 +1,12 @@
+{
+  "guid": "60e860b6-8ae6-49db-ad07-5e73edd88f5d",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

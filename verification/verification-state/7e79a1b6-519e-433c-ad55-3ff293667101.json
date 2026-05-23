@@ -1,0 +1,13 @@
+{
+  "guid": "7e79a1b6-519e-433c-ad55-3ff293667101",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2yitir.tmp' because it is being used by another process."
+    }
+  }
+}

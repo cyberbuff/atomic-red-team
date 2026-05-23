@@ -1,0 +1,13 @@
+{
+  "guid": "c0413fb5-33e2-40b7-9b6f-60b29f4a7a18",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpkurhua.tmp' because it is being used by another process."
+    }
+  }
+}

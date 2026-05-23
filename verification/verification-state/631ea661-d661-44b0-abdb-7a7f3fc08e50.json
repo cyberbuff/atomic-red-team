@@ -1,0 +1,19 @@
+{
+  "guid": "631ea661-d661-44b0-abdb-7a7f3fc08e50",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.006-4 Modify file timestamps using reference file\n\nPrerequisites met: \nT1070.006-4 Modify file timestamps using reference file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.006-4 Modify file timestamps using reference file\n\nExit code: 0\nDone executing test: \nT1070.006-4 Modify file timestamps using reference file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.006-4 Modify file timestamps using reference file\n\nDone executing cleanup for test: \nT1070.006-4 Modify file timestamps using reference file\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.006-4 Modify file timestamps using reference file\n\nPrerequisites met: \nT1070.006-4 Modify file timestamps using reference file\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.006-4 Modify file timestamps using reference file\n\nExit code: 0\nDone executing test: \nT1070.006-4 Modify file timestamps using reference file\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.006-4 Modify file timestamps using reference file\n\nDone executing cleanup for test: \nT1070.006-4 Modify file timestamps using reference file\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

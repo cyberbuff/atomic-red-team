@@ -1,0 +1,13 @@
+{
+  "guid": "95e19466-469e-4316-86d2-1dc401b5a959",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpg0texx.tmp' because it is being used by another process."
+    }
+  }
+}

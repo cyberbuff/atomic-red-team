@@ -1,0 +1,13 @@
+{
+  "guid": "0e36303b-6762-4500-b003-127743b80ba6",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpx3dqlm.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "4d46e16b-5765-4046-9f25-a600d3e65e4d",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.002-4 Binary packed by UPX, with modified headers\n\nPrerequisites met: \nT1027.002-4 Binary packed by UPX, with modified headers\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.002-4 Binary packed by UPX, with modified headers\n\nsh: line 1:  2547 Killed: 9               /tmp/packed_bin\nExit code: 137\nDone executing test: \nT1027.002-4 Binary packed by UPX, with modified headers\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.002-4 Binary packed by UPX, with modified headers\n\nDone executing cleanup for test: \nT1027.002-4 Binary packed by UPX, with modified headers\n\n",
+      "stderr": "",
+      "exit_code": 137,
+      "last_error": "Command exited with code 137"
+    }
+  }
+}

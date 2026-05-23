@@ -1,0 +1,20 @@
+{
+  "guid": "b95ce2eb-a093-4cd8-938d-5258cef656ea",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1036.006-2 Space After Filename\n\nPrerequisites met: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1036.006-2 Space After Filename\n\nrunning T1035.006 with space after filename to masquerade init\ntestdirwithspaceend /init : No such file or directory\nExit code: 0\nDone executing test: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1036.006-2 Space After Filename\n\nDone executing cleanup for test: \nT1036.006-2 Space After Filename\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1036.006-2 Space After Filename\n\nPrerequisites met: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1036.006-2 Space After Filename\n\nsh: /usr/bin/echo: No such file or directory\ntestdirwithspaceend /init : No such file or directory\nchmod: testdirwithspaceend /init : No such file or directory\nsh: ./testdirwithspaceend /init : No such file or directory\nExit code: 127\nDone executing test: \nT1036.006-2 Space After Filename\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1036.006-2 Space After Filename\n\nDone executing cleanup for test: \nT1036.006-2 Space After Filename\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

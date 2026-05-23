@@ -1,0 +1,12 @@
+{
+  "guid": "ac333fe1-ce2b-400b-a117-538634427439",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-62 Disable ASLR Via sysctl parameters - Linux\n\nPrerequisites not met: T1685-62 Disable ASLR Via sysctl parameters - Linux\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-62 Disable ASLR Via sysctl parameters - Linux\n\nkernel.randomize_va_space = 0\nsysctl: permission denied on key \"kernel.randomize_va_space\", ignoring\nExit code: 0\nDone executing test: \nT1685-62 Disable ASLR Via sysctl parameters - Linux\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-62 Disable ASLR Via sysctl parameters - Linux\n\nkernel.randomize_va_space = 2\nsysctl: permission denied on key \"kernel.randomize_va_space\", ignoring\nDone executing cleanup for test: \nT1685-62 Disable ASLR Via sysctl parameters - Linux\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

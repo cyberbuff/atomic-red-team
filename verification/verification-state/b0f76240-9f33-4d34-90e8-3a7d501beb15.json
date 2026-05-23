@@ -1,0 +1,13 @@
+{
+  "guid": "b0f76240-9f33-4d34-90e8-3a7d501beb15",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpy12ans.tmp' because it is being used by another process."
+    }
+  }
+}

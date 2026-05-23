@@ -1,0 +1,13 @@
+{
+  "guid": "36c62584-d360-41d6-886f-d194654be7c2",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpefrikv.tmp' because it is being used by another process."
+    }
+  }
+}

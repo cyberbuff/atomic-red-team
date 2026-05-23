@@ -1,0 +1,12 @@
+{
+  "guid": "9d04efee-eff5-4240-b8d2-07792b873608",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1040-3 Packet Capture macOS using tcpdump or tshark\n\nPrerequisites not met: T1040-3 Packet Capture macOS using tcpdump or tshark\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1040-3 Packet Capture macOS using tcpdump or tshark\n\n(No such device exists)\ntcpdump: en0A: No such device exists\nExit code: 0\nDone executing test: \nT1040-3 Packet Capture macOS using tcpdump or tshark\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1040-3 Packet Capture macOS using tcpdump or tshark\n\nDone executing cleanup for test: \nT1040-3 Packet Capture macOS using tcpdump or tshark\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

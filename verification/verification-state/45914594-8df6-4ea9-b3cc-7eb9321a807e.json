@@ -1,0 +1,13 @@
+{
+  "guid": "45914594-8df6-4ea9-b3cc-7eb9321a807e",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpretee4.tmp' because it is being used by another process."
+    }
+  }
+}

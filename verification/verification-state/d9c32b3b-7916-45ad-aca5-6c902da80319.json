@@ -1,0 +1,13 @@
+{
+  "guid": "d9c32b3b-7916-45ad-aca5-6c902da80319",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpl4bxa2.tmp' because it is being used by another process."
+    }
+  }
+}

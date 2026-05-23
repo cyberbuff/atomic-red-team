@@ -1,0 +1,13 @@
+{
+  "guid": "0f8af516-9818-4172-922b-42986ef1e81d",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpei3tz3.tmp' because it is being used by another process."
+    }
+  }
+}

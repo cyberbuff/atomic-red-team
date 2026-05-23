@@ -1,0 +1,12 @@
+{
+  "guid": "8cd1947b-4a54-41fb-b5ea-07d0ace04f81",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-5 New script file in the tmp directory\n\nPrerequisites met: \nT1059.004-5 New script file in the tmp directory\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-5 New script file in the tmp directory\n\nuid=1001(runner) gid=1001(runner) groups=1001(runner),4(adm),100(users),118(docker),999(systemd-journal)\nExit code: 0\nDone executing test: \nT1059.004-5 New script file in the tmp directory\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-5 New script file in the tmp directory\n\nTry 'rm --help' for more information.\nrm: missing operand\nDone executing cleanup for test: \nT1059.004-5 New script file in the tmp directory\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

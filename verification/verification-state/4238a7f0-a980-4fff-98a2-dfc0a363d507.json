@@ -1,0 +1,12 @@
+{
+  "guid": "4238a7f0-a980-4fff-98a2-dfc0a363d507",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1564.002-1 Create Hidden User using UniqueID < 500\n\nPrerequisites not met: T1564.002-1 Create Hidden User using UniqueID < 500\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1564.002-1 Create Hidden User using UniqueID < 500\n\nExit code: 0\nDone executing test: \nT1564.002-1 Create Hidden User using UniqueID < 500\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1564.002-1 Create Hidden User using UniqueID < 500\n\nDone executing cleanup for test: \nT1564.002-1 Create Hidden User using UniqueID < 500\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

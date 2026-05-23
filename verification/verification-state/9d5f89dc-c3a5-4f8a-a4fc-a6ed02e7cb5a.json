@@ -1,0 +1,13 @@
+{
+  "guid": "9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpoxceuw.tmp' because it is being used by another process."
+    }
+  }
+}

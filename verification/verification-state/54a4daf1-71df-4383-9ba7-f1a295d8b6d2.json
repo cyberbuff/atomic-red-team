@@ -1,0 +1,13 @@
+{
+  "guid": "54a4daf1-71df-4383-9ba7-f1a295d8b6d2",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpl1grxm.tmp' because it is being used by another process."
+    }
+  }
+}

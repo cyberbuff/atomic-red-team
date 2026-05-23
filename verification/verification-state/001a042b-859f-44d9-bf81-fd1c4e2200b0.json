@@ -1,0 +1,12 @@
+{
+  "guid": "001a042b-859f-44d9-bf81-fd1c4e2200b0",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\n/opt/hostedtoolcache/Python/3.11.2/x64/bin/python\nPrerequisites met: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\nExit code: 0\nDone executing test: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\nDone executing cleanup for test: \nT1560.002-3 Compressing data using zipfile in Python (FreeBSD/Linux)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

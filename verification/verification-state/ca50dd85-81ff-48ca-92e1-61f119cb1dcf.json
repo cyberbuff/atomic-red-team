@@ -1,0 +1,13 @@
+{
+  "guid": "ca50dd85-81ff-48ca-92e1-61f119cb1dcf",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685.006-18 Delete system journal logs via rm and journalctl utilities\n\nSize: 4096      \tBlocks: 8          IO Block: 4096   directory\n  File: /var/log/journal\nDevice: 8,1\tInode: 84607       Links: 3\nAccess: (2755/drwxr-sr-x)  Uid: (    0/    root)   Gid: (  999/systemd-journal)\nAccess: 2026-05-23 01:20:35.270463947 +0000\nModify: 2026-05-18 14:20:33.214187418 +0000\n Birth: 2026-05-06 04:17:04.658499382 +0000\nChange: 2026-05-18 14:20:33.214187418 +0000\nPrerequisites not met: T1685.006-18 Delete system journal logs via rm and journalctl utilities\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685.006-18 Delete system journal logs via rm and journalctl utilities\n\nrm: cannot remove '/var/log/journal/f2a4fdbe4d78448ba143d2566129dc42': Is a directory\nExit code: 1\nDone executing test: \nT1685.006-18 Delete system journal logs via rm and journalctl utilities\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685.006-18 Delete system journal logs via rm and journalctl utilities\n\nDone executing cleanup for test: \nT1685.006-18 Delete system journal logs via rm and journalctl utilities\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "fc369906-90c7-4a15-86fd-d37da624dde6",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1037.005-2 Add launch script to launch daemon\n\nPrerequisites not met: T1037.005-2 Add launch script to launch daemon\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1037.005-2 Add launch script to launch daemon\n\nAtomic Test T1037.005 - Daemon\nExit code: 0\nDone executing test: \nT1037.005-2 Add launch script to launch daemon\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1037.005-2 Add launch script to launch daemon\n\nDone executing cleanup for test: \nT1037.005-2 Add launch script to launch daemon\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "6904235f-0f55-4039-8aed-41c300ff7733",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmphi5y5q.tmp' because it is being used by another process."
+    }
+  }
+}

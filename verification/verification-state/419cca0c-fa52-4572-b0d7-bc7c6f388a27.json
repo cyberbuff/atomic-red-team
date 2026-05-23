@@ -1,0 +1,13 @@
+{
+  "guid": "419cca0c-fa52-4572-b0d7-bc7c6f388a27",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-17 Tail the UFW firewall log file\n\n***** ufw NOT logging *****\n-e\nPrerequisites not met: T1686-17 Tail the UFW firewall log file\n\t[*] Elevation required but not provided\n\n\t[*] Check if /var/log/ufw.log exists.\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-17 Tail the UFW firewall log file\n\ntail: cannot open '/var/log/ufw.log' for reading: No such file or directory\nExit code: 1\nDone executing test: \nT1686-17 Tail the UFW firewall log file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-17 Tail the UFW firewall log file\n\nDone executing cleanup for test: \nT1686-17 Tail the UFW firewall log file\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

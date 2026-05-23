@@ -1,0 +1,13 @@
+{
+  "guid": "875805bc-9e86-4e87-be86-3a5527315cae",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1135-2 Network Share Discovery - linux\n\ndpkg-query: package 'samba' is not installed and no information is available\nUse dpkg --info (= dpkg-deb --info) to examine archive files.\nPrerequisites not met: T1135-2 Network Share Discovery - linux\n\t[*] Elevation required but not provided\n\n\t[*] Package with smbstatus (samba) must exist on device\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1135-2 Network Share Discovery - linux\n\nbash: line 1: smbstatus: command not found\nExit code: 127\nDone executing test: \nT1135-2 Network Share Discovery - linux\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1135-2 Network Share Discovery - linux\n\nDone executing cleanup for test: \nT1135-2 Network Share Discovery - linux\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

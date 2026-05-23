@@ -1,0 +1,13 @@
+{
+  "guid": "b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpubviya.tmp' because it is being used by another process."
+    }
+  }
+}

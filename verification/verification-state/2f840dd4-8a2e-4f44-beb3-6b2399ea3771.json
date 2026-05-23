@@ -1,0 +1,13 @@
+{
+  "guid": "2f840dd4-8a2e-4f44-beb3-6b2399ea3771",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnfnuxi.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "3824130e-a6e4-4528-8091-3a52eeb540f6",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.008-3 Copy and Delete Mailbox Data on macOS\n\nPrerequisites not met: T1070.008-3 Copy and Delete Mailbox Data on macOS\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.008-3 Copy and Delete Mailbox Data on macOS\n\nExit code: 0\nDone executing test: \nT1070.008-3 Copy and Delete Mailbox Data on macOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.008-3 Copy and Delete Mailbox Data on macOS\n\nDone executing cleanup for test: \nT1070.008-3 Copy and Delete Mailbox Data on macOS\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

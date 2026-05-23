@@ -1,0 +1,12 @@
+{
+  "guid": "8e36da01-cd29-45fd-be72-8a0fcaad4481",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\nPrerequisites met: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\n/usr/bin/mount\n/usr/bin/sudo\n/usr/bin/newgidmap\n/usr/bin/newgrp\n/usr/bin/fusermount3\n/usr/bin/chfn\n/usr/bin/umount\nExit code: 0\nDone executing test: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\nDone executing cleanup for test: \nT1548.001-9 Do reconnaissance for files that have the setuid bit set\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

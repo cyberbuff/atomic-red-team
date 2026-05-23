@@ -1,0 +1,13 @@
+{
+  "guid": "648d68c1-8bcd-4486-9abe-71c6655b6a2c",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1090.001-2 Connection Proxy for macOS UI\n\nPrerequisites met: \nT1090.001-2 Connection Proxy for macOS UI\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1090.001-2 Connection Proxy for macOS UI\n\n** Error: The parameters were not valid.\n** Error: The parameters were not valid.\nExit code: 4\nDone executing test: \nT1090.001-2 Connection Proxy for macOS UI\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1090.001-2 Connection Proxy for macOS UI\n\n** Error: Unable to find item in network database.\n** Error: Unable to find item in network database.\nDone executing cleanup for test: \nT1090.001-2 Connection Proxy for macOS UI\n\n",
+      "stderr": "",
+      "exit_code": 4,
+      "last_error": "Command exited with code 4"
+    }
+  }
+}

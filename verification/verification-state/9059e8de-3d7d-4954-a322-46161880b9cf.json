@@ -1,0 +1,13 @@
+{
+  "guid": "9059e8de-3d7d-4954-a322-46161880b9cf",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp3masvd.tmp' because it is being used by another process."
+    }
+  }
+}

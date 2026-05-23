@@ -1,0 +1,13 @@
+{
+  "guid": "41410c60-614d-4b9d-b66e-b0192dd9c597",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpunaxzc.tmp' because it is being used by another process."
+    }
+  }
+}

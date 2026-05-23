@@ -1,0 +1,21 @@
+{
+  "guid": "3180f7d5-52c0-4493-9ea0-e3431a84773f",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-2 rsync remote file copy (pull)\n\nPrerequisites met: \nT1105-2 rsync remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-2 rsync remote file copy (pull)\n\nssh: Could not resolve hostname adversary-host: Temporary failure in name resolution\nrsync: connection unexpectedly closed (0 bytes received so far) [Receiver]\nrsync error: unexplained error (code 255) at io.c(232) [Receiver=3.2.7]\nExit code: 255\nDone executing test: \nT1105-2 rsync remote file copy (pull)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-2 rsync remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-2 rsync remote file copy (pull)\n\n",
+      "stderr": "",
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-2 rsync remote file copy (pull)\n\nPrerequisites met: \nT1105-2 rsync remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-2 rsync remote file copy (pull)\n\nssh: Could not resolve hostname adversary-host: nodename nor servname provided, or not known\nrsync(25010): error: unexpected end of file\nExit code: 255\nDone executing test: \nT1105-2 rsync remote file copy (pull)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-2 rsync remote file copy (pull)\n\nDone executing cleanup for test: \nT1105-2 rsync remote file copy (pull)\n\n",
+      "stderr": "",
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
+    }
+  }
+}

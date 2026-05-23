@@ -1,0 +1,13 @@
+{
+  "guid": "c7a0bb71-70ce-4a53-b115-881f241b795b",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1123-3 using Quicktime Player\n\nPrerequisites met: \nT1123-3 using Quicktime Player\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1123-3 using Quicktime Player\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nStarting recording, make some noise for 5 seconds!\nFailed\n/Users/runner/work/atomic-red-team/atomic-red-team/atomics/T1123/src/T1123.sh: line 24: 32390 Killed: 9               osascript -e '\n    on run argv\n        set theFilePath to POSIX path of item 1 of argv\n        set durn to item 2 of argv\n        tell application \"Quicktime Player\"\n            start (new audio recording)\n            repeat durn times\n                log (durn)\n                delay 1\n                set durn to (durn - 1)\n            end repeat\n            tell document \"Audio Recording\"\n                pause\n                save it in POSIX file theFilePath\n                stop\n                close\n            end tell\n            close\n        end tell\n    end run\n' \"${OUTPATH}\" ${DURSEC}\nExit code: 1\nDone executing test: \nT1123-3 using Quicktime Player\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1123-3 using Quicktime Player\n\nsh: -c: line 0: `if test -w /tmp/T1123.m4a; then;   rm /tmp/T1123.m4a; fi'\nsh: -c: line 0: syntax error near unexpected token `;'\nDone executing cleanup for test: \nT1123-3 using Quicktime Player\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

@@ -24,8 +24,10 @@ from atomic_red_team.verification import (
     build_platform_matrix,
     load_results,
     merge_verification_results,
+    read_verification_state,
     read_yaml,
     targets_for_platform,
+    write_verification_state,
     write_yaml,
 )
 
@@ -197,17 +199,17 @@ def merge_verification_files(
     state: Annotated[
         str,
         typer.Option("--state"),
-    ] = "verification/verification-state.yaml",
+    ] = "verification/verification-state",
 ):
     """Merge execution results into verified atomics and grace-period state."""
     verified_data, state_data = merge_verification_results(
         read_yaml(Path(allowed)),
         read_yaml(Path(verified)),
-        read_yaml(Path(state)),
+        read_verification_state(Path(state)),
         load_results(Path(results_dir)),
     )
     write_yaml(Path(verified), verified_data)
-    write_yaml(Path(state), state_data)
+    write_verification_state(Path(state), state_data)
 
 
 if __name__ == "__main__":

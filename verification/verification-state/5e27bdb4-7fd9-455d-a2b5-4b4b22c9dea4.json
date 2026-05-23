@@ -1,0 +1,13 @@
+{
+  "guid": "5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpirwpph.tmp' because it is being used by another process."
+    }
+  }
+}

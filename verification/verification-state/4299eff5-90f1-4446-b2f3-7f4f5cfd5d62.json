@@ -1,0 +1,13 @@
+{
+  "guid": "4299eff5-90f1-4446-b2f3-7f4f5cfd5d62",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp0mycnc.tmp' because it is being used by another process."
+    }
+  }
+}

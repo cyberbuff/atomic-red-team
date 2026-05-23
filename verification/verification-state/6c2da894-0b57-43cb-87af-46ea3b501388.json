@@ -1,0 +1,12 @@
+{
+  "guid": "6c2da894-0b57-43cb-87af-46ea3b501388",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\nPrerequisites met: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\n169.254.169.254 age 53.242sec cwnd 10 rtt 2073us rttvar 3557us source 10.1.0.18\n151.101.128.223 age 17.966sec cwnd 10 rtt 814us rttvar 482us source 10.1.0.18\n57.150.228.1 age 174.458sec cwnd 10 rtt 713us rttvar 668us source 10.1.0.18\n57.150.146.161 age 173.565sec cwnd 10 rtt 920us rttvar 746us source 10.1.0.18\n151.101.64.223 age 17.966sec cwnd 10 rtt 1003us rttvar 818us source 10.1.0.18\n151.101.192.223 age 25.140sec cwnd 10 rtt 1421us rttvar 1421us source 10.1.0.18\n168.63.129.16 age 4.647sec cwnd 49 rtt 438us rttvar 567us source 10.1.0.18\n::1 age 0.937sec cwnd 10 rtt 3946us rttvar 7851us source ::1\nExit code: 0\nDone executing test: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\nDone executing cleanup for test: \nT1018-15 Remote System Discovery - ip tcp_metrics\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

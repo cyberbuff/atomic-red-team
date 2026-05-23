@@ -1,0 +1,12 @@
+{
+  "guid": "5fc528dd-79de-47f5-8188-25572b7fafe0",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1217-9 List Safari Bookmarks on MacOS\n\nPrerequisites met: \nT1217-9 List Safari Bookmarks on MacOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1217-9 List Safari Bookmarks on MacOS\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nsh: line 1:  7470 Killed: 9               find / -path \"*/Safari/Bookmarks.plist\" 2> /dev/null >> /tmp/T1217-Safari.txt\nExit code: 0\nDone executing test: \nT1217-9 List Safari Bookmarks on MacOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1217-9 List Safari Bookmarks on MacOS\n\nDone executing cleanup for test: \nT1217-9 List Safari Bookmarks on MacOS\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "fef31710-223a-40ee-8462-a396d6b66978",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpuccjay.tmp' because it is being used by another process."
+    }
+  }
+}

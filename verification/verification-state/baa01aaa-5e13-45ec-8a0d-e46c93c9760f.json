@@ -1,0 +1,13 @@
+{
+  "guid": "baa01aaa-5e13-45ec-8a0d-e46c93c9760f",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpkhyni2.tmp' because it is being used by another process."
+    }
+  }
+}

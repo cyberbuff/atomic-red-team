@@ -1,0 +1,13 @@
+{
+  "guid": "a58d9386-3080-4242-ab5f-454c16503d18",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpaokgbn.tmp' because it is being used by another process."
+    }
+  }
+}

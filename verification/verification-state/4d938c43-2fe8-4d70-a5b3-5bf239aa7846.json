@@ -1,0 +1,13 @@
+{
+  "guid": "4d938c43-2fe8-4d70-a5b3-5bf239aa7846",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1531-5 Delete User via dscl utility\n\nPrerequisites not met: T1531-5 Delete User via dscl utility\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1531-5 Delete User via dscl utility\n\ndelete: Invalid Path\n<dscl_cmd> DS Error: -14009 (eDSUnknownNodeName)\nExit code: 185\nDone executing test: \nT1531-5 Delete User via dscl utility\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1531-5 Delete User via dscl utility\n\n<main> attribute status: eDSPermissionError\n<dscl_cmd> DS Error: -14120 (eDSPermissionError)\nDone executing cleanup for test: \nT1531-5 Delete User via dscl utility\n\n",
+      "stderr": "",
+      "exit_code": 185,
+      "last_error": "Command exited with code 185"
+    }
+  }
+}

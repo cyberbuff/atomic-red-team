@@ -1,0 +1,13 @@
+{
+  "guid": "a6ce9acf-842a-4af6-8f79-539be7608e2b",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpxelbal.tmp' because it is being used by another process."
+    }
+  }
+}

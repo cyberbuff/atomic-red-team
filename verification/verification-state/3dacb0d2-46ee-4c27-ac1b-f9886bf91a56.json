@@ -1,0 +1,13 @@
+{
+  "guid": "3dacb0d2-46ee-4c27-ac1b-f9886bf91a56",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2fulxk.tmp' because it is being used by another process."
+    }
+  }
+}

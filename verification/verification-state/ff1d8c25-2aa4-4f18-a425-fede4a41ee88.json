@@ -1,0 +1,12 @@
+{
+  "guid": "ff1d8c25-2aa4-4f18-a425-fede4a41ee88",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1016-8 List macOS Firewall Rules\n\nPrerequisites not met: T1016-8 List macOS Firewall Rules\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1016-8 List macOS Firewall Rules\n\n2026-05-23 01:23:49.488 defaults[8239:25235] \nDomain /Library/Preferences/com.apple.alf does not exist\nExit code: 0\nDone executing test: \nT1016-8 List macOS Firewall Rules\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1016-8 List macOS Firewall Rules\n\nDone executing cleanup for test: \nT1016-8 List macOS Firewall Rules\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

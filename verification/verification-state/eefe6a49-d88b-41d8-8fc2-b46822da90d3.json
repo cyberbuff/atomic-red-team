@@ -1,0 +1,13 @@
+{
+  "guid": "eefe6a49-d88b-41d8-8fc2-b46822da90d3",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\nPrerequisites met: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\nsh: 1: kldstat: not found\nsh: 1: kldstat: not found\nExit code: 1\nDone executing test: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\nDone executing cleanup for test: \nT1082-6 FreeBSD VM Check via Kernel Modules\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

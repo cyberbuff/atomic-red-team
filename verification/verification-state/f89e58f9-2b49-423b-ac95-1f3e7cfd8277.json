@@ -1,0 +1,13 @@
+{
+  "guid": "f89e58f9-2b49-423b-ac95-1f3e7cfd8277",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplgdtf2.tmp' because it is being used by another process."
+    }
+  }
+}

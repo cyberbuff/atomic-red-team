@@ -1,0 +1,13 @@
+{
+  "guid": "da86f239-9bd3-4e85-92ed-4a94ef111a1c",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwtagna.tmp' because it is being used by another process."
+    }
+  }
+}

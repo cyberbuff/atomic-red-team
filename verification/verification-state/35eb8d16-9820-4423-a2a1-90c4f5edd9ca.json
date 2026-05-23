@@ -1,0 +1,13 @@
+{
+  "guid": "35eb8d16-9820-4423-a2a1-90c4f5edd9ca",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpegtzmt.tmp' because it is being used by another process."
+    }
+  }
+}

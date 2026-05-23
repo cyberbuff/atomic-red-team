@@ -1,0 +1,12 @@
+{
+  "guid": "0315bdff-4178-47e9-81e4-f31a6d23f7e4",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1078.001-3 Enable Guest Account on macOS\n\nPrerequisites not met: T1078.001-3 Enable Guest Account on macOS\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1078.001-3 Enable Guest Account on macOS\n\n2026-05-23 01:25:44.382 sysadminctl[49191:116183] Creating guest account\u2026\nIOServiceMatchingfailed for: AppleM2ScalerParavirtDriver\n2026-05-23 01:25:45.924 sysadminctl[49191:116183] Enabling guest\u2026\n2026-05-23 01:25:45.939 sysadminctl[49191:116183] Done.\nExit code: 0\nDone executing test: \nT1078.001-3 Enable Guest Account on macOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1078.001-3 Enable Guest Account on macOS\n\n2026-05-23 01:25:46.362 sysadminctl[49226:116334] Disabling guest\u2026\n2026-05-23 01:25:46.395 sysadminctl[49226:116334] Done.\nDone executing cleanup for test: \nT1078.001-3 Enable Guest Account on macOS\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "f7308845-6da8-468e-99f2-4271f2f5bb67",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\nPrerequisites met: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\nsh: 1: [: /dev/null: unexpected operator\nExit code: 0\nDone executing test: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\nDone executing cleanup for test: \nT1690-9 Setting the HISTFILE environment variable (freebsd)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

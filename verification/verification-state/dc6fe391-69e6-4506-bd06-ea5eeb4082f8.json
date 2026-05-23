@@ -1,0 +1,13 @@
+{
+  "guid": "dc6fe391-69e6-4506-bd06-ea5eeb4082f8",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpfjz21e.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "13117939-c9b2-4a43-999e-0a543df92f0d",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp0loftf.tmp' because it is being used by another process."
+    }
+  }
+}

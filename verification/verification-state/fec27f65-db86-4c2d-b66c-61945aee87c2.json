@@ -1,0 +1,13 @@
+{
+  "guid": "fec27f65-db86-4c2d-b66c-61945aee87c2",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpmsqyl1.tmp' because it is being used by another process."
+    }
+  }
+}

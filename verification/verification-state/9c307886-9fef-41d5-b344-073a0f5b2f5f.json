@@ -1,0 +1,13 @@
+{
+  "guid": "9c307886-9fef-41d5-b344-073a0f5b2f5f",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpa3brtk.tmp' because it is being used by another process."
+    }
+  }
+}

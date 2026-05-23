@@ -1,0 +1,13 @@
+{
+  "guid": "581d7521-9c4b-420e-9695-2aec5241167f",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpipxuj3.tmp' because it is being used by another process."
+    }
+  }
+}

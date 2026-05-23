@@ -1,0 +1,13 @@
+{
+  "guid": "2f898b81-3e97-4abb-bc3f-a95138988370",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplohyks.tmp' because it is being used by another process."
+    }
+  }
+}

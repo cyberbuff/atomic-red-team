@@ -1,0 +1,13 @@
+{
+  "guid": "694b3cc8-6a78-4d35-9e74-0123d009e94b",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1546.004-4 Append to the system shell profile\n\nPrerequisites not met: T1546.004-4 Append to the system shell profile\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1546.004-4 Append to the system shell profile\n\nsh: 1: cannot create /etc/profile: Permission denied\nExit code: 2\nDone executing test: \nT1546.004-4 Append to the system shell profile\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1546.004-4 Append to the system shell profile\n\nsed: couldn't open temporary file /etc/sedKwlpAb: Permission denied\nDone executing cleanup for test: \nT1546.004-4 Append to the system shell profile\n\n",
+      "stderr": "",
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
+    }
+  }
+}

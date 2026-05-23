@@ -1,0 +1,13 @@
+{
+  "guid": "2a821573-fb3f-4e71-92c3-daac7432f053",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-12 Disable macOS Gatekeeper\n\nPrerequisites not met: T1685-12 Disable macOS Gatekeeper\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-12 Disable macOS Gatekeeper\n\nGlobally disabling the assessment system needs to be confirmed in System Settings.\nExit code: 1\nDone executing test: \nT1685-12 Disable macOS Gatekeeper\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-12 Disable macOS Gatekeeper\n\nDone executing cleanup for test: \nT1685-12 Disable macOS Gatekeeper\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "2cb98256-625e-4da9-9d44-f2e5f90b8bd5",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmporltv5.tmp' because it is being used by another process."
+    }
+  }
+}

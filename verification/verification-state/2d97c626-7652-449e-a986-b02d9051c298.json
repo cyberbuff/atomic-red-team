@@ -1,0 +1,13 @@
+{
+  "guid": "2d97c626-7652-449e-a986-b02d9051c298",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1132.001-2 Base64 Encoded data (freebsd)\n\nPrerequisites met: \nT1132.001-2 Base64 Encoded data (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1132.001-2 Base64 Encoded data (freebsd)\n\nsh: 1: b64encode: not found\ncurl: (3) URL rejected: Bad hostname\nExit code: 3\nDone executing test: \nT1132.001-2 Base64 Encoded data (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1132.001-2 Base64 Encoded data (freebsd)\n\nDone executing cleanup for test: \nT1132.001-2 Base64 Encoded data (freebsd)\n\n",
+      "stderr": "",
+      "exit_code": 3,
+      "last_error": "Command exited with code 3"
+    }
+  }
+}

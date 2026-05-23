@@ -1,0 +1,12 @@
+{
+  "guid": "3fb46e17-f337-4c14-9f9a-a471946533e2",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\nPrerequisites met: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\n/usr/bin/ssh-agent\n/usr/bin/mlock\n/usr/bin/chage\n/usr/bin/expiry\n/usr/bin/crontab\nExit code: 0\nDone executing test: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\nDone executing cleanup for test: \nT1548.001-10 Do reconnaissance for files that have the setgid bit set\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

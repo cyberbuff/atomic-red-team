@@ -1,0 +1,19 @@
+{
+  "guid": "23d348f3-cc5c-4ba9-bd0a-ae09069f0914",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nPrerequisites met: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nExit code: 0\nDone executing test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nDone executing cleanup for test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nPrerequisites met: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nExit code: 0\nDone executing test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\nDone executing cleanup for test: \nT1070.003-4 Clear Bash history (ln dev/null)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

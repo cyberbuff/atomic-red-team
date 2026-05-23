@@ -1,0 +1,13 @@
+{
+  "guid": "23c9c127-322b-4c75-95ca-eff464906114",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1546.014-1 Persistance with Event Monitor - emond\n\nPrerequisites not met: T1546.014-1 Persistance with Event Monitor - emond\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1546.014-1 Persistance with Event Monitor - emond\n\ncp: /etc/emond.d/rules/T1546.014_emond.plist: No such file or directory\ntouch: /private/var/db/emondClients/T1546.014: No such file or directory\nExit code: 1\nDone executing test: \nT1546.014-1 Persistance with Event Monitor - emond\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1546.014-1 Persistance with Event Monitor - emond\n\nrm: /etc/emond.d/rules/T1546.014_emond.plist: No such file or directory\nrm: /private/var/db/emondClients/T1546.014: No such file or directory\nDone executing cleanup for test: \nT1546.014-1 Persistance with Event Monitor - emond\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

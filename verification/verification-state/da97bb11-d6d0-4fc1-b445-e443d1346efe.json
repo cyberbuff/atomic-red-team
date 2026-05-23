@@ -1,0 +1,19 @@
+{
+  "guid": "da97bb11-d6d0-4fc1-b445-e443d1346efe",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.004-4 CC compile\n\nPrerequisites met: \nT1027.004-4 CC compile\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.004-4 CC compile\n\nT1027-004-test.cc has compiled and executed\nT1027-004-test.cc has compiled and executed\nExit code: 0\nDone executing test: \nT1027.004-4 CC compile\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.004-4 CC compile\n\nDone executing cleanup for test: \nT1027.004-4 CC compile\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.004-4 CC compile\n\nPrerequisites met: \nT1027.004-4 CC compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.004-4 CC compile\n\nT1027-004-test.cc has compiled and executed\nT1027-004-test.cc has compiled and executed\nExit code: 0\nDone executing test: \nT1027.004-4 CC compile\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.004-4 CC compile\n\nDone executing cleanup for test: \nT1027.004-4 CC compile\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

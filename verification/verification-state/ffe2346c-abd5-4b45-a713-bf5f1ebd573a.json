@@ -1,0 +1,19 @@
+{
+  "guid": "ffe2346c-abd5-4b45-a713-bf5f1ebd573a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\nPrerequisites not met: T1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\t[*] The binary must exist on disk at specified location (/tmp/evil-binary)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n1+0 records in\n1+0 records out\n1 byte copied, 3.8526e-05 s, 26.0 kB/s\nExit code: 0\nDone executing test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\nDone executing cleanup for test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\nPrerequisites not met: T1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\t[*] The binary must exist on disk at specified location (/tmp/evil-binary)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n1+0 records in\n1+0 records out\n1 bytes transferred in 0.000069 secs (14493 bytes/sec)\nExit code: 0\nDone executing test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\nDone executing cleanup for test: \nT1027.001-1 Pad Binary to Change Hash - Linux/macOS dd\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

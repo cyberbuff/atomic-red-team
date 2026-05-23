@@ -1,0 +1,13 @@
+{
+  "guid": "a2b35a63-9df1-4806-9a4d-5fe0500845f2",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.004-4 LinEnum tool execution\n\nPrerequisites not met: T1059.004-4 LinEnum tool execution\n\t[*] LinnEnum must exist on disk at specified location (/home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/LinEnum.sh)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.004-4 LinEnum tool execution\n\nchmod: cannot access '/home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/LinEnum.sh': No such file or directory\nbash: /home/runner/work/atomic-red-team/atomic-red-team/atomics/T1059.004/src/LinEnum.sh: No such file or directory\nExit code: 127\nDone executing test: \nT1059.004-4 LinEnum tool execution\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.004-4 LinEnum tool execution\n\nDone executing cleanup for test: \nT1059.004-4 LinEnum tool execution\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

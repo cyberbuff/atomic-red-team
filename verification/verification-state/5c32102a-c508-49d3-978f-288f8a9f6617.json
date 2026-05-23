@@ -1,0 +1,12 @@
+{
+  "guid": "5c32102a-c508-49d3-978f-288f8a9f6617",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

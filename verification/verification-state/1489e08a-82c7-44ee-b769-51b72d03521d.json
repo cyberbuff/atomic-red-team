@@ -1,0 +1,13 @@
+{
+  "guid": "1489e08a-82c7-44ee-b769-51b72d03521d",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwrl24l.tmp' because it is being used by another process."
+    }
+  }
+}

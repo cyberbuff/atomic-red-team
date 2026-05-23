@@ -1,0 +1,12 @@
+{
+  "guid": "9a1ec7da-b892-449f-ad68-67066d04380c",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1564.001-7 Show all hidden files\n\nPrerequisites met: \nT1564.001-7 Show all hidden files\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1564.001-7 Show all hidden files\n\nExit code: 0\nDone executing test: \nT1564.001-7 Show all hidden files\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1564.001-7 Show all hidden files\n\nDone executing cleanup for test: \nT1564.001-7 Show all hidden files\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "bc219ff7-789f-4d51-9142-ecae3397deae",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1574.006-2 Shared Library Injection via LD_PRELOAD\n\nPrerequisites not met: T1574.006-2 Shared Library Injection via LD_PRELOAD\n\t[*] The shared library must exist on disk at specified location (/tmp/T1574006.so)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1574.006-2 Shared Library Injection via LD_PRELOAD\n\nCoreFxPipe_PSHost.DCEA5277.2547.None.pwsh\nInvoke-AtomicTest-ExecutionLog.csv\nMicrosoft.PackageManagement\nclr-debug-pipe-2136-8847-in\nclr-debug-pipe-2136-8847-out\nclr-debug-pipe-2151-8960-in\nclr-debug-pipe-2151-8960-out\nclr-debug-pipe-2547-11263-in\nclr-debug-pipe-2547-11263-out\ndotnet-diagnostic-2136-8847-socket\ndotnet-diagnostic-2151-8960-socket\ndotnet-diagnostic-2547-11263-socket\nsnap-private-tmp\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-ModemManager.service-CQRLsw\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-chrony.service-rxK3MT\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-haveged.service-DZAPDA\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-polkit.service-iRXegF\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-systemd-localed.service-VLcd0b\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-systemd-logind.service-yyBCsH\nsystemd-private-70b10c4b9ccc4fc3abfcb26dfce9c59d-systemd-resolved.service-vSOHuW\ntmpZBwgDK.tmp\ntmpW2ugnJ.tmp\nERROR: ld.so: object '/tmp/T1574006.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.\nExit code: 0\nDone executing test: \nT1574.006-2 Shared Library Injection via LD_PRELOAD\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1574.006-2 Shared Library Injection via LD_PRELOAD\n\nDone executing cleanup for test: \nT1574.006-2 Shared Library Injection via LD_PRELOAD\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

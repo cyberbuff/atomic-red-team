@@ -1,0 +1,19 @@
+{
+  "guid": "552b4db3-8850-412c-abce-ab5cc8a86604",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\nPrerequisites met: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n{\n  \"city\": \"Chicago\",\n  \"ip\": \"20.102.235.83\",\n  \"region\": \"Illinois\",\n  \"country\": \"US\",\n  \"loc\": \"41.8500,-87.6500\",\n  \"org\": \"AS8075 Microsoft Corporation\",\n  \"postal\": \"60602\",\n  \"timezone\": \"America/Chicago\",\n  \"readme\": \"https://ipinfo.io/missingauth\"\n}\nDload  Upload   Total   Spent    Left  Speed\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100   260  100   260    0     0   2864      0 --:--:-- --:--:-- --:--:--  2888\nExit code: 0\nDone executing test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\nDone executing cleanup for test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\nPrerequisites met: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n{\n  \"ip\": \"13.105.220.1\",\n  \"city\": \"San Jose\",\n  \"region\": \"California\",\n  \"country\": \"US\",\n  \"loc\": \"37.3394,-121.8950\",\n  \"org\": \"AS8075 Microsoft Corporation\",\n  \"postal\": \"95025\",\n  \"timezone\": \"America/Los_Angeles\",\n  \"readme\": \"https://ipinfo.io/missingauth\"\nDload  Upload   Total   Spent    Left  Speed\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100   267  100   267    0     0   2601      0 --:--:-- --:--:-- --:--:--  2617\nExit code: 0\nDone executing test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\nDone executing cleanup for test: \nT1614-2 Get geolocation info through IP-Lookup services using curl freebsd, linux or macos\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

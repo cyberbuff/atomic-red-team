@@ -1,0 +1,19 @@
+{
+  "guid": "acb6b1ff-e2ad-4d64-806c-6c35fe73b951",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1018-6 Remote System Discovery - arp nix\n\nPrerequisites met: \nT1018-6 Remote System Discovery - arp nix\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1018-6 Remote System Discovery - arp nix\n\n_gateway (10.1.0.1) at 12:34:56:78:9a:bc [ether] on eth0\nExit code: 0\nDone executing test: \nT1018-6 Remote System Discovery - arp nix\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1018-6 Remote System Discovery - arp nix\n\nDone executing cleanup for test: \nT1018-6 Remote System Discovery - arp nix\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1018-6 Remote System Discovery - arp nix\n\nPrerequisites met: \nT1018-6 Remote System Discovery - arp nix\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1018-6 Remote System Discovery - arp nix\n\nmdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet]\nExit code: 0\nDone executing test: \nT1018-6 Remote System Discovery - arp nix\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1018-6 Remote System Discovery - arp nix\n\nDone executing cleanup for test: \nT1018-6 Remote System Discovery - arp nix\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

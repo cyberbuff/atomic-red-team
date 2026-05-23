@@ -1,0 +1,12 @@
+{
+  "guid": "a5983dee-bf6c-4eaf-951c-dbc1a7b90900",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1543.001-1 Launch Agent\n\nPrerequisites not met: T1543.001-1 Launch Agent\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1543.001-1 Launch Agent\n\nWarning: Expecting a LaunchDaemons path since the command was ran as root. Got LaunchAgents instead.\n`launchctl bootstrap` is a recommended alternative.\nExit code: 0\nDone executing test: \nT1543.001-1 Launch Agent\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1543.001-1 Launch Agent\n\nWarning: Expecting a LaunchDaemons path since the command was ran as root. Got LaunchAgents instead.\n`launchctl bootout` is a recommended alternative.\nDone executing cleanup for test: \nT1543.001-1 Launch Agent\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

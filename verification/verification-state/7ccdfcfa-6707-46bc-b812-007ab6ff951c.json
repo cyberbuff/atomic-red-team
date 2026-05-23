@@ -1,0 +1,13 @@
+{
+  "guid": "7ccdfcfa-6707-46bc-b812-007ab6ff951c",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\nPrerequisites met: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\n--2026-05-23 01:21:50--  https://example.com/\nResolving example.com (example.com)... 172.66.147.243, 104.20.23.154, 2606:4700:10::6814:179a, ...\nConnecting to example.com (example.com)|172.66.147.243|:443... connected.\nHTTP request sent, awaiting response... 405 Method Not Allowed\n2026-05-23 01:21:51 ERROR 405: Method Not Allowed.\nExit code: 8\nDone executing test: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\nDone executing cleanup for test: \nT1048.002-3 Exfiltrate data in a file over HTTPS using wget\n\n",
+      "stderr": "",
+      "exit_code": 8,
+      "last_error": "Command exited with code 8"
+    }
+  }
+}

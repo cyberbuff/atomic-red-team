@@ -1,0 +1,12 @@
+{
+  "guid": "5cafd6c1-2f43-46eb-ac47-a5301ba0a618",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1690-6 Setting the HISTFILESIZE environment variable\n\nPrerequisites met: \nT1690-6 Setting the HISTFILESIZE environment variable\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1690-6 Setting the HISTFILESIZE environment variable\n\nrunnning some commands to populate the history\nrunner\nrunner adm users docker systemd-journal\n\\0 is zero\nExit code: 0\nDone executing test: \nT1690-6 Setting the HISTFILESIZE environment variable\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1690-6 Setting the HISTFILESIZE environment variable\n\nDone executing cleanup for test: \nT1690-6 Setting the HISTFILESIZE environment variable\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

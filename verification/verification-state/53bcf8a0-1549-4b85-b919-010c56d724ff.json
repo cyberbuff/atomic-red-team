@@ -1,0 +1,12 @@
+{
+  "guid": "53bcf8a0-1549-4b85-b919-010c56d724ff",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1553.004-3 Install root CA on Debian/Ubuntu\n\nPrerequisites not met: T1553.004-3 Install root CA on Debian/Ubuntu\n\t[*] Elevation required but not provided\n\n\t[*] Verify the certificate exists. It generates if not on disk.\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1553.004-3 Install root CA on Debian/Ubuntu\n\nUpdating certificates in /etc/ssl/certs...\n0 added, 0 removed; done.\nRunning hooks in /etc/ca-certificates/update.d...\n/etc/ssl/certs/adoptium/cacerts successfully populated.\ndone.\nmv: cannot stat 'rootCA.crt': No such file or directory\nExit code: 0\nDone executing test: \nT1553.004-3 Install root CA on Debian/Ubuntu\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1553.004-3 Install root CA on Debian/Ubuntu\n\nDone executing cleanup for test: \nT1553.004-3 Install root CA on Debian/Ubuntu\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

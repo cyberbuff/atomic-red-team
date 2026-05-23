@@ -1,0 +1,12 @@
+{
+  "guid": "1338bf0c-fd0c-48c0-9e65-329f18e2c0d3",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1014-3 dynamic-linker based rootkit (libprocesshider)\n\nPrerequisites not met: T1014-3 dynamic-linker based rootkit (libprocesshider)\n\t[*] Elevation required but not provided\n\n\t[*] The preload library must exist on disk at specified location (/usr/local/lib/libprocesshider.so)\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1014-3 dynamic-linker based rootkit (libprocesshider)\n\n/usr/local/lib/libprocesshider.so\nprocess hidden\ntee: /etc/ld.so.preload: Permission denied\nsh: 1: /usr/local/bin/evil_script.py: not found\nExit code: 0\nDone executing test: \nT1014-3 dynamic-linker based rootkit (libprocesshider)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1014-3 dynamic-linker based rootkit (libprocesshider)\n\nsed: can't read /etc/ld.so.preload: No such file or directory\nDone executing cleanup for test: \nT1014-3 dynamic-linker based rootkit (libprocesshider)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "69bd4abe-8759-49a6-8d21-0f15822d6370",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp422bg2.tmp' because it is being used by another process."
+    }
+  }
+}

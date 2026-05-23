@@ -3,8 +3,10 @@ from pathlib import Path
 from atomic_red_team.verification import (
     build_platform_matrix,
     merge_verification_results,
+    read_verification_state,
     shard_for_guid,
     targets_for_platform,
+    write_verification_state,
 )
 
 RUNNER_SCRIPT = Path("verification/run-atomic-verification.ps1")
@@ -499,11 +501,96 @@ def test_merge_results_promotes_existing_platform_run_metadata_when_no_results()
     assert platform_state["exit_code"] == 0
 
 
+def test_write_verification_state_splits_metadata_and_atomic_files(tmp_path):
+    state_dir = tmp_path / "verification-state"
+    state = {
+        "version": 2,
+        "last_run_at": "2026-05-22T09:00:00Z",
+        "last_run_id": "4",
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platforms": {
+                    "linux": {
+                        "consecutive_failures": 0,
+                        "last_status": "passed",
+                        "exit_code": 0,
+                        "stdout": "command output\n",
+                        "stderr": "",
+                    }
+                },
+            }
+        ],
+    }
+
+    write_verification_state(state_dir, state)
+
+    assert not (tmp_path / "verification-state.yaml").exists()
+    assert (state_dir / "metadata.json").read_text(encoding="utf-8") == (
+        '{\n'
+        '  "version": 2,\n'
+        '  "last_run_time": "2026-05-22T09:00:00Z",\n'
+        '  "last_run_id": "4"\n'
+        '}\n'
+    )
+    assert (state_dir / "11111111-1111-4111-8111-111111111111.json").exists()
+
+
+def test_read_verification_state_loads_directory_files(tmp_path):
+    state_dir = tmp_path / "verification-state"
+    state_dir.mkdir()
+    (state_dir / "metadata.json").write_text(
+        '{\n'
+        '  "version": 2,\n'
+        '  "last_run_time": "2026-05-22T09:00:00Z",\n'
+        '  "last_run_id": "4"\n'
+        '}\n',
+        encoding="utf-8",
+    )
+    (state_dir / "11111111-1111-4111-8111-111111111111.json").write_text(
+        '{\n'
+        '  "guid": "11111111-1111-4111-8111-111111111111",\n'
+        '  "platforms": {\n'
+        '    "linux": {\n'
+        '      "consecutive_failures": 0,\n'
+        '      "last_status": "passed",\n'
+        '      "exit_code": 0,\n'
+        '      "stdout": "command output\\n",\n'
+        '      "stderr": ""\n'
+        '    }\n'
+        '  }\n'
+        '}\n',
+        encoding="utf-8",
+    )
+
+    state = read_verification_state(state_dir)
+
+    assert state == {
+        "version": 2,
+        "last_run_at": "2026-05-22T09:00:00Z",
+        "last_run_id": "4",
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platforms": {
+                    "linux": {
+                        "consecutive_failures": 0,
+                        "last_status": "passed",
+                        "exit_code": 0,
+                        "stdout": "command output\n",
+                        "stderr": "",
+                    }
+                },
+            }
+        ],
+    }
+
+
 def test_runner_captures_stage_output_and_emits_result_streams():
     script = RUNNER_SCRIPT.read_text(encoding="utf-8")
 
     assert "& $ScriptBlock *> $null" not in script
-    assert "stdout = Get-FileText -Path $stdoutPath" in script
+    assert "stdout = Get-JoinedFileText -Paths $stdoutPaths" in script
     assert "stderr = Get-FileText -Path $stderrPath" in script
     assert "stdout = $stdout" in script
     assert "stderr = $stderr" in script
@@ -530,10 +617,18 @@ def test_runner_fails_stage_when_inner_command_logs_nonzero_exit_code():
 def test_runner_captures_non_error_powershell_streams_as_stdout():
     script = RUNNER_SCRIPT.read_text(encoding="utf-8")
 
-    assert "3>> $stdoutPath" in script
-    assert "4>> $stdoutPath" in script
-    assert "5>> $stdoutPath" in script
-    assert "6>> $stdoutPath" in script
+    assert "3>> $stdoutPath" not in script
+    assert "4>> $stdoutPath" not in script
+    assert "5>> $stdoutPath" not in script
+    assert "6>> $stdoutPath" not in script
+    assert "$warningPath = [System.IO.Path]::GetTempFileName()" in script
+    assert "$verbosePath = [System.IO.Path]::GetTempFileName()" in script
+    assert "$debugPath = [System.IO.Path]::GetTempFileName()" in script
+    assert "$informationPath = [System.IO.Path]::GetTempFileName()" in script
+    assert "3> $warningPath" in script
+    assert "4> $verbosePath" in script
+    assert "5> $debugPath" in script
+    assert "6> $informationPath" in script
 
 
 def test_runner_emits_stage_and_result_exit_codes():

@@ -1,0 +1,13 @@
+{
+  "guid": "37ad2f24-7c53-4a50-92da-427a4ad13f58",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1546.004-7 Create/Append to .bash_logout\n\nPrerequisites not met: T1546.004-7 Create/Append to .bash_logout\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1546.004-7 Create/Append to .bash_logout\n\nuseradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\nsu: user art does not exist or the user entry does not contain all the required fields\nExit code: 1\nDone executing test: \nT1546.004-7 Create/Append to .bash_logout\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1546.004-7 Create/Append to .bash_logout\n\nuserdel: user 'art' does not exist\nDone executing cleanup for test: \nT1546.004-7 Create/Append to .bash_logout\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

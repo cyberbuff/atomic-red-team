@@ -1,0 +1,13 @@
+{
+  "guid": "0512d214-9512-4d22-bde7-f37e058259b3",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2tuits.tmp' because it is being used by another process."
+    }
+  }
+}

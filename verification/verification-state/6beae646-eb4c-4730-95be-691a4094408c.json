@@ -1,0 +1,12 @@
+{
+  "guid": "6beae646-eb4c-4730-95be-691a4094408c",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\nPrerequisites met: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\nExit code: 0\nDone executing test: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\nDone executing cleanup for test: \nT1497.001-6 Detect Virtualization Environment using sysctl (hw.model)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

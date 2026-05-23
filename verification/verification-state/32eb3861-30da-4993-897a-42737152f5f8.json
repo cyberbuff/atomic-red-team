@@ -1,0 +1,13 @@
+{
+  "guid": "32eb3861-30da-4993-897a-42737152f5f8",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpvrtnna.tmp' because it is being used by another process."
+    }
+  }
+}

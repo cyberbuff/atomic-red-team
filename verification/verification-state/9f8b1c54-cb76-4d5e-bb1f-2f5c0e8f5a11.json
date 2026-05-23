@@ -1,0 +1,13 @@
+{
+  "guid": "9f8b1c54-cb76-4d5e-bb1f-2f5c0e8f5a11",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmps3xjpg.tmp' because it is being used by another process."
+    }
+  }
+}

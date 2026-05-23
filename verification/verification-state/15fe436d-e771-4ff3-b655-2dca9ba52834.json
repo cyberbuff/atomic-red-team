@@ -1,0 +1,13 @@
+{
+  "guid": "15fe436d-e771-4ff3-b655-2dca9ba52834",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmprli4wm.tmp' because it is being used by another process."
+    }
+  }
+}

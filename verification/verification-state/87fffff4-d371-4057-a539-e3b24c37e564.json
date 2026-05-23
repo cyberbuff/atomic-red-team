@@ -1,0 +1,13 @@
+{
+  "guid": "87fffff4-d371-4057-a539-e3b24c37e564",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.006-9 MacOS - Timestomp Date Modified\n\nPrerequisites not met: T1070.006-9 MacOS - Timestomp Date Modified\n\t[*] The file must exist in order to be timestomped\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.006-9 MacOS - Timestomp Date Modified\n\nERROR: File Not Found. (-43)  on file: /tmp/T1070.006-modified.txt\nExit code: 2\nDone executing test: \nT1070.006-9 MacOS - Timestomp Date Modified\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.006-9 MacOS - Timestomp Date Modified\n\nDone executing cleanup for test: \nT1070.006-9 MacOS - Timestomp Date Modified\n\n",
+      "stderr": "",
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
+    }
+  }
+}

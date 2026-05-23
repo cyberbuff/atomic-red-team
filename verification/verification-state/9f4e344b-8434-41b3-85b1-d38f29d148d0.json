@@ -1,0 +1,13 @@
+{
+  "guid": "9f4e344b-8434-41b3-85b1-d38f29d148d0",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2hpoeq.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "dcc2ca85-a21c-43a4-acc7-7314d4e5891c",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzluwmo.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "4469192c-2d2d-4a3a-9758-1f31d937a92b",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpfdva3z.tmp' because it is being used by another process."
+    }
+  }
+}

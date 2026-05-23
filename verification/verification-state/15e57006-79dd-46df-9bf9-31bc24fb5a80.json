@@ -1,0 +1,13 @@
+{
+  "guid": "15e57006-79dd-46df-9bf9-31bc24fb5a80",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpq1gamz.tmp' because it is being used by another process."
+    }
+  }
+}

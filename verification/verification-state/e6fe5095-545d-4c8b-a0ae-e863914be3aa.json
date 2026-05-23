@@ -1,0 +1,13 @@
+{
+  "guid": "e6fe5095-545d-4c8b-a0ae-e863914be3aa",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\nPrerequisites not met: T1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\t[*] Elevation required but not provided\n\n\t[*] compile C program\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\nsudo: /tmp/t1040_macos_pcapdemo: command not found\nExit code: 1\nDone executing test: \nT1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\nDone executing cleanup for test: \nT1040-8 Packet Capture macOS using /dev/bpfN with sudo\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

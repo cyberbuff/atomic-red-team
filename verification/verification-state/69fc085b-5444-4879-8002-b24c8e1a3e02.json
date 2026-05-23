@@ -1,0 +1,13 @@
+{
+  "guid": "69fc085b-5444-4879-8002-b24c8e1a3e02",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4typpx.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "2db7852e-5a32-4ec7-937f-f4e027881700",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp32ktzk.tmp' because it is being used by another process."
+    }
+  }
+}

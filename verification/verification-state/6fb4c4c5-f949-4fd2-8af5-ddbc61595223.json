@@ -1,0 +1,13 @@
+{
+  "guid": "6fb4c4c5-f949-4fd2-8af5-ddbc61595223",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpihtmvc.tmp' because it is being used by another process."
+    }
+  }
+}

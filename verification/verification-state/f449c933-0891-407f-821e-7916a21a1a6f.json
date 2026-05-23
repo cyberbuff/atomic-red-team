@@ -1,0 +1,19 @@
+{
+  "guid": "f449c933-0891-407f-821e-7916a21a1a6f",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nPrerequisites met: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nSat May 23 01:22:32 UTC 2026\nExit code: 0\nDone executing test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nDone executing cleanup for test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nPrerequisites met: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nSat May 23 01:29:36 UTC 2026\nExit code: 0\nDone executing test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\nDone executing cleanup for test: \nT1124-3 System Time Discovery in FreeBSD/macOS\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

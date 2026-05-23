@@ -1,0 +1,19 @@
+{
+  "guid": "005943f9-8dd5-4349-8b46-0313c0a9f973",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-8 Hex decoding with shell utilities\n\n/usr/bin/xxd\nPrerequisites met: \nT1140-8 Hex decoding with shell utilities\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-8 Hex decoding with shell utilities\n\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nExit code: 0\nDone executing test: \nT1140-8 Hex decoding with shell utilities\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-8 Hex decoding with shell utilities\n\nDone executing cleanup for test: \nT1140-8 Hex decoding with shell utilities\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-8 Hex decoding with shell utilities\n\n/usr/bin/xxd\nPrerequisites met: \nT1140-8 Hex decoding with shell utilities\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-8 Hex decoding with shell utilities\n\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nExit code: 0\nDone executing test: \nT1140-8 Hex decoding with shell utilities\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-8 Hex decoding with shell utilities\n\nDone executing cleanup for test: \nT1140-8 Hex decoding with shell utilities\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

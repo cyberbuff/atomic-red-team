@@ -1,0 +1,13 @@
+{
+  "guid": "f9b8daff-8fa7-4e6a-a1a7-7c14675a545b",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpxewdug.tmp' because it is being used by another process."
+    }
+  }
+}

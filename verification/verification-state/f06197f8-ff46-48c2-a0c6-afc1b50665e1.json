@@ -1,0 +1,12 @@
+{
+  "guid": "f06197f8-ff46-48c2-a0c6-afc1b50665e1",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\nPrerequisites met: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\nthe cake is a lie\nExit code: 0\nDone executing test: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\nDone executing cleanup for test: \nT1027.002-2 Binary packed by UPX, with modified headers (linux)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "7ec5b74e-8289-4ff2-a162-b6f286a33abd",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpt2aeml.tmp' because it is being used by another process."
+    }
+  }
+}

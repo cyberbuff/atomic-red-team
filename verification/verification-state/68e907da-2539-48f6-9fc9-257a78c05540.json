@@ -1,0 +1,19 @@
+{
+  "guid": "68e907da-2539-48f6-9fc9-257a78c05540",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-1 Port Scan\n\nPrerequisites met: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-1 Port Scan\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nExit code: \nDone executing test: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-1 Port Scan\n\nDone executing cleanup for test: \nT1046-1 Port Scan\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-1 Port Scan\n\nPrerequisites met: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-1 Port Scan\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nbash: line 1: 39328 Killed: 9               ( echo 2> /dev/null > /dev/tcp/192.168.1.1/$port )\nExit code: \nDone executing test: \nT1046-1 Port Scan\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-1 Port Scan\n\nDone executing cleanup for test: \nT1046-1 Port Scan\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

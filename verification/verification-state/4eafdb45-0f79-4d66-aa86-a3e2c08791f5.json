@@ -1,0 +1,19 @@
+{
+  "guid": "4eafdb45-0f79-4d66-aa86-a3e2c08791f5",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1690-1 Disable history collection\n\nPrerequisites met: \nT1690-1 Disable history collection\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1690-1 Disable history collection\n\nrunner\nExit code: 0\nDone executing test: \nT1690-1 Disable history collection\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1690-1 Disable history collection\n\nDone executing cleanup for test: \nT1690-1 Disable history collection\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1690-1 Disable history collection\n\nPrerequisites met: \nT1690-1 Disable history collection\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1690-1 Disable history collection\n\nrunner\nExit code: 0\nDone executing test: \nT1690-1 Disable history collection\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1690-1 Disable history collection\n\nDone executing cleanup for test: \nT1690-1 Disable history collection\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

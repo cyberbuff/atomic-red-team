@@ -1,0 +1,13 @@
+{
+  "guid": "dfb1b667-4bb8-4a63-a85e-29936ea75f29",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpulgbnq.tmp' because it is being used by another process."
+    }
+  }
+}

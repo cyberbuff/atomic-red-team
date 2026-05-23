@@ -1,0 +1,19 @@
+{
+  "guid": "91a60b03-fb75-4d24-a42e-2eb8956e8de1",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.003-5 Disable tty_tickets for sudo caching\n\nPrerequisites not met: T1548.003-5 Disable tty_tickets for sudo caching\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n/etc/sudoers.d/README: parsed OK\n/etc/sudoers.d/runner: parsed OK\n/etc/sudoers: parsed OK\n/etc/sudoers.d/90-cloud-init-users: parsed OK\nExit code: 0\nDone executing test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\nDone executing cleanup for test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.003-5 Disable tty_tickets for sudo caching\n\nPrerequisites not met: T1548.003-5 Disable tty_tickets for sudo caching\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n/etc/sudoers: parsed OK\n/private/etc/sudoers.d/anka: parsed OK\n/private/etc/sudoers.d/runner: parsed OK\nExit code: 0\nDone executing test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\nDone executing cleanup for test: \nT1548.003-5 Disable tty_tickets for sudo caching\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

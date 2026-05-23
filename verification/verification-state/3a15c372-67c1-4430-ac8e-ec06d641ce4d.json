@@ -1,0 +1,19 @@
+{
+  "guid": "3a15c372-67c1-4430-ac8e-ec06d641ce4d",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n/usr/bin/base64\nPrerequisites met: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nExit code: 0\nDone executing test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\nDone executing cleanup for test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n/usr/bin/base64\nPrerequisites met: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nhttps://www.youtube.com/@atomicsonafriday FTW\nExit code: 0\nDone executing test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\nDone executing cleanup for test: \nT1140-9 Linux Base64 Encoded Shebang in CLI\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

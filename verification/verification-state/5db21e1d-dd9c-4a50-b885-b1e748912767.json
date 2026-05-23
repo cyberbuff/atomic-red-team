@@ -1,0 +1,19 @@
+{
+  "guid": "5db21e1d-dd9c-4a50-b885-b1e748912767",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1571-2 Testing usage of uncommonly used port\n\n/usr/bin/telnet\nPrerequisites met: \nT1571-2 Testing usage of uncommonly used port\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1571-2 Testing usage of uncommonly used port\n\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\nKilled\nExit code: 0\nDone executing test: \nT1571-2 Testing usage of uncommonly used port\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1571-2 Testing usage of uncommonly used port\n\nDone executing cleanup for test: \nT1571-2 Testing usage of uncommonly used port\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1571-2 Testing usage of uncommonly used port\n\nPrerequisites not met: T1571-2 Testing usage of uncommonly used port\n\t[*] Requires telnet\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1571-2 Testing usage of uncommonly used port\n\nsh: telnet: command not found\nExit code: 0\nDone executing test: \nT1571-2 Testing usage of uncommonly used port\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1571-2 Testing usage of uncommonly used port\n\nDone executing cleanup for test: \nT1571-2 Testing usage of uncommonly used port\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "guid": "d2791d72-b67f-4615-814f-ec824a91f514",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1018-14 Remote System Discovery - netstat\n\nPrerequisites met: \nT1018-14 Remote System Discovery - netstat\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1018-14 Remote System Discovery - netstat\n\ndefault         _gateway        0.0.0.0         UG        0 0          0 eth0\nExit code: 0\nDone executing test: \nT1018-14 Remote System Discovery - netstat\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1018-14 Remote System Discovery - netstat\n\nDone executing cleanup for test: \nT1018-14 Remote System Discovery - netstat\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

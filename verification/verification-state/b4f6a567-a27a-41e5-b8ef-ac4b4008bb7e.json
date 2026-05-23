@@ -1,0 +1,19 @@
+{
+  "guid": "b4f6a567-a27a-41e5-b8ef-ac4b4008bb7e",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-5 Base64 decoding with shell utilities\n\nPrerequisites met: \nT1140-5 Base64 decoding with shell utilities\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-5 Base64 decoding with shell utilities\n\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nExit code: 0\nDone executing test: \nT1140-5 Base64 decoding with shell utilities\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-5 Base64 decoding with shell utilities\n\nDone executing cleanup for test: \nT1140-5 Base64 decoding with shell utilities\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-5 Base64 decoding with shell utilities\n\nPrerequisites met: \nT1140-5 Base64 decoding with shell utilities\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-5 Base64 decoding with shell utilities\n\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nHello from Atomic Red Team test T1140!\nbase64: invalid argument /tmp/T1140.encoded\nUsage:\tbase64 [-Ddh] [-b num] [-i in_file] [-o out_file]\n  -b, --break       break encoded output up into lines of length num\n  -D, -d, --decode  decode input\n  -h, --help        display this message\n  -i, --input       input file (default: \"-\" for stdin)\n  -o, --output      output file (default: \"-\" for stdout)\nExit code: 0\nDone executing test: \nT1140-5 Base64 decoding with shell utilities\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-5 Base64 decoding with shell utilities\n\nDone executing cleanup for test: \nT1140-5 Base64 decoding with shell utilities\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

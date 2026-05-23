@@ -1,0 +1,13 @@
+{
+  "guid": "b13e9306-3351-4b4b-a6e8-477358b0b498",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmppasgpf.tmp' because it is being used by another process."
+    }
+  }
+}

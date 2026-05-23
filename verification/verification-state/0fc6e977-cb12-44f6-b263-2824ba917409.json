@@ -1,0 +1,21 @@
+{
+  "guid": "0fc6e977-cb12-44f6-b263-2824ba917409",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-1 rsync remote file copy (push)\n\nPrerequisites not met: T1105-1 rsync remote file copy (push)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-1 rsync remote file copy (push)\n\nssh: Could not resolve hostname victim-host: Temporary failure in name resolution\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(232) [sender=3.2.7]\nExit code: 255\nDone executing test: \nT1105-1 rsync remote file copy (push)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-1 rsync remote file copy (push)\n\nDone executing cleanup for test: \nT1105-1 rsync remote file copy (push)\n\n",
+      "stderr": "",
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1105-1 rsync remote file copy (push)\n\nPrerequisites not met: T1105-1 rsync remote file copy (push)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1105-1 rsync remote file copy (push)\n\nssh: Could not resolve hostname victim-host: nodename nor servname provided, or not known\nrsync(6965): error: unexpected end of file\nExit code: 255\nDone executing test: \nT1105-1 rsync remote file copy (push)\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1105-1 rsync remote file copy (push)\n\nDone executing cleanup for test: \nT1105-1 rsync remote file copy (push)\n\n",
+      "stderr": "",
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
+    }
+  }
+}

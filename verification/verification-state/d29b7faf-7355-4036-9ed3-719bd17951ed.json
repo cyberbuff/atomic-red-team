@@ -1,0 +1,13 @@
+{
+  "guid": "d29b7faf-7355-4036-9ed3-719bd17951ed",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpiql0at.tmp' because it is being used by another process."
+    }
+  }
+}

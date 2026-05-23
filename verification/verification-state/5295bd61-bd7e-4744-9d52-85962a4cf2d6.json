@@ -1,0 +1,13 @@
+{
+  "guid": "5295bd61-bd7e-4744-9d52-85962a4cf2d6",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpf0gunv.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "60eee3ea-2ebd-453b-a666-c52ce08d2709",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-10 chflags - Remove immutable file attribute\n\nPrerequisites met: \nT1222.002-10 chflags - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-10 chflags - Remove immutable file attribute\n\nsh: 1: chflags: not found\nsh: 1: chflags: not found\nExit code: 127\nDone executing test: \nT1222.002-10 chflags - Remove immutable file attribute\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-10 chflags - Remove immutable file attribute\n\nDone executing cleanup for test: \nT1222.002-10 chflags - Remove immutable file attribute\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "guid": "7693ccaa-8d64-4043-92a5-a2eb70359535",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.013-1 Decode Eicar File and Write to File\n\nPrerequisites met: \nT1027.013-1 Decode Eicar File and Write to File\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.013-1 Decode Eicar File and Write to File\n\nOut-File: \n   5 |  $decodedString | Out-File $env:temp\\T1027.013_decodedEicar.txt\n     |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n     | Access to the path '/T1027.013_decodedEicar.txt' is denied.\nLine |\nExit code: 1\nDone executing test: \nT1027.013-1 Decode Eicar File and Write to File\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.013-1 Decode Eicar File and Write to File\n\nDone executing cleanup for test: \nT1027.013-1 Decode Eicar File and Write to File\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    },
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.013-1 Decode Eicar File and Write to File\n\nPrerequisites met: \nT1027.013-1 Decode Eicar File and Write to File\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.013-1 Decode Eicar File and Write to File\n\nOut-File: \nLine |\n   5 |  $decodedString | Out-File $env:temp\\T1027.013_decodedEicar.txt\n     |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n     | Read-only file system : '/T1027.013_decodedEicar.txt'\nExit code: 1\nDone executing test: \nT1027.013-1 Decode Eicar File and Write to File\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.013-1 Decode Eicar File and Write to File\n\nDone executing cleanup for test: \nT1027.013-1 Decode Eicar File and Write to File\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    },
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp54ejaf.tmp' because it is being used by another process."
+    }
+  }
+}

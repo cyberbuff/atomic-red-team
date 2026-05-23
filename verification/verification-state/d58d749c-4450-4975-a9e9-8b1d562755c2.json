@@ -1,0 +1,13 @@
+{
+  "guid": "d58d749c-4450-4975-a9e9-8b1d562755c2",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\nPrerequisites not met: T1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\t[*] Packages sssd-ad sssd-tools realmd adcli installed and realm available, ldapsearch\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\nsh: 1: ldapsearch: not found\nExit code: 127\nDone executing test: \nT1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\nDone executing cleanup for test: \nT1069.002-15 Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

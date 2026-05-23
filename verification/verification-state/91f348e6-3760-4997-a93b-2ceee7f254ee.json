@@ -1,0 +1,13 @@
+{
+  "guid": "91f348e6-3760-4997-a93b-2ceee7f254ee",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpyxnrmo.tmp' because it is being used by another process."
+    }
+  }
+}

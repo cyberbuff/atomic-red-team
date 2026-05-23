@@ -1,0 +1,13 @@
+{
+  "guid": "21fe622f-8e53-4b31-ba83-6d333c2583f4",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwibcaw.tmp' because it is being used by another process."
+    }
+  }
+}

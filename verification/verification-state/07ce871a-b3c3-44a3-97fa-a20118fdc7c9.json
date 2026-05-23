@@ -1,0 +1,12 @@
+{
+  "guid": "07ce871a-b3c3-44a3-97fa-a20118fdc7c9",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1614.001-4 Discover System Language with localectl\n\nPrerequisites met: \nT1614.001-4 Discover System Language with localectl\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1614.001-4 Discover System Language with localectl\n\nX11 Model: pc105\n   X11 Layout: us\n    VC Keymap: (unset)\nSystem Locale: LANG=C.UTF-8\nExit code: 0\nDone executing test: \nT1614.001-4 Discover System Language with localectl\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1614.001-4 Discover System Language with localectl\n\nDone executing cleanup for test: \nT1614.001-4 Discover System Language with localectl\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

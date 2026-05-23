@@ -1,0 +1,19 @@
+{
+  "guid": "39ce0303-ae16-4b9e-bb5b-4f53e8262066",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1074.001-2 Stage data from Discovery.sh\n\ncurl is installed\nPrerequisites met: \nT1074.001-2 Stage data from Discovery.sh\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1074.001-2 Stage data from Discovery.sh\n\n% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100    11  100    11    0     0    231      0 --:--:-- --:--:-- --:--:--   234\nls: cannot access '/Users/': No such file or directory\nls: cannot access '/Applications/': No such file or directory\nls: cannot access '/Library/': No such file or directory\nno crontab for runner\nsh: 11: at: not found\nExit code: 0\nDone executing test: \nT1074.001-2 Stage data from Discovery.sh\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1074.001-2 Stage data from Discovery.sh\n\nDone executing cleanup for test: \nT1074.001-2 Stage data from Discovery.sh\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1074.001-2 Stage data from Discovery.sh\n\ncurl is installed\nPrerequisites met: \nT1074.001-2 Stage data from Discovery.sh\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1074.001-2 Stage data from Discovery.sh\n\n% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100    14  100    14    0     0    327      0 --:--:-- --:--:-- --:--:--   333\ncrontab: no crontab for runner\nExit code: 0\nDone executing test: \nT1074.001-2 Stage data from Discovery.sh\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1074.001-2 Stage data from Discovery.sh\n\nDone executing cleanup for test: \nT1074.001-2 Stage data from Discovery.sh\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

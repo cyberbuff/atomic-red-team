@@ -1,0 +1,13 @@
+{
+  "guid": "afdfd7e3-8a0b-409f-85f7-886fdf249c9e",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmphlgaps.tmp' because it is being used by another process."
+    }
+  }
+}

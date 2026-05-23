@@ -19,6 +19,7 @@ RUNNERS_BY_PLATFORM = {
     "macos": "macos-latest",
     "windows": "windows-latest",
 }
+STATE_METADATA_FILE = "metadata.json"
 
 
 def read_yaml(path: Path) -> dict[str, Any]:
@@ -37,6 +38,79 @@ def write_yaml(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as file:
         yaml.safe_dump(data, file, sort_keys=False)
+
+
+def read_json(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8") as file:
+        data = json.load(file)
+    if data is None:
+        return {}
+    if not isinstance(data, dict):
+        raise ValueError(f"{path} must contain a JSON object")
+    return data
+
+
+def write_json(path: Path, data: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(data, indent=2) + "\n"
+    path.write_text(text, encoding="utf-8")
+
+
+def read_verification_state(path: Path) -> dict[str, Any]:
+    if path.is_dir():
+        metadata = read_json(path / STATE_METADATA_FILE)
+        state = {
+            "version": metadata.get("version", 2),
+            "atomics": read_atomic_state_files(path),
+        }
+        if "last_run_time" in metadata:
+            state["last_run_at"] = metadata["last_run_time"]
+        elif "last_run_at" in metadata:
+            state["last_run_at"] = metadata["last_run_at"]
+        if "last_run_id" in metadata:
+            state["last_run_id"] = metadata["last_run_id"]
+        return state
+    if path.exists():
+        return read_yaml(path)
+    legacy_path = path.with_suffix(".yaml")
+    if legacy_path.exists():
+        return read_yaml(legacy_path)
+    return {}
+
+
+def read_atomic_state_files(path: Path) -> list[dict[str, Any]]:
+    atomics = []
+    for atomic_path in sorted(path.glob("*.json")):
+        if atomic_path.name == STATE_METADATA_FILE:
+            continue
+        data = read_json(atomic_path)
+        if data:
+            atomics.append(data)
+    return sorted(atomics, key=lambda atomic: atomic.get("guid", ""))
+
+
+def write_verification_state(path: Path, state: dict[str, Any]) -> None:
+    path.mkdir(parents=True, exist_ok=True)
+    metadata = {"version": state.get("version", 2)}
+    if "last_run_at" in state:
+        metadata["last_run_time"] = state["last_run_at"]
+    if "last_run_id" in state:
+        metadata["last_run_id"] = state["last_run_id"]
+    write_json(path / STATE_METADATA_FILE, metadata)
+
+    atomics = [
+        atomic
+        for atomic in state.get("atomics", [])
+        if isinstance(atomic, dict) and isinstance(atomic.get("guid"), str)
+    ]
+    expected_files = {f"{atomic['guid']}.json" for atomic in atomics}
+    for atomic_path in path.glob("*.json"):
+        if atomic_path.name not in expected_files and atomic_path.name != STATE_METADATA_FILE:
+            atomic_path.unlink()
+    for atomic in sorted(atomics, key=lambda item: item["guid"]):
+        write_json(path / f"{atomic['guid']}.json", atomic)
 
 
 def shard_for_guid(guid: str, shard_count: int) -> int:
@@ -466,7 +540,7 @@ def main(argv: list[str] | None = None) -> int:
     merge = subparsers.add_parser("merge-results")
     merge.add_argument("--allowed", default="verification/allowed-atomics.yaml")
     merge.add_argument("--verified", default="verification/verified-atomics.yaml")
-    merge.add_argument("--state", default="verification/verification-state.yaml")
+    merge.add_argument("--state", default="verification/verification-state")
     merge.add_argument("--results-dir", required=True)
 
     args = parser.parse_args(argv)
@@ -498,11 +572,11 @@ def main(argv: list[str] | None = None) -> int:
         verified, state = merge_verification_results(
             read_yaml(Path(args.allowed)),
             read_yaml(Path(args.verified)),
-            read_yaml(Path(args.state)),
+            read_verification_state(Path(args.state)),
             load_results(Path(args.results_dir)),
         )
         write_yaml(Path(args.verified), verified)
-        write_yaml(Path(args.state), state)
+        write_verification_state(Path(args.state), state)
         return 0
     return 1
 

@@ -1,0 +1,13 @@
+{
+  "guid": "8d73c7b0-c2b1-4ac1-881a-4aa644f76064",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp5zoxwp.tmp' because it is being used by another process."
+    }
+  }
+}

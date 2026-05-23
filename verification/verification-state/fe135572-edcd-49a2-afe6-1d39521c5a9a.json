@@ -1,0 +1,13 @@
+{
+  "guid": "fe135572-edcd-49a2-afe6-1d39521c5a9a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-7 Stop/Start UFW firewall\n\nERROR: You need to be root to run this script\nPrerequisites not met: T1686-7 Stop/Start UFW firewall\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-7 Stop/Start UFW firewall\n\nERROR: You need to be root to run this script\nExit code: 1\nDone executing test: \nT1686-7 Stop/Start UFW firewall\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-7 Stop/Start UFW firewall\n\nERROR: You need to be root to run this script\nERROR: You need to be root to run this script\nDone executing cleanup for test: \nT1686-7 Stop/Start UFW firewall\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

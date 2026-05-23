@@ -1,0 +1,12 @@
+{
+  "guid": "3a41f169-a5ab-407f-9269-abafdb5da6c2",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\nPrerequisites met: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\nExit code: 0\nDone executing test: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\nDone executing cleanup for test: \nT1217-1 List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

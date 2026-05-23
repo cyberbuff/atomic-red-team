@@ -1,0 +1,12 @@
+{
+  "guid": "8a930abe-841c-4d4f-a877-72e9fe90b9ea",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1021.005-1 Enable Apple Remote Desktop Agent\n\nPrerequisites not met: T1021.005-1 Enable Apple Remote Desktop Agent\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1021.005-1 Enable Apple Remote Desktop Agent\n\nExit code: 0\nDone executing test: \nT1021.005-1 Enable Apple Remote Desktop Agent\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1021.005-1 Enable Apple Remote Desktop Agent\n\nDone executing cleanup for test: \nT1021.005-1 Enable Apple Remote Desktop Agent\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

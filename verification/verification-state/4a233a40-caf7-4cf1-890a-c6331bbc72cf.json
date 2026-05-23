@@ -1,0 +1,13 @@
+{
+  "guid": "4a233a40-caf7-4cf1-890a-c6331bbc72cf",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpb0naux.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "7db7a7f9-9531-4840-9b30-46220135441c",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmparpod2.tmp' because it is being used by another process."
+    }
+  }
+}

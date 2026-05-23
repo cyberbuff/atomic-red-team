@@ -1,0 +1,13 @@
+{
+  "guid": "b6097712-c42e-4174-b8f2-4b1e1a5bbb3d",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\nPrerequisites met: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\nsh: 1: b64encode: not found\nsh: 1: printf: usage: printf format [arg ...]\nsh: 1: b64decode: not found\nsh: 1: b64decode: not found\nsh: 1: b64decode: not found\nsh: 1: echo: echo: I/O error\nsh: 1: b64encode: not found\nsh: 1: b64decode: not found\nsh: 1: b64decode: not found\ncat: write error: Broken pipe\nsh: 1: b64decode: not found\ncat: write error: Broken pipe\nExit code: 127\nDone executing test: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\nDone executing cleanup for test: \nT1140-6 Base64 decoding with shell utilities (freebsd)\n\n",
+      "stderr": "",
+      "exit_code": 127,
+      "last_error": "Command exited with code 127"
+    }
+  }
+}

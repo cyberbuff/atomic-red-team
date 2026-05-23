@@ -1,0 +1,13 @@
+{
+  "guid": "32d1cf1b-cbc2-4c09-8d05-07ec5c83a821",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgujjfz.tmp' because it is being used by another process."
+    }
+  }
+}

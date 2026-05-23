@@ -1,0 +1,13 @@
+{
+  "guid": "8faff437-a114-4547-9a60-749652a03df6",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplubqke.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "73785dd2-323b-4205-ab16-bb6f06677e14",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwdiykr.tmp' because it is being used by another process."
+    }
+  }
+}

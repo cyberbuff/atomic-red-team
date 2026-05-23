@@ -1,0 +1,13 @@
+{
+  "guid": "fa96c21c-5fd6-4428-aa28-51a2fbecdbdc",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\nPrerequisites met: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\nExit code: 1\nDone executing test: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\nDone executing cleanup for test: \nT1518.001-5 Security Software Discovery - pgrep (FreeBSD)\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

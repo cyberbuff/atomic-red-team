@@ -1,0 +1,13 @@
+{
+  "guid": "d3eda496-1fc0-49e9-aff5-3bec5da9fa22",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1053.006-3 Create a system level transient systemd service and timer\n\nPrerequisites not met: T1053.006-3 Create a system level transient systemd service and timer\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1053.006-3 Create a system level transient systemd service and timer\n\nFailed to start transient timer unit: Interactive authentication required.\nExit code: 1\nDone executing test: \nT1053.006-3 Create a system level transient systemd service and timer\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1053.006-3 Create a system level transient systemd service and timer\n\nSee system logs and 'systemctl status Atomic-Red-Team.service' for details.\nFailed to stop Atomic-Red-Team.service: Interactive authentication required.\nFailed to stop Atomic-Red-Team.timer: Interactive authentication required.\nSee system logs and 'systemctl status Atomic-Red-Team.timer' for details.\nrm: cannot remove '/tmp/log': No such file or directory\nDone executing cleanup for test: \nT1053.006-3 Create a system level transient systemd service and timer\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

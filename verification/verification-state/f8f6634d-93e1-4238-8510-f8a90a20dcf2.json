@@ -1,0 +1,13 @@
+{
+  "guid": "f8f6634d-93e1-4238-8510-f8a90a20dcf2",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmps2ezvk.tmp' because it is being used by another process."
+    }
+  }
+}

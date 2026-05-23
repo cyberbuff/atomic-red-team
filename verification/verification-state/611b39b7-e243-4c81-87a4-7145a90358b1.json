@@ -1,0 +1,13 @@
+{
+  "guid": "611b39b7-e243-4c81-87a4-7145a90358b1",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpom4lbc.tmp' because it is being used by another process."
+    }
+  }
+}

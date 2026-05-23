@@ -1,0 +1,13 @@
+{
+  "guid": "bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgdfikc.tmp' because it is being used by another process."
+    }
+  }
+}

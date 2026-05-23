@@ -1,0 +1,12 @@
+{
+  "guid": "158bd4dd-6359-40ab-b13c-285b9ef6fa25",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1018-12 Remote System Discovery - ip neighbour\n\nPrerequisites met: \nT1018-12 Remote System Discovery - ip neighbour\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1018-12 Remote System Discovery - ip neighbour\n\n10.1.0.1 dev eth0 lladdr 12:34:56:78:9a:bc REACHABLE\nExit code: 0\nDone executing test: \nT1018-12 Remote System Discovery - ip neighbour\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1018-12 Remote System Discovery - ip neighbour\n\nDone executing cleanup for test: \nT1018-12 Remote System Discovery - ip neighbour\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

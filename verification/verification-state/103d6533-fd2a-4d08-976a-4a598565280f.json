@@ -1,0 +1,12 @@
+{
+  "guid": "103d6533-fd2a-4d08-976a-4a598565280f",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1518-3 Find and Display Safari Browser Version\n\nPrerequisites met: \nT1518-3 Find and Display Safari Browser Version\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1518-3 Find and Display Safari Browser Version\n\n26.5\n20624.2.5.18.3\nExit code: 0\nDone executing test: \nT1518-3 Find and Display Safari Browser Version\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1518-3 Find and Display Safari Browser Version\n\nDone executing cleanup for test: \nT1518-3 Find and Display Safari Browser Version\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

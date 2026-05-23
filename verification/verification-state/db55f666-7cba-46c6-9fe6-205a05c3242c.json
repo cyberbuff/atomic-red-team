@@ -1,0 +1,19 @@
+{
+  "guid": "db55f666-7cba-46c6-9fe6-205a05c3242c",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.001-5 Set a SetGID flag on file\n\nPrerequisites not met: T1548.001-5 Set a SetGID flag on file\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.001-5 Set a SetGID flag on file\n\nExit code: 0\nDone executing test: \nT1548.001-5 Set a SetGID flag on file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.001-5 Set a SetGID flag on file\n\nDone executing cleanup for test: \nT1548.001-5 Set a SetGID flag on file\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.001-5 Set a SetGID flag on file\n\nPrerequisites not met: T1548.001-5 Set a SetGID flag on file\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.001-5 Set a SetGID flag on file\n\nExit code: 0\nDone executing test: \nT1548.001-5 Set a SetGID flag on file\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.001-5 Set a SetGID flag on file\n\nDone executing cleanup for test: \nT1548.001-5 Set a SetGID flag on file\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

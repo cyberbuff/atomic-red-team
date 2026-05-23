@@ -1,0 +1,12 @@
+{
+  "guid": "cb8f7cdc-36c4-4ed0-befc-7ad7d24dfd7a",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1614.001-6 Discover System Language by Environment Variable Query\n\nPrerequisites met: \nT1614.001-6 Discover System Language by Environment Variable Query\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1614.001-6 Discover System Language by Environment Variable Query\n\nLANG=C.UTF-8\nC.UTF-8\nLANG='C.UTF-8'\nExit code: 0\nDone executing test: \nT1614.001-6 Discover System Language by Environment Variable Query\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1614.001-6 Discover System Language by Environment Variable Query\n\nDone executing cleanup for test: \nT1614.001-6 Discover System Language by Environment Variable Query\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "4b81bcfa-fb0a-45e9-90c2-e3efe5160140",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmprl1uei.tmp' because it is being used by another process."
+    }
+  }
+}

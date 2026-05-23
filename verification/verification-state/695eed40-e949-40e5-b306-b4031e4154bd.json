@@ -1,0 +1,13 @@
+{
+  "guid": "695eed40-e949-40e5-b306-b4031e4154bd",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnd0otk.tmp' because it is being used by another process."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guid": "dafaf052-5508-402d-bf77-51e0700c02e2",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp1ksdld.tmp' because it is being used by another process."
+    }
+  }
+}

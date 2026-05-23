@@ -1,0 +1,12 @@
+{
+  "guid": "6d99f93c-da56-49e3-b195-163090ace4f6",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.008-5 Copy and Modify Mailbox Data on Linux\n\nPrerequisites not met: T1070.008-5 Copy and Modify Mailbox Data on Linux\n\t[*] Elevation required but not provided\n\n\t[*] Create dummy file in /var/spool/mail/ if no files exist\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.008-5 Copy and Modify Mailbox Data on Linux\n\nmkdir: cannot create directory \u2018/var/spool/mail/copy\u2019: Permission denied\ncp: cannot stat '/var/spool/mail/*': No such file or directory\nExit code: 0\nDone executing test: \nT1070.008-5 Copy and Modify Mailbox Data on Linux\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.008-5 Copy and Modify Mailbox Data on Linux\n\nls: cannot access '/var/spool/mail/temp': No such file or directory\nDone executing cleanup for test: \nT1070.008-5 Copy and Modify Mailbox Data on Linux\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

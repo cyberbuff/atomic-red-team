@@ -1,0 +1,12 @@
+{
+  "guid": "d3812c4e-30ee-466a-a0aa-07e355b561d6",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1531-6 Delete User via sysadminctl utility\n\nPrerequisites not met: T1531-6 Delete User via sysadminctl utility\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1531-6 Delete User via sysadminctl utility\n\n2026-05-23 01:25:04.925 sysadminctl[31032:76938] sysadminctl should be run as root, or in interactive mode! (Error Domain=NSOSStatusErrorDomain Code=-60007 \"errAuthorizationInteractionNotAllowed: The authorization was denied since no user interaction was possible.\")\nExit code: 0\nDone executing test: \nT1531-6 Delete User via sysadminctl utility\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1531-6 Delete User via sysadminctl utility\n\n2026-05-23 01:25:05.507 sysadminctl[31051:76969] sysadminctl should be run as root, or in interactive mode! (Error Domain=NSOSStatusErrorDomain Code=-60007 \"errAuthorizationInteractionNotAllowed: The authorization was denied since no user interaction was possible.\")\nDone executing cleanup for test: \nT1531-6 Delete User via sysadminctl utility\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

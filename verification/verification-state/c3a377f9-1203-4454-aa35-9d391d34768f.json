@@ -1,0 +1,12 @@
+{
+  "guid": "c3a377f9-1203-4454-aa35-9d391d34768f",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-2 Disable journal logging via systemctl utility\n\nPrerequisites not met: T1685-2 Disable journal logging via systemctl utility\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-2 Disable journal logging via systemctl utility\n\nStopping 'systemd-journald.service', but its triggering units are still active:\nsystemd-journald.socket, systemd-journald-dev-log.socket\nExit code: 0\nDone executing test: \nT1685-2 Disable journal logging via systemctl utility\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-2 Disable journal logging via systemctl utility\n\nDone executing cleanup for test: \nT1685-2 Disable journal logging via systemctl utility\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

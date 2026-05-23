@@ -1,0 +1,19 @@
+{
+  "guid": "2a9b677d-a230-44f4-ad86-782df1ef108c",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1033-2 System Owner/User Discovery\n\nPrerequisites met: \nT1033-2 System Owner/User Discovery\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1033-2 System Owner/User Discovery\n\n01:21:38 up 5 min,  0 user,  load average: 0.60, 0.31, 0.15\nUSER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT\nExit code: 0\nDone executing test: \nT1033-2 System Owner/User Discovery\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1033-2 System Owner/User Discovery\n\nDone executing cleanup for test: \nT1033-2 System Owner/User Discovery\n\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1033-2 System Owner/User Discovery\n\nPrerequisites met: \nT1033-2 System Owner/User Discovery\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1033-2 System Owner/User Discovery\n\nrunner\nrunner     console  -       0:53      31 -\n 1:24  up 32 mins, 1 user, load averages: 3.05 1.31 2.56\nUSER       TTY      FROM    LOGIN@  IDLE WHAT\nrunner           console      May 23 00:53\nExit code: 0\nDone executing test: \nT1033-2 System Owner/User Discovery\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1033-2 System Owner/User Discovery\n\nDone executing cleanup for test: \nT1033-2 System Owner/User Discovery\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

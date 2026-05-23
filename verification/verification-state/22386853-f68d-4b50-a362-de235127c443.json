@@ -1,0 +1,13 @@
+{
+  "guid": "22386853-f68d-4b50-a362-de235127c443",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpitrd2i.tmp' because it is being used by another process."
+    }
+  }
+}

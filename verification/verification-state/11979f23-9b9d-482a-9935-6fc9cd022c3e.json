@@ -1,0 +1,13 @@
+{
+  "guid": "11979f23-9b9d-482a-9935-6fc9cd022c3e",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1543.001-2 Event Monitor Daemon Persistence\n\nPrerequisites not met: T1543.001-2 Event Monitor Daemon Persistence\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1543.001-2 Event Monitor Daemon Persistence\n\ncp: /etc/emond.d/rules/atomicredteam_T1543_001.plist: No such file or directory\ntouch: /private/var/db/emondClients/randomflag: No such file or directory\nExit code: 1\nDone executing test: \nT1543.001-2 Event Monitor Daemon Persistence\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1543.001-2 Event Monitor Daemon Persistence\n\nrm: /etc/emond.d/rules/atomicredteam_T1543_001.plist: No such file or directory\nrm: /private/var/db/emondClients/randomflag: No such file or directory\nDone executing cleanup for test: \nT1543.001-2 Event Monitor Daemon Persistence\n\n",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "Command exited with code 1"
+    }
+  }
+}

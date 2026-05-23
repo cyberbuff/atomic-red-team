@@ -1,0 +1,12 @@
+{
+  "guid": "e04d2e89-de15-4d90-92f9-a335c7337f0f",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\nPrerequisites met: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\nExit code: 0\nDone executing test: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\nDone executing cleanup for test: \nT1497.001-8 Detect Virtualization Environment using system_profiler\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

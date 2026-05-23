@@ -1,0 +1,13 @@
+{
+  "guid": "94f6a1c9-aae7-46a4-9083-2bb1f5768ec4",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-43 Suspend History\n\nPrerequisites not met: T1685-43 Suspend History\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-43 Suspend History\n\nsh: 1: set: Illegal option -o history\nExit code: 2\nDone executing test: \nT1685-43 Suspend History\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-43 Suspend History\n\nsh: 1: set: Illegal option -o history\nDone executing cleanup for test: \nT1685-43 Suspend History\n\n",
+      "stderr": "",
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
+    }
+  }
+}

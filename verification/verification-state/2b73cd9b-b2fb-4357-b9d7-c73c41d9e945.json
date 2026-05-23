@@ -1,0 +1,12 @@
+{
+  "guid": "2b73cd9b-b2fb-4357-b9d7-c73c41d9e945",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.001-7 Check if System Integrity Protection is enabled\n\nPrerequisites met: \nT1497.001-7 Check if System Integrity Protection is enabled\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.001-7 Check if System Integrity Protection is enabled\n\nPossible Virtualization Environment detected\nExit code: 0\nDone executing test: \nT1497.001-7 Check if System Integrity Protection is enabled\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.001-7 Check if System Integrity Protection is enabled\n\nDone executing cleanup for test: \nT1497.001-7 Check if System Integrity Protection is enabled\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

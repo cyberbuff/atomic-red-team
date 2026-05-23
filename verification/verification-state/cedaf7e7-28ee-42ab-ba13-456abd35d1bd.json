@@ -1,0 +1,13 @@
+{
+  "guid": "cedaf7e7-28ee-42ab-ba13-456abd35d1bd",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-64 Auditing Configuration Changes on FreeBSD Host\n\nPrerequisites not met: T1685-64 Auditing Configuration Changes on FreeBSD Host\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-64 Auditing Configuration Changes on FreeBSD Host\n\nsh: 1: cannot create /etc/security/audit_event: Permission denied\nExit code: 2\nDone executing test: \nT1685-64 Auditing Configuration Changes on FreeBSD Host\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-64 Auditing Configuration Changes on FreeBSD Host\n\nsed: can't read /#art_test_1562_006_1/d: No such file or directory\nsed: can't read /etc/security/audit_event: No such file or directory\nDone executing cleanup for test: \nT1685-64 Auditing Configuration Changes on FreeBSD Host\n\n",
+      "stderr": "",
+      "exit_code": 2,
+      "last_error": "Command exited with code 2"
+    }
+  }
+}

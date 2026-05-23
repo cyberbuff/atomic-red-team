@@ -28,6 +28,15 @@ function Get-FileText {
   return $text
 }
 
+function Get-JoinedFileText {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string[]]$Paths
+  )
+
+  return (($Paths | ForEach-Object { Get-FileText -Path $_ }) | Where-Object { $_ }) -join "`n"
+}
+
 function Get-InnerExitCode {
   param(
     [string[]]$Texts
@@ -58,12 +67,17 @@ function Add-Stage {
   $started = Get-Date
   $stdoutPath = [System.IO.Path]::GetTempFileName()
   $stderrPath = [System.IO.Path]::GetTempFileName()
+  $warningPath = [System.IO.Path]::GetTempFileName()
+  $verbosePath = [System.IO.Path]::GetTempFileName()
+  $debugPath = [System.IO.Path]::GetTempFileName()
+  $informationPath = [System.IO.Path]::GetTempFileName()
+  $stdoutPaths = @($stdoutPath, $warningPath, $verbosePath, $debugPath, $informationPath)
   try {
     $LASTEXITCODE = 0
-    & $ScriptBlock 1> $stdoutPath 2> $stderrPath 3>> $stdoutPath `
-      4>> $stdoutPath 5>> $stdoutPath 6>> $stdoutPath
+    & $ScriptBlock 1> $stdoutPath 2> $stderrPath 3> $warningPath `
+      4> $verbosePath 5> $debugPath 6> $informationPath
     $stageExitCode = [int]$LASTEXITCODE
-    $stdout = Get-FileText -Path $stdoutPath
+    $stdout = Get-JoinedFileText -Paths $stdoutPaths
     $stderr = Get-FileText -Path $stderrPath
     $innerExitCode = Get-InnerExitCode -Texts @($stdout, $stderr)
     if ($stageExitCode -eq 0 -and $innerExitCode -ne 0) {
@@ -99,13 +113,13 @@ function Add-Stage {
         duration_seconds = [math]::Round(((Get-Date) - $started).TotalSeconds, 2)
         error = $_.Exception.Message
         exit_code = 1
-        stdout = Get-FileText -Path $stdoutPath
+        stdout = Get-JoinedFileText -Paths $stdoutPaths
         stderr = Get-FileText -Path $stderrPath
       })
     return $false
   }
   finally {
-    Remove-Item -Force -ErrorAction SilentlyContinue -Path $stdoutPath, $stderrPath
+    Remove-Item -Force -ErrorAction SilentlyContinue -Path ($stdoutPaths + $stderrPath)
   }
 }
 

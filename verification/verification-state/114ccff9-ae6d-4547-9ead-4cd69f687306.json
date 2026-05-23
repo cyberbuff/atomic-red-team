@@ -1,0 +1,13 @@
+{
+  "guid": "114ccff9-ae6d-4547-9ead-4cd69f687306",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpsmsfrg.tmp' because it is being used by another process."
+    }
+  }
+}

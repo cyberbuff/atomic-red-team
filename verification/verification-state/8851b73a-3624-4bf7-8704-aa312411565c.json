@@ -1,0 +1,13 @@
+{
+  "guid": "8851b73a-3624-4bf7-8704-aa312411565c",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpxmq5e5.tmp' because it is being used by another process."
+    }
+  }
+}

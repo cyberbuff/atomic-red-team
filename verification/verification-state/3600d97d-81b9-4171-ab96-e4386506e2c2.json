@@ -1,0 +1,12 @@
+{
+  "guid": "3600d97d-81b9-4171-ab96-e4386506e2c2",
+  "platforms": {
+    "macos": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1059.002-1 AppleScript\n\nPrerequisites met: \nT1059.002-1 AppleScript\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1059.002-1 AppleScript\n\nExit code: 0\nDone executing test: \nT1059.002-1 AppleScript\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1059.002-1 AppleScript\n\nDone executing cleanup for test: \nT1059.002-1 AppleScript\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

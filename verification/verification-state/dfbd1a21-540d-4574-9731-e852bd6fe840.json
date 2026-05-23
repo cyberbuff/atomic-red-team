@@ -1,0 +1,12 @@
+{
+  "guid": "dfbd1a21-540d-4574-9731-e852bd6fe840",
+  "platforms": {
+    "linux": {
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1497.001-1 Detect Virtualization Environment (Linux)\n\nPrerequisites not met: T1497.001-1 Detect Virtualization Environment (Linux)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1497.001-1 Detect Virtualization Environment (Linux)\n\nmicrosoft\nVirtualization Environment detected\nExit code: 0\nDone executing test: \nT1497.001-1 Detect Virtualization Environment (Linux)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1497.001-1 Detect Virtualization Environment (Linux)\n\nDone executing cleanup for test: \nT1497.001-1 Detect Virtualization Environment (Linux)\n\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  }
+}

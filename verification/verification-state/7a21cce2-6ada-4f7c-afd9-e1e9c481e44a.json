@@ -1,0 +1,13 @@
+{
+  "guid": "7a21cce2-6ada-4f7c-afd9-e1e9c481e44a",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpsterei.tmp' because it is being used by another process."
+    }
+  }
+}

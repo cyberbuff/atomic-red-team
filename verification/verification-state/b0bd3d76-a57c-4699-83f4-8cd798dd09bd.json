@@ -1,0 +1,13 @@
+{
+  "guid": "b0bd3d76-a57c-4699-83f4-8cd798dd09bd",
+  "platforms": {
+    "windows": {
+      "consecutive_failures": 1,
+      "last_status": "failed",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 1,
+      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmphitp2f.tmp' because it is being used by another process."
+    }
+  }
+}
