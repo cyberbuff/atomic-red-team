@@ -2,12 +2,12 @@
   "guid": "c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\nPrerequisites met: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\nExit code: 5\r\nDone executing test: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\nDone executing cleanup for test: \r\nT1218.010-2 Regsvr32 remote COM scriptlet execution\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmph2zp4m.tmp' because it is being used by another process."
+      "exit_code": 5,
+      "last_error": "Command exited with code 5"
     }
   }
 }

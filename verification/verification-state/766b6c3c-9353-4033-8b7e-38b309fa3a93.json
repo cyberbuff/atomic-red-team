@@ -2,7 +2,7 @@
   "guid": "766b6c3c-9353-4033-8b7e-38b309fa3a93",
   "platforms": {
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\nPrerequisites not met: T1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\t[*] compile C program\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\nsave backup copy to /tmp/\nbefore\n{\n  \"TALAppsToRelaunchAtLogin\" => [\n    0 => {\n      \"BackgroundState\" => 2\n      \"BundleID\" => \"com.apple.setupassistant\"\n      \"Hide\" => 0\n      \"Path\" => \"/System/Library/CoreServices/Setup Assistant.app\"\n    }\n    1 => {\n      \"BackgroundState\" => 2\n      \"BundleID\" => \"com.apple.finder\"\n      \"Hide\" => 0\n      \"Path\" => \"/System/Library/CoreServices/Finder.app\"\n    }\n  ]\n}\noverwriting...\nsh: /tmp/t1547007_append_exe: No such file or directory\nExit code: 127\nDone executing test: \nT1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\nDone executing cleanup for test: \nT1547.007-3 Append to existing loginwindow for Re-Opened Applications\n\n",
       "stderr": "",

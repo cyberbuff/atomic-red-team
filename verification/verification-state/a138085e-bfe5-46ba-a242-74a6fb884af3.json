@@ -2,12 +2,12 @@
   "guid": "a138085e-bfe5-46ba-a242-74a6fb884af3",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\nPrerequisites met: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\nUSERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME\r\n>runneradmin           console             2  Active      none   5/23/2026 1:36 AM\r\nExit code: 1\r\nDone executing test: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\nDone executing cleanup for test: \r\nT1087.001-10 Enumerate logged on users via CMD (Local)\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplw3wme.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

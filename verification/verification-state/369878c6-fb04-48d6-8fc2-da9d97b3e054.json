@@ -2,7 +2,7 @@
   "guid": "369878c6-fb04-48d6-8fc2-da9d97b3e054",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\nPrerequisites not met: T1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\nsh: 1: cannot create /var/log/messages: Permission denied\nExit code: 2\nDone executing test: \nT1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\nDone executing cleanup for test: \nT1685.006-7 Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)\n\n",
       "stderr": "",

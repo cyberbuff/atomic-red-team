@@ -2,12 +2,11 @@
   "guid": "6ca45b04-9f15-4424-b9d3-84a217285a5c",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1046-4 Port Scan using python\r\n\r\nPrerequisites met: \r\nT1046-4 Port Scan using python\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1046-4 Port Scan using python\r\n\r\nOpen ports:\r\n127.0.0.1/24 - open\r\n127.0.0.1/82 - open\r\n127.0.0.1/136 - open\r\n127.0.0.1/447 - open\r\n127.0.0.1/1802 - open\r\n127.0.0.1/2105 - open\r\n127.0.0.1/2107 - open\r\n127.0.0.1/2109 - open\r\n127.0.0.1/2181 - open\r\n127.0.0.1/3390 - open\r\n127.0.0.1/5986 - open\r\n127.0.0.1/5987 - open\r\n127.0.0.1/47003 - open\r\n127.0.0.1/49665 - open\r\n127.0.0.1/49666 - open\r\n127.0.0.1/49667 - open\r\n127.0.0.1/49669 - open\r\n127.0.0.1/49670 - open\r\n127.0.0.1/49671 - open\r\n127.0.0.1/49672 - open\r\n127.0.0.1/49686 - open\r\nExit code: 0\r\nDone executing test: \r\nT1046-4 Port Scan using python\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1046-4 Port Scan using python\r\n\r\nDone executing cleanup for test: \r\nT1046-4 Port Scan using python\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpxei4qj.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "b1cbdf8b-6078-48f5-a890-11ea19d7f8e9",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\nPrerequisites not met: T1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\t[*] Elevation required but not provided\n\n\t[*] compile C program\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\nsudo: /tmp/t1040_linux_pcapdemo: command not found\nExit code: 1\nDone executing test: \nT1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\nDone executing cleanup for test: \nT1040-15 Packet Capture Linux socket AF_PACKET,SOCK_RAW with BPF filter for UDP with sudo\n\n",
       "stderr": "",

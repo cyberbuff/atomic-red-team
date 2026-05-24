@@ -2,12 +2,11 @@
   "guid": "ac494fe5-81a4-4897-af42-e774cf005ecb",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\nPrerequisites met: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\nPSComputerName\r\n--------------\r\nlocalhost     \r\nlocalhost\r\nExit code: 0\r\nDone executing test: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\nInvoke-CimMethod : Cannot bind argument to parameter 'CimSession' because it is null.\r\nAt line:1 char:213\r\n+ ... t\\Windows NT\\Terminal Services\"; sValueName=\"Shadow\"} -CimSession $s}\r\n+                                                                       ~~\r\n    + CategoryInfo          : InvalidData: (:) [Invoke-CimMethod], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.Management.Infrastructure.CimCm \r\n   dlets.InvokeCimMethodCommand\r\nDone executing cleanup for test: \r\nT1112-72 Setting Shadow key in Registry for RDP Shadowing\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmptmoxox.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

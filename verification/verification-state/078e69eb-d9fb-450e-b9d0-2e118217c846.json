@@ -2,7 +2,7 @@
   "guid": "078e69eb-d9fb-450e-b9d0-2e118217c846",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1053.003-3 Cron - Add script to /etc/cron.d folder\n\nPrerequisites not met: T1053.003-3 Cron - Add script to /etc/cron.d folder\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1053.003-3 Cron - Add script to /etc/cron.d folder\n\nsh: 1: cannot create /etc/cron.d/persistevil: Permission denied\nExit code: 2\nDone executing test: \nT1053.003-3 Cron - Add script to /etc/cron.d folder\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1053.003-3 Cron - Add script to /etc/cron.d folder\n\nDone executing cleanup for test: \nT1053.003-3 Cron - Add script to /etc/cron.d folder\n\n",
       "stderr": "",

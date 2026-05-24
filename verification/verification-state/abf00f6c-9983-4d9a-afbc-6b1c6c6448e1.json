@@ -2,12 +2,11 @@
   "guid": "abf00f6c-9983-4d9a-afbc-6b1c6c6448e1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\nPrerequisites met: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\nname of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was \r\n& : The term 'D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\AdFind.exe' is not recognized as the \r\nincluded, verify that the path is correct and try again.\r\nAt line:1 char:6\r\n+ & {& \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayload ...\r\n+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (D:\\a\\atomic-red...oads\\AdFind.exe:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\nDone executing cleanup for test: \r\nT1087.002-21 Suspicious LAPS Attributes Query with adfind all properties\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgcp2mx.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

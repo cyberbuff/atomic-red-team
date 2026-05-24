@@ -2,12 +2,11 @@
   "guid": "95f5c72f-6dfe-45f3-a8c1-d8faa07176fa",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\nPrerequisites met: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\nProcessCreationIncludeCmdLine_Enabled : 0\r\nPSPath                                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windo\r\n                                        ws\\CurrentVersion\\Policies\\System\\Audit\r\nPSParentPath                          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windo\r\n                                        ws\\CurrentVersion\\Policies\\System\r\nPSChildName                           : Audit\r\nPSDrive                               : HKLM\r\nPSProvider                            : Microsoft.PowerShell.Core\\Registry\r\nExit code: 0\r\nDone executing test: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\nProcessCreationIncludeCmdLine_Enabled : 1\r\nPSPath                                : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windo\r\n                                        ws\\CurrentVersion\\Policies\\System\\Audit\r\nPSParentPath                          : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windo\r\n                                        ws\\CurrentVersion\\Policies\\System\r\nPSChildName                           : Audit\r\nPSDrive                               : HKLM\r\nPSProvider                            : Microsoft.PowerShell.Core\\Registry\r\nDone executing cleanup for test: \r\nT1690-12 Disable Windows Command Line Auditing using Powershell Cmdlet\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpeyxawq.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

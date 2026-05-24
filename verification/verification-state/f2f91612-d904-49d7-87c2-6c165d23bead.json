@@ -2,12 +2,12 @@
   "guid": "f2f91612-d904-49d7-87c2-6c165d23bead",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\nPrerequisites met: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\nHKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\r\n    SystemBiosVersion    REG_MULTI_SZ    VRTUAL - 1\\0Hyper-V UEFI Release v4.1\\0Microsoft - 100032\r\nERROR: The system was unable to find the specified registry key or value.\r\nExit code: 1\r\nDone executing test: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\nDone executing cleanup for test: \r\nT1082-30 BIOS Information Discovery through Registry\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmptbgpk0.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

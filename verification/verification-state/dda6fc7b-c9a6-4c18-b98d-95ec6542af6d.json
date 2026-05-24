@@ -2,12 +2,11 @@
   "guid": "dda6fc7b-c9a6-4c18-b98d-95ec6542af6d",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\nPrerequisites met: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\nTaskPath                                       TaskName                          State     \r\n--------                                       --------                          -----     \r\n\\                                              AtomicTaskModifed                 Ready     \r\n\\                                              AtomicTaskModifed                 Ready\r\nExit code: 0\r\nDone executing test: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\nDone executing cleanup for test: \r\nT1053.005-9 PowerShell Modify A Scheduled Task\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2ltox3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

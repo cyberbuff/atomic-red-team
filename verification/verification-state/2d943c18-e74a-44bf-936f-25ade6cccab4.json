@@ -2,7 +2,7 @@
   "guid": "2d943c18-e74a-44bf-936f-25ade6cccab4",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\nPrerequisites not met: T1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\nbash: line 1: /var/spool/cron/crontabs/persistevil: Permission denied\nExit code: 1\nDone executing test: \nT1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\nrm: cannot remove '/var/spool/cron/crontabs/persistevil': Permission denied\nDone executing cleanup for test: \nT1053.003-4 Cron - Add script to /var/spool/cron/crontabs/ folder\n\n",
       "stderr": "",

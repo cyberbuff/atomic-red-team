@@ -2,12 +2,11 @@
   "guid": "2170d9b5-bacd-4819-a952-da76dae0815f",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\nPrerequisites met: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\nThis script creates a new user, adds it to a local administrator group and then deletes the user.\r\nUser 'NewLocalUser' created successfully.\r\nUser 'NewLocalUser' added to the 'Administrators' group.\r\nNewly Created User Info:\r\nUser name                    NewLocalUser\r\nComment                      \r\nFull Name                    NewLocalUser\r\nUser's comment               \r\nCountry/region code          000 (System Default)\r\nAccount active               Yes\r\nAccount expires              Never\r\nPassword last set            5/23/2026 2:04:09 AM\r\nPassword expires             Never\r\nPassword changeable          5/23/2026 2:04:09 AM\r\nPassword required            Yes\r\nUser may change password     No\r\nWorkstations allowed         All\r\nLogon script                 \r\nUser profile                 \r\nHome directory               \r\nLast logon                   Never\r\nLogon hours allowed          All\r\nLocal Group Memberships      *Administrators       \r\nGlobal Group memberships     *None                 \r\nThe command completed successfully.\r\nUser 'NewLocalUser' deleted successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\nDone executing cleanup for test: \r\nT1136.001-9 Create a new Windows admin user via .NET\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp3sqdyz.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

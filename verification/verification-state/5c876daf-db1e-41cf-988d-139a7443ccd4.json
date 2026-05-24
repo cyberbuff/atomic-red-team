@@ -2,12 +2,11 @@
   "guid": "5c876daf-db1e-41cf-988d-139a7443ccd4",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\nPrerequisites met: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\nName                           ComputerName    Type         DriverName                PortName        Shared   Publishe\r\n                                                                                                               d       \r\n----                           ------------    ----         ----------                --------        ------   --------\r\nMicrosoft Print to PDF                         Local        Microsoft Print To PDF    PORTPROMPT:     False    False\r\nExit code: 0\r\nDone executing test: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\nDone executing cleanup for test: \r\nT1120-4 Get Printer Device List via PowerShell Command\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp15aykj.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

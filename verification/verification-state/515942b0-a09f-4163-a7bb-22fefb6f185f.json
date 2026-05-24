@@ -9,7 +9,7 @@
       "exit_code": 0
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1046-2 Port Scan Nmap\n\nPrerequisites not met: T1046-2 Port Scan Nmap\n\t[*] Elevation required but not provided\n\n\t[*] Check if nmap command exists on the machine\n\n\t[*] Check if telnet command exists on the machine\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1046-2 Port Scan Nmap\n\nsudo: nmap: command not found\nsh: telnet: command not found\nnc: connectx to 192.168.1.1 port 80 (tcp) failed: Operation timed out\nExit code: 1\nDone executing test: \nT1046-2 Port Scan Nmap\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1046-2 Port Scan Nmap\n\nDone executing cleanup for test: \nT1046-2 Port Scan Nmap\n\n",
       "stderr": "",

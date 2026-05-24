@@ -2,12 +2,11 @@
   "guid": "b4ca838d-d013-4461-bf2c-f7132617b409",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1057-8 Process Discovery - PC Hunter\r\n\r\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\r\nPrerequisites not met: T1057-8 Process Discovery - PC Hunter\r\n\t[*] PCHunter must be present in device\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1057-8 Process Discovery - PC Hunter\r\n\r\nStart-Process : This command cannot be run due to the error: The system cannot find the file specified.\r\nAt line:1 char:4\r\n+ & {Start-Process -FilePath \"C:\\Temp\\ExternalPayloads\\PCHunter_free\\PC ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException\r\n    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand\r\nExit code: 0\r\nDone executing test: \r\nT1057-8 Process Discovery - PC Hunter\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1057-8 Process Discovery - PC Hunter\r\n\r\nDone executing cleanup for test: \r\nT1057-8 Process Discovery - PC Hunter\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpo0qe4i.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

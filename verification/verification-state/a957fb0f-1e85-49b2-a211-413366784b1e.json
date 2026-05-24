@@ -2,12 +2,11 @@
   "guid": "a957fb0f-1e85-49b2-a211-413366784b1e",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\nPrerequisites met: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\nset-WebConfigurationProperty : The term 'set-WebConfigurationProperty' is not recognized as the name of a cmdlet, \r\nfunction, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the \r\npath is correct and try again.\r\nAt line:1 char:4\r\n+ & {set-WebConfigurationProperty -PSPath \"IIS:\\Sites\\Default Web Site\\ ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (set-WebConfigurationProperty:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\nDone executing cleanup for test: \r\nT1685.001-2 Disable Windows IIS HTTP Logging via PowerShell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpsprygf.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

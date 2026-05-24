@@ -2,12 +2,11 @@
   "guid": "a5ad6104-5bab-4c43-b295-b4c44c7c6b05",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\nPrerequisites met: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\nThe operation completed successfully.\r\nRemove-Item : Cannot remove item C:\\Users\\Public\\AtomicTest.dll: Access to the path 'C:\\Users\\Public\\AtomicTest.dll' \r\nis denied.\r\nAt line:2 char:1\r\n+ Remove-Item C:\\Users\\Public\\AtomicTest.dll -Force\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : PermissionDenied: (C:\\Users\\Public\\AtomicTest.dll:FileInfo) [Remove-Item], UnauthorizedA \r\n   ccessException\r\n    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand\r\nRemove-Item : Cannot remove item C:\\Users\\Public\\AtomicTest.txt: The process cannot access the file \r\n'C:\\Users\\Public\\AtomicTest.txt' because it is being used by another process.\r\nAt line:3 char:1\r\n+ Remove-Item C:\\Users\\Public\\AtomicTest.txt -Force}\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : WriteError: (C:\\Users\\Public\\AtomicTest.txt:FileInfo) [Remove-Item], IOException\r\n    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand\r\nDone executing cleanup for test: \r\nT1546.009-1 Create registry persistence via AppCert DLL\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgtequ1.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

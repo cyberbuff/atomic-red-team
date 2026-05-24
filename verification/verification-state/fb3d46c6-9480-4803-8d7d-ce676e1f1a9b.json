@@ -2,7 +2,7 @@
   "guid": "fb3d46c6-9480-4803-8d7d-ce676e1f1a9b",
   "platforms": {
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1553.001-1 Gatekeeper Bypass\n\nPrerequisites met: \nT1553.001-1 Gatekeeper Bypass\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1553.001-1 Gatekeeper Bypass\n\nxattr: No such file: myapp.app\nExit code: 1\nDone executing test: \nT1553.001-1 Gatekeeper Bypass\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1553.001-1 Gatekeeper Bypass\n\nDone executing cleanup for test: \nT1553.001-1 Gatekeeper Bypass\n\n",
       "stderr": "",

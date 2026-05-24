@@ -2,7 +2,7 @@
   "guid": "4947897f-643a-4b75-b3f5-bed6885749f6",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1082-26 FreeBSD List Kernel Modules\n\nPrerequisites met: \nT1082-26 FreeBSD List Kernel Modules\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1082-26 FreeBSD List Kernel Modules\n\nsh: 1: kldstat: not found\nsh: 1: kldstat: not found\nExit code: 1\nDone executing test: \nT1082-26 FreeBSD List Kernel Modules\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1082-26 FreeBSD List Kernel Modules\n\nDone executing cleanup for test: \nT1082-26 FreeBSD List Kernel Modules\n\n",
       "stderr": "",

@@ -2,12 +2,11 @@
   "guid": "a58d9386-3080-4242-ab5f-454c16503d18",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1546.010-1 Install AppInit Shim\r\n\r\nPrerequisites not met: T1546.010-1 Install AppInit Shim\r\n\t[*] DLL's must exist in the C:\\Tools directory (T1546.010.dll and T1546.010x86.dll)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1546.010-1 Install AppInit Shim\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1546.010-1 Install AppInit Shim\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1546.010-1 Install AppInit Shim\r\n\r\nDone executing cleanup for test: \r\nT1546.010-1 Install AppInit Shim\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpaokgbn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

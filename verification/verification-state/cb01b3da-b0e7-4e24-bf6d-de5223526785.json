@@ -2,12 +2,11 @@
   "guid": "cb01b3da-b0e7-4e24-bf6d-de5223526785",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1547-1 Add a driver\r\n\r\nPrerequisites met: \r\nT1547-1 Add a driver\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1547-1 Add a driver\r\n\r\nMicrosoft PnP Utility\r\nAdding driver package:  usbstor.inf\r\nPublished Name:         usbstor.inf\r\nTotal driver packages:  1\r\nAdded driver packages:  1\r\nExit code: 0\r\nDone executing test: \r\nT1547-1 Add a driver\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1547-1 Add a driver\r\n\r\nDone executing cleanup for test: \r\nT1547-1 Add a driver\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4zrvoq.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

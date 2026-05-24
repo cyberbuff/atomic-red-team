@@ -2,12 +2,12 @@
   "guid": "88b81702-a1c0-49a9-95b2-2dd53d755767",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1564.006-2 Create and start VirtualBox virtual machine\r\n\r\nPrerequisites not met: T1564.006-2 Create and start VirtualBox virtual machine\r\n\t[*] VirtualBox must exist on disk at specified locations (C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox.exe)\r\n\r\n\t[*] VBoxManage must exist on disk at specified locations (C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1564.006-2 Create and start VirtualBox virtual machine\r\n\r\n'C:\\Program' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nExit code: 1\r\nDone executing test: \r\nT1564.006-2 Create and start VirtualBox virtual machine\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1564.006-2 Create and start VirtualBox virtual machine\r\n\r\n'C:\\Program' is not recognized as an internal or external command,\r\noperable program or batch file.\r\nDone executing cleanup for test: \r\nT1564.006-2 Create and start VirtualBox virtual machine\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpmwq2g1.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "fe53e878-10a3-477b-963e-4367348f5af5",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\nPrerequisites met: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\n\"ip\": \"172.184.214.224\",\r\n  \"city\": \"San Jose\",\r\n{\r\n  \"region\": \"California\",\r\n  \"country\": \"US\",\r\n  \"org\": \"AS8075 Microsoft Corporation\",\r\n  \"postal\": \"95025\",\r\n  \"timezone\": \"America/Los_Angeles\",\r\n  \"readme\": \"https://ipinfo.io/missingauth\"\r\n  \"loc\": \"37.3394,-121.8950\",\r\n}\r\n% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\r\n                                 Dload  Upload   Total   Spent    Left  Speed\r\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r\n100   270  100   270    0     0   2278      0 --:--:-- --:--:-- --:--:--  2307\r\nExit code: 0\r\nDone executing test: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\nDone executing cleanup for test: \r\nT1614-1 Get geolocation info through IP-Lookup services using curl Windows\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpeuh5cb.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

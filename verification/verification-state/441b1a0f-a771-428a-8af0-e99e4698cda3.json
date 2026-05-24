@@ -2,12 +2,11 @@
   "guid": "441b1a0f-a771-428a-8af0-e99e4698cda3",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\r\nPrerequisites not met: T1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\t[*] Microsoft Excel must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\r\nNew-Object : Retrieving the COM class factory for component with CLSID {00000000-0000-0000-0000-000000000000} failed \r\ndue to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).\r\nAt line:1 char:16\r\n+ & {$excelApp = New-Object -COMObject \"Excel.Application\"\r\n+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException\r\n    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand\r\n \r\nYou cannot call a method on a null-valued expression.\r\nAt line:2 char:4\r\n+ if(-not $excelApp.path.contains(\"Program Files (x86)\")){\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : InvokeMethodOnNull\r\nExit code: 0\r\nDone executing test: \r\nT1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\r\nDone executing cleanup for test: \r\nT1137.006-1 Code Executed Via Excel Add-in File (XLL)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpvrfwzr.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,7 +2,7 @@
   "guid": "096b6d2a-b63f-4100-8fa0-525da4cd25ca",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1087.002-23 Active Directory Domain Search\n\nPrerequisites not met: T1087.002-23 Active Directory Domain Search\n\t[*] Packages sssd-ad sssd-tools realmd adcli installed and realm available, ldapsearch\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1087.002-23 Active Directory Domain Search\n\nsh: 1: ldapsearch: not found\nExit code: 127\nDone executing test: \nT1087.002-23 Active Directory Domain Search\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1087.002-23 Active Directory Domain Search\n\nDone executing cleanup for test: \nT1087.002-23 Active Directory Domain Search\n\n",
       "stderr": "",

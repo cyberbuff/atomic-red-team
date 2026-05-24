@@ -2,7 +2,7 @@
   "guid": "4ce786f8-e601-44b5-bfae-9ebb15a7d1c8",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685-4 Disable syslog\n\nPrerequisites not met: T1685-4 Disable syslog\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685-4 Disable syslog\n\nFailed to stop rsyslog.service: Interactive authentication required.\nSee system logs and 'systemctl status rsyslog.service' for details.\nFailed to disable unit: Interactive authentication required.\nExit code: 1\nDone executing test: \nT1685-4 Disable syslog\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685-4 Disable syslog\n\nFailed to start rsyslog.service: Interactive authentication required.\nSee system logs and 'systemctl status rsyslog.service' for details.\nFailed to enable unit: Interactive authentication required.\nDone executing cleanup for test: \nT1685-4 Disable syslog\n\n",
       "stderr": "",

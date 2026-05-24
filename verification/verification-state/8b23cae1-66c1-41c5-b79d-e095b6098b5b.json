@@ -2,7 +2,7 @@
   "guid": "8b23cae1-66c1-41c5-b79d-e095b6098b5b",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-12 Add and delete Packet Filter rules\n\n-e \n***** PF NOT installed *****\nPrerequisites not met: T1686-12 Add and delete Packet Filter rules\n\t[*] Elevation required but not provided\n\n\t[*] Check if pf is installed on the machine and enabled.\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-12 Add and delete Packet Filter rules\n\nsh: 1: pfctl: not found\nsh: 1: pfctl: not found\nExit code: 127\nDone executing test: \nT1686-12 Add and delete Packet Filter rules\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-12 Add and delete Packet Filter rules\n\nsh: 1: pfctl: not found\nsed: can't read /anchor pf-rules/d: No such file or directory\nsh: 1: pfctl: not found\nDone executing cleanup for test: \nT1686-12 Add and delete Packet Filter rules\n\n",
       "stderr": "",

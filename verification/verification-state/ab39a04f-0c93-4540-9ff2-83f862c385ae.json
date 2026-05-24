@@ -2,12 +2,11 @@
   "guid": "ab39a04f-0c93-4540-9ff2-83f862c385ae",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1135-6 View available share drives\r\n\r\nPrerequisites met: \r\nT1135-6 View available share drives\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1135-6 View available share drives\r\n\r\nShare name   Resource                        Remark\r\n-------------------------------------------------------------------------------\r\nC$           C:\\                             Default share                     \r\nD$           D:\\                             Default share                     \r\nIPC$                                         Remote IPC                        \r\nADMIN$       C:\\Windows                      Remote Admin                      \r\nThe command completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1135-6 View available share drives\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1135-6 View available share drives\r\n\r\nDone executing cleanup for test: \r\nT1135-6 View available share drives\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzsxfzn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

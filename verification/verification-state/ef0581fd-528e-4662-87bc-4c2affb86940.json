@@ -2,12 +2,11 @@
   "guid": "ef0581fd-528e-4662-87bc-4c2affb86940",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\nPrerequisites met: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\n1 file(s) copied.\r\n[SC] CreateService SUCCESS\r\n[SC] ChangeServiceConfig SUCCESS\r\n[SC] ChangeServiceConfig2 SUCCESS\r\nThe operation completed successfully.\r\nThe operation completed successfully.\r\nSERVICE_NAME: W64Time \r\n        TYPE               : 30  WIN32  \r\n        STATE              : 2  START_PENDING \r\n                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)\r\n        WIN32_EXIT_CODE    : 0  (0x0)\r\n        SERVICE_EXIT_CODE  : 0  (0x0)\r\n        CHECKPOINT         : 0x0\r\n        WAIT_HINT          : 0x7d0\r\n        PID                : 8556\r\n        FLAGS              :\r\nExit code: 0\r\nDone executing test: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\nSERVICE_NAME: W64Time \r\n        TYPE               : 30  WIN32  \r\n        STATE              : 1  STOPPED \r\n        WIN32_EXIT_CODE    : 0  (0x0)\r\n        SERVICE_EXIT_CODE  : 0  (0x0)\r\n        CHECKPOINT         : 0x0\r\n        WAIT_HINT          : 0x0\r\n[SC] DeleteService SUCCESS\r\nThe operation completed successfully.\r\nERROR: The system was unable to find the specified registry key or value.\r\nDone executing cleanup for test: \r\nT1543.003-4 TinyTurla backdoor service w64time\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp2mnwum.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

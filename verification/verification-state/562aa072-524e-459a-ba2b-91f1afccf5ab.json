@@ -2,9 +2,9 @@
   "guid": "562aa072-524e-459a-ba2b-91f1afccf5ab",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1136.002-4 Active Directory Create Admin Account\n\nPrerequisites not met: T1136.002-4 Active Directory Create Admin Account\n\t[*] Packages sssd-ad sssd-tools realmd adcli installed and realm available\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1136.002-4 Active Directory Create Admin Account\n\nldapadd -H ldap://example.test:389 -x -D admin@example.test -w s3CurePssw0rD! -f tempadmin.ldif\nsh: 1: ldapadd: not found\nExit code: 127\nDone executing test: \nT1136.002-4 Active Directory Create Admin Account\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1136.002-4 Active Directory Create Admin Account\n\nsh: 1: Syntax error: \"(\" unexpected\nDone executing cleanup for test: \nT1136.002-4 Active Directory Create Admin Account\n\n",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1136.002-4 Active Directory Create Admin Account\n\nPrerequisites not met: T1136.002-4 Active Directory Create Admin Account\n\t[*] Packages sssd-ad sssd-tools realmd adcli installed and realm available\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1136.002-4 Active Directory Create Admin Account\n\nldapadd -H ldap://example.test:389 -x -D admin@example.test -w s3CurePssw0rD! -f tempadmin.ldif\nsh: 1: ldapadd: not found\nExit code: 127\nDone executing test: \nT1136.002-4 Active Directory Create Admin Account\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1136.002-4 Active Directory Create Admin Account\n\nDone executing cleanup for test: \nT1136.002-4 Active Directory Create Admin Account\n\n",
       "stderr": "",
       "exit_code": 127,
       "last_error": "Command exited with code 127"

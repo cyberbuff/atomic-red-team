@@ -2,12 +2,11 @@
   "guid": "a4651931-ebbb-4cde-9363-ddf3d66214cb",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\nPrerequisites met: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\nThe operation completed successfully.\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\nDone executing cleanup for test: \r\nT1686-20 LockBit Black - Unusual Windows firewall registry modification -cmd\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpmkaxfb.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

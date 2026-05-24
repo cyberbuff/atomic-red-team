@@ -2,12 +2,12 @@
   "guid": "0eb03d41-79e4-4393-8e57-6344856be1cf",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.002-3 Copy and Execute File with PsExec\r\n\r\nPrerequisites not met: T1021.002-3 Copy and Execute File with PsExec\r\n\t[*] PsExec tool from Sysinternals must exist on disk at specified location (D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\PsExec.exe)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.002-3 Copy and Execute File with PsExec\r\n\r\nThe system cannot find the path specified.\r\nExit code: 1\r\nDone executing test: \r\nT1021.002-3 Copy and Execute File with PsExec\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.002-3 Copy and Execute File with PsExec\r\n\r\nDone executing cleanup for test: \r\nT1021.002-3 Copy and Execute File with PsExec\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp1ak4nk.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

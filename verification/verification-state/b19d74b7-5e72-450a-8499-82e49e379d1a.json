@@ -2,12 +2,11 @@
   "guid": "b19d74b7-5e72-450a-8499-82e49e379d1a",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1135-12 Enumerate All Network Shares with Snaffler\r\n\r\nPrerequisites not met: T1135-12 Enumerate All Network Shares with Snaffler\r\n\t[*] The Snaffler executable must exist on disk\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1135-12 Enumerate All Network Shares with Snaffler\r\n\r\nstop-process : Cannot find a process with the name \"snaffler\". Verify the process name and call the cmdlet again.\r\nAt line:1 char:184\r\n+ ... 5SnafflerOutput.txt\" }; start-sleep 90; stop-process -name \"snaffler\"\r\n+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (snaffler:String) [Stop-Process], ProcessCommandException\r\n    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.StopProcessCommand\r\nExit code: 0\r\nDone executing test: \r\nT1135-12 Enumerate All Network Shares with Snaffler\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1135-12 Enumerate All Network Shares with Snaffler\r\n\r\nDone executing cleanup for test: \r\nT1135-12 Enumerate All Network Shares with Snaffler\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpta1dou.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

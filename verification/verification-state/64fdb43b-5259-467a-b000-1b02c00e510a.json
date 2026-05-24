@@ -2,12 +2,12 @@
   "guid": "64fdb43b-5259-467a-b000-1b02c00e510a",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\nPrerequisites met: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\nVERBOSE: get-domain\r\nVERBOSE: [Get-Domain] Error retrieving the current domain: Exception calling \"GetCurrentDomain\" with \"0\" argument(s): \r\n\"Current security context is not associated with an Active Directory domain or forest.\"\r\nVERBOSE: [Get-DomainSearcher] search base: LDAP://\r\nVERBOSE: [Get-DomainComputer] Get-DomainComputer filter string: (&(samAccountType=805306369)(|(name=runnervmqq1k9)))\r\nException calling \"FindAll\" with \"0\" argument(s): \"Unknown error (0x80005000)\"\r\nAt line:6331 char:20\r\n+             else { $Results = $CompSearcher.FindAll() }\r\n+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\r\n    + FullyQualifiedErrorId : COMException\r\n \r\n[Get-DomainGPOComputerLocalGroupMapping] Computer runnervmqq1k9 not found. Try a fully qualified host name.\r\nAt line:13945 char:17\r\n+ ...             throw \"[Get-DomainGPOComputerLocalGroupMapping] Computer  ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: ([Get-DomainGPOC...fied host name.:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : [Get-DomainGPOComputerLocalGroupMapping] Computer runnervmqq1k9 not found. Try a fully q \r\n   ualified host name.\r\nExit code: 1\r\nDone executing test: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\nDone executing cleanup for test: \r\nT1069.002-6 Find Local Admins via Group Policy (PowerView)\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmphmhrgf.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

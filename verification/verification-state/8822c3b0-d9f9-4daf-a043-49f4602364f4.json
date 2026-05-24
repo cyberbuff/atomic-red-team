@@ -2,12 +2,11 @@
   "guid": "8822c3b0-d9f9-4daf-a043-49f4602364f4",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\nPrerequisites met: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\nMicrosoft (R) Cabinet Extraction Tool\r\nCopyright (c) Microsoft Corporation. All rights reserved..\r\nERROR: Cannot open file: c:\\ADS\\\\procexp.cab\r\n****  Online  ****\r\n  0000  ...\r\n  001d\r\nCertUtil: -URLCache command completed successfully.\r\nCabinet Maker - Lossless Data Compression Tool\r\nERROR: Could not find file: c:\\ADS\\\\autoruns.exe\r\nUnable to initialize device C:\\ADS\\\\file.txt:autoruns.exe\r\nMicrosoft (R) File Expansion Utility\r\nCopyright (c) Microsoft Corporation. All rights reserved.\r\nCan't open input file: \\\\webdav\\folder\\file.bat.\r\nInitiating COPY FILE mode...\r\n     Source File: c:\\ADS\\\\autoruns.exe\r\nDestination File: c:\\ADS\\\\file.txt:autoruns.exe\r\n                      Copy Progress (% complete)\r\n          0    10   20   30   40   50   60   70   80   90  100\r\n          |----|----|----|----|----|----|----|----|----|----|\r\n          \r\nOperation terminated with error -1023 (JET_errInvalidPath, Invalid file path) after 0.47 seconds.\r\nThe system cannot find the path specified.\r\nThe system cannot find the path specified.\r\nERROR: The system was unable to find the specified registry key or value.\r\nExit code: -1023\r\nDone executing test: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\nDone executing cleanup for test: \r\nT1564.004-1 Alternate Data Streams (ADS)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpcbnhy5.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

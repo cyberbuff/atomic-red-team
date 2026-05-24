@@ -2,12 +2,11 @@
   "guid": "09147b61-40f6-4b2a-b6fb-9e73a3437c96",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\nPrerequisites met: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\nThe operation completed successfully.\r\nDone executing cleanup for test: \r\nT1112-66 Disabling ShowUI Settings of Windows Error Reporting (WER)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpapkkao.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

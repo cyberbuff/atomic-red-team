@@ -2,12 +2,11 @@
   "guid": "d7512c33-3a75-4806-9893-69abc3ccdd43",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1070.006-8 Windows - Timestomp a File\r\n\r\nPrerequisites not met: T1070.006-8 Windows - Timestomp a File\r\n\t[*] timestomp.ps1 must be present in D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads.\r\n\r\n\t[*] kxwn.lock must be present in D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads.\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1070.006-8 Windows - Timestomp a File\r\n\r\nimport-module : The specified module 'D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\timestomp.ps1' \r\nwas not loaded because no valid module file was found in any module directory.\r\nAt line:1 char:4\r\n+ & {import-module \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\Ext ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ResourceUnavailable: (D:\\a\\atomic-red...s\\timestomp.ps1:String) [Import-Module], FileNot \r\n   FoundException\r\n    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand\r\n \r\ntimestomp : The term 'timestomp' is not recognized as the name of a cmdlet, function, script file, or operable \r\nprogram. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:2 char:1\r\n+ timestomp -dest \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\Exte ...\r\n+ ~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (timestomp:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1070.006-8 Windows - Timestomp a File\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1070.006-8 Windows - Timestomp a File\r\n\r\nDone executing cleanup for test: \r\nT1070.006-8 Windows - Timestomp a File\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmppvooyu.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,12 @@
   "guid": "7f843046-abf2-443f-b880-07a83cf968ec",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\r\nPrerequisites not met: T1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\t[*] Check if plink and pscp are available.\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\r\nThe system cannot find the path specified.\r\nThe system cannot find the path specified.\r\nExit code: 255\r\nDone executing test: \r\nT1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\r\nThe system cannot find the path specified.\r\nDone executing cleanup for test: \r\nT1129-1 ESXi - Install a custom VIB on an ESXi host\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpsrkhxi.tmp' because it is being used by another process."
+      "exit_code": 255,
+      "last_error": "Command exited with code 255"
     }
   }
 }

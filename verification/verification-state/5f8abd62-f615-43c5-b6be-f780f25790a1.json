@@ -2,7 +2,7 @@
   "guid": "5f8abd62-f615-43c5-b6be-f780f25790a1",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1070.003-9 Disable Bash History Logging with SSH -T\n\nPrerequisites not met: T1070.003-9 Disable Bash History Logging with SSH -T\n\t[*] Install sshpass and create user account used for excuting\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1070.003-9 Disable Bash History Logging with SSH -T\n\nExit code: 6\nDone executing test: \nT1070.003-9 Disable Bash History Logging with SSH -T\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1070.003-9 Disable Bash History Logging with SSH -T\n\nuserdel: user 'testuser1' does not exist\nDone executing cleanup for test: \nT1070.003-9 Disable Bash History Logging with SSH -T\n\n",
       "stderr": "",

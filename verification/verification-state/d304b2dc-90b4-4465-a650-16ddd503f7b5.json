@@ -2,7 +2,7 @@
   "guid": "d304b2dc-90b4-4465-a650-16ddd503f7b5",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1685.006-20 Overwrite Linux Log\n\nPrerequisites not met: T1685.006-20 Overwrite Linux Log\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1685.006-20 Overwrite Linux Log\n\nbash: line 1: /var/log/secure: Permission denied\nExit code: 1\nDone executing test: \nT1685.006-20 Overwrite Linux Log\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1685.006-20 Overwrite Linux Log\n\nDone executing cleanup for test: \nT1685.006-20 Overwrite Linux Log\n\n",
       "stderr": "",

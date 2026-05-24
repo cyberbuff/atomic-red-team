@@ -2,12 +2,11 @@
   "guid": "32d1cf1b-cbc2-4c09-8d05-07ec5c83a821",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\nPrerequisites met: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\nProcess Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout\r\nExit code: -1\r\nDone executing test: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\nDone executing cleanup for test: \r\nT1218.011-3 Rundll32 execute VBscript command using Ordinal number\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpgujjfz.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

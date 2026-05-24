@@ -2,12 +2,11 @@
   "guid": "dc6fe391-69e6-4506-bd06-ea5eeb4082f8",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\nPrerequisites met: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\nInput Length = 49152\r\nOutput Length = 67640\r\nCertUtil: -encode command completed successfully.\r\nInput Length = 67640\r\nOutput Length = 49152\r\nCertUtil: -decode command completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\nDone executing cleanup for test: \r\nT1140-1 Deobfuscate/Decode Files Or Information\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpfjz21e.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

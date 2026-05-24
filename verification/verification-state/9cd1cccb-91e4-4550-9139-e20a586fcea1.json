@@ -2,7 +2,7 @@
   "guid": "9cd1cccb-91e4-4550-9139-e20a586fcea1",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1113-5 Capture Linux Desktop using Import Tool\n\nPrerequisites not met: T1113-5 Capture Linux Desktop using Import Tool\n\t[*] ImageMagick must be installed\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1113-5 Capture Linux Desktop using Import Tool\n\nbash: line 1: import: command not found\nExit code: 127\nDone executing test: \nT1113-5 Capture Linux Desktop using Import Tool\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1113-5 Capture Linux Desktop using Import Tool\n\nrm: cannot remove '/tmp/T1113_desktop.png': No such file or directory\nDone executing cleanup for test: \nT1113-5 Capture Linux Desktop using Import Tool\n\n",
       "stderr": "",

@@ -2,9 +2,9 @@
   "guid": "b16ef901-00bb-4dda-b4fc-a04db5067e20",
   "platforms": {
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.002-3 Binary simply packed by UPX\n\nPrerequisites met: \nT1027.002-3 Binary simply packed by UPX\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.002-3 Binary simply packed by UPX\n\nsh: line 1:  2858 Killed: 9               /tmp/packed_bin\nExit code: 137\nDone executing test: \nT1027.002-3 Binary simply packed by UPX\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.002-3 Binary simply packed by UPX\n\nDone executing cleanup for test: \nT1027.002-3 Binary simply packed by UPX\n\n",
+      "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1027.002-3 Binary simply packed by UPX\n\nPrerequisites met: \nT1027.002-3 Binary simply packed by UPX\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1027.002-3 Binary simply packed by UPX\n\nsh: line 1: 23396 Killed: 9               /tmp/packed_bin\nExit code: 137\nDone executing test: \nT1027.002-3 Binary simply packed by UPX\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1027.002-3 Binary simply packed by UPX\n\nDone executing cleanup for test: \nT1027.002-3 Binary simply packed by UPX\n\n",
       "stderr": "",
       "exit_code": 137,
       "last_error": "Command exited with code 137"

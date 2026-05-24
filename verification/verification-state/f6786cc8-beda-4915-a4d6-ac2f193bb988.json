@@ -2,7 +2,7 @@
   "guid": "f6786cc8-beda-4915-a4d6-ac2f193bb988",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nPrerequisites met: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nssh: Could not resolve hostname target.example.com: No address associated with hostname\nExit code: 255\nDone executing test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nDone executing cleanup for test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n",
       "stderr": "",
@@ -10,7 +10,7 @@
       "last_error": "Command exited with code 255"
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nPrerequisites met: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nssh: Could not resolve hostname target.example.com: nodename nor servname provided, or not known\nExit code: 255\nDone executing test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\nDone executing cleanup for test: \nT1048-1 Exfiltration Over Alternative Protocol - SSH\n\n",
       "stderr": "",

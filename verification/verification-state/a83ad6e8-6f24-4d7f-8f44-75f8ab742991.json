@@ -2,7 +2,7 @@
   "guid": "a83ad6e8-6f24-4d7f-8f44-75f8ab742991",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1548.003-4 Unlimited sudo cache timeout (freebsd)\n\nPrerequisites not met: T1548.003-4 Unlimited sudo cache timeout (freebsd)\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1548.003-4 Unlimited sudo cache timeout (freebsd)\n\nsed: can't read /usr/local/etc/sudoers: No such file or directory\nvisudo: unable to open /usr/local/etc/sudoers: No such file or directory\nExit code: 1\nDone executing test: \nT1548.003-4 Unlimited sudo cache timeout (freebsd)\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1548.003-4 Unlimited sudo cache timeout (freebsd)\n\nDone executing cleanup for test: \nT1548.003-4 Unlimited sudo cache timeout (freebsd)\n\n",
       "stderr": "",

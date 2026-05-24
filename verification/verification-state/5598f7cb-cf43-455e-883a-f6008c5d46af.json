@@ -2,12 +2,11 @@
   "guid": "5598f7cb-cf43-455e-883a-f6008c5d46af",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1098-1 Admin Account Manipulate\r\n\r\nPrerequisites met: \r\nT1098-1 Admin Account Manipulate\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1098-1 Admin Account Manipulate\r\n\r\nHaHa_203013907726\r\nExit code: 0\r\nDone executing test: \r\nT1098-1 Admin Account Manipulate\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1098-1 Admin Account Manipulate\r\n\r\nDone executing cleanup for test: \r\nT1098-1 Admin Account Manipulate\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpyitdci.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

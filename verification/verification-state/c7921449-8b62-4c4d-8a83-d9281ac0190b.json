@@ -2,12 +2,11 @@
   "guid": "c7921449-8b62-4c4d-8a83-d9281ac0190b",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1001.002-1 Steganographic Tarball Embedding\r\n\r\nPrerequisites not met: T1001.002-1 Steganographic Tarball Embedding\r\n\t[*] Image file must exist\r\n\r\n\t[*] File to hide within tarz file must exist\r\n\r\n\t[*] Tarz file to embed in image must exist \r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1001.002-1 Steganographic Tarball Embedding\r\n\r\nGet-Content : Cannot find path 'D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1001.002\\bin\\T1001.002.jpg' because it \r\ndoes not exist.\r\nAt line:1 char:4\r\n+ & {Get-Content \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1001.00 ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (D:\\a\\atomic-red...n\\T1001.002.jpg:String) [Get-Content], ItemNotFoundEx \r\n   ception\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand\r\n \r\nGet-Content : Cannot find path 'C:\\Users\\Public\\Downloads\\T1001.002.tarz' because it does not exist.\r\nAt line:1 char:4\r\n+ & {Get-Content \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1001.00 ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (C:\\Users\\Public\\Downloads\\T1001.002.tarz:String) [Get-Content], ItemNot \r\n   FoundException\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand\r\nExit code: 0\r\nDone executing test: \r\nT1001.002-1 Steganographic Tarball Embedding\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1001.002-1 Steganographic Tarball Embedding\r\n\r\nSet-ExecutionPolicy : The 'Set-ExecutionPolicy' command was found in the module 'Microsoft.PowerShell.Security', but \r\nthe module could not be loaded. For more information, run 'Import-Module Microsoft.PowerShell.Security'.\r\nAt line:1 char:4\r\n+ & {Set-ExecutionPolicy Bypass -Scope Process -Force -ErrorAction Igno ...\r\n+    ~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Set-ExecutionPolicy:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule\r\nDone executing cleanup for test: \r\nT1001.002-1 Steganographic Tarball Embedding\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpw4cpxl.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "43f71395-6c37-498e-ab17-897d814a0947",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1531-3 Remove Account From Domain Admin Group\r\n\r\nPrerequisites not met: T1531-3 Remove Account From Domain Admin Group\r\n\t[*] Requires the Active Directory module for powershell to be installed.\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1531-3 Remove Account From Domain Admin Group\r\n\r\nConvertTo-SecureString : The 'ConvertTo-SecureString' command was found in the module 'Microsoft.PowerShell.Security', \r\nbut the module could not be loaded. For more information, run 'Import-Module Microsoft.PowerShell.Security'.\r\nAt line:1 char:13\r\n+ & {$PWord = ConvertTo-SecureString -String password -AsPlainText -For ...\r\n+             ~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (ConvertTo-SecureString:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule\r\n \r\nNew-Object : Exception calling \".ctor\" with \"2\" argument(s): \"Cannot process argument because the value of argument \r\n\"password\" is null. Change the value of argument \"password\" to a non-null value.\"\r\nAt line:2 char:15\r\n+ ... redential = New-Object -TypeName System.Management.Automation.PSCrede ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException\r\n    + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewObjectCommand\r\n \r\nGet-ADUser : The term 'Get-ADUser' is not recognized as the name of a cmdlet, function, script file, or operable \r\nAt line:3 char:5\r\n+ if((Get-ADUser remove_user -Properties memberof).memberof -like \"CN=D ...\r\n+     ~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Get-ADUser:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\n \r\nprogram. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nExit code: 0\r\nDone executing test: \r\nT1531-3 Remove Account From Domain Admin Group\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1531-3 Remove Account From Domain Admin Group\r\n\r\nDone executing cleanup for test: \r\nT1531-3 Remove Account From Domain Admin Group\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp3foh3o.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

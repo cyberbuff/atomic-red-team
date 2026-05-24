@@ -2,12 +2,11 @@
   "guid": "fd3c1c6a-02d2-4b72-82d9-71c527abb126",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\nPrerequisites met: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\nMicrosoft (R) Visual C# Compiler version 4.8.9221.0\r\nfor C# 5\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\nThis compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240\r\nMicrosoft (R) .NET Framework Services Installation Utility Version 4.8.9221.0\r\nCopyright (C) Microsoft Corporation.  All rights reserved.\r\nI shouldn't really execute\r\nWARNING: The assembly does not declare an ApplicationAccessControl Attribute.  Application security will be enabled by default.\r\nInstalled Assembly:\r\n\tAssembly: C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\T1218.009.dll\r\n\tApplication: T1218.009\r\n\tTypeLib: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\T1218.009.tlb\r\nExit code: 0\r\nDone executing test: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\nDone executing cleanup for test: \r\nT1218.009-2 Regsvcs Uninstall Method Call Test\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmplggwwn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

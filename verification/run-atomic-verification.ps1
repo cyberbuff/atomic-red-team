@@ -12,6 +12,88 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+function Test-IsWindowsPlatform {
+  $isWindowsVariable = Get-Variable -Name IsWindows -ErrorAction SilentlyContinue
+  if ($isWindowsVariable) {
+    return [bool]$isWindowsVariable.Value
+  }
+  return [System.Environment]::OSVersion.Platform -eq [System.PlatformID]::Win32NT
+}
+
+function Test-IsWindowsAdministrator {
+  $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+  $principal = [Security.Principal.WindowsPrincipal]::new($identity)
+  return $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+}
+
+function Get-CurrentUnixUserId {
+  $idCommand = Get-Command id -ErrorAction SilentlyContinue
+  if (-not $idCommand) {
+    throw "Cannot determine current user id because the 'id' command was not found."
+  }
+
+  $userId = & $idCommand.Source -u
+  if ($LASTEXITCODE -ne 0) {
+    throw "Cannot determine current user id because 'id -u' exited with code $LASTEXITCODE."
+  }
+  return [int]($userId | Select-Object -First 1)
+}
+
+function Get-CurrentPowerShellPath {
+  $currentProcess = Get-Process -Id $PID
+  if ($currentProcess.Path) {
+    return $currentProcess.Path
+  }
+
+  $pwshCommand = Get-Command pwsh -ErrorAction SilentlyContinue
+  if ($pwshCommand) {
+    return $pwshCommand.Source
+  }
+  throw "Cannot locate the current PowerShell executable for sudo re-execution."
+}
+
+function Invoke-AtomicVerificationWithSudo {
+  $sudoCommand = Get-Command sudo -ErrorAction SilentlyContinue
+  if (-not $sudoCommand) {
+    throw "Atomic verification requires root privileges, but the 'sudo' command was not found."
+  }
+
+  $scriptArguments = @(
+    "-NoProfile",
+    "-File",
+    $PSCommandPath,
+    "-TargetsPath",
+    $TargetsPath,
+    "-OutputPath",
+    $OutputPath,
+    "-AtomicsPath",
+    $AtomicsPath,
+    "-InvokeAtomicVersion",
+    $InvokeAtomicVersion
+  )
+  $sudoPath = $sudoCommand.Source
+  $sudoArguments = @((Get-CurrentPowerShellPath)) + $scriptArguments
+  Write-Host "Re-running atomic verification with sudo for elevated privileges."
+  & $sudoPath @sudoArguments
+  exit $LASTEXITCODE
+}
+
+function Assert-AtomicVerificationPrivilege {
+  if (Test-IsWindowsPlatform) {
+    if (-not (Test-IsWindowsAdministrator)) {
+      throw "Atomic verification must be run from an elevated Administrator PowerShell session."
+    }
+    return
+  }
+
+  if ((Get-CurrentUnixUserId) -eq 0) {
+    return
+  }
+  Invoke-AtomicVerificationWithSudo
+}
+
+Assert-AtomicVerificationPrivilege
+
 function Get-FileText {
   param(
     [Parameter(Mandatory = $true)]

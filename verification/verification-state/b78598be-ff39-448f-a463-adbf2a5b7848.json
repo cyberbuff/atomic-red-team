@@ -2,7 +2,7 @@
   "guid": "b78598be-ff39-448f-a463-adbf2a5b7848",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nPrerequisites met: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nchown: cannot access '/tmp/AtomicRedTeam/atomics/T1222.002': No such file or directory\nExit code: 1\nDone executing test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nDone executing cleanup for test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n",
       "stderr": "",
@@ -10,7 +10,7 @@
       "last_error": "Command exited with code 1"
     },
     "macos": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
       "stdout": "PathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nPrerequisites met: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nchown: root: illegal group name\nExit code: 1\nDone executing test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n\nPathToAtomicsFolder = /Users/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\nDone executing cleanup for test: \nT1222.002-6 chown - Change file or folder ownership and group recursively\n\n",
       "stderr": "",

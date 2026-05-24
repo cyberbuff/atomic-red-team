@@ -2,12 +2,12 @@
   "guid": "3b625eaa-c10d-4635-af96-3eae7d2a2f3c",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\nPrerequisites met: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\nERROR: Access is denied.\r\nExit code: 1\r\nDone executing test: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\nERROR: Access is denied.\r\nDone executing cleanup for test: \r\nT1112-56 Tamper Win Defender Protection\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpt11pzo.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

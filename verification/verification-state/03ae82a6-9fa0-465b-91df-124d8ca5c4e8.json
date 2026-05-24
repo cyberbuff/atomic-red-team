@@ -2,12 +2,11 @@
   "guid": "03ae82a6-9fa0-465b-91df-124d8ca5c4e8",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\nPrerequisites met: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\nVEDetector   : C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\VEDetector.exe\r\nPSPath       : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\r\nPSParentPath : Microsoft.PowerShell.Core\\Registry::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\r\nPSChildName  : Run\r\nPSDrive      : HKLM\r\nPSProvider   : Microsoft.PowerShell.Core\\Registry\r\nExit code: 0\r\nDone executing test: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\n[+] Cleaned up VEDetector artifacts\r\nDone executing cleanup for test: \r\nT1036.005-3 Masquerading cmd.exe as VEDetector.exe\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmph03te1.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

@@ -2,12 +2,11 @@
   "guid": "c187c9bc-4511-40b3-aa10-487b2c70b6a5",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\nPrerequisites met: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\nName           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation\r\n----           ---------     --------- --------      ----                                               ---------------\r\nC                 116.82         32.63 FileSystem    C:\\                                 ...neradmin\\AppData\\Local\\Temp\r\nD                   3.49        146.51 FileSystem    D:\\\r\nExit code: 0\r\nDone executing test: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\nDone executing cleanup for test: \r\nT1082-38 Enumerate Available Drives via gdr\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpc2ntp3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

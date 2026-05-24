@@ -2,12 +2,11 @@
   "guid": "ffd492e3-0455-4518-9fb1-46527c9f241b",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1105-8 certutil download (verifyctl)\r\n\r\nPrerequisites met: \r\nT1105-8 certutil download (verifyctl)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1105-8 certutil download (verifyctl)\r\n\r\nDirectory: C:\\Users\\runneradmin\\AppData\\Local\\Temp\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\nd-----         5/23/2026   2:12 AM                certutil-2026_05_23                                                  \r\nCertUtil: -verifyCTL command FAILED: 0x8009310b (ASN: 267 CRYPT_E_ASN1_BADTAG)\r\nCertUtil: ASN1 bad tag value met.\r\nExit code: 0\r\nDone executing test: \r\nT1105-8 certutil download (verifyctl)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1105-8 certutil download (verifyctl)\r\n\r\nDone executing cleanup for test: \r\nT1105-8 certutil download (verifyctl)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp4b5hgy.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

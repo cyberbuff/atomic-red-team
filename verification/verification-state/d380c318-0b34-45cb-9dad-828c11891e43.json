@@ -2,12 +2,11 @@
   "guid": "d380c318-0b34-45cb-9dad-828c11891e43",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1564.001-10 Create Windows System File with powershell\r\n\r\nPrerequisites not met: T1564.001-10 Create Windows System File with powershell\r\n\t[*] The file must exist on disk at specified location (%temp%\\T1564.001-10.txt)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1564.001-10 Create Windows System File with powershell\r\n\r\nGet-Item : Cannot find path 'C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\T1564.001-10.txt' because it does not exist.\r\nAt line:1 char:12\r\n+ & {$file = Get-Item $env:temp\\T1564.001-10.txt -Force\r\n+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (C:\\Users\\RUNNER...1564.001-10.txt:String) [Get-Item], ItemNotFoundExcep \r\n   tion\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand\r\n \r\nThe property 'attributes' cannot be found on this object. Verify that the property exists and can be set.\r\nAt line:2 char:1\r\n+ $file.attributes='System'}\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : PropertyNotFound\r\nExit code: 0\r\nDone executing test: \r\nT1564.001-10 Create Windows System File with powershell\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1564.001-10 Create Windows System File with powershell\r\n\r\nDone executing cleanup for test: \r\nT1564.001-10 Create Windows System File with powershell\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpl3gdax.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

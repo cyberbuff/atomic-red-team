@@ -2,12 +2,11 @@
   "guid": "c2587b8d-743d-4985-aa50-c83394eaeb68",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\nPrerequisites met: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\nAttached          : True\r\nBlockSize         : 0\r\nDevicePath        : \\\\.\\CDROM0\r\nFileSize          : 71680\r\nImagePath         : D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1553.005\\bin\\AllTheThings.iso\r\nLogicalSectorSize : 2048\r\nNumber            : 0\r\nSize              : 71680\r\nStorageType       : 1\r\nPSComputerName    :\r\nException calling \"CreateInstance\" with \"1\" argument(s): \"Creating an instance of the COM component with CLSID \r\n{C08AFD90-F2A1-11D1-8455-00A0C91F3880} from the IClassFactory failed due to the following error: 80004005 Unspecified \r\nerror (Exception from HRESULT: 0x80004005 (E_FAIL)).\"\r\nAt line:4 char:1\r\n+ $instance = [activator]::CreateInstance([type]::GetTypeFromCLSID(\"{c0 ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\r\n    + FullyQualifiedErrorId : COMException\r\n \r\nYou cannot call a method on a null-valued expression.\r\nAt line:5 char:1\r\n+ $instance.Document.Application.ShellExecute($driveLetter+\":\\document. ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : InvokeMethodOnNull\r\nExit code: 0\r\nDone executing test: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\nDone executing cleanup for test: \r\nT1553.005-4 Execute LNK file from ISO\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp40i2zn.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

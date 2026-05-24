@@ -2,12 +2,12 @@
   "guid": "a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1220-2 MSXSL Bypass using remote files\r\n\r\nPrerequisites not met: T1220-2 MSXSL Bypass using remote files\r\n\t[*] msxsl.exe must exist on disk at specified location (\"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\msxsl.exe\")\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1220-2 MSXSL Bypass using remote files\r\n\r\nThe filename, directory name, or volume label syntax is incorrect.\r\nExit code: 1\r\nDone executing test: \r\nT1220-2 MSXSL Bypass using remote files\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1220-2 MSXSL Bypass using remote files\r\n\r\nDone executing cleanup for test: \r\nT1220-2 MSXSL Bypass using remote files\r\n\r\n",
       "stderr": "",
       "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmp0ry0qy.tmp' because it is being used by another process."
+      "last_error": "Command exited with code 1"
     }
   }
 }

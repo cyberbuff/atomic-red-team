@@ -2,12 +2,11 @@
   "guid": "70bd71e6-eba4-4e00-92f7-617911dbe020",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\r\nPrerequisites not met: T1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\t[*] HVCI must be enabled\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\r\nThe operation completed successfully.\r\nExit code: 0\r\nDone executing test: \r\nT1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\r\nThe operation completed successfully.\r\nERROR: The system was unable to find the specified registry key or value.\r\nERROR: The system was unable to find the specified registry key or value.\r\nERROR: The system was unable to find the specified registry key or value.\r\nERROR: The system was unable to find the specified registry key or value.\r\nDone executing cleanup for test: \r\nT1685-47 Disable Hypervisor-Enforced Code Integrity (HVCI)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpefrv34.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

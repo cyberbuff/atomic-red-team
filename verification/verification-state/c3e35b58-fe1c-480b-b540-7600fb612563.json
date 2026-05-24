@@ -2,12 +2,11 @@
   "guid": "c3e35b58-fe1c-480b-b540-7600fb612563",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\r\nPrerequisites not met: T1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\t[*] Microsoft Word must be installed\r\n\r\n\r\nTry installing prereq's with the \r\n-GetPrereqs\r\n switch\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\r\nNew-Object : Retrieving the COM class factory for component with CLSID {00000000-0000-0000-0000-000000000000} failed \r\ndue to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).\r\nAt line:1 char:13\r\n+ & {$wdApp = New-Object -COMObject \"Word.Application\"\r\n+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException\r\n    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand\r\n \r\nYou cannot call a method on a null-valued expression.\r\nAt line:2 char:4\r\n+ if(-not $wdApp.path.contains(\"Program Files (x86)\"))\r\n+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : InvokeMethodOnNull\r\n \r\nStop-Process : Cannot find a process with the name \"WinWord\". Verify the process name and call the cmdlet again.\r\n+ Stop-Process -Name \"WinWord\"\r\nAt line:11 char:1\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (WinWord:String) [Stop-Process], ProcessCommandException\r\n    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.StopProcessCommand\r\n \r\nStart-Process : This command cannot be run due to the error: The system cannot find the file specified.\r\n+ Start-Process \"WinWord\"}\r\nAt line:12 char:1\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException\r\n    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand\r\nExit code: 0\r\nDone executing test: \r\nT1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\r\nDone executing cleanup for test: \r\nT1137.002-1 Office Application Startup Test Persistence (HKCU)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpk1knr3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

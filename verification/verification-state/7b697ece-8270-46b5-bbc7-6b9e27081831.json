@@ -2,9 +2,9 @@
   "guid": "7b697ece-8270-46b5-bbc7-6b9e27081831",
   "platforms": {
     "linux": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "last_status": "failed",
-      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-16 Edit UFW firewall main configuration file\n\nPrerequisites not met: T1686-16 Edit UFW firewall main configuration file\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-16 Edit UFW firewall main configuration file\n\nsh: 1: cannot create /etc/default/ufw: Permission denied\nExit code: 1\nDone executing test: \nT1686-16 Edit UFW firewall main configuration file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-16 Edit UFW firewall main configuration file\n\nsed: couldn't open temporary file /etc/default/sed0pdI24: Permission denied\nDone executing cleanup for test: \nT1686-16 Edit UFW firewall main configuration file\n\n",
+      "stdout": "PathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nCheckPrereq's for: \nT1686-16 Edit UFW firewall main configuration file\n\nPrerequisites not met: T1686-16 Edit UFW firewall main configuration file\n\t[*] Elevation required but not provided\n\n\nTry installing prereq's with the \n-GetPrereqs\n switch\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting test: \nT1686-16 Edit UFW firewall main configuration file\n\nsh: 1: cannot create /etc/default/ufw: Permission denied\nExit code: 1\nDone executing test: \nT1686-16 Edit UFW firewall main configuration file\n\n\nPathToAtomicsFolder = /home/runner/work/atomic-red-team/atomic-red-team/atomics\n\nExecuting cleanup for test: \nT1686-16 Edit UFW firewall main configuration file\n\nsed: couldn't open temporary file /etc/default/sedDpvmT3: Permission denied\nDone executing cleanup for test: \nT1686-16 Edit UFW firewall main configuration file\n\n",
       "stderr": "",
       "exit_code": 1,
       "last_error": "Command exited with code 1"

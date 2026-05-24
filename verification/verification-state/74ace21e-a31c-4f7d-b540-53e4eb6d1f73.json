@@ -2,12 +2,11 @@
   "guid": "74ace21e-a31c-4f7d-b540-53e4eb6d1f73",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\nPrerequisites met: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\nThe operation completed successfully.\r\nOk.\r\nExit code: 0\r\nDone executing test: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\nDone executing cleanup for test: \r\nT1021.001-3 Changing RDP Port to Non Standard Port via Command_Prompt\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmploqzcr.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

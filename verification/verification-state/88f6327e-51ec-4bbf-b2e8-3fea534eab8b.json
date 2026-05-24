@@ -2,12 +2,11 @@
   "guid": "88f6327e-51ec-4bbf-b2e8-3fea534eab8b",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\nPrerequisites met: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\n11\r\nFormat-Hex : The term 'Format-Hex' is not recognized as the name of a cmdlet, function, script file, or operable \r\nprogram. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:5 char:1\r\n+ Format-Hex -InputObject $buffer}\r\n+ ~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (Format-Hex:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\nExit code: 0\r\nDone executing test: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\nDone executing cleanup for test: \r\nT1006-1 Read volume boot sector via DOS device path (PowerShell)\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnedrtk.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

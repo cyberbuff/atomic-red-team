@@ -2,12 +2,11 @@
   "guid": "fb8d4d7e-f5a4-481c-8867-febf13f8b6d3",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\nPrerequisites met: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\nName      State CPUUsage(%) MemoryAssigned(M) Uptime   Status             Version\r\n----      ----- ----------- ----------------- ------   ------             -------\r\nAtomic VM Off   0           0                 00:00:00 Operating normally 12.0\r\nExit code: 0\r\nDone executing test: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\nStop-VM : Cannot validate argument on parameter 'Name'. The argument is null or empty. Provide an argument that is not \r\nnull or empty, and then try the command again.\r\nAt line:1 char:12\r\n+ & {Stop-VM $VM -Force\r\n+            ~~~\r\n    + CategoryInfo          : InvalidData: (:) [Stop-VM], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.HyperV.PowerShell.Commands.StopVM\r\n \r\nRemove-VM : Cannot validate argument on parameter 'Name'. The argument is null or empty. Provide an argument that is \r\nnot null or empty, and then try the command again.\r\nAt line:2 char:11\r\n+ Remove-VM $VM -Force}\r\n+           ~~~\r\n    + CategoryInfo          : InvalidData: (:) [Remove-VM], ParameterBindingValidationException\r\n    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.HyperV.PowerShell.Commands.RemoveVM\r\nDone executing cleanup for test: \r\nT1564.006-3 Create and start Hyper-V virtual machine\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpj0mwdb.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

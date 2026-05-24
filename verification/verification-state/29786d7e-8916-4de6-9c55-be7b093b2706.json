@@ -2,12 +2,11 @@
   "guid": "29786d7e-8916-4de6-9c55-be7b093b2706",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\nPrerequisites met: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\nMicrosoft (R) MOF Compiler Version 10.0.26100.32860\r\nCopyright (c) Microsoft Corp. 1997-2006. All rights reserved.\r\nParsing MOF file: D:\\a\\atomic-red-team\\atomic-red-team\\atomics\\T1546.003\\src\\T1546.003.mof\r\nMOF file has been successfully parsed\r\nStoring data in the repository...\r\nDone!\r\nExit code: 0\r\nDone executing test: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\nDone executing cleanup for test: \r\nT1546.003-3 Windows MOFComp.exe Load MOF File\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpvf0gjt.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }

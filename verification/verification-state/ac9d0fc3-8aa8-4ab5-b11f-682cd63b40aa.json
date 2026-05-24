@@ -2,12 +2,11 @@
   "guid": "ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa",
   "platforms": {
     "windows": {
-      "consecutive_failures": 1,
-      "last_status": "failed",
-      "stdout": "",
+      "consecutive_failures": 0,
+      "last_status": "passed",
+      "stdout": "PathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nCheckPrereq's for: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\nPrerequisites met: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting test: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\n1 file(s) copied.\r\nWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\nInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\r\nPS C:\\Users\\runneradmin\\AppData\\Local\\Temp> \r\nC:\\Users\\RUNNER~1\\AppData\\Local\\Temp>\r\nExit code: 0\r\nDone executing test: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\n\nPathToAtomicsFolder = D:\\a\\atomic-red-team\\atomic-red-team\\atomics\r\n\r\nExecuting cleanup for test: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\nDone executing cleanup for test: \r\nT1036.003-5 Masquerading - powershell.exe running as taskhostw.exe\r\n\r\n",
       "stderr": "",
-      "exit_code": 1,
-      "last_error": "The process cannot access the file 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\tmpnw2uh3.tmp' because it is being used by another process."
+      "exit_code": 0
     }
   }
 }
