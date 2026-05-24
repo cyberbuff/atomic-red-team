@@ -78,6 +78,34 @@ def compact_output_stream(value: Any) -> str:
     return f"{value[:head_length]}{marker}{value[-tail_length:]}"
 
 
+def result_exit_code(result: dict[str, Any]) -> int:
+    try:
+        return int(result.get("exit_code", 0))
+    except (TypeError, ValueError):
+        return 1
+
+
+def result_stderr(result: dict[str, Any]) -> str:
+    return compact_output_stream(result.get("stderr", ""))
+
+
+def result_passed_cleanly(result: dict[str, Any]) -> bool:
+    return (
+        result.get("status") == "passed"
+        and result_exit_code(result) == 0
+        and result_stderr(result) == ""
+    )
+
+
+def verification_error(result: dict[str, Any]) -> str:
+    if result.get("status") != "passed":
+        return str(result.get("error", "verification failed"))
+    exit_code = result_exit_code(result)
+    if exit_code != 0:
+        return f"Command exited with code {exit_code}"
+    return "Command wrote to stderr"
+
+
 def read_verification_state(path: Path) -> dict[str, Any]:
     if path.is_dir():
         metadata = read_json(path / STATE_METADATA_FILE)
@@ -257,14 +285,14 @@ def merge_verification_results(
             platform,
             {"consecutive_failures": 0},
         )
-        if result["status"] == "passed":
+        if result_passed_cleanly(result):
             platform_state.update(
                 {
                     "consecutive_failures": 0,
                     "last_status": "passed",
-                    "exit_code": result.get("exit_code", 0),
+                    "exit_code": result_exit_code(result),
                     "stdout": compact_output_stream(result.get("stdout", "")),
-                    "stderr": compact_output_stream(result.get("stderr", "")),
+                    "stderr": result_stderr(result),
                 }
             )
             platform_state.pop("last_error", None)
@@ -275,14 +303,13 @@ def merge_verification_results(
                 {
                     "consecutive_failures": failures,
                     "last_status": "failed",
-                    "last_error": result.get("error", ""),
-                    "exit_code": result.get("exit_code", 1),
+                    "last_error": verification_error(result),
+                    "exit_code": result_exit_code(result),
                     "stdout": compact_output_stream(result.get("stdout", "")),
-                    "stderr": compact_output_stream(result.get("stderr", "")),
+                    "stderr": result_stderr(result),
                 }
             )
-            if failures >= 2:
-                remove_verified_platform(verified_by_guid, guid, platform)
+            remove_verified_platform(verified_by_guid, guid, platform)
 
     verified_data = {
         "version": 1,

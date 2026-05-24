@@ -288,11 +288,6 @@ atomics:
   name: Execute Python via Python executables
   verified_platforms:
   - platform: linux
-- guid: 0b79c06f-c788-44a2-8630-d69051f1123d
-  atomic_id: T1112-9
-  name: BlackByte Ransomware Registry Changes - Powershell
-  verified_platforms:
-  - platform: windows
 - guid: 0b996469-48c6-46e2-8155-a17f8b6c2247
   atomic_id: T1014-4
   name: Loadable Kernel Module based Rootkit (Diamorphine)
@@ -389,11 +384,6 @@ atomics:
   name: Setting the HISTCONTROL environment variable
   verified_platforms:
   - platform: linux
-- guid: 10b33fb0-c58b-44cd-8599-b6da5ad6384c
-  atomic_id: T1112-79
-  name: Modify UseTPMPIN Registry entry
-  verified_platforms:
-  - platform: windows
 - guid: 10ba02d0-ab76-4f80-940d-451633f24c5b
   atomic_id: T1518-5
   name: WinPwn - DotNet
@@ -719,11 +709,6 @@ atomics:
     arguments
   verified_platforms:
   - platform: windows
-- guid: 1c91e740-1729-4329-b779-feba6e71d048
-  atomic_id: T1055-1
-  name: Shellcode execution via VBA
-  verified_platforms:
-  - platform: windows
 - guid: 1ca1f9c7-44bc-46bb-8c85-c50e2e94267b
   atomic_id: T1217-2
   name: List Mozilla Firefox Bookmark Database Files on macOS
@@ -1026,11 +1011,6 @@ atomics:
   name: Process Injection with Go using CreateThread WinAPI (Natively)
   verified_platforms:
   - platform: windows
-- guid: 2a4ab5c1-97ad-4d6d-b5d3-13f3a6c94e39
-  atomic_id: T1055-10
-  name: Remote Process Injection with Go using CreateRemoteThread WinAPI (Natively)
-  verified_platforms:
-  - platform: windows
 - guid: 2a4b0d29-e5dd-4b66-b729-07423ba1cd9d
   atomic_id: T1105-34
   name: Windows push file using scp.exe
@@ -1134,11 +1114,6 @@ atomics:
   name: Replace Desktop Wallpaper
   verified_platforms:
   - platform: windows
-- guid: 30cbeda4-08d9-42f1-8685-197fad677734
-  atomic_id: T1027.006-1
-  name: HTML Smuggling Remote Payload
-  verified_platforms:
-  - platform: windows
 - guid: 315f4be6-2240-4552-b3e1-d1047f5eecea
   atomic_id: T1685-27
   name: Tamper with Windows Defender Evade Scanning -Extension
@@ -1225,11 +1200,6 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
-- guid: 3448824b-3c35-4a9e-a8f5-f887f68bea21
-  atomic_id: T1112-42
-  name: Terminal Server Client Connection History Cleared
-  verified_platforms:
-  - platform: windows
 - guid: 34557863-344a-468f-808b-a1bfb89b4fa9
   atomic_id: T1016-9
   name: DNS Server Discovery Using nslookup
@@ -1316,16 +1286,10 @@ atomics:
   name: Disable Windows Auto Reboot for current logon user
   verified_platforms:
   - platform: windows
-- guid: 39cb0e67-dd0d-4b74-a74b-c072db7ae991
-  atomic_id: T1574.006-1
-  name: Shared Library Injection via /etc/ld.so.preload
-  verified_platforms:
-  - platform: linux
 - guid: 39ce0303-ae16-4b9e-bb5b-4f53e8262066
   atomic_id: T1074.001-2
   name: Stage data from Discovery.sh
   verified_platforms:
-  - platform: linux
   - platform: macos
 - guid: 39ceed55-f653-48ac-bd19-aceceaf525db
   atomic_id: T1218.005-6
@@ -1428,11 +1392,6 @@ atomics:
   name: WinPwn - itm4nprivesc
   verified_platforms:
   - platform: windows
-- guid: 3d257a03-eb80-41c5-b744-bb37ac7f65c7
-  atomic_id: T1033-6
-  name: System Discovery - SocGholish whoami
-  verified_platforms:
-  - platform: windows
 - guid: 3d25f1f2-55cb-4a41-a523-d17ad4cfba19
   atomic_id: T1105-37
   name: Windows pull file using sftp.exe
@@ -1486,11 +1445,6 @@ atomics:
 - guid: 3f1b5096-0139-4736-9b78-19bcb02bb1cb
   atomic_id: T1114.001-1
   name: Email Collection with PowerShell Get-Inbox
-  verified_platforms:
-  - platform: windows
-- guid: 3f3120f0-7e50-4be2-88ae-54c61230cb9f
-  atomic_id: T1204.002-12
-  name: ClickFix Campaign - Abuse RunMRU to Launch mshta via PowerShell
   verified_platforms:
   - platform: windows
 - guid: 3f3af983-118a-4fa1-85d3-ba4daa739d80
@@ -1665,11 +1619,6 @@ atomics:
   name: Enumerate Active Directory for Unconstrained Delegation
   verified_platforms:
   - platform: windows
-- guid: 4700a710-c821-4e17-a3ec-9e4c81d6845f
-  atomic_id: T1482-1
-  name: Windows - Discover domain trusts with dsquery
-  verified_platforms:
-  - platform: windows
 - guid: 47966a1d-df4f-4078-af65-db6d9aa20739
   atomic_id: T1070.003-5
   name: Clear Bash history (truncate)
@@ -1701,11 +1650,6 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
-- guid: 491a4af6-a521-4b74-b23b-f7b3f1ee9e77
-  atomic_id: T1543.003-3
-  name: Service Installation PowerShell
-  verified_platforms:
-  - platform: windows
 - guid: 49543237-25db-497b-90df-d0a0a6e8fe2c
   atomic_id: T1055-4
   name: Dirty Vanity process Injection
@@ -1737,11 +1681,6 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
-- guid: 4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8
-  atomic_id: T1053.002-1
-  name: At.exe Scheduled task
-  verified_platforms:
-  - platform: windows
 - guid: 4b467538-f102-491d-ace7-ed487b853bf5
   atomic_id: T1016-5
   name: List Open Egress Ports
@@ -1881,11 +1820,6 @@ atomics:
     policy)
   verified_platforms:
   - platform: windows
-- guid: 514e9cd7-9207-4882-98b1-c8f791bae3c5
-  atomic_id: T1021.002-2
-  name: Map Admin Share PowerShell
-  verified_platforms:
-  - platform: windows
 - guid: 515942b0-a09f-4163-a7bb-22fefb6f185f
   atomic_id: T1046-2
   name: Port Scan Nmap
@@ -1914,11 +1848,6 @@ atomics:
 - guid: 52778a8f-a10b-41a4-9eae-52ddb74072bf
   atomic_id: T1615-5
   name: MSFT Get-GPO Cmdlet
-  verified_platforms:
-  - platform: windows
-- guid: 5295bd61-bd7e-4744-9d52-85962a4cf2d6
-  atomic_id: T1021.006-2
-  name: Remote Code Execution with PS Credentials Using Invoke-Command
   verified_platforms:
   - platform: windows
 - guid: 52ab5108-3f6f-42fb-8ba3-73bc054f22c8
@@ -2125,11 +2054,6 @@ atomics:
   name: Create an "Administrator " user (with a space on the end)
   verified_platforms:
   - platform: windows
-- guid: 5bcda9cd-8e85-48fa-861d-b5a85d91d48c
-  atomic_id: T1218-10
-  name: Lolbin Gpscript logon option
-  verified_platforms:
-  - platform: windows
 - guid: 5bcefe5f-3f30-4f1c-a61a-8d7db3f4450c
   atomic_id: T1105-31
   name: File download via nscurl
@@ -2221,11 +2145,6 @@ atomics:
   name: Re-Opened Applications using LoginHook
   verified_platforms:
   - platform: macos
-- guid: 5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3
-  atomic_id: T1007-2
-  name: System Service Discovery - net.exe
-  verified_platforms:
-  - platform: windows
 - guid: 5f8e36de-37ca-455e-b054-a2584f043c06
   atomic_id: T1112-74
   name: Disable Windows Remote Desktop Protocol
@@ -2334,11 +2253,6 @@ atomics:
   name: Enumerate Active Directory Computers with ADSISearcher
   verified_platforms:
   - platform: windows
-- guid: 653c6e17-14a2-4849-851d-f1c0cc8ea9ab
-  atomic_id: T1685-57
-  name: Disable EventLog-Application Auto Logger Session Via Registry - Cmd
-  verified_platforms:
-  - platform: windows
 - guid: 653d39cd-bae7-499a-898c-9fb96b8b5cd1
   atomic_id: T1685.006-3
   name: Delete log files using built-in log utility
@@ -2444,11 +2358,6 @@ atomics:
 - guid: 6a5b2a50-d037-4879-bf01-43d4d6cbf73f
   atomic_id: T1059.001-21
   name: SOAPHound - Dump BloodHound Data
-  verified_platforms:
-  - platform: windows
-- guid: 6aa58451-1121-4490-a8e9-1dada3f1c68c
-  atomic_id: T1048.003-4
-  name: Exfiltration Over Alternative Protocol - HTTP
   verified_platforms:
   - platform: windows
 - guid: 6afe288a-8a8b-4d33-a629-8d03ba9dad3a
@@ -2563,11 +2472,6 @@ atomics:
   name: Launchctl
   verified_platforms:
   - platform: macos
-- guid: 6fdaae87-c05b-42f8-842e-991a74e8376b
-  atomic_id: T1105-25
-  name: certreq download
-  verified_platforms:
-  - platform: windows
 - guid: 70bd71e6-eba4-4e00-92f7-617911dbe020
   atomic_id: T1685-47
   name: Disable Hypervisor-Enforced Code Integrity (HVCI)
@@ -2938,11 +2842,6 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
-- guid: 81c13829-f6c9-45b8-85a6-053366d55297
-  atomic_id: T1071.001-1
-  name: Malicious User Agents - Powershell
-  verified_platforms:
-  - platform: windows
 - guid: 81ce22fd-9612-4154-918e-8a1f285d214d
   atomic_id: T1685-31
   name: Disable Defender Using NirSoft AdvancedRun
@@ -2978,11 +2877,6 @@ atomics:
   name: Malicious process Masquerading as LSM.exe
   verified_platforms:
   - platform: windows
-- guid: 83a95136-a496-423c-81d3-1c6750133917
-  atomic_id: T1218.011-13
-  name: Rundll32 with desk.cpl
-  verified_platforms:
-  - platform: windows
 - guid: 8529ee44-279a-4a19-80bf-b846a40dda58
   atomic_id: T1567.002-1
   name: Exfiltrate data with rclone to cloud Storage - Mega (Windows)
@@ -2996,11 +2890,6 @@ atomics:
 - guid: 855fb8b4-b8ab-4785-ae77-09f5df7bff55
   atomic_id: T1040-7
   name: Windows Internal pktmon set filter
-  verified_platforms:
-  - platform: windows
-- guid: 85cfbf23-4a1e-4342-8792-007e004b975f
-  atomic_id: T1082-7
-  name: Hostname Discovery (Windows)
   verified_platforms:
   - platform: windows
 - guid: 85e6eff8-3ed4-4e03-ae50-aa6a404898a5
@@ -3207,16 +3096,6 @@ atomics:
   name: Disable Carbon Black Response
   verified_platforms:
   - platform: macos
-- guid: 8fcfa3d5-ea7d-4e1c-bd3e-3c4ed315b7d2
-  atomic_id: T1053.005-11
-  name: Scheduled Task Persistence via CompMgmt.msc
-  verified_platforms:
-  - platform: windows
-- guid: 9059e8de-3d7d-4954-a322-46161880b9cf
-  atomic_id: T1021.006-1
-  name: Enable Windows Remote Management
-  verified_platforms:
-  - platform: windows
 - guid: 906865c3-e05f-4acc-85c4-fbc185455095
   atomic_id: T1218.005-2
   name: Mshta executes VBScript to execute malicious command
@@ -3529,24 +3408,9 @@ atomics:
   name: User scope COR_PROFILER
   verified_platforms:
   - platform: windows
-- guid: 9d71c492-ea2e-4c08-af16-c6994cdf029f
-  atomic_id: T1218.010-5
-  name: Regsvr32 Silent DLL Install Call DllRegisterServer
-  verified_platforms:
-  - platform: windows
 - guid: 9d77fed7-05f8-476e-a81b-8ff0472c64d0
   atomic_id: T1003.002-6
   name: dump volume shadow copy hives with System.IO.File
-  verified_platforms:
-  - platform: windows
-- guid: 9dc7767b-30c1-4cc4-b999-50cab5e27891
-  atomic_id: T1547.001-9
-  name: SystemBC Malware-as-a-Service Registry
-  verified_platforms:
-  - platform: windows
-- guid: 9dca5a1d-f78c-4a8d-accb-d6de67cfed6b
-  atomic_id: T1518.001-10
-  name: Security Software Discovery - Windows Firewall Enumeration
   verified_platforms:
   - platform: windows
 - guid: 9dee89bd-9a98-4c4f-9e2d-4256690b0e72
@@ -3696,11 +3560,6 @@ atomics:
 - guid: a55a22e9-a3d3-42ce-bd48-2653adb8f7a9
   atomic_id: T1098-2
   name: Domain Account and Group Manipulate
-  verified_platforms:
-  - platform: windows
-- guid: a574dafe-a903-4cce-9701-14040f4f3532
-  atomic_id: T1546-2
-  name: HKLM - Persistence using CommandProcessor AutoRun key (With Elevation)
   verified_platforms:
   - platform: windows
 - guid: a57fbe4b-3440-452a-88a7-943531ac872a
@@ -3880,11 +3739,6 @@ atomics:
 - guid: acfcd709-0013-4f1e-b9ee-bc1e7bafaaec
   atomic_id: T1082-40
   name: Discover OS Build Number via Registry
-  verified_platforms:
-  - platform: windows
-- guid: acfef903-7662-447e-a391-9c91c2f00f7b
-  atomic_id: T1547.001-10
-  name: Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value
   verified_platforms:
   - platform: windows
 - guid: ad2c17ed-f626-4061-b21e-b9804a6f3655
@@ -4176,16 +4030,6 @@ atomics:
   name: Modify EnableBDEWithNoTPM Registry entry
   verified_platforms:
   - platform: windows
-- guid: bb037826-cbe8-4a41-93ea-b94059d6bb98
-  atomic_id: T1046-8
-  name: WinPwn - fruit
-  verified_platforms:
-  - platform: windows
-- guid: bb6b51e1-ab92-45b5-aeea-e410d06405f8
-  atomic_id: T1553.006-1
-  name: Code Signing Policy Modification
-  verified_platforms:
-  - platform: windows
 - guid: bbdb06bc-bab6-4f5b-8232-ba3fbed51d77
   atomic_id: T1546.004-5
   name: Append commands user shell profile
@@ -4407,11 +4251,6 @@ atomics:
   name: Recon information for export with PowerShell
   verified_platforms:
   - platform: windows
-- guid: c426dacf-575d-4937-8611-a148a86a5e61
-  atomic_id: T1218-1
-  name: mavinject - Inject DLL into running process
-  verified_platforms:
-  - platform: windows
 - guid: c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b
   atomic_id: T1518-2
   name: Applications Installed
@@ -4447,11 +4286,6 @@ atomics:
   name: Find Kernel Extensions (macOS)
   verified_platforms:
   - platform: macos
-- guid: c67ba807-f48b-446e-b955-e4928cd1bf91
-  atomic_id: T1040-6
-  name: Windows Internal pktmon capture
-  verified_platforms:
-  - platform: windows
 - guid: c691cee2-8d17-4395-b22f-00644c7f1c2d
   atomic_id: T1112-86
   name: Modify RDP-Tcp Initial Program Registry Entry
@@ -4485,11 +4319,6 @@ atomics:
 - guid: c8480c83-a932-446e-a919-06a1fd1e512a
   atomic_id: T1112-80
   name: Modify UseTPMKey Registry entry
-  verified_platforms:
-  - platform: windows
-- guid: c88ef166-50fa-40d5-a80c-e2b87d4180f7
-  atomic_id: T1112-59
-  name: Modify Internet Zone Protocol Defaults in Current User Registry - cmd
   verified_platforms:
   - platform: windows
 - guid: c8d40da9-31bd-47da-a497-11ea55d1ef6c
@@ -4548,11 +4377,6 @@ atomics:
   name: WinPwn - printercheck
   verified_platforms:
   - platform: windows
-- guid: cb814cf8-24f2-41dc-a1cd-1c2073276d4a
-  atomic_id: T1137.005-5
-  name: Outlook Rule - Create Rule with Obfuscated Blank Name (MAPI Evasion)
-  verified_platforms:
-  - platform: windows
 - guid: cb8f7cdc-36c4-4ed0-befc-7ad7d24dfd7a
   atomic_id: T1614.001-6
   name: Discover System Language by Environment Variable Query
@@ -4594,11 +4418,6 @@ atomics:
   name: WinPwn - Get SYSTEM shell - Pop System Shell using Token Manipulation technique
   verified_platforms:
   - platform: windows
-- guid: cd925593-fbb4-486d-8def-16cbdf944bf4
-  atomic_id: T1053.005-8
-  name: Import XML Schedule Task with Hidden Attribute
-  verified_platforms:
-  - platform: windows
 - guid: cde3c2af-3485-49eb-9c1f-0ed60e9cc0af
   atomic_id: T1560.001-6
   name: Data Compressed - nix - gzip Single File
@@ -4618,11 +4437,6 @@ atomics:
 - guid: ce4e76e6-de70-4392-9efe-b281fc2b4087
   atomic_id: T1106-2
   name: WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique
-  verified_platforms:
-  - platform: windows
-- guid: ce4fc678-364f-4282-af16-2fb4c78005ce
-  atomic_id: T1547.009-1
-  name: Shortcut Modification
   verified_platforms:
   - platform: windows
 - guid: cecfea7a-5f03-4cdd-8bc8-6f7c22862440
@@ -4648,11 +4462,6 @@ atomics:
 - guid: cfdc954d-4bb0-4027-875b-a1893ce406f2
   atomic_id: T1547.009-2
   name: Create shortcut to cmd in startup folders
-  verified_platforms:
-  - platform: windows
-- guid: cfe6315c-4945-40f7-b5a4-48f7af2262af
-  atomic_id: T1217-11
-  name: Extract chrome Browsing History
   verified_platforms:
   - platform: windows
 - guid: d0377aa6-850a-42b2-95f0-de558d80be57
@@ -4750,11 +4559,6 @@ atomics:
 - guid: d40da266-e073-4e5a-bb8b-2b385023e5f9
   atomic_id: T1547.004-3
   name: Winlogon Notify Key Logon Persistence - PowerShell
-  verified_platforms:
-  - platform: windows
-- guid: d41aaab5-bdfe-431d-a3d5-c29e9136ff46
-  atomic_id: T1021.002-4
-  name: Execute command writing output to local Admin Share
   verified_platforms:
   - platform: windows
 - guid: d430bf85-b656-40e7-b238-42db01df0183
@@ -4865,11 +4669,6 @@ atomics:
 - guid: da75ae8d-26d6-4483-b0fe-700e4df4f037
   atomic_id: T1070.003-12
   name: Clear Powershell History by Deleting History File
-  verified_platforms:
-  - platform: windows
-- guid: da86f239-9bd3-4e85-92ed-4a94ef111a1c
-  atomic_id: T1685-58
-  name: Disable EventLog-Application Auto Logger Session Via Registry - PowerShell
   verified_platforms:
   - platform: windows
 - guid: da97bb11-d6d0-4fc1-b445-e443d1346efe
@@ -4985,11 +4784,6 @@ atomics:
   name: Create a new time provider
   verified_platforms:
   - platform: windows
-- guid: df81db1b-066c-4802-9bc8-b6d030c3ba8e
-  atomic_id: T1059.003-5
-  name: Command Prompt read contents from CMD file and execute
-  verified_platforms:
-  - platform: windows
 - guid: dfbd1a21-540d-4574-9731-e852bd6fe840
   atomic_id: T1497.001-1
   name: Detect Virtualization Environment (Linux)
@@ -5010,11 +4804,6 @@ atomics:
   name: Detect Virtualization Environment (FreeBSD)
   verified_platforms:
   - platform: linux
-- guid: e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675
-  atomic_id: T1553.003-1
-  name: SIP (Subject Interface Package) Hijacking via Custom DLL
-  verified_platforms:
-  - platform: windows
 - guid: e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b
   atomic_id: T1053.005-6
   name: WMI Invoke-CimMethod Scheduled Task
@@ -5362,11 +5151,6 @@ atomics:
   name: Check OS version via "ver" command
   verified_platforms:
   - platform: windows
-- guid: f70974c8-c094-4574-b542-2c545af95a32
-  atomic_id: T1564.001-3
-  name: Create Windows System File with Attrib
-  verified_platforms:
-  - platform: windows
 - guid: f7308845-6da8-468e-99f2-4271f2f5bb67
   atomic_id: T1690-9
   name: Setting the HISTFILE environment variable (freebsd)
@@ -5450,11 +5234,6 @@ atomics:
 - guid: faab755e-4299-48ec-8202-fc7885eb6545
   atomic_id: T1217-5
   name: List Google Chrome / Opera Bookmarks on Windows with powershell
-  verified_platforms:
-  - platform: windows
-- guid: fb32c935-ee2e-454b-8fa3-1c46b42e8dfb
-  atomic_id: T1547.004-2
-  name: Winlogon Userinit Key Persistence - PowerShell
   verified_platforms:
   - platform: windows
 - guid: fb4151a2-db33-4f8c-b7f8-78ea8790f961

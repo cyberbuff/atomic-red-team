@@ -225,7 +225,7 @@ atomic_tests:
     }
 
 
-def test_merge_results_applies_failure_grace_period():
+def test_merge_results_removes_verified_platform_after_unclean_result():
     allowed = {
         "version": 1,
         "atomics": [
@@ -273,29 +273,8 @@ def test_merge_results_applies_failure_grace_period():
         ],
     )
 
-    assert verified["atomics"][0]["verified_platforms"][0]["platform"] == "linux"
-    assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 1
-
-    verified, state = merge_verification_results(
-        allowed,
-        verified,
-        state,
-        [
-            {
-                "guid": "11111111-1111-4111-8111-111111111111",
-                "platform": "linux",
-                "status": "failed",
-                "atomic_id": "T1000-1",
-                "name": "safe command",
-                "verified_at": "2026-05-15T09:00:00Z",
-                "run_id": "3",
-                "error": "execution failed again",
-            }
-        ],
-    )
-
     assert verified["atomics"] == []
-    assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 2
+    assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 1
 
     verified, state = merge_verification_results(
         allowed,
@@ -320,6 +299,98 @@ def test_merge_results_applies_failure_grace_period():
         {"platform": "linux"}
     ]
     assert state["atomics"][0]["platforms"]["linux"]["consecutive_failures"] == 0
+
+
+def test_merge_results_rejects_status_passed_with_stderr():
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1000",
+                "platforms": ["linux"],
+            }
+        ],
+    }
+    verified = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_platforms": [{"platform": "linux"}],
+            }
+        ],
+    }
+    state = {"version": 1, "atomics": []}
+
+    verified, state = merge_verification_results(
+        allowed,
+        verified,
+        state,
+        [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platform": "linux",
+                "status": "passed",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_at": "2026-05-22T09:00:00Z",
+                "run_id": "4",
+                "exit_code": 0,
+                "stdout": "command output\n",
+                "stderr": "warning output\n",
+            }
+        ],
+    )
+
+    assert verified["atomics"] == []
+    platform_state = state["atomics"][0]["platforms"]["linux"]
+    assert platform_state["last_status"] == "failed"
+    assert platform_state["last_error"] == "Command wrote to stderr"
+    assert platform_state["consecutive_failures"] == 1
+
+
+def test_merge_results_rejects_status_passed_with_nonzero_exit_code():
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1000",
+                "platforms": ["linux"],
+            }
+        ],
+    }
+    verified = {"version": 1, "atomics": []}
+    state = {"version": 1, "atomics": []}
+
+    verified, state = merge_verification_results(
+        allowed,
+        verified,
+        state,
+        [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platform": "linux",
+                "status": "passed",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_at": "2026-05-22T09:00:00Z",
+                "run_id": "4",
+                "exit_code": 7,
+                "stdout": "command output\n",
+                "stderr": "",
+            }
+        ],
+    )
+
+    assert verified["atomics"] == []
+    platform_state = state["atomics"][0]["platforms"]["linux"]
+    assert platform_state["last_status"] == "failed"
+    assert platform_state["last_error"] == "Command exited with code 7"
+    assert platform_state["consecutive_failures"] == 1
 
 
 def test_merge_results_promotes_verified_platform_metadata_to_root():
@@ -387,7 +458,7 @@ def test_merge_results_writes_run_metadata_and_output_to_state():
                 "run_id": "4",
                 "exit_code": 0,
                 "stdout": "command output\n",
-                "stderr": "warning output\n",
+                "stderr": "",
             }
         ],
     )
@@ -402,7 +473,7 @@ def test_merge_results_writes_run_metadata_and_output_to_state():
         "last_status": "passed",
         "exit_code": 0,
         "stdout": "command output\n",
-        "stderr": "warning output\n",
+        "stderr": "",
     }
 
 
