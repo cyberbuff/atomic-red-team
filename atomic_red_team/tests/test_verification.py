@@ -10,6 +10,7 @@ from atomic_red_team.verification import (
 )
 
 RUNNER_SCRIPT = Path("verification/run-atomic-verification.ps1")
+VERIFICATION_WORKFLOW = Path(".github/workflows/verify-atomics.yml")
 
 
 def write_atomic(path: Path, body: str) -> None:
@@ -405,6 +406,54 @@ def test_merge_results_writes_run_metadata_and_output_to_state():
     }
 
 
+def test_merge_results_compacts_large_output_streams():
+    allowed = {
+        "version": 1,
+        "atomics": [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "technique": "T1000",
+                "platforms": ["linux"],
+            }
+        ],
+    }
+    verified = {"version": 1, "atomics": []}
+    state = {"version": 1, "atomics": []}
+    large_stdout = f"{'A' * 70000}\nmiddle omitted\n{'Z' * 70000}"
+    large_stderr = f"{'B' * 70000}\nerror middle omitted\n{'Y' * 70000}"
+
+    _, state = merge_verification_results(
+        allowed,
+        verified,
+        state,
+        [
+            {
+                "guid": "11111111-1111-4111-8111-111111111111",
+                "platform": "linux",
+                "status": "failed",
+                "atomic_id": "T1000-1",
+                "name": "safe command",
+                "verified_at": "2026-05-22T09:00:00Z",
+                "run_id": "4",
+                "error": "new failure",
+                "exit_code": 7,
+                "stdout": large_stdout,
+                "stderr": large_stderr,
+            }
+        ],
+    )
+
+    platform_state = state["atomics"][0]["platforms"]["linux"]
+    assert len(platform_state["stdout"]) < len(large_stdout)
+    assert len(platform_state["stderr"]) < len(large_stderr)
+    assert platform_state["stdout"].startswith("A" * 100)
+    assert platform_state["stdout"].endswith("Z" * 100)
+    assert platform_state["stderr"].startswith("B" * 100)
+    assert platform_state["stderr"].endswith("Y" * 100)
+    assert "truncated" in platform_state["stdout"]
+    assert "truncated" in platform_state["stderr"]
+
+
 def test_merge_results_removes_platform_run_metadata_from_existing_state():
     allowed = {
         "version": 1,
@@ -652,3 +701,17 @@ def test_runner_self_elevates_before_running_atomictests():
         script.index("Assert-AtomicVerificationPrivilege")
         < script.index("Install-Module")
     )
+
+
+def test_workflow_uploads_verification_state_without_staging_it():
+    workflow = VERIFICATION_WORKFLOW.read_text(encoding="utf-8")
+
+    assert "name: verification-state-${{ github.run_id }}" in workflow
+    assert "path: verification/verification-state" in workflow
+    assert "git add verification/verified-atomics.yaml" in workflow
+    assert "git add \\\n            verification/verified-atomics.yaml" not in workflow
+    staged_state_pattern = (
+        "verification/verified-atomics.yaml \\\n"
+        "            verification/verification-state"
+    )
+    assert staged_state_pattern not in workflow

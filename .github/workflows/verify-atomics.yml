@@ -153,6 +153,14 @@ jobs:
       - name: Format verification YAML
         run: python verification/format-yaml.py
 
+      - name: Upload verification state
+        if: ${{ always() }}
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: verification-state-${{ github.run_id }}
+          path: verification/verification-state
+          if-no-files-found: warn
+
       - name: Commit verification updates
         id: commit
         env:
@@ -171,9 +179,7 @@ jobs:
             git checkout -B "$BRANCH_NAME"
           fi
 
-          git add \
-            verification/verified-atomics.yaml \
-            verification/verification-state
+          git add verification/verified-atomics.yaml
 
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"

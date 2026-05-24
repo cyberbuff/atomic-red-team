@@ -20,6 +20,7 @@ RUNNERS_BY_PLATFORM = {
     "windows": "windows-latest",
 }
 STATE_METADATA_FILE = "metadata.json"
+MAX_STATE_STREAM_CHARS = 60_000
 
 
 def read_yaml(path: Path) -> dict[str, Any]:
@@ -56,6 +57,25 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(data, indent=2) + "\n"
     path.write_text(text, encoding="utf-8")
+
+
+def compact_output_stream(value: Any) -> str:
+    if value is None:
+        return ""
+    if not isinstance(value, str):
+        value = str(value)
+    if len(value) <= MAX_STATE_STREAM_CHARS:
+        return value
+
+    marker = (
+        "\n\n"
+        f"[verification output truncated: {len(value) - MAX_STATE_STREAM_CHARS} "
+        "characters omitted]"
+        "\n\n"
+    )
+    head_length = (MAX_STATE_STREAM_CHARS - len(marker)) // 2
+    tail_length = MAX_STATE_STREAM_CHARS - len(marker) - head_length
+    return f"{value[:head_length]}{marker}{value[-tail_length:]}"
 
 
 def read_verification_state(path: Path) -> dict[str, Any]:
@@ -243,8 +263,8 @@ def merge_verification_results(
                     "consecutive_failures": 0,
                     "last_status": "passed",
                     "exit_code": result.get("exit_code", 0),
-                    "stdout": result.get("stdout", ""),
-                    "stderr": result.get("stderr", ""),
+                    "stdout": compact_output_stream(result.get("stdout", "")),
+                    "stderr": compact_output_stream(result.get("stderr", "")),
                 }
             )
             platform_state.pop("last_error", None)
@@ -257,8 +277,8 @@ def merge_verification_results(
                     "last_status": "failed",
                     "last_error": result.get("error", ""),
                     "exit_code": result.get("exit_code", 1),
-                    "stdout": result.get("stdout", ""),
-                    "stderr": result.get("stderr", ""),
+                    "stdout": compact_output_stream(result.get("stdout", "")),
+                    "stderr": compact_output_stream(result.get("stderr", "")),
                 }
             )
             if failures >= 2:
@@ -445,8 +465,8 @@ def normalize_platform_state(platform_state: dict[str, Any]) -> dict[str, Any]:
     normalized.pop("last_run_at", None)
     normalized.pop("last_run_id", None)
     normalized.setdefault("exit_code", 0)
-    normalized.setdefault("stdout", "")
-    normalized.setdefault("stderr", "")
+    normalized["stdout"] = compact_output_stream(normalized.get("stdout", ""))
+    normalized["stderr"] = compact_output_stream(normalized.get("stderr", ""))
     return normalized
 
 
