@@ -639,3 +639,16 @@ def test_runner_emits_stage_and_result_exit_codes():
     assert "$exitCode = 0" in script
     assert "$exitCode = $failedStage.exit_code" in script
     assert "exit_code = $exitCode" in script
+
+
+def test_runner_self_elevates_before_running_atomictests():
+    script = RUNNER_SCRIPT.read_text(encoding="utf-8")
+
+    assert "function Assert-AtomicVerificationPrivilege" in script
+    assert "sudo" in script
+    assert "& $sudoPath @sudoArguments" in script
+    assert "Administrator" in script
+    assert (
+        script.index("Assert-AtomicVerificationPrivilege")
+        < script.index("Install-Module")
+    )
