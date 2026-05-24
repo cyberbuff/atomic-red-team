@@ -1,6 +1,6 @@
 version: 1
-verified_at: '2026-05-23T02:17:35Z'
-run_id: '26320462572'
+verified_at: '2026-05-24T02:34:56Z'
+run_id: local
 atomics:
 - guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
   atomic_id: T1560.002-3
@@ -90,6 +90,11 @@ atomics:
   name: Compress Data and lock with password for Exfiltration with winzip
   verified_platforms:
   - platform: windows
+- guid: 0208ea60-98f1-4e8c-8052-930dce8f742c
+  atomic_id: T1685.006-9
+  name: Overwrite macOS system log via echo utility
+  verified_platforms:
+  - platform: macos
 - guid: 02124c37-767e-4b76-9383-c9fc366d9d4c
   atomic_id: T1053.005-12
   name: Scheduled Task Persistence via Eventviewer.msc
@@ -202,6 +207,11 @@ atomics:
   name: JScript execution to gather local computer information via wscript
   verified_platforms:
   - platform: windows
+- guid: 078e69eb-d9fb-450e-b9d0-2e118217c846
+  atomic_id: T1053.003-3
+  name: Cron - Add script to /etc/cron.d folder
+  verified_platforms:
+  - platform: linux
 - guid: 07b18a66-6304-47d2-bad0-ef421eb2e107
   atomic_id: T1082-21
   name: WinPwn - PowerSharpPack - Watson searching for missing windows patches
@@ -542,6 +552,11 @@ atomics:
   name: AMSI Bypass - Remove AMSI Provider Reg Key
   verified_platforms:
   - platform: windows
+- guid: 14033063-ee04-4eaf-8f5d-ba07ca7a097c
+  atomic_id: T1685.006-5
+  name: Truncate system log files via truncate utility (freebsd)
+  verified_platforms:
+  - platform: linux
 - guid: 142752dc-ca71-443b-9359-cf6f497315f1
   atomic_id: T1486-4
   name: Encrypt files using openssl (FreeBSD/Linux)
@@ -597,6 +612,11 @@ atomics:
   name: Javascript in registry
   verified_platforms:
   - platform: windows
+- guid: 1602ff76-ed7f-4c94-b550-2f727b4782d4
+  atomic_id: T1685.006-19
+  name: Overwrite Linux Mail Spool
+  verified_platforms:
+  - platform: linux
 - guid: 160a7c77-b00e-4111-9e45-7c2a44eda3fd
   atomic_id: T1548.002-25
   name: Disable UAC notification via registry keys
@@ -951,6 +971,11 @@ atomics:
   name: Discover System Time Zone via Registry
   verified_platforms:
   - platform: windows
+- guid: 25e2be0e-96f7-4417-bd16-a4a2500e3802
+  atomic_id: T1070.008-2
+  name: Copy and Delete Mailbox Data on Linux
+  verified_platforms:
+  - platform: linux
 - guid: 26fc7375-a551-4336-90d7-3f2817564304
   atomic_id: T1112-76
   name: Requires the BitLocker PIN for Pre-boot authentication
@@ -1109,6 +1134,11 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
+- guid: 2d943c18-e74a-44bf-936f-25ade6cccab4
+  atomic_id: T1053.003-4
+  name: Cron - Add script to /var/spool/cron/crontabs/ folder
+  verified_platforms:
+  - platform: linux
 - guid: 2db7852e-5a32-4ec7-937f-f4e027881700
   atomic_id: T1546-6
   name: Load custom DLL on mstsc execution
@@ -1276,6 +1306,11 @@ atomics:
   name: Identifying Network Shares - Linux
   verified_platforms:
   - platform: linux
+- guid: 369878c6-fb04-48d6-8fc2-da9d97b3e054
+  atomic_id: T1685.006-7
+  name: Delete log files via cat utility by appending /dev/null or /dev/zero (freebsd)
+  verified_platforms:
+  - platform: linux
 - guid: 36b8dbf9-59b1-4e9b-a3bb-36e80563ef01
   atomic_id: T1546-3
   name: HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)
@@ -1438,6 +1473,11 @@ atomics:
   name: Windows pull file using sftp.exe
   verified_platforms:
   - platform: windows
+- guid: 3d2cd093-ee05-41bd-a802-59ee5c301b85
+  atomic_id: T1078.003-11
+  name: Login as nobody (Linux)
+  verified_platforms:
+  - platform: linux
 - guid: 3d47daaa-2f56-43e0-94cc-caf5d8d52a68
   atomic_id: T1685-23
   name: Remove Windows Defender Definition Files
@@ -1639,6 +1679,11 @@ atomics:
   name: Disable Windows Security Center Notifications
   verified_platforms:
   - platform: windows
+- guid: 45ad4abd-19bd-4c5f-a687-41f3eee8d8c2
+  atomic_id: T1685.006-13
+  name: Delete system log files via unlink utility (freebsd)
+  verified_platforms:
+  - platform: linux
 - guid: 46352f40-f283-4fe5-b56d-d9a71750e145
   atomic_id: T1069.002-12
   name: Get-DomainGroupMember with PowerView
@@ -1782,6 +1827,11 @@ atomics:
   name: Remote Process Injection with Go using NtQueueApcThreadEx WinAPI
   verified_platforms:
   - platform: windows
+- guid: 4ce786f8-e601-44b5-bfae-9ebb15a7d1c8
+  atomic_id: T1685-4
+  name: Disable syslog
+  verified_platforms:
+  - platform: linux
 - guid: 4d61779d-be7f-425c-b560-0cafb2522911
   atomic_id: T1685-75
   name: Disable .NET Event Tracing for Windows Via Environment Variable HKLM Registry
@@ -2411,6 +2461,11 @@ atomics:
   name: Disable Windows IIS HTTP Logging
   verified_platforms:
   - platform: windows
+- guid: 694b3cc8-6a78-4d35-9e74-0123d009e94b
+  atomic_id: T1546.004-4
+  name: Append to the system shell profile
+  verified_platforms:
+  - platform: linux
 - guid: 69534efc-d5f5-4550-89e6-12c6457b9edd
   atomic_id: T1055-9
   name: Remote Process Injection with Go using CreateRemoteThread WinAPI
@@ -2673,6 +2728,7 @@ atomics:
   atomic_id: T1027.013-1
   name: Decode Eicar File and Write to File
   verified_platforms:
+  - platform: linux
   - platform: windows
 - guid: 76f49d86-5eb1-461a-a032-a480f86652f1
   atomic_id: T1553.004-5
@@ -2770,6 +2826,11 @@ atomics:
   name: AutoHotKey script execution
   verified_platforms:
   - platform: windows
+- guid: 7b697ece-8270-46b5-bbc7-6b9e27081831
+  atomic_id: T1686-16
+  name: Edit UFW firewall main configuration file
+  verified_platforms:
+  - platform: linux
 - guid: 7b8ce084-3922-4618-8d22-95f996173765
   atomic_id: T1486-1
   name: Encrypt files using gpg (FreeBSD/Linux)
@@ -2983,6 +3044,11 @@ atomics:
   name: Rundll32 with desk.cpl
   verified_platforms:
   - platform: windows
+- guid: 848e43b3-4c0a-4e4c-b4c9-d1e8cea9651c
+  atomic_id: T1685.006-11
+  name: Real-time system log clearance/deletion
+  verified_platforms:
+  - platform: macos
 - guid: 8529ee44-279a-4a19-80bf-b846a40dda58
   atomic_id: T1567.002-1
   name: Exfiltrate data with rclone to cloud Storage - Mega (Windows)
@@ -3212,6 +3278,11 @@ atomics:
   name: Scheduled Task Persistence via CompMgmt.msc
   verified_platforms:
   - platform: windows
+- guid: 8fe2ccfd-f079-4c03-b1a9-bd9b362b67d4
+  atomic_id: T1546.004-6
+  name: System shell profile scripts
+  verified_platforms:
+  - platform: linux
 - guid: 9059e8de-3d7d-4954-a322-46161880b9cf
   atomic_id: T1021.006-1
   name: Enable Windows Remote Management
@@ -3599,6 +3670,11 @@ atomics:
   name: Rundll32 with Ordinal Value
   verified_platforms:
   - platform: windows
+- guid: 9fd99609-1854-4f3c-b47b-97d9a5972bd1
+  atomic_id: T1686-9
+  name: Stop/Start UFW firewall systemctl
+  verified_platforms:
+  - platform: linux
 - guid: a059b6c4-e7d6-4b2e-bcd7-9b2b33191a04
   atomic_id: T1218.007-1
   name: Msiexec.exe - Execute Local MSI file with embedded JScript
@@ -3614,6 +3690,11 @@ atomics:
   name: Modify Event Log Access Permissions via Registry - PowerShell
   verified_platforms:
   - platform: windows
+- guid: a1040a30-d28b-4eda-bd99-bb2861a4616c
+  atomic_id: T1136.001-6
+  name: Create a new user in Linux with `root` UID and GID.
+  verified_platforms:
+  - platform: linux
 - guid: a123ce6a-3916-45d6-ba9c-7d4081315c27
   atomic_id: T1685-28
   name: Tamper with Windows Defender Evade Scanning -Process
@@ -4014,6 +4095,11 @@ atomics:
   name: LOLBAS CustomShellHost to Spawn Process
   verified_platforms:
   - platform: windows
+- guid: b2563a4e-c4b8-429c-8d47-d5bcb227ba7a
+  atomic_id: T1686-11
+  name: Add and delete UFW firewall rules
+  verified_platforms:
+  - platform: linux
 - guid: b2698b33-984c-4a1c-93bb-e4ba72a0babb
   atomic_id: T1201-10
   name: Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy
@@ -4048,6 +4134,7 @@ atomics:
   atomic_id: T1027.013-2
   name: Decrypt Eicar File and Write to File
   verified_platforms:
+  - platform: linux
   - platform: windows
 - guid: b4094750-5fc7-4e8e-af12-b4e36bf5e7f6
   atomic_id: T1218.001-4
@@ -4116,6 +4203,11 @@ atomics:
   name: List Google Chrome Bookmark JSON Files on macOS
   verified_platforms:
   - platform: macos
+- guid: b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0
+  atomic_id: T1053.003-2
+  name: Cron - Add script to all cron subfolders
+  verified_platforms:
+  - platform: linux
 - guid: b7fc4c3f-fe6e-479a-ba27-ef91b88536e3
   atomic_id: T1546-7
   name: Persistence using automatic execution of custom DLL during RDP session
@@ -4273,6 +4365,11 @@ atomics:
   name: Check internet connection using ping freebsd, linux or macos
   verified_platforms:
   - platform: macos
+- guid: beaf815a-c883-4194-97e9-fdbbb2bbdd7c
+  atomic_id: T1686-13
+  name: Edit UFW firewall user.rules file
+  verified_platforms:
+  - platform: linux
 - guid: bec1e95c-83aa-492e-ab77-60c71bbd21b0
   atomic_id: T1222.001-3
   name: attrib - Remove read-only attribute
@@ -4339,6 +4436,11 @@ atomics:
   name: Enumerate Available Drives via gdr
   verified_platforms:
   - platform: windows
+- guid: c1d8c4eb-88da-4927-ae97-c7c25893803b
+  atomic_id: T1686-14
+  name: Edit UFW firewall ufw.conf file
+  verified_platforms:
+  - platform: linux
 - guid: c2587b8d-743d-4985-aa50-c83394eaeb68
   atomic_id: T1553.005-4
   name: Execute LNK file from ISO
@@ -4369,6 +4471,11 @@ atomics:
 - guid: c33f3d80-5f04-419b-a13a-854d1cbdbf3a
   atomic_id: T1037.004-2
   name: rc.common
+  verified_platforms:
+  - platform: linux
+- guid: c35ac4a8-19de-43af-b9f8-755da7e89c89
+  atomic_id: T1543.002-3
+  name: Create Systemd Service file,  Enable the service , Modify and Reload the service.
   verified_platforms:
   - platform: linux
 - guid: c375558d-7c25-45e9-bd64-7b23a97c1db0
@@ -4422,6 +4529,11 @@ atomics:
   name: Mshta Executes Remote HTML Application (HTA)
   verified_platforms:
   - platform: windows
+- guid: c51cec55-28dd-4ad2-9461-1eacbc82c3a0
+  atomic_id: T1560.001-5
+  name: Data Compressed - nix - zip
+  verified_platforms:
+  - platform: linux
 - guid: c531aa6e-9c97-4b29-afee-9b7be6fc8a64
   atomic_id: T1685-34
   name: Tamper with Windows Defender ATP using Aliases - PowerShell
@@ -4477,6 +4589,11 @@ atomics:
   name: Steganographic Tarball Embedding
   verified_platforms:
   - platform: windows
+- guid: c7ac59cb-13cc-4622-81dc-6d2fee9bfac7
+  atomic_id: T1059.004-10
+  name: Change login shell
+  verified_platforms:
+  - platform: linux
 - guid: c7fa0c3b-b57f-4cba-9118-863bf4e653fc
   atomic_id: T1036.007-1
   name: File Extension Masquerading
@@ -4630,6 +4747,11 @@ atomics:
   name: Indirect Command Execution - pcalua.exe
   verified_platforms:
   - platform: windows
+- guid: cedaf7e7-28ee-42ab-ba13-456abd35d1bd
+  atomic_id: T1685-64
+  name: Auditing Configuration Changes on FreeBSD Host
+  verified_platforms:
+  - platform: linux
 - guid: cf3391e0-b482-4b02-87fc-ca8362269b29
   atomic_id: T1202-3
   name: Indirect Command Execution - conhost.exe
@@ -4717,6 +4839,16 @@ atomics:
   name: Copy and Delete Mailbox Data on Windows
   verified_platforms:
   - platform: windows
+- guid: d2b95631-62d7-45a3-aaef-0972cea97931
+  atomic_id: T1078.003-9
+  name: Reactivate a locked/expired account (Linux)
+  verified_platforms:
+  - platform: linux
+- guid: d304b2dc-90b4-4465-a650-16ddd503f7b5
+  atomic_id: T1685.006-20
+  name: Overwrite Linux Log
+  verified_platforms:
+  - platform: linux
 - guid: d322cdd7-7d60-46e3-9111-648848da7c02
   atomic_id: T1574.001-5
   name: DLL Side-Loading using the dotnet startup hook environment variable
@@ -4747,6 +4879,11 @@ atomics:
   name: Invoke HTML Application - JScript Engine with Inline Protocol Handler
   verified_platforms:
   - platform: windows
+- guid: d3eda496-1fc0-49e9-aff5-3bec5da9fa22
+  atomic_id: T1053.006-3
+  name: Create a system level transient systemd service and timer
+  verified_platforms:
+  - platform: linux
 - guid: d40da266-e073-4e5a-bb8b-2b385023e5f9
   atomic_id: T1547.004-3
   name: Winlogon Notify Key Logon Persistence - PowerShell
@@ -5255,6 +5392,11 @@ atomics:
   name: Juicy Potato
   verified_platforms:
   - platform: windows
+- guid: f1275566-1c26-4b66-83e3-7f9f7f964daa
+  atomic_id: T1078.003-2
+  name: Create local account with admin privileges - MacOS
+  verified_platforms:
+  - platform: macos
 - guid: f12acddb-7502-4ce6-a146-5b62c59592f1
   atomic_id: T1690-10
   name: Setting the HISTIGNORE environment variable
@@ -5327,6 +5469,11 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
+- guid: f4983098-bb13-44fb-9b2c-46149961807b
+  atomic_id: T1053.006-1
+  name: Create Systemd Service and Timer
+  verified_platforms:
+  - platform: linux
 - guid: f4b26bce-4c2c-46c0-bcc5-fce062d38bef
   atomic_id: T1007-3
   name: System Service Discovery - systemctl/service
@@ -5504,6 +5651,11 @@ atomics:
   name: IFEO Add Debugger
   verified_platforms:
   - platform: windows
+- guid: fe135572-edcd-49a2-afe6-1d39521c5a9a
+  atomic_id: T1686-7
+  name: Stop/Start UFW firewall
+  verified_platforms:
+  - platform: linux
 - guid: fe53e878-10a3-477b-963e-4367348f5af5
   atomic_id: T1614-1
   name: Get geolocation info through IP-Lookup services using curl Windows
