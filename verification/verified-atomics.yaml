@@ -1281,11 +1281,6 @@ atomics:
   name: HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)
   verified_platforms:
   - platform: windows
-- guid: 36c62584-d360-41d6-886f-d194654be7c2
-  atomic_id: T1560.001-10
-  name: ESXi - Remove Syslog remote IP
-  verified_platforms:
-  - platform: windows
 - guid: 37950714-e923-4f92-8c7c-51e4b6fffbf6
   atomic_id: T1112-58
   name: Allow Simultaneous Download Registry
@@ -3197,11 +3192,6 @@ atomics:
   name: System Service Discovery - Linux init scripts
   verified_platforms:
   - platform: linux
-- guid: 8f6c14d1-f13d-4616-b7fc-98cc69fe56ec
-  atomic_id: T1021.004-1
-  name: ESXi - Enable SSH via PowerCLI
-  verified_platforms:
-  - platform: windows
 - guid: 8f907648-1ebf-4276-b0f0-e2678ca474f0
   atomic_id: T1685-60
   name: Disable EventLog-Application ETW Provider Via Registry - PowerShell
