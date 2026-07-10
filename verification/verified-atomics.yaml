@@ -1,6 +1,6 @@
 version: 1
-verified_at: '2026-05-24T02:55:41Z'
-run_id: '26349828983'
+verified_at: '2026-07-10T11:56:03Z'
+run_id: '29090030664'
 atomics:
 - guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
   atomic_id: T1560.002-3
@@ -632,6 +632,11 @@ atomics:
   name: Disable UAC notification via registry keys
   verified_platforms:
   - platform: windows
+- guid: 161d694c-b543-4434-85c3-c3a433e33792
+  atomic_id: T1059.006-4
+  name: Python pty module and spawn function used to spawn sh or bash
+  verified_platforms:
+  - platform: linux
 - guid: 1620de42-160a-4fe5-bbaf-d3fef0181ce9
   atomic_id: T1059.005-1
   name: Visual Basic script execution to gather local computer information
@@ -2054,7 +2059,6 @@ atomics:
   name: Delete a single file - FreeBSD/Linux/macOS
   verified_platforms:
   - platform: linux
-  - platform: macos
 - guid: 57289962-21dc-4501-b756-80cd30608d9f
   atomic_id: T1546.018-1
   name: Python Startup Hook - atomic_hook.pth (Windows)
@@ -2998,7 +3002,6 @@ atomics:
   name: Set a file's creation timestamp
   verified_platforms:
   - platform: linux
-  - platform: macos
 - guid: 81c13829-f6c9-45b8-85a6-053366d55297
   atomic_id: T1071.001-1
   name: Malicious User Agents - Powershell
@@ -3804,11 +3807,6 @@ atomics:
   name: Install AppInit Shim
   verified_platforms:
   - platform: windows
-- guid: a5983dee-bf6c-4eaf-951c-dbc1a7b90900
-  atomic_id: T1543.001-1
-  name: Launch Agent
-  verified_platforms:
-  - platform: macos
 - guid: a5ad6104-5bab-4c43-b295-b4c44c7c6b05
   atomic_id: T1546.009-1
   name: Create registry persistence via AppCert DLL
@@ -3862,6 +3860,11 @@ atomics:
   name: Get-EventLog To Enumerate Windows Security Log
   verified_platforms:
   - platform: windows
+- guid: a934276e-2be5-4a36-93fd-98adbb5bd4fc
+  atomic_id: T1070.003-1
+  name: Clear Bash history (rm)
+  verified_platforms:
+  - platform: linux
 - guid: a957fb0f-1e85-49b2-a211-413366784b1e
   atomic_id: T1685.001-2
   name: Disable Windows IIS HTTP Logging via PowerShell
@@ -3957,7 +3960,6 @@ atomics:
   name: Remote System Discovery - arp nix
   verified_platforms:
   - platform: linux
-  - platform: macos
 - guid: acfcd709-0013-4f1e-b9ee-bc1e7bafaaec
   atomic_id: T1082-40
   name: Discover OS Build Number via Registry
@@ -4298,11 +4300,6 @@ atomics:
   name: Create a new user in PowerShell
   verified_platforms:
   - platform: windows
-- guid: bc8eeb4a-cc3e-45ec-aa6e-41e973da2558
-  atomic_id: T1685.006-8
-  name: System log file deletion via find utility
-  verified_platforms:
-  - platform: macos
 - guid: bcd4c2bc-490b-4f91-bd31-3709fe75bbdf
   atomic_id: T1059.004-15
   name: Creating shell using cpan command
@@ -4380,11 +4377,6 @@ atomics:
   name: What shells are available
   verified_platforms:
   - platform: linux
-- guid: bf8c1441-4674-4dab-8e4e-39d93d08f9b7
-  atomic_id: T1059.001-3
-  name: Run Bloodhound from Memory using Download Cradle
-  verified_platforms:
-  - platform: windows
 - guid: bf9f9d65-ee4d-4c3e-a843-777d04f19c38
   atomic_id: T1547.004-1
   name: Winlogon Shell Key Persistence - PowerShell
@@ -5061,11 +5053,6 @@ atomics:
   name: MITM Proxy Injection (Windows)
   verified_platforms:
   - platform: windows
-- guid: dd3b61dd-7bbc-48cd-ab51-49ad1a776df0
-  atomic_id: T1105-7
-  name: certutil download (urlcache)
-  verified_platforms:
-  - platform: windows
 - guid: dd4b4421-2e25-4593-90ae-7021947ad12e
   atomic_id: T1048.003-2
   name: Exfiltration Over Alternative Protocol - ICMP
@@ -5387,11 +5374,6 @@ atomics:
   name: Juicy Potato
   verified_platforms:
   - platform: windows
-- guid: f1275566-1c26-4b66-83e3-7f9f7f964daa
-  atomic_id: T1078.003-2
-  name: Create local account with admin privileges - MacOS
-  verified_platforms:
-  - platform: macos
 - guid: f12acddb-7502-4ce6-a146-5b62c59592f1
   atomic_id: T1690-10
   name: Setting the HISTIGNORE environment variable
@@ -5584,11 +5566,6 @@ atomics:
   name: Creating W32Time similar named service using schtasks
   verified_platforms:
   - platform: windows
-- guid: fa050f5e-bc75-4230-af73-b6fd7852cd73
-  atomic_id: T1059.001-10
-  name: PowerShell Fileless Script Execution
-  verified_platforms:
-  - platform: windows
 - guid: fa5a2759-41d7-4e13-a19c-e8f28a53566f
   atomic_id: T1105-12
   name: svchost writing a file to a UNC path
@@ -5739,7 +5716,6 @@ atomics:
   name: Pad Binary to Change Hash - Linux/macOS dd
   verified_platforms:
   - platform: linux
-  - platform: macos
 - guid: ffeddced-bb9f-49c6-97f0-3d07a509bf94
   atomic_id: T1112-62
   name: Activities To Disable Microsoft [FIDO Aka Fast IDentity Online] Authentication
