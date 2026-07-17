@@ -1,6 +1,6 @@
 version: 1
-verified_at: '2026-05-24T02:55:41Z'
-run_id: '26349828983'
+verified_at: '2026-07-17T10:46:25Z'
+run_id: '29573514217'
 atomics:
 - guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
   atomic_id: T1560.002-3
@@ -2055,6 +2055,11 @@ atomics:
   verified_platforms:
   - platform: linux
   - platform: macos
+- guid: 56b9589c-9170-4682-8c3d-33b86ecb5119
+  atomic_id: T1620-1
+  name: WinPwn - Reflectively load Mimik@tz into memory
+  verified_platforms:
+  - platform: windows
 - guid: 57289962-21dc-4501-b756-80cd30608d9f
   atomic_id: T1546.018-1
   name: Python Startup Hook - atomic_hook.pth (Windows)
@@ -3862,6 +3867,11 @@ atomics:
   name: Get-EventLog To Enumerate Windows Security Log
   verified_platforms:
   - platform: windows
+- guid: a934276e-2be5-4a36-93fd-98adbb5bd4fc
+  atomic_id: T1070.003-1
+  name: Clear Bash history (rm)
+  verified_platforms:
+  - platform: linux
 - guid: a957fb0f-1e85-49b2-a211-413366784b1e
   atomic_id: T1685.001-2
   name: Disable Windows IIS HTTP Logging via PowerShell
@@ -4380,11 +4390,6 @@ atomics:
   name: What shells are available
   verified_platforms:
   - platform: linux
-- guid: bf8c1441-4674-4dab-8e4e-39d93d08f9b7
-  atomic_id: T1059.001-3
-  name: Run Bloodhound from Memory using Download Cradle
-  verified_platforms:
-  - platform: windows
 - guid: bf9f9d65-ee4d-4c3e-a843-777d04f19c38
   atomic_id: T1547.004-1
   name: Winlogon Shell Key Persistence - PowerShell
@@ -5061,11 +5066,6 @@ atomics:
   name: MITM Proxy Injection (Windows)
   verified_platforms:
   - platform: windows
-- guid: dd3b61dd-7bbc-48cd-ab51-49ad1a776df0
-  atomic_id: T1105-7
-  name: certutil download (urlcache)
-  verified_platforms:
-  - platform: windows
 - guid: dd4b4421-2e25-4593-90ae-7021947ad12e
   atomic_id: T1048.003-2
   name: Exfiltration Over Alternative Protocol - ICMP
@@ -5582,11 +5582,6 @@ atomics:
 - guid: f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9
   atomic_id: T1036.004-1
   name: Creating W32Time similar named service using schtasks
-  verified_platforms:
-  - platform: windows
-- guid: fa050f5e-bc75-4230-af73-b6fd7852cd73
-  atomic_id: T1059.001-10
-  name: PowerShell Fileless Script Execution
   verified_platforms:
   - platform: windows
 - guid: fa5a2759-41d7-4e13-a19c-e8f28a53566f
