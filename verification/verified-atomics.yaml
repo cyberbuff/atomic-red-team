@@ -1,6 +1,6 @@
 version: 1
-verified_at: '2026-05-24T02:55:41Z'
-run_id: '26349828983'
+verified_at: '2026-07-24T11:09:54Z'
+run_id: '30087602632'
 atomics:
 - guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
   atomic_id: T1560.002-3
@@ -3862,6 +3862,11 @@ atomics:
   name: Get-EventLog To Enumerate Windows Security Log
   verified_platforms:
   - platform: windows
+- guid: a934276e-2be5-4a36-93fd-98adbb5bd4fc
+  atomic_id: T1070.003-1
+  name: Clear Bash history (rm)
+  verified_platforms:
+  - platform: linux
 - guid: a957fb0f-1e85-49b2-a211-413366784b1e
   atomic_id: T1685.001-2
   name: Disable Windows IIS HTTP Logging via PowerShell
@@ -5582,11 +5587,6 @@ atomics:
 - guid: f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9
   atomic_id: T1036.004-1
   name: Creating W32Time similar named service using schtasks
-  verified_platforms:
-  - platform: windows
-- guid: fa050f5e-bc75-4230-af73-b6fd7852cd73
-  atomic_id: T1059.001-10
-  name: PowerShell Fileless Script Execution
   verified_platforms:
   - platform: windows
 - guid: fa5a2759-41d7-4e13-a19c-e8f28a53566f
